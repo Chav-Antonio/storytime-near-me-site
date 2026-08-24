@@ -1,0 +1,874 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Storytime Near Me</title>
+<style>:root{color-scheme:light dark}html,body{margin:0}img{max-width:100%}</style>
+</head>
+<body>
+<style>
+  :root{
+    --paper:#FBFAF9; --card:#FFFFFF; --ink:#22262E; --muted:#5F6773; --faint:#8A929E;
+    --line:#E7E3DC; --line-strong:#D8D3C9; --accent:#E8654F; --accent-ink:#B23f2c;
+    --chip-bg:#F2EFEA; --shadow:0 1px 2px rgba(30,25,20,.05),0 6px 18px rgba(30,25,20,.06);
+    --good:#3f9a5c; --warn-bg:#FBEFD8; --warn-ink:#8a5a12;
+    --wknd:#E8654F; --wkdy:#3E88C7;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#14161C; --card:#1D2026; --ink:#ECEAE4; --muted:#A2ABB8; --faint:#727C89;
+      --line:#2B2F38; --line-strong:#3A3F4A; --accent:#F27C67; --accent-ink:#F9A794;
+      --chip-bg:#262A32; --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 22px rgba(0,0,0,.35);
+      --warn-bg:#38301C; --warn-ink:#E8C583;
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#14161C; --card:#1D2026; --ink:#ECEAE4; --muted:#A2ABB8; --faint:#727C89;
+    --line:#2B2F38; --line-strong:#3A3F4A; --accent:#F27C67; --accent-ink:#F9A794;
+    --chip-bg:#262A32; --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 22px rgba(0,0,0,.35);
+    --warn-bg:#38301C; --warn-ink:#E8C583;
+  }
+
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{
+    background:var(--paper); color:var(--ink);
+    font:400 16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1080px;margin:0 auto;padding:0 20px 80px}
+  h1,h2,h3{font-family:Georgia,"Iowan Old Style","Times New Roman",serif;font-weight:600;letter-spacing:-.01em}
+  a{color:var(--accent-ink);text-decoration:none}
+  a:hover{text-decoration:underline}
+  button{font-family:inherit}
+  :focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:6px}
+
+  /* header */
+  header{padding:34px 0 18px}
+  .eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-ink);font-weight:600}
+  h1{font-size:clamp(30px,5vw,44px);margin:.24em 0 .12em;text-wrap:balance;line-height:1.05}
+  .lede{color:var(--muted);max-width:60ch;font-size:16.5px}
+  .lede b{color:var(--ink);font-weight:600}
+
+  /* controls */
+  .panel{
+    position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--paper) 88%,transparent);
+    backdrop-filter:blur(10px);border-bottom:1px solid var(--line);margin:0 -20px 22px;padding:12px 20px;
+  }
+  .controls{display:flex;flex-wrap:wrap;gap:14px 18px;align-items:flex-end}
+  .filterbar{display:none}  /* mobile-only trigger; desktop shows controls inline */
+  .field{display:flex;flex-direction:column;gap:5px}
+  .field label{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--faint);font-weight:600}
+  .field input[type=text],.field input[type=number]{
+    width:88px;padding:7px 9px;border:1px solid var(--line-strong);border-radius:9px;background:var(--card);color:var(--ink);font-size:15px;
+  }
+  .field .val{font-variant-numeric:tabular-nums}
+  input[type=range]{width:130px;accent-color:var(--accent);margin:0}
+  .rangewrap{display:flex;align-items:center;gap:9px}
+  .rangewrap .val{font-size:13px;color:var(--muted);min-width:58px}
+  .stepper{display:flex;align-items:center;gap:6px}
+  .stepper input[type=number]{width:52px;text-align:center;-moz-appearance:textfield}
+  .stepper input[type=number]::-webkit-outer-spin-button,
+  .stepper input[type=number]::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
+  .field .hint{font-size:11px;color:#e0554b;font-weight:600;display:none}
+  .field .hint.show{display:block}
+  .stepbtn{width:34px;height:36px;flex:0 0 auto;border:1px solid var(--line-strong);border-radius:9px;
+    background:var(--card);color:var(--ink);font-size:19px;line-height:1;font-weight:600;cursor:pointer;
+    display:inline-flex;align-items:center;justify-content:center;padding:0}
+  .stepbtn:hover{border-color:var(--accent)}
+  .stepbtn:active{background:var(--chip-bg)}
+  .checks{display:flex;flex-wrap:wrap;gap:6px}
+  .chk{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:600;color:var(--muted);
+       border:1px solid var(--line-strong);background:var(--card);border-radius:20px;padding:5px 11px;cursor:pointer;user-select:none}
+  .chk input{position:absolute;opacity:0;width:0;height:0}
+  .chk.on{color:#fff;border-color:transparent}
+  .chk .dot{width:9px;height:9px;border-radius:50%}
+  .chk.on .dot{display:none}  /* fill already shows state; drop the dot so the label centers */
+  #dowChecks .chk{min-width:38px;justify-content:center}
+
+  /* tabs + summary */
+  .bar{display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between;margin:2px 0 20px}
+  .tabs{display:inline-flex;gap:4px;background:var(--chip-bg);padding:4px;border-radius:12px}
+  .tabs button{border:0;background:transparent;color:var(--muted);font-weight:600;font-size:14px;padding:8px 15px;border-radius:9px;cursor:pointer}
+  .tabs button.on{background:var(--card);color:var(--ink);box-shadow:var(--shadow)}
+  .summary{font-size:14px;color:var(--muted)}
+  .summary b{color:var(--ink);font-variant-numeric:tabular-nums}
+
+  /* date group */
+  .dategroup{margin:0 0 30px}
+  .datehead{display:flex;align-items:baseline;gap:10px;position:sticky;top:132px;z-index:5;
+            background:color-mix(in srgb,var(--paper) 90%,transparent);padding:6px 0;margin-bottom:6px}
+  .datehead h2{font-size:19px;margin:0}
+  .datehead .dow{color:var(--accent-ink);font-family:Georgia,serif;font-style:italic}
+  .datehead .cnt{font-size:12px;color:var(--faint);font-weight:600;letter-spacing:.04em;text-transform:uppercase}
+
+  /* event card */
+  .ev{position:relative;display:grid;grid-template-columns:76px 1fr auto;gap:16px;align-items:start;
+      background:var(--card);border:1px solid var(--line);border-left-width:5px;border-radius:12px;
+      padding:14px 16px 14px 15px;margin-bottom:10px;box-shadow:var(--shadow)}
+  .ev .time{font-variant-numeric:tabular-nums;font-weight:700;font-size:15px}
+  .ev .time small{display:block;font-weight:500;color:var(--faint);font-size:12px}
+  .ev .body h3{font-size:16.5px;margin:0 0 3px}
+  .ev .meta{display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center;font-size:13px;color:var(--muted)}
+  .ev .loc{display:inline-flex;align-items:center;gap:6px;font-weight:600;color:var(--ink)}
+  .ev .loc .dot{width:9px;height:9px;border-radius:50%}
+  .tag{font-size:11.5px;font-weight:600;padding:2px 8px;border-radius:20px;background:var(--chip-bg);color:var(--muted);letter-spacing:.02em}
+  .tag.lang{background:color-mix(in srgb,var(--accent) 15%,transparent);color:var(--accent-ink)}
+  .tag.age{border:1px solid var(--line-strong);background:transparent}
+  .tag.older{background:color-mix(in srgb,#3E88C7 16%,transparent);color:#2f6ea8}
+  :root[data-theme="dark"] .tag.older,:root:not([data-theme="light"]) .tag.older{color:#8fbde8}
+  .ev .actions{display:flex;flex-direction:column;gap:7px;align-items:stretch;min-width:132px}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;font-size:12.5px;font-weight:600;
+       padding:7px 11px;border-radius:9px;border:1px solid var(--line-strong);background:var(--card);color:var(--ink);cursor:pointer;white-space:nowrap;text-align:center}
+  .btn:hover{border-color:var(--accent);text-decoration:none;color:var(--accent-ink)}
+  .btn.gcal{background:var(--accent);color:#fff;border-color:transparent}
+  .btn.gcal:hover{color:#fff;filter:brightness(1.05)}
+
+  /* location view */
+  .loccard{background:var(--card);border:1px solid var(--line);border-left-width:6px;border-radius:14px;padding:18px 20px;margin-bottom:16px;box-shadow:var(--shadow)}
+  .loccard .lhead{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:baseline;justify-content:space-between}
+  .loccard h2{font-size:21px;margin:0;display:flex;align-items:center;gap:9px}
+  .loccard h2 a{color:inherit;text-decoration:none}
+  .loccard h2 a:hover{color:var(--accent-ink);text-decoration:underline}
+  .loccard h2 .dot{width:13px;height:13px;border-radius:50%}
+  .loccard .sys{font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--faint)}
+  .loccard .addr{color:var(--muted);font-size:14px;margin:4px 0 0}
+  .loclinks{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 4px}
+  .loclinks a{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:600;padding:6px 12px;border:1px solid var(--line-strong);border-radius:20px;color:var(--ink)}
+  .loclinks a:hover{border-color:var(--accent);color:var(--accent-ink);text-decoration:none}
+  .note{display:flex;gap:8px;align-items:flex-start;background:var(--warn-bg);color:var(--warn-ink);border-radius:10px;padding:9px 12px;font-size:13px;font-weight:500;margin:12px 0 2px}
+  .schedrow{display:grid;grid-template-columns:172px 1fr auto;gap:14px;align-items:center;padding:10px 2px;border-top:1px dashed var(--line)}
+  .schedrow .d{font-weight:700;font-size:14px;white-space:nowrap}
+  .schedrow .n{font-size:14.5px}
+  .schedrow .n .sub{color:var(--muted);font-size:12.5px}
+  .morerows summary{display:inline-flex;align-items:center;gap:6px;margin-top:8px;padding:7px 12px;
+       font-size:13px;font-weight:600;color:var(--accent-ink);cursor:pointer;user-select:none;
+       border:1px solid var(--line-strong);border-radius:20px;list-style:none;width:max-content}
+  .morerows summary::-webkit-details-marker{display:none}
+  .morerows summary::marker{content:""}
+  .morerows summary:hover{border-color:var(--accent)}
+  .morerows summary .less{display:none}
+  .morerows[open] summary{margin-bottom:12px}
+  .morerows[open] summary .more{display:none}
+  .morerows[open] summary .less{display:inline}
+
+  /* by-date view */
+  .datesticky{position:sticky;top:132px;z-index:5;padding:6px 0 8px;margin-bottom:2px;
+    background:color-mix(in srgb,var(--paper) 94%,transparent);backdrop-filter:blur(10px)}
+  .datesticky h2{font-size:22px;margin:0}
+  .datesticky .dcount{font-size:14px;color:var(--muted);margin:2px 0 0}
+  .daynav{display:flex;gap:8px;overflow-x:auto;padding:4px 2px 12px;margin:0 -2px}
+  .daychip{flex:0 0 auto;min-width:64px;text-align:center;border:1px solid var(--line-strong);background:var(--card);border-radius:12px;padding:9px 12px;cursor:pointer}
+  .daychip.on{background:var(--ink);color:var(--paper);border-color:transparent}
+  .daychip.on .dn{color:var(--paper)}
+  .daychip .mo{font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:var(--accent-ink);font-weight:700}
+  .daychip.on .mo{color:color-mix(in srgb,var(--paper) 80%,transparent)}
+  .daychip .dw{font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--faint);font-weight:700}
+  .daychip.on .dw{color:color-mix(in srgb,var(--paper) 75%,transparent)}
+  .daychip .dn{font-size:20px;font-weight:700;font-variant-numeric:tabular-nums}
+  .daychip .cc{font-size:11px;color:var(--faint);font-weight:600}
+  .daychip.on .cc{color:color-mix(in srgb,var(--paper) 70%,transparent)}
+  .daychip.empty{opacity:.45}
+  .legend{display:flex;flex-wrap:wrap;gap:8px 14px;margin:6px 0 20px;font-size:12.5px}
+  .legend .li{display:inline-flex;align-items:center;gap:6px;color:var(--muted)}
+  .legend .li .dot{width:11px;height:11px;border-radius:3px}
+  .dayblocks{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
+  .block{border-radius:12px;padding:14px 15px;color:#fff;box-shadow:var(--shadow);position:relative;overflow:hidden}
+  .block .bt{font-variant-numeric:tabular-nums;font-weight:700;font-size:14px;opacity:.95}
+  .block h3{margin:2px 0 6px;font-size:17px;color:#fff}
+  .block .bl{font-size:13px;font-weight:600;opacity:.95}
+  .block .bmeta{display:flex;flex-wrap:wrap;gap:6px;margin-top:9px}
+  .block .btag{font-size:11px;font-weight:600;background:rgba(255,255,255,.22);color:#fff;padding:2px 8px;border-radius:20px}
+  .block .bacts{display:flex;gap:7px;margin-top:12px}
+  .block .bbtn{font-size:12px;font-weight:700;padding:6px 10px;border-radius:8px;background:rgba(255,255,255,.95);color:#222;text-align:center}
+  .block .bbtn:hover{text-decoration:none;background:#fff}
+  .block .bbtn.ghost{background:rgba(255,255,255,.16);color:#fff;border:1px solid rgba(255,255,255,.5)}
+
+  .empty{text-align:center;padding:60px 20px;color:var(--muted)}
+  .empty h2{font-size:22px;color:var(--ink);margin:0 0 6px}
+  .empty code{background:var(--chip-bg);padding:1px 6px;border-radius:6px;font-size:13px}
+  footer{margin-top:40px;padding-top:20px;border-top:1px solid var(--line);color:var(--faint);font-size:12.5px;line-height:1.6}
+  footer a{color:var(--muted)}
+  .hide{display:none!important}
+  @media (max-width:640px){
+    header{padding:22px 0 12px}
+    /* Weekday chips: one no-wrap row of 7 equal-width initials */
+    .controls .field:has(#dowChecks){flex-basis:100%}
+    #dowChecks{flex-wrap:nowrap;gap:5px}
+    #dowChecks .chk{flex:1 1 0;min-width:0;padding:6px 2px;gap:0}
+    #dowChecks .chk .dot{display:none}
+    /* Collapsible filter drawer: a slim sticky trigger, controls hidden until opened */
+    .filterbar{display:flex;align-items:center;gap:8px;width:100%;border:0;background:transparent;
+      padding:8px 2px;cursor:pointer;color:var(--ink);font-size:15px;font-weight:600}
+    .filterbar .fspace{flex:1}
+    .filterbar .fsum{font-size:12.5px;font-weight:600;color:var(--muted);font-variant-numeric:tabular-nums}
+    .filterbar .fchev{color:var(--muted);font-size:13px;transition:transform .2s ease}
+    .panel.open .filterbar .fchev{transform:rotate(180deg)}
+    .controls{display:none}
+    .panel.open .controls{display:flex;margin-top:12px;padding-bottom:6px;
+      max-height:calc(100dvh - 108px);overflow-y:auto}
+    /* Event card: time reads inline (no cramped fixed column that wraps "11:30 am") */
+    .ev{grid-template-columns:1fr;gap:7px;padding:14px 15px}
+    .ev .time{display:flex;align-items:baseline;gap:7px;font-size:14.5px}
+    .ev .time small{display:inline;font-size:12.5px}
+    .ev .time small::before{content:"·\00a0"}
+    .ev .actions{grid-column:auto;flex-direction:row;min-width:0;margin-top:2px}
+    .schedrow{grid-template-columns:1fr auto;row-gap:2px}
+    .schedrow .btn{grid-column:2;grid-row:1/3}
+    /* View tabs stick just under the filter bar; count already lives in it, so drop the summary */
+    .bar{position:sticky;top:60px;z-index:15;margin:0 -20px 16px;padding:8px 20px;
+      background:color-mix(in srgb,var(--paper) 92%,transparent);backdrop-filter:blur(10px);
+      border-bottom:1px solid var(--line)}
+    .bar .summary{display:none}
+    .datehead,.datesticky{top:120px}
+  }
+  @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Free Library Events · San Diego</div>
+    <h1>Storytime Finder</h1>
+    <p class="lede">Baby/toddler library events.</p>
+  </header>
+
+  <div class="panel open" id="panel">
+    <button type="button" class="filterbar" id="filterToggle" aria-expanded="true" aria-controls="controls">
+      <span class="fl">Filters</span>
+      <span class="fchev" aria-hidden="true">▾</span>
+      <span class="fspace"></span>
+      <span class="fsum" id="fsum"></span>
+    </button>
+    <div class="controls" id="controls">
+      <div class="field">
+        <label for="zip">Zip</label>
+        <input type="text" id="zip" inputmode="numeric" maxlength="5" value="92108">
+      </div>
+      <div class="field">
+        <label for="radius">Distance</label>
+        <div class="rangewrap"><input type="range" id="radius" min="1" max="20" step="1" value="9"><span class="val" id="radiusV">9 mi</span></div>
+      </div>
+      <div class="field">
+        <label for="age">Child age (mo)</label>
+        <div class="stepper">
+          <button type="button" class="stepbtn" id="ageDec" aria-label="Decrease age">−</button>
+          <input type="number" id="age" min="0" max="60" step="1" value="13" inputmode="numeric">
+          <button type="button" class="stepbtn" id="ageInc" aria-label="Increase age">+</button>
+        </div>
+        <span class="hint" id="ageHint" role="status" aria-live="polite">Max is 60</span>
+      </div>
+      <div class="field">
+        <label for="flex">Age flexibility</label>
+        <div class="rangewrap"><input type="range" id="flex" min="0" max="36" step="1" value="14"><span class="val" id="flexV">±14 mo</span></div>
+      </div>
+      <div class="field">
+        <label>Languages</label>
+        <div class="checks" id="langChecks">
+          <label class="chk" data-lang="en"><input type="checkbox" checked><span class="dot"></span>English</label>
+          <label class="chk" data-lang="es"><input type="checkbox" checked><span class="dot"></span>Spanish</label>
+          <label class="chk" data-lang="other"><input type="checkbox"><span class="dot"></span>Other</label>
+        </div>
+      </div>
+      <div class="field">
+        <label>Day of week</label>
+        <div class="checks" id="dowChecks">
+          <label class="chk" data-dow="1" title="Monday"><input type="checkbox" checked aria-label="Monday"><span class="dot"></span>M</label>
+          <label class="chk" data-dow="2" title="Tuesday"><input type="checkbox" checked aria-label="Tuesday"><span class="dot"></span>T</label>
+          <label class="chk" data-dow="3" title="Wednesday"><input type="checkbox" checked aria-label="Wednesday"><span class="dot"></span>W</label>
+          <label class="chk" data-dow="4" title="Thursday"><input type="checkbox" checked aria-label="Thursday"><span class="dot"></span>T</label>
+          <label class="chk" data-dow="5" title="Friday"><input type="checkbox" checked aria-label="Friday"><span class="dot"></span>F</label>
+          <label class="chk" data-dow="6" title="Saturday"><input type="checkbox" checked aria-label="Saturday"><span class="dot"></span>S</label>
+          <label class="chk" data-dow="0" title="Sunday"><input type="checkbox" checked aria-label="Sunday"><span class="dot"></span>S</label>
+        </div>
+      </div>
+      <div class="field">
+        <label>Time of day</label>
+        <div class="checks" id="timeChecks">
+          <label class="chk" data-time="am"><input type="checkbox" checked><span class="dot"></span>AM</label>
+          <label class="chk" data-time="pm"><input type="checkbox" checked><span class="dot"></span>PM</label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bar">
+    <div class="tabs" id="tabs">
+      <button data-view="schedule" class="on">Schedule</button>
+      <button data-view="location">By location</button>
+      <button data-view="date">By date</button>
+    </div>
+    <div class="summary" id="summary"></div>
+  </div>
+
+  <main id="app"></main>
+
+  <footer id="footer"></footer>
+</div>
+
+<script>
+"use strict";
+
+// ---------- CONFIG --------------------------------------------------------
+// Event data lives in ./data as one JS file per month (yyyy-mm.js), listed in
+// ./data/manifest.js. Library metadata is ./data/libraries.js. Each file is a
+// tiny script that registers its JSON onto window.STORYTIME, and we pull them
+// in with <script> tags rather than fetch() — so the page also works when
+// opened straight from disk (file://), where fetch is blocked by CORS. Because
+// a browser can't enumerate a folder, manifest.js's "months" array is the
+// authoritative list of which files to load.
+const DATA_DIR = "data";
+window.STORYTIME = window.STORYTIME || {};
+
+// Fallback palette if a library record has no explicit color.
+const PALETTE = ["#E8654F","#2FA6A0","#6C6CE0","#D98A17","#4C9F5A","#C2569E","#3E88C7","#9A7B3A","#D2504E","#7BA23F"];
+
+// ZIP centroids used for the radius filter — all of San Diego County
+// (city + county), so any local home ZIP resolves to a real centroid
+// instead of silently falling back to 92131.
+const ZIPS = {
+  // --- San Diego city ---
+  "92101":[32.7220,-117.1620],"92102":[32.7130,-117.1180],"92103":[32.7490,-117.1650],
+  "92104":[32.7410,-117.1290],"92105":[32.7410,-117.0930],"92106":[32.7280,-117.2340],
+  "92107":[32.7420,-117.2490],"92108":[32.7740,-117.1520],"92109":[32.7940,-117.2410],
+  "92110":[32.7620,-117.2020],"92111":[32.8040,-117.1700],"92113":[32.6990,-117.1220],
+  "92114":[32.7060,-117.0530],"92115":[32.7620,-117.0700],"92116":[32.7620,-117.1230],
+  "92117":[32.8250,-117.1980],"92119":[32.8090,-117.0300],"92120":[32.7930,-117.0710],
+  "92121":[32.8960,-117.2000],"92122":[32.8600,-117.2080],"92123":[32.8000,-117.1370],
+  "92124":[32.8130,-117.0930],"92126":[32.9130,-117.1430],"92127":[33.0250,-117.1050],
+  "92128":[33.0080,-117.0720],"92129":[32.9686,-117.1210],"92130":[32.9520,-117.2260],
+  "92131":[32.9203,-117.1067],"92139":[32.6810,-117.0490],"92154":[32.5680,-117.0790],
+  "92173":[32.5550,-117.0470],
+  // --- Coastal North County ---
+  "92007":[33.0170,-117.2790],"92008":[33.1580,-117.3390],"92009":[33.0960,-117.2670],
+  "92010":[33.1660,-117.2970],"92011":[33.1070,-117.3030],"92014":[32.9590,-117.2630],
+  "92024":[33.0490,-117.2630],"92037":[32.8440,-117.2640],"92054":[33.2000,-117.3700],
+  "92056":[33.1900,-117.3000],"92057":[33.2400,-117.3100],"92058":[33.2400,-117.3700],
+  "92075":[32.9910,-117.2610],"92091":[33.0100,-117.2300],
+  // --- Inland North County ---
+  "92003":[33.2900,-117.2200],"92025":[33.1100,-117.0600],"92026":[33.1800,-117.1000],
+  "92027":[33.1300,-116.9900],"92028":[33.3750,-117.2340],"92029":[33.0900,-117.1100],
+  "92059":[33.3600,-117.0700],"92060":[33.3400,-116.8600],"92061":[33.3100,-116.9600],
+  "92064":[32.9620,-117.0360],"92065":[33.0300,-116.8700],"92066":[33.2100,-116.5300],
+  "92067":[33.0200,-117.2000],"92069":[33.1500,-117.1600],"92070":[33.1100,-116.6700],
+  "92078":[33.1300,-117.1900],"92081":[33.1600,-117.2400],"92082":[33.2800,-117.0000],
+  "92083":[33.2000,-117.2400],"92084":[33.2100,-117.2200],"92086":[33.2800,-116.6500],
+  // --- East County ---
+  "91901":[32.8340,-116.7660],"91916":[32.8580,-116.6150],"91931":[32.8470,-116.5650],
+  "91935":[32.7080,-116.8760],"91941":[32.7620,-117.0100],"91942":[32.7840,-117.0170],
+  "91945":[32.7330,-117.0320],"91948":[32.8700,-116.4200],"91962":[32.8300,-116.5100],
+  "91977":[32.7230,-116.9990],"91978":[32.7420,-116.9660],"92019":[32.7900,-116.9000],
+  "92020":[32.7960,-116.9650],"92021":[32.8300,-116.9000],"92036":[33.0600,-116.5300],
+  "92040":[32.8700,-116.9200],"92071":[32.8450,-116.9800],
+  // --- South Bay ---
+  "91902":[32.6670,-117.0170],"91910":[32.6400,-117.0610],"91911":[32.6110,-117.0490],
+  "91913":[32.6350,-116.9810],"91914":[32.6650,-116.9600],"91915":[32.6260,-116.9390],
+  "91932":[32.5780,-117.1140],"91950":[32.6740,-117.0930],"92118":[32.6800,-117.1800],
+  // --- Rural / backcountry ---
+  "91905":[32.6720,-116.2780],"91906":[32.6350,-116.4690],"91917":[32.6230,-116.7880],
+  "91934":[32.6360,-116.1450],"91963":[32.6200,-116.6100],"91980":[32.6000,-116.6200],
+  "92004":[33.2000,-116.3400]
+};
+
+// Fallback origin when the browser can't give us the user's location:
+// a central San Diego ZIP (Mission Valley), roughly the city's geographic middle.
+const SD_CENTROID_ZIP = "92108";
+
+// ---------- STATE ---------------------------------------------------------
+const state = {
+  zip:SD_CENTROID_ZIP, radius:9, age:13, flex:14,
+  langs:{en:true, es:true, other:false},
+  dows:{0:true,1:true,2:true,3:true,4:true,5:true,6:true},
+  times:{am:true, pm:true},
+  view:"schedule", weeks:5, selDay:null
+};
+
+// Populated at runtime from ./data
+let LIBS = [];            // array of library records
+let LIB = {};             // id -> library record
+let ALL = [];             // normalized, dated event instances
+let loadState = "loading";// "loading" | "ready" | "error"
+let loadError = null;
+
+// ---------- HELPERS -------------------------------------------------------
+const DOW=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+const DOWS=["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+const DOWI=["S","M","T","W","T","F","S"];   // single-letter initials, indexed by getDay()
+const MON=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+function haversine(a,b,c,d){
+  const R=3958.8, toR=x=>x*Math.PI/180;
+  const dLat=toR(c-a), dLng=toR(d-b);
+  const s=Math.sin(dLat/2)**2 + Math.cos(toR(a))*Math.cos(toR(c))*Math.sin(dLng/2)**2;
+  return R*2*Math.asin(Math.sqrt(s));
+}
+function origin(){ return ZIPS[state.zip] || ZIPS[SD_CENTROID_ZIP]; }
+function libDist(l){ const o=origin(); return haversine(o[0],o[1],l.lat,l.lng); }
+
+// Snap a lat/lng to the closest known San Diego ZIP centroid.
+function nearestZip(lat,lng){
+  let best=null, bestD=Infinity;
+  for(const z in ZIPS){ const c=ZIPS[z], d=haversine(lat,lng,c[0],c[1]); if(d<bestD){ bestD=d; best=z; } }
+  return {zip:best, dist:bestD};
+}
+function setZip(z){
+  state.zip=z;
+  const el=document.getElementById("zip"); if(el) el.value=z;
+  render();
+}
+// Try to center the search on the user's location; otherwise keep the SD centroid default.
+function initLocation(){
+  if(!navigator.geolocation) return;
+  navigator.geolocation.getCurrentPosition(
+    pos=>{
+      const {zip,dist}=nearestZip(pos.coords.latitude,pos.coords.longitude);
+      // Only adopt it if they're actually in/near the county (every SD ZIP centroid is
+      // within ~10 mi of another); otherwise stay centered on the city.
+      if(zip && dist<=30) setZip(zip);
+    },
+    ()=>{ /* denied / unavailable / timeout — SD centroid default stands */ },
+    {enableHighAccuracy:false, timeout:8000, maximumAge:600000}
+  );
+}
+function fmtTime(t){
+  let [h,m]=t.split(":").map(Number); const ap=h>=12?"pm":"am"; let hh=h%12; if(hh===0)hh=12;
+  return m===0 ? `${hh}:00 ${ap}` : `${hh}:${String(m).padStart(2,"0")} ${ap}`;
+}
+function ageLabel(min,max){
+  const f=n=> n%12===0 ? `${n/12}y` : (n<24? `${n}mo` : `${(n/12).toFixed(1).replace(".0","")}y`);
+  if(min===0) return `birth–${f(max)}`;
+  return `${f(min)}–${f(max)}`;
+}
+function langTags(arr){
+  if(arr.length>1) return ["Bilingual EN·ES"];
+  return arr.map(x=> x==="en"?"English":x==="es"?"Spanish":"Mandarin");
+}
+function pad(n){ return String(n).padStart(2,"0"); }
+function dateKey(d){ return `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`; }
+// Parse "yyyy-mm-dd" as a LOCAL date (Date("yyyy-mm-dd") would parse as UTC).
+function parseDate(s){ const [y,m,d]=String(s).split("-").map(Number); return new Date(y, m-1, d); }
+
+// ---------- DATA LOADING --------------------------------------------------
+// Load a data file by adding a <script> tag. Unlike fetch(), this works over
+// file://. The script populates window.STORYTIME as a side effect.
+function loadScript(path){
+  return new Promise((resolve,reject)=>{
+    const s=document.createElement("script");
+    s.src=path; s.async=false;
+    s.onload=()=>resolve(path);
+    s.onerror=()=>reject(new Error(`Couldn't load ${path}`));
+    document.head.appendChild(s);
+  });
+}
+
+// Read the manifest, the library metadata, then every month file it lists,
+// and flatten them into ALL[]. A single bad month file is skipped, not fatal.
+async function loadData(){
+  const S = window.STORYTIME;
+
+  await loadScript(`${DATA_DIR}/manifest.js`);
+  const manifest = S.manifest || {};
+  const months   = manifest.months || [];
+  const libsFile = manifest.libraries || "libraries.js";
+
+  await loadScript(`${DATA_DIR}/${libsFile}`);
+  LIBS = S.libraries || [];
+  LIBS.forEach((l,i)=>{ if(!l.color) l.color = PALETTE[i % PALETTE.length]; });
+  LIB = Object.fromEntries(LIBS.map(l=>[l.id,l]));
+
+  const results = await Promise.allSettled(
+    months.map(mo => loadScript(`${DATA_DIR}/${mo}.js`))
+  );
+  const raw = [];
+  months.forEach((mo,i)=>{
+    if(results[i].status !== "fulfilled"){ console.warn("Skipped month", mo, results[i].reason); return; }
+    const doc  = (S.months||{})[mo];
+    const list = doc ? (doc.events||[]) : [];
+    for(const ev of list) raw.push(ev);
+  });
+
+  ALL = raw.map(normalize).filter(Boolean).sort((a,b)=> a.start - b.start);
+}
+
+// Turn a raw JSON event into the internal shape the renderers expect. The .tp
+// sub-object mirrors the old "template" fields so the render code is unchanged.
+function normalize(ev){
+  const lib = LIB[ev.lib];
+  if(!lib) return null;                       // unknown library id -> skip
+  const date = parseDate(ev.date);
+  if(isNaN(date)) return null;                // bad date -> skip
+  const time = ev.time || "10:00";
+  const [h,m] = time.split(":").map(Number);
+  const dur = ev.dur ?? 30;
+  const start = new Date(date); start.setHours(h, m, 0, 0);
+  const finish = new Date(start.getTime() + dur*60000);
+  const tp = {
+    name: ev.name, t: time, dur,
+    aMin: ev.ageMin ?? 0, aMax: ev.ageMax ?? 60,
+    lang: (ev.lang && ev.lang.length) ? ev.lang : ["en"],
+    eventId: ev.eventId || "",     // deep-links to the exact event when known
+    url: ev.url || "",             // optional explicit override
+    note: ev.note || "",
+    dow: date.getDay()
+  };
+  return { tp, lib, date, start, finish, key: dateKey(date) };
+}
+
+// The public link for an event. Prefer an explicit url; else deep-link by
+// eventId into the correct platform for that library's system; else fall back
+// to the system's events calendar so the link always lands somewhere real.
+function eventUrl(e){
+  const t=e.tp, l=e.lib;
+  if(t.url) return t.url;
+  if(t.eventId){
+    return l.system==="county"
+      ? `https://sdcl.bibliocommons.com/events/${encodeURIComponent(t.eventId)}`
+      : `https://sandiego.events.mylibrary.digital/event?id=${encodeURIComponent(t.eventId)}`;
+  }
+  return l.events || l.web || "#";
+}
+
+// ---------- FILTER --------------------------------------------------------
+function applyFilters(all){
+  const langSel = Object.entries(state.langs).filter(([,v])=>v).map(([k])=>k);
+  const aLo = state.age-state.flex, aHi = state.age+state.flex;
+  const today = new Date(); today.setHours(0,0,0,0);
+  const end = new Date(today); end.setDate(end.getDate()+state.weeks*7); end.setHours(23,59,59,999);
+  return all.filter(e=>{
+    // rolling window: today through the next N weeks
+    if(e.date < today || e.date > end) return false;
+    if(libDist(e.lib) > state.radius+0.05) return false;
+    // language: event langs intersect selection (en/es explicit, else 'other')
+    const evLangs = e.tp.lang.map(x=> (x==="en"||x==="es")?x:"other");
+    if(!evLangs.some(x=>langSel.includes(x))) return false;
+    // age overlap between [aLo,aHi] and [aMin,aMax]
+    if(e.tp.aMax < aLo || e.tp.aMin > aHi) return false;
+    // day of week: individual Sun–Sat toggles (Weekdays/Weekends drive these)
+    if(!state.dows[e.date.getDay()]) return false;
+    // time of day: am / pm
+    const slot = e.start.getHours() < 12 ? "am" : "pm";
+    if(!state.times[slot]) return false;
+    return true;
+  }).map(e=>{
+    e.older = e.tp.aMin > state.age;      // aimed at kids older than her
+    e.younger = e.tp.aMax < state.age;    // aimed at younger
+    e.dist = libDist(e.lib);
+    return e;
+  });
+}
+
+function gcalUrl(e){
+  const f=d=>`${d.getFullYear()}${pad(d.getMonth()+1)}${pad(d.getDate())}T${pad(d.getHours())}${pad(d.getMinutes())}00`;
+  const details=`${e.tp.name} at ${e.lib.name}.`+(e.tp.note?` ${e.tp.note}`:"")+`\n\nAges ${ageLabel(e.tp.aMin,e.tp.aMax)}. Free library event.\nDetails: ${eventUrl(e)}`;
+  // Build manually so the slash between start/end times stays a literal "/"
+  // (URLSearchParams encodes it to %2F, which Google's TEMPLATE parser rejects).
+  const q=[
+    "action=TEMPLATE",
+    "text="+encodeURIComponent(`${e.tp.name} — ${e.lib.name}`),
+    "dates="+f(e.start)+"/"+f(e.finish),
+    "location="+encodeURIComponent(e.lib.addr),
+    "details="+encodeURIComponent(details),
+    "ctz=America/Los_Angeles"
+  ].join("&");
+  return "https://calendar.google.com/calendar/render?"+q;
+}
+
+// ---------- RENDER --------------------------------------------------------
+const app=document.getElementById("app");
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+function badges(e){
+  let h="";
+  langTags(e.tp.lang).forEach(t=> h+=`<span class="tag lang">${esc(t)}</span>`);
+  h+=`<span class="tag age">Ages ${ageLabel(e.tp.aMin,e.tp.aMax)}</span>`;
+  if(e.older) h+=`<span class="tag older">↑ bigger kids</span>`;
+  return h;
+}
+
+function evCard(e){
+  const col=e.lib.color;
+  return `<article class="ev" style="border-left-color:${col}">
+    <div class="time">${fmtTime(e.tp.t)}<small>${e.tp.dur} min</small></div>
+    <div class="body">
+      <h3>${esc(e.tp.name)}</h3>
+      <div class="meta">
+        <span class="loc"><span class="dot" style="background:${col}"></span>${esc(e.lib.name)}</span>
+        <span>· ${e.dist.toFixed(1)} mi</span>
+      </div>
+      <div class="meta" style="margin-top:7px">${badges(e)}</div>
+    </div>
+    <div class="actions">
+      <a class="btn gcal" href="${gcalUrl(e)}" target="_blank" rel="noopener">＋ Google Calendar</a>
+      <a class="btn" href="${esc(eventUrl(e))}" target="_blank" rel="noopener">Event page ↗</a>
+    </div>
+  </article>`;
+}
+
+function renderSchedule(evs){
+  if(!evs.length) return emptyState();
+  const byDay={};
+  evs.forEach(e=>{ (byDay[e.key]=byDay[e.key]||[]).push(e); });
+  const keys=Object.keys(byDay).sort();
+  let h="";
+  for(const k of keys){
+    const list=byDay[k].sort((a,b)=>a.start-b.start);
+    const d=list[0].date;
+    h+=`<section class="dategroup">
+      <div class="datehead">
+        <h2><span class="dow">${DOW[d.getDay()]}</span> ${MON[d.getMonth()]} ${d.getDate()}</h2>
+        <span class="cnt">${list.length} event${list.length>1?"s":""}</span>
+      </div>
+      ${list.map(evCard).join("")}
+    </section>`;
+  }
+  return h;
+}
+
+// One dated event occurrence in the By-location view.
+function schedRow(e){
+  return `<div class="schedrow">
+    <span class="d">${DOWS[e.date.getDay()]} ${MON[e.date.getMonth()]} ${e.date.getDate()} · ${fmtTime(e.tp.t)}</span>
+    <span class="n">${esc(e.tp.name)}<div class="sub">${langTags(e.tp.lang).join(" · ")} · ages ${ageLabel(e.tp.aMin,e.tp.aMax)}${e.older?" · bigger kids":""}</div></span>
+    <a class="btn" href="${esc(eventUrl(e))}" target="_blank" rel="noopener">Details ↗</a>
+  </div>`;
+}
+function renderLocation(evs){
+  // group by lib, only libs that have any matching event (plus always-note the closed home library if in radius)
+  const byLib={};
+  evs.forEach(e=>{ (byLib[e.lib.id]=byLib[e.lib.id]||[]).push(e); });
+  // ordering: by distance
+  const libIds=LIBS.filter(l=>libDist(l)<=state.radius+0.05)
+                   .sort((a,b)=>libDist(a)-libDist(b)).map(l=>l.id);
+  let h="";
+  let any=false;
+  for(const id of libIds){
+    const l=LIB[id]; const col=l.color;
+    // every matching occurrence, in chronological order
+    const rows=(byLib[id]||[]).sort((a,b)=> a.start-b.start);
+    if(!rows.length && !l.note) continue;
+    any=true;
+    const nameHtml = l.web
+      ? `<a href="${esc(l.web)}" target="_blank" rel="noopener">${esc(l.name)} ↗</a>`
+      : esc(l.name);
+    h+=`<section class="loccard" style="border-left-color:${col}">
+      <div class="lhead">
+        <h2><span class="dot" style="background:${col}"></span>${nameHtml}</h2>
+        <span class="sys">${esc(l.sys)} · ${libDist(l).toFixed(1)} mi</span>
+      </div>
+      <p class="addr">${esc(l.addr)}${l.phone?` · <a href="tel:${l.phone.replace(/[^0-9]/g,'')}">${l.phone}</a>`:""}</p>
+      <div class="loclinks">
+        <a href="${esc(l.web)}" target="_blank" rel="noopener">🌐 Website</a>
+        ${l.fb?`<a href="${esc(l.fb)}" target="_blank" rel="noopener">📘 Facebook</a>`:""}
+      </div>
+      ${l.note?`<div class="note">⚠ ${esc(l.note)}</div>`:""}
+      ${rows.slice(0,2).map(schedRow).join("")}
+      ${rows.length>2 ? `<details class="morerows">
+          <summary><span class="more">Show ${rows.length-2} more ▾</span><span class="less">Show less ▴</span></summary>
+          ${rows.slice(2).map(schedRow).join("")}
+        </details>` : ""}
+    </section>`;
+  }
+  return any? h : emptyState();
+}
+
+function renderDate(evs){
+  if(!evs.length) return emptyState();
+  const byDay={};
+  evs.forEach(e=>{ (byDay[e.key]=byDay[e.key]||[]).push(e); });
+  const keys=Object.keys(byDay).sort();
+  if(!state.selDay || !byDay[state.selDay]) state.selDay=keys[0];
+  // day nav
+  let nav=`<div class="daynav">`;
+  for(const k of keys){
+    const list=byDay[k]; const d=list[0].date;
+    nav+=`<div class="daychip ${k===state.selDay?"on":""}" data-day="${k}">
+      <div class="mo">${MON[d.getMonth()]}</div>
+      <div class="dw" title="${DOWS[d.getDay()]}">${DOWI[d.getDay()]}</div>
+      <div class="dn">${d.getDate()}</div>
+      <div class="cc">${list.length} ev</div>
+    </div>`;
+  }
+  nav+=`</div>`;
+  // legend for libs present on selected day
+  const day=byDay[state.selDay].sort((a,b)=>a.start-b.start);
+  const libsToday=[...new Set(day.map(e=>e.lib.id))].map(id=>LIB[id]);
+  let legend=`<div class="legend">`+libsToday.map(l=>
+    `<span class="li"><span class="dot" style="background:${l.color}"></span>${esc(l.name)}</span>`).join("")+`</div>`;
+  // blocks
+  const d0=day[0].date;
+  let head=`<div class="datesticky">
+      <h2>${DOW[d0.getDay()]}, ${MON[d0.getMonth()]} ${d0.getDate()}</h2>
+      <p class="dcount">${day.length} event${day.length>1?"s":""} · color-coded by library</p>
+    </div>`;
+  let blocks=`<div class="dayblocks">`+day.map(e=>{
+    const col=e.lib.color;
+    return `<div class="block" style="background:${col}">
+      <div class="bt">${fmtTime(e.tp.t)} · ${e.tp.dur} min</div>
+      <h3>${esc(e.tp.name)}</h3>
+      <div class="bl">${esc(e.lib.name)} · ${e.dist.toFixed(1)} mi</div>
+      <div class="bmeta">
+        ${langTags(e.tp.lang).map(t=>`<span class="btag">${esc(t)}</span>`).join("")}
+        <span class="btag">Ages ${ageLabel(e.tp.aMin,e.tp.aMax)}</span>
+        ${e.older?`<span class="btag">↑ bigger kids</span>`:""}
+      </div>
+      <div class="bacts">
+        <a class="bbtn" href="${gcalUrl(e)}" target="_blank" rel="noopener">＋ Calendar</a>
+        <a class="bbtn ghost" href="${esc(eventUrl(e))}" target="_blank" rel="noopener">Event ↗</a>
+      </div>
+    </div>`;
+  }).join("")+`</div>`;
+  return nav+legend+head+blocks;
+}
+
+function loadingState(){
+  return `<div class="empty"><h2>Loading storytimes…</h2>
+    <p>Reading monthly schedules from the <code>${esc(DATA_DIR)}/</code> folder.</p></div>`;
+}
+function errorState(err){
+  const msg = esc(String(err && err.message || err));
+  return `<div class="empty">
+    <h2>Couldn't load schedule data</h2>
+    <p>${msg}</p>
+    <p style="margin-top:14px">This page reads its schedule from the <code>${esc(DATA_DIR)}/</code> folder.
+    Make sure <code>${esc(DATA_DIR)}/manifest.js</code>, <code>libraries.js</code>, and each
+    <code>yyyy-mm.js</code> it lists are present next to this file.</p>
+  </div>`;
+}
+function emptyState(){
+  return `<div class="empty">
+    <h2>No events match yet</h2>
+    <p>Try widening the radius, raising age flexibility, or turning on more languages, days, or times.<br>
+    Heads up: Scripps Miramar Ranch (right in 92131) is closed for renovation until Winter 2026.</p>
+  </div>`;
+}
+
+function render(){
+  const summaryEl=document.getElementById("summary");
+  if(loadState==="loading"){ app.innerHTML=loadingState(); summaryEl.textContent=""; return; }
+  if(loadState==="error"){ app.innerHTML=errorState(loadError); summaryEl.textContent=""; return; }
+
+  const evs=applyFilters(ALL);
+  const libs=new Set(evs.map(e=>e.lib.id)).size;
+  const older=evs.filter(e=>e.older).length;
+  summaryEl.innerHTML=
+    `<b>${evs.length}</b> events · <b>${libs}</b> libraries · next <b>${state.weeks}</b> weeks`+
+    (older?` · <b>${older}</b> for bigger kids`:"");
+  const fsum=document.getElementById("fsum");
+  if(fsum) fsum.textContent=`${evs.length} events`;
+
+  if(state.view==="schedule") app.innerHTML=renderSchedule(evs);
+  else if(state.view==="location") app.innerHTML=renderLocation(evs);
+  else app.innerHTML=renderDate(evs);
+
+  if(state.view==="date"){
+    app.querySelectorAll(".daychip").forEach(c=>c.addEventListener("click",()=>{
+      state.selDay=c.dataset.day; render();
+    }));
+  }
+}
+
+// ---------- CONTROLS WIRING ----------------------------------------------
+function paintChip(el,c){
+  const on=el.querySelector("input").checked; el.classList.toggle("on",on);
+  el.querySelector(".dot").style.background=c;
+  el.style.background=on?c:""; el.style.borderColor=on?"transparent":"";
+}
+function syncColors(){
+  const lang={en:"#3E88C7",es:"#E8654F",other:"#7BA23F"};
+  document.querySelectorAll("#langChecks .chk").forEach(el=>paintChip(el,lang[el.dataset.lang]));
+  // weekend days red, weekdays blue
+  document.querySelectorAll("#dowChecks .chk").forEach(el=>{
+    const d=+el.dataset.dow;
+    el.querySelector("input").checked=!!state.dows[d];
+    paintChip(el,(d===0||d===6)?"#E8654F":"#3E88C7");
+  });
+  const time={am:"#D98A17",pm:"#6C6CE0"};
+  document.querySelectorAll("#timeChecks .chk").forEach(el=>paintChip(el,time[el.dataset.time]));
+}
+// Mobile filter drawer: toggle the panel open/closed (CSS hides controls otherwise).
+(function(){
+  const panel=document.getElementById("panel"), btn=document.getElementById("filterToggle");
+  btn.addEventListener("click",()=>{
+    const open=panel.classList.toggle("open");
+    btn.setAttribute("aria-expanded",open?"true":"false");
+  });
+})();
+document.getElementById("zip").addEventListener("input",e=>{
+  const v=e.target.value.trim();
+  state.zip = /^\d{5}$/.test(v)? v : SD_CENTROID_ZIP;
+  if(/^\d{5}$/.test(v)) render();
+});
+document.getElementById("zip").addEventListener("blur",render);
+function bindRange(id,key,fmt){
+  const el=document.getElementById(id), out=document.getElementById(id+"V");
+  el.addEventListener("input",()=>{ state[key]=+el.value; out.textContent=fmt(el.value); render(); });
+  out.textContent=fmt(el.value);
+}
+bindRange("radius","radius",v=>`${v} mi`);
+bindRange("flex","flex",v=>`±${v} mo`);
+// Child age: number input with −/+ steppers, clamped to 0–60 months.
+(function(){
+  const el=document.getElementById("age");
+  const hint=document.getElementById("ageHint");
+  let hintTimer=null;
+  const flashMax=()=>{                       // show "Max is 60" red, hide 5s later
+    hint.classList.add("show");
+    clearTimeout(hintTimer);
+    hintTimer=setTimeout(()=>hint.classList.remove("show"),5000);
+  };
+  const clamp=v=>Math.max(0,Math.min(60,v));
+  const commit=v=>{
+    if(v>60) flashMax();                     // only when they overshoot the max
+    v=clamp(v); el.value=v; state.age=v; render();
+  };
+  el.addEventListener("input",()=>{
+    if(el.value==="") return;              // let the field go empty while editing
+    const v=parseInt(el.value,10);
+    if(isNaN(v)){ el.value=state.age; return; }
+    commit(v);                              // clamp + rewrite the digits immediately
+  });
+  el.addEventListener("blur",()=>{ let v=parseInt(el.value,10); commit(isNaN(v)?0:v); });
+  document.getElementById("ageDec").addEventListener("click",()=>commit((parseInt(el.value,10)||0)-1));
+  document.getElementById("ageInc").addEventListener("click",()=>commit((parseInt(el.value,10)||0)+1));
+})();
+document.querySelectorAll("#langChecks .chk").forEach(el=>{
+  el.querySelector("input").addEventListener("change",()=>{
+    state.langs[el.dataset.lang]=el.querySelector("input").checked; syncColors(); render();
+  });
+});
+document.querySelectorAll("#dowChecks .chk").forEach(el=>{
+  el.querySelector("input").addEventListener("change",()=>{
+    state.dows[+el.dataset.dow]=el.querySelector("input").checked; syncColors(); render();
+  });
+});
+document.querySelectorAll("#timeChecks .chk").forEach(el=>{
+  el.querySelector("input").addEventListener("change",()=>{
+    state.times[el.dataset.time]=el.querySelector("input").checked; syncColors(); render();
+  });
+});
+document.querySelectorAll("#tabs button").forEach(b=>b.addEventListener("click",()=>{
+  document.querySelectorAll("#tabs button").forEach(x=>x.classList.remove("on"));
+  b.classList.add("on"); state.view=b.dataset.view; render();
+}));
+
+document.getElementById("footer").innerHTML=
+  `Schedules are compiled from public library pages and reflect typical recurring storytimes — <b>always confirm the day &amp; time via each event link before you go</b>, since libraries adjust and cancel sessions. `+
+  `Events are read from monthly snapshots in the <code>data/</code> folder (one <code>yyyy-mm.js</code> file per month). Sources: `+
+  `<a href="https://sandiego.events.mylibrary.digital/" target="_blank" rel="noopener">SD Public Library</a>, `+
+  `<a href="https://sdcl.bibliocommons.com/v2/events" target="_blank" rel="noopener">SD County Library</a>. `;
+
+// ---------- INIT ----------------------------------------------------------
+syncColors();
+render();                       // paints the loading state
+initLocation();                 // async: recenters on the user's location if allowed
+loadData().then(()=>{
+  loadState="ready";
+  render();
+}).catch(err=>{
+  loadState="error"; loadError=err;
+  console.error("Data load failed:", err);
+  render();
+});
+</script>
+</body>
+</html>
