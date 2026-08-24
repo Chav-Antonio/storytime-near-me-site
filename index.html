@@ -187,6 +187,10 @@
 
   .empty{text-align:center;padding:60px 20px;color:var(--muted)}
   .empty h2{font-size:22px;color:var(--ink);margin:0 0 6px}
+  .spinner{width:40px;height:40px;margin:0 auto 16px;border-radius:50%;
+    border:3px solid var(--line-strong);border-top-color:var(--accent);animation:spin .8s linear infinite}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  @media (prefers-reduced-motion:reduce){.spinner{animation-duration:1.8s}}
   .empty code{background:var(--chip-bg);padding:1px 6px;border-radius:6px;font-size:13px}
   footer{margin-top:40px;padding-top:20px;border-top:1px solid var(--line);color:var(--faint);font-size:12.5px;line-height:1.6}
   footer a{color:var(--muted)}
@@ -389,6 +393,7 @@ let LIB = {};             // id -> library record
 let ALL = [];             // normalized, dated event instances
 let loadState = "loading";// "loading" | "ready" | "error"
 let loadError = null;
+let locating = true;      // true until geolocation resolves (or falls back to the default ZIP)
 
 // ---------- HELPERS -------------------------------------------------------
 const DOW=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
@@ -416,19 +421,23 @@ function setZip(z){
   const el=document.getElementById("zip"); if(el) el.value=z;
   render();
 }
+// Clear the "locating" hold once and repaint (events replace the spinner).
+function finishLocating(){ if(locating){ locating=false; render(); } }
 // Try to center the search on the user's location; otherwise keep the SD centroid default.
 function initLocation(){
-  if(!navigator.geolocation) return;
+  if(!navigator.geolocation){ finishLocating(); return; }
   navigator.geolocation.getCurrentPosition(
     pos=>{
       const {zip,dist}=nearestZip(pos.coords.latitude,pos.coords.longitude);
       // Only adopt it if they're actually in/near the county (every SD ZIP centroid is
       // within ~10 mi of another); otherwise stay centered on the city.
       if(zip && dist<=30) setZip(zip);
+      finishLocating();
     },
-    ()=>{ /* denied / unavailable / timeout — SD centroid default stands */ },
+    ()=>{ finishLocating(); },   // denied / unavailable / timeout — SD centroid default stands
     {enableHighAccuracy:false, timeout:8000, maximumAge:600000}
   );
+  setTimeout(finishLocating, 9000);   // safety net in case no callback ever fires
 }
 function fmtTime(t){
   let [h,m]=t.split(":").map(Number); const ap=h>=12?"pm":"am"; let hh=h%12; if(hh===0)hh=12;
@@ -721,8 +730,9 @@ function renderDate(evs){
 }
 
 function loadingState(){
-  return `<div class="empty"><h2>Loading storytimes…</h2>
-    <p>Reading monthly schedules from the <code>${esc(DATA_DIR)}/</code> folder.</p></div>`;
+  const msg = locating ? "Finding storytimes near you…" : "Loading storytimes…";
+  return `<div class="empty"><div class="spinner" role="status" aria-label="Loading"></div>
+    <h2>${msg}</h2></div>`;
 }
 function errorState(err){
   const msg = esc(String(err && err.message || err));
@@ -744,8 +754,8 @@ function emptyState(){
 
 function render(){
   const summaryEl=document.getElementById("summary");
-  if(loadState==="loading"){ app.innerHTML=loadingState(); summaryEl.textContent=""; return; }
   if(loadState==="error"){ app.innerHTML=errorState(loadError); summaryEl.textContent=""; return; }
+  if(loadState==="loading" || locating){ app.innerHTML=loadingState(); summaryEl.textContent=""; return; }
 
   const evs=applyFilters(ALL);
   const libs=new Set(evs.map(e=>e.lib.id)).size;
@@ -853,7 +863,6 @@ document.querySelectorAll("#tabs button").forEach(b=>b.addEventListener("click",
 
 document.getElementById("footer").innerHTML=
   `Schedules are compiled from public library pages and reflect typical recurring storytimes — <b>always confirm the day &amp; time via each event link before you go</b>, since libraries adjust and cancel sessions. `+
-  `Events are read from monthly snapshots in the <code>data/</code> folder (one <code>yyyy-mm.js</code> file per month). Sources: `+
   `<a href="https://sandiego.events.mylibrary.digital/" target="_blank" rel="noopener">SD Public Library</a>, `+
   `<a href="https://sdcl.bibliocommons.com/v2/events" target="_blank" rel="noopener">SD County Library</a>. `;
 
