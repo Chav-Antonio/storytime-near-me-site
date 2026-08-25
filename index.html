@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Storytime Near Me</title>
+<title data-i18n="doc.title">Storytime Near Me</title>
 <style>:root{color-scheme:light dark}html,body{margin:0}img{max-width:100%}</style>
 </head>
 <body>
@@ -50,6 +50,10 @@
   h1{font-size:clamp(30px,5vw,44px);margin:.24em 0 .12em;text-wrap:balance;line-height:1.05}
   .lede{color:var(--muted);max-width:60ch;font-size:16.5px}
   .lede b{color:var(--ink);font-weight:600}
+  .eyebrowrow{display:flex;align-items:center;justify-content:space-between;gap:10px 14px;flex-wrap:wrap}
+  .langtoggle{display:inline-flex;gap:2px;background:var(--chip-bg);padding:3px;border-radius:10px;flex:0 0 auto}
+  .langtoggle button{border:0;background:transparent;color:var(--muted);font-weight:700;font-size:12px;letter-spacing:.04em;padding:5px 11px;border-radius:7px;cursor:pointer}
+  .langtoggle button[aria-pressed="true"]{background:var(--card);color:var(--ink);box-shadow:var(--shadow)}
 
   /* controls */
   .panel{
@@ -243,65 +247,71 @@
 
 <div class="wrap">
   <header>
-    <div class="eyebrow">Free Library Events · San Diego</div>
-    <h1>Storytime Finder</h1>
-    <p class="lede">Baby/toddler library events.</p>
+    <div class="eyebrowrow">
+      <div class="eyebrow" data-i18n="header.eyebrow">Free Library Events · San Diego</div>
+      <div class="langtoggle" role="group" aria-label="Language / Idioma">
+        <button type="button" data-setlang="en" aria-pressed="true">EN</button>
+        <button type="button" data-setlang="es" aria-pressed="false">ES</button>
+      </div>
+    </div>
+    <h1 data-i18n="header.title">Storytime Finder</h1>
+    <p class="lede" data-i18n="header.lede">Baby/toddler library events.</p>
   </header>
 
   <div class="panel open" id="panel">
     <button type="button" class="filterbar" id="filterToggle" aria-expanded="true" aria-controls="controls">
-      <span class="fl">Filters</span>
+      <span class="fl" data-i18n="filter.heading">Filters</span>
       <span class="fchev" aria-hidden="true">▾</span>
       <span class="fspace"></span>
       <span class="fsum" id="fsum"></span>
     </button>
     <div class="controls" id="controls">
       <div class="field">
-        <label for="zip">Zip</label>
-        <input type="text" id="zip" inputmode="numeric" maxlength="5" value="" placeholder="Locating…">
+        <label for="zip" data-i18n="filter.zip">Zip</label>
+        <input type="text" id="zip" inputmode="numeric" maxlength="5" value="" placeholder="Locating…" data-i18n-ph="filter.zip.locating">
       </div>
       <div class="field">
-        <label for="radius">Distance</label>
+        <label for="radius" data-i18n="filter.distance">Distance</label>
         <div class="rangewrap"><input type="range" id="radius" min="1" max="20" step="1" value="9"><span class="val" id="radiusV">9 mi</span></div>
       </div>
       <div class="field">
-        <label for="age">Child age (mo)</label>
+        <label for="age" data-i18n="filter.age">Child age (mo)</label>
         <div class="stepper">
           <button type="button" class="stepbtn" id="ageDec" aria-label="Decrease age">−</button>
           <input type="number" id="age" min="0" max="60" step="1" value="12" inputmode="numeric">
           <button type="button" class="stepbtn" id="ageInc" aria-label="Increase age">+</button>
         </div>
-        <span class="hint" id="ageHint" role="status" aria-live="polite">Max is 60</span>
+        <span class="hint" id="ageHint" role="status" aria-live="polite" data-i18n="filter.age.max">Max is 60</span>
       </div>
       <div class="field">
-        <label for="flex">Age flexibility</label>
+        <label for="flex" data-i18n="filter.flex">Age flexibility</label>
         <div class="rangewrap"><input type="range" id="flex" min="0" max="36" step="1" value="14"><span class="val" id="flexV">±14 mo</span></div>
       </div>
       <div class="field">
-        <label>Languages</label>
+        <label data-i18n="filter.langs">Languages</label>
         <div class="checks" id="langChecks">
-          <label class="chk" data-lang="en"><input type="checkbox" checked><span class="dot"></span>English</label>
-          <label class="chk" data-lang="es"><input type="checkbox" checked><span class="dot"></span>Spanish</label>
-          <label class="chk" data-lang="other"><input type="checkbox" checked><span class="dot"></span>Other</label>
+          <label class="chk" data-lang="en"><input type="checkbox" checked><span class="dot"></span><span data-i18n="lang.en">English</span></label>
+          <label class="chk" data-lang="es"><input type="checkbox" checked><span class="dot"></span><span data-i18n="lang.es">Spanish</span></label>
+          <label class="chk" data-lang="other"><input type="checkbox" checked><span class="dot"></span><span data-i18n="lang.other">Other</span></label>
         </div>
       </div>
       <div class="field">
-        <label>Day of week</label>
+        <label data-i18n="filter.dow">Day of week</label>
         <div class="checks" id="dowChecks">
-          <label class="chk" data-dow="1" title="Monday"><input type="checkbox" checked aria-label="Monday"><span class="dot"></span>M</label>
-          <label class="chk" data-dow="2" title="Tuesday"><input type="checkbox" checked aria-label="Tuesday"><span class="dot"></span>T</label>
-          <label class="chk" data-dow="3" title="Wednesday"><input type="checkbox" checked aria-label="Wednesday"><span class="dot"></span>W</label>
-          <label class="chk" data-dow="4" title="Thursday"><input type="checkbox" checked aria-label="Thursday"><span class="dot"></span>T</label>
-          <label class="chk" data-dow="5" title="Friday"><input type="checkbox" checked aria-label="Friday"><span class="dot"></span>F</label>
-          <label class="chk" data-dow="6" title="Saturday"><input type="checkbox" checked aria-label="Saturday"><span class="dot"></span>S</label>
-          <label class="chk" data-dow="0" title="Sunday"><input type="checkbox" checked aria-label="Sunday"><span class="dot"></span>S</label>
+          <label class="chk" data-dow="1" title="Monday"><input type="checkbox" checked aria-label="Monday"><span class="dot"></span><span class="dl">M</span></label>
+          <label class="chk" data-dow="2" title="Tuesday"><input type="checkbox" checked aria-label="Tuesday"><span class="dot"></span><span class="dl">T</span></label>
+          <label class="chk" data-dow="3" title="Wednesday"><input type="checkbox" checked aria-label="Wednesday"><span class="dot"></span><span class="dl">W</span></label>
+          <label class="chk" data-dow="4" title="Thursday"><input type="checkbox" checked aria-label="Thursday"><span class="dot"></span><span class="dl">T</span></label>
+          <label class="chk" data-dow="5" title="Friday"><input type="checkbox" checked aria-label="Friday"><span class="dot"></span><span class="dl">F</span></label>
+          <label class="chk" data-dow="6" title="Saturday"><input type="checkbox" checked aria-label="Saturday"><span class="dot"></span><span class="dl">S</span></label>
+          <label class="chk" data-dow="0" title="Sunday"><input type="checkbox" checked aria-label="Sunday"><span class="dot"></span><span class="dl">S</span></label>
         </div>
       </div>
       <div class="field">
-        <label>Time of day</label>
+        <label data-i18n="filter.time">Time of day</label>
         <div class="checks" id="timeChecks">
-          <label class="chk" data-time="am"><input type="checkbox" checked><span class="dot"></span>AM</label>
-          <label class="chk" data-time="pm"><input type="checkbox" checked><span class="dot"></span>PM</label>
+          <label class="chk" data-time="am"><input type="checkbox" checked><span class="dot"></span><span data-i18n="time.am">AM</span></label>
+          <label class="chk" data-time="pm"><input type="checkbox" checked><span class="dot"></span><span data-i18n="time.pm">PM</span></label>
         </div>
       </div>
     </div>
@@ -309,9 +319,9 @@
 
   <div class="bar">
     <div class="tabs" id="tabs">
-      <button data-view="schedule" class="on">Schedule</button>
-      <button data-view="location">By location</button>
-      <button data-view="date">By date</button>
+      <button data-view="schedule" class="on" data-i18n="tab.schedule">Schedule</button>
+      <button data-view="location" data-i18n="tab.location">By location</button>
+      <button data-view="date" data-i18n="tab.date">By date</button>
     </div>
     <div class="summary" id="summary"></div>
   </div>
@@ -321,7 +331,7 @@
   <footer id="footer"></footer>
 </div>
 
-<button type="button" id="toTop" class="totop" aria-label="Back to top" title="Back to top">↑</button>
+<button type="button" id="toTop" class="totop" aria-label="Back to top" title="Back to top" data-i18n-aria="a11y.toTop" data-i18n-title="a11y.toTop">↑</button>
 
 <script>
 "use strict";
@@ -393,6 +403,7 @@ const SD_CENTROID_ZIP = "92108";
 
 // ---------- STATE ---------------------------------------------------------
 const state = {
+  lang:"en",
   zip:SD_CENTROID_ZIP, radius:9, age:12, flex:14,
   langs:{en:true, es:true, other:true},
   dows:{0:true,1:true,2:true,3:true,4:true,5:true,6:true},
@@ -409,10 +420,176 @@ let loadError = null;
 let locating = true;      // true until geolocation resolves (or falls back to the default ZIP)
 
 // ---------- HELPERS -------------------------------------------------------
-const DOW=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-const DOWS=["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
-const DOWI=["S","M","T","W","T","F","S"];   // single-letter initials, indexed by getDay()
-const MON=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+// ---------- I18N ----------------------------------------------------------
+// UI language ("en" | "es"). Only the app's own chrome is translated; event
+// content (titles, notes, addresses from the feeds) stays as each library
+// publishes it. Dates/times are formatted per-locale via Intl (replacing the
+// old hand-maintained DOW/DOWS/DOWI/MON arrays).
+const LOCALE = { en:"en-US", es:"es-US" };
+function loc(){ return LOCALE[state.lang] || "en-US"; }
+const _dtf = {};
+function dtf(opts){                                   // Intl.DateTimeFormat, memoized by lang+opts
+  const k = state.lang + JSON.stringify(opts);
+  return _dtf[k] || (_dtf[k] = new Intl.DateTimeFormat(loc(), opts));
+}
+const wdLong   = d => dtf({weekday:"long"}).format(d);    // was DOW  (Sunday…)
+const wdShort  = d => dtf({weekday:"short"}).format(d);   // was DOWS (Sun…)
+const wdNarrow = d => dtf({weekday:"narrow"}).format(d);  // was DOWI (S/M/T…; es-US: L/M/M/J/V/S/D)
+const moShort  = d => dtf({month:"short"}).format(d);     // was MON  (Jan…)
+
+const STRINGS = {
+  en:{
+    "header.eyebrow":"Free Library Events · San Diego",
+    "header.title":"Storytime Finder",
+    "header.lede":"Baby/toddler library events.",
+    "filter.heading":"Filters",
+    "filter.zip":"Zip",
+    "filter.zip.locating":"Locating…",
+    "filter.distance":"Distance",
+    "filter.age":"Child age (mo)",
+    "filter.age.max":"Max is 60",
+    "filter.flex":"Age flexibility",
+    "filter.langs":"Languages",
+    "filter.dow":"Day of week",
+    "filter.time":"Time of day",
+    "lang.en":"English","lang.es":"Spanish","lang.other":"Other","lang.mandarin":"Mandarin",
+    "time.am":"AM","time.pm":"PM",
+    "tab.schedule":"Schedule","tab.location":"By location","tab.date":"By date",
+    "badge.ages":"Ages {label}",
+    "badge.bigger":"↑ bigger kids",
+    "badge.bilingual":"Bilingual EN·ES",
+    "schedrow.bigger":"bigger kids",
+    "unit.min":"{n} min","unit.mi":"{n} mi",
+    "btn.gcal":"＋ Google Calendar","btn.gcal.short":"＋ Calendar",
+    "btn.eventPage":"Event page ↗","btn.event.short":"Event ↗","btn.details":"Details ↗",
+    "loc.website":"🌐 Website","loc.facebook":"📘 Facebook",
+    "loc.showMore":"Show {n} more ▾","loc.showLess":"Show less ▴","loc.ages":"ages {label}",
+    "schedule.count":v=>`${v.n} event${v.n===1?"":"s"}`,
+    "date.count":v=>`${v.n} event${v.n===1?"":"s"} · color-coded by library`,
+    "date.evShort":"{n} ev",
+    "age.birth":"birth","age.y":"y","age.mo":"mo",
+    "summary.line":"<b>{n}</b> events · <b>{libs}</b> libraries · next <b>{weeks}</b> weeks",
+    "summary.older":" · <b>{n}</b> for bigger kids",
+    "fsum":"{n} events",
+    "loading.locating":"Finding storytimes near you…",
+    "loading.data":"Loading storytimes…",
+    "error.title":"Couldn't load schedule data",
+    "error.body":"This page reads its schedule from the <code>{dir}/</code> folder. Make sure <code>{dir}/manifest.js</code>, <code>libraries.js</code>, and each <code>yyyy-mm.js</code> it lists are present next to this file.",
+    "empty.title":"No events match yet",
+    "empty.body":"Try widening the radius, raising age flexibility, or turning on more languages, days, or times.",
+    "empty.reno":"Heads up: Scripps Miramar Ranch (right in 92131) is closed for renovation until Winter 2026.",
+    "footer.body":"Schedules are compiled from public library pages and reflect typical recurring storytimes — <b>always confirm the day &amp; time via each event link before you go</b>, since libraries adjust and cancel sessions. {links}",
+    "footer.linkCity":"SD Public Library","footer.linkCounty":"SD County Library",
+    "a11y.toTop":"Back to top","a11y.loading":"Loading",
+    "doc.title":"Storytime Near Me",
+    "gcal.text":"{name} — {lib}",
+    "gcal.details":"{name} at {lib}.{note}\n\nAges {label}. Free library event.\nDetails: {url}"
+  },
+  es:{
+    "header.eyebrow":"Eventos gratis en la biblioteca · San Diego",
+    "header.title":"Buscador de Cuentos",
+    "header.lede":"Eventos de bibliotecas para bebés y niños pequeños.",
+    "filter.heading":"Filtros",
+    "filter.zip":"Código postal",
+    "filter.zip.locating":"Localizando…",
+    "filter.distance":"Distancia",
+    "filter.age":"Edad (meses)",
+    "filter.age.max":"El máximo es 60",
+    "filter.flex":"Rango de edad",
+    "filter.langs":"Idiomas",
+    "filter.dow":"Día de la semana",
+    "filter.time":"Hora",
+    "lang.en":"Inglés","lang.es":"Español","lang.other":"Otro","lang.mandarin":"Mandarín",
+    "time.am":"AM","time.pm":"PM",
+    "tab.schedule":"Horario","tab.location":"Por ubicación","tab.date":"Por fecha",
+    "badge.ages":"Edades {label}",
+    "badge.bigger":"↑ niños mayores",
+    "badge.bilingual":"Bilingüe EN·ES",
+    "schedrow.bigger":"niños mayores",
+    "unit.min":"{n} min","unit.mi":"{n} mi",
+    "btn.gcal":"＋ Google Calendar","btn.gcal.short":"＋ Calendario",
+    "btn.eventPage":"Página del evento ↗","btn.event.short":"Evento ↗","btn.details":"Detalles ↗",
+    "loc.website":"🌐 Sitio web","loc.facebook":"📘 Facebook",
+    "loc.showMore":"Mostrar {n} más ▾","loc.showLess":"Mostrar menos ▴","loc.ages":"edades {label}",
+    "schedule.count":v=>`${v.n} evento${v.n===1?"":"s"}`,
+    "date.count":v=>`${v.n} evento${v.n===1?"":"s"}`,
+    "date.evShort":"{n} ev",
+    "age.birth":"nacimiento","age.y":"a","age.mo":"m",
+    "summary.line":"<b>{n}</b> eventos · <b>{libs}</b> bibliotecas · próximas <b>{weeks}</b> semanas",
+    "summary.older":" · <b>{n}</b> para niños mayores",
+    "fsum":"{n} eventos",
+    "loading.locating":"Buscando eventos cerca de ti…",
+    "loading.data":"Cargando eventos…",
+    "error.title":"No se pudieron cargar los datos del horario",
+    "error.body":"Esta página lee su horario de la carpeta <code>{dir}/</code>. Asegúrate de que <code>{dir}/manifest.js</code>, <code>libraries.js</code> y cada <code>yyyy-mm.js</code> que enumera estén junto a este archivo.",
+    "empty.title":"Aún no hay eventos que coincidan",
+    "empty.body":"Intenta ampliar el radio, subir la flexibilidad de edad o activar más idiomas, días u horarios.",
+    "empty.reno":"Aviso: Scripps Miramar Ranch (en 92131) está cerrada por renovación hasta el invierno de 2026.",
+    "footer.body":"Los horarios se recopilan de páginas públicas de bibliotecas y reflejan las horas del cuento habituales — <b>confirma siempre el día y la hora en el enlace de cada evento antes de ir</b>, ya que las bibliotecas ajustan y cancelan sesiones. {links}",
+    "footer.linkCity":"Biblioteca Pública de SD","footer.linkCounty":"Biblioteca del Condado de SD",
+    "a11y.toTop":"Volver arriba","a11y.loading":"Cargando",
+    "doc.title":"Buscador de Cuentos",
+    "gcal.text":"{name} — {lib}",
+    "gcal.details":"{name} en {lib}.{note}\n\nEdades {label}. Evento gratuito de biblioteca.\nDetalles: {url}"
+  }
+};
+
+// Look up a string for the active language. Values may be plain strings (with
+// {placeholder} interpolation) or functions (for count/plural cases). Falls
+// back to English, then to the key itself.
+function t(key, vars){
+  const table = STRINGS[state.lang] || STRINGS.en;
+  let s = table[key];
+  if(s == null) s = STRINGS.en[key];
+  if(s == null) return key;
+  if(typeof s === "function") return s(vars || {});
+  if(vars) s = s.replace(/\{(\w+)\}/g, (_,k)=> (vars[k] != null ? vars[k] : ""));
+  return s;
+}
+
+// Swap all static [data-i18n*] markup + the footer to the active language.
+// Dynamic view content is retranslated on the next render().
+function applyStaticI18n(){
+  document.querySelectorAll("[data-i18n]").forEach(el=>{ el.textContent = t(el.dataset.i18n); });
+  [["data-i18n-ph","placeholder"],["data-i18n-title","title"],["data-i18n-aria","aria-label"]]
+    .forEach(([da,dom])=>document.querySelectorAll("["+da+"]").forEach(el=>el.setAttribute(dom, t(el.getAttribute(da)))));
+  const f=document.getElementById("footer"); if(f) f.innerHTML=footerHtml();
+}
+// Weekday chips: single-letter glyph + title/aria localized via Intl (0=Sun..6=Sat).
+function localizeDowChips(){
+  document.querySelectorAll("#dowChecks .chk").forEach(el=>{
+    const rd=new Date(2024,0,7 + (+el.dataset.dow));   // Jan 7 2024 = Sunday; +dow lands on the day
+    const dl=el.querySelector(".dl"); if(dl) dl.textContent=wdNarrow(rd);
+    const full=wdLong(rd);
+    el.title=full;
+    const inp=el.querySelector("input"); if(inp) inp.setAttribute("aria-label", full);
+  });
+}
+function footerHtml(){
+  const links=`<a href="https://sandiego.events.mylibrary.digital/" target="_blank" rel="noopener">${esc(t("footer.linkCity"))}</a>, `+
+              `<a href="https://sdcl.bibliocommons.com/v2/events" target="_blank" rel="noopener">${esc(t("footer.linkCounty"))}</a>. `;
+  return t("footer.body",{links});
+}
+// Resolve the initial language: ?lang= → localStorage → navigator → English.
+function initialLang(){
+  try{ const p=new URL(location.href).searchParams.get("lang"); if(p==="en"||p==="es") return p; }catch(e){}
+  try{ const s=localStorage.getItem("stny.lang"); if(s==="en"||s==="es") return s; }catch(e){}
+  const navs=navigator.languages||[navigator.language||""];
+  return navs.some(l=>String(l).toLowerCase().startsWith("es")) ? "es" : "en";
+}
+// Switch UI language: persist, reflect in <html lang> + URL, retranslate, repaint.
+function setLang(lang){
+  state.lang = (lang==="es") ? "es" : "en";
+  try{ localStorage.setItem("stny.lang", state.lang); }catch(e){}
+  document.documentElement.lang = state.lang;
+  try{ const u=new URL(location.href); u.searchParams.set("lang", state.lang); history.replaceState(null,"",u); }catch(e){}
+  document.querySelectorAll(".langtoggle button").forEach(b=>
+    b.setAttribute("aria-pressed", b.dataset.setlang===state.lang ? "true":"false"));
+  applyStaticI18n();
+  localizeDowChips();
+  render();
+  syncStickyHeights();
+}
 
 function haversine(a,b,c,d){
   const R=3958.8, toR=x=>x*Math.PI/180;
@@ -465,18 +642,22 @@ function initLocation(){
   );
   setTimeout(finishLocating, 9000);   // safety net in case no callback ever fires
 }
-function fmtTime(t){
-  let [h,m]=t.split(":").map(Number); const ap=h>=12?"pm":"am"; let hh=h%12; if(hh===0)hh=12;
-  return m===0 ? `${hh}:00 ${ap}` : `${hh}:${String(m).padStart(2,"0")} ${ap}`;
+function fmtTime(tm){
+  const [h,m]=tm.split(":").map(Number);
+  const d=new Date(2000,0,1,h,m);                     // any date; only h:m matter
+  // Intl handles am/pm per locale (en "10:00 AM", es "10:00 a. m."); lowercase
+  // to keep the app's existing "10:00 am" styling.
+  return dtf({hour:"numeric",minute:"2-digit",hour12:true}).format(d).toLowerCase();
 }
 function ageLabel(min,max){
-  const f=n=> n%12===0 ? `${n/12}y` : (n<24? `${n}mo` : `${(n/12).toFixed(1).replace(".0","")}y`);
-  if(min===0) return `birth–${f(max)}`;
+  const y=t("age.y"), mo=t("age.mo");
+  const f=n=> n%12===0 ? `${n/12}${y}` : (n<24? `${n}${mo}` : `${(n/12).toFixed(1).replace(".0","")}${y}`);
+  if(min===0) return `${t("age.birth")}–${f(max)}`;
   return `${f(min)}–${f(max)}`;
 }
 function langTags(arr){
-  if(arr.length>1) return ["Bilingual EN·ES"];
-  return arr.map(x=> x==="en"?"English":x==="es"?"Spanish":"Mandarin");
+  if(arr.length>1) return [t("badge.bilingual")];
+  return arr.map(x=> x==="en"?t("lang.en"):x==="es"?t("lang.es"):t("lang.mandarin"));
 }
 function pad(n){ return String(n).padStart(2,"0"); }
 function dateKey(d){ return `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`; }
@@ -594,12 +775,14 @@ function applyFilters(all){
 
 function gcalUrl(e){
   const f=d=>`${d.getFullYear()}${pad(d.getMonth()+1)}${pad(d.getDate())}T${pad(d.getHours())}${pad(d.getMinutes())}00`;
-  const details=`${e.tp.name} at ${e.lib.name}.`+(e.tp.note?` ${e.tp.note}`:"")+`\n\nAges ${ageLabel(e.tp.aMin,e.tp.aMax)}. Free library event.\nDetails: ${eventUrl(e)}`;
+  const note=e.tp.note?` ${e.tp.note}`:"";
+  const details=t("gcal.details",{name:e.tp.name, lib:e.lib.name, note,
+    label:ageLabel(e.tp.aMin,e.tp.aMax), url:eventUrl(e)});
   // Build manually so the slash between start/end times stays a literal "/"
   // (URLSearchParams encodes it to %2F, which Google's TEMPLATE parser rejects).
   const q=[
     "action=TEMPLATE",
-    "text="+encodeURIComponent(`${e.tp.name} — ${e.lib.name}`),
+    "text="+encodeURIComponent(t("gcal.text",{name:e.tp.name, lib:e.lib.name})),
     "dates="+f(e.start)+"/"+f(e.finish),
     "location="+encodeURIComponent(e.lib.addr),
     "details="+encodeURIComponent(details),
@@ -614,27 +797,27 @@ const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",
 
 function badges(e){
   let h="";
-  langTags(e.tp.lang).forEach(t=> h+=`<span class="tag lang">${esc(t)}</span>`);
-  h+=`<span class="tag age">Ages ${ageLabel(e.tp.aMin,e.tp.aMax)}</span>`;
-  if(e.older) h+=`<span class="tag older">↑ bigger kids</span>`;
+  langTags(e.tp.lang).forEach(tag=> h+=`<span class="tag lang">${esc(tag)}</span>`);
+  h+=`<span class="tag age">${esc(t("badge.ages",{label:ageLabel(e.tp.aMin,e.tp.aMax)}))}</span>`;
+  if(e.older) h+=`<span class="tag older">${esc(t("badge.bigger"))}</span>`;
   return h;
 }
 
 function evCard(e){
   const col=e.lib.color;
   return `<article class="ev" style="border-left-color:${col}">
-    <div class="time">${fmtTime(e.tp.t)}<small>${e.tp.dur} min</small></div>
+    <div class="time">${fmtTime(e.tp.t)}<small>${esc(t("unit.min",{n:e.tp.dur}))}</small></div>
     <div class="body">
       <h3>${esc(e.tp.name)}</h3>
       <div class="meta">
         <span class="loc"><span class="dot" style="background:${col}"></span>${esc(e.lib.name)}</span>
-        <span>· ${e.dist.toFixed(1)} mi</span>
+        <span>· ${esc(t("unit.mi",{n:e.dist.toFixed(1)}))}</span>
       </div>
       <div class="meta" style="margin-top:7px">${badges(e)}</div>
     </div>
     <div class="actions">
-      <a class="btn gcal" href="${gcalUrl(e)}" target="_blank" rel="noopener">＋ Google Calendar</a>
-      <a class="btn" href="${esc(eventUrl(e))}" target="_blank" rel="noopener">Event page ↗</a>
+      <a class="btn gcal" href="${gcalUrl(e)}" target="_blank" rel="noopener">${esc(t("btn.gcal"))}</a>
+      <a class="btn" href="${esc(eventUrl(e))}" target="_blank" rel="noopener">${esc(t("btn.eventPage"))}</a>
     </div>
   </article>`;
 }
@@ -650,8 +833,8 @@ function renderSchedule(evs){
     const d=list[0].date;
     h+=`<section class="dategroup">
       <div class="datehead">
-        <h2><span class="dow">${DOW[d.getDay()]}</span> ${MON[d.getMonth()]} ${d.getDate()}</h2>
-        <span class="cnt">${list.length} event${list.length>1?"s":""}</span>
+        <h2><span class="dow">${esc(wdLong(d))}</span> ${esc(moShort(d))} ${d.getDate()}</h2>
+        <span class="cnt">${esc(t("schedule.count",{n:list.length}))}</span>
       </div>
       ${list.map(evCard).join("")}
     </section>`;
@@ -662,9 +845,9 @@ function renderSchedule(evs){
 // One dated event occurrence in the By-location view.
 function schedRow(e){
   return `<div class="schedrow">
-    <span class="d">${DOWS[e.date.getDay()]} ${MON[e.date.getMonth()]} ${e.date.getDate()} · ${fmtTime(e.tp.t)}</span>
-    <span class="n">${esc(e.tp.name)}<div class="sub">${langTags(e.tp.lang).join(" · ")} · ages ${ageLabel(e.tp.aMin,e.tp.aMax)}${e.older?" · bigger kids":""}</div></span>
-    <a class="btn" href="${esc(eventUrl(e))}" target="_blank" rel="noopener">Details ↗</a>
+    <span class="d">${esc(wdShort(e.date))} ${esc(moShort(e.date))} ${e.date.getDate()} · ${fmtTime(e.tp.t)}</span>
+    <span class="n">${esc(e.tp.name)}<div class="sub">${langTags(e.tp.lang).map(esc).join(" · ")} · ${esc(t("loc.ages",{label:ageLabel(e.tp.aMin,e.tp.aMax)}))}${e.older?" · "+esc(t("schedrow.bigger")):""}</div></span>
+    <a class="btn" href="${esc(eventUrl(e))}" target="_blank" rel="noopener">${esc(t("btn.details"))}</a>
   </div>`;
 }
 function renderLocation(evs){
@@ -688,17 +871,17 @@ function renderLocation(evs){
     h+=`<section class="loccard" style="border-left-color:${col}">
       <div class="lhead">
         <h2><span class="dot" style="background:${col}"></span>${nameHtml}</h2>
-        <span class="sys">${esc(l.sys)} · ${libDist(l).toFixed(1)} mi</span>
+        <span class="sys">${esc(l.sys)} · ${esc(t("unit.mi",{n:libDist(l).toFixed(1)}))}</span>
       </div>
       <p class="addr">${esc(l.addr)}${l.phone?` · <a href="tel:${l.phone.replace(/[^0-9]/g,'')}">${l.phone}</a>`:""}</p>
       <div class="loclinks">
-        <a href="${esc(l.web)}" target="_blank" rel="noopener">🌐 Website</a>
-        ${l.fb?`<a href="${esc(l.fb)}" target="_blank" rel="noopener">📘 Facebook</a>`:""}
+        <a href="${esc(l.web)}" target="_blank" rel="noopener">${esc(t("loc.website"))}</a>
+        ${l.fb?`<a href="${esc(l.fb)}" target="_blank" rel="noopener">${esc(t("loc.facebook"))}</a>`:""}
       </div>
       ${l.note?`<div class="note">⚠ ${esc(l.note)}</div>`:""}
       ${rows.slice(0,2).map(schedRow).join("")}
       ${rows.length>2 ? `<details class="morerows">
-          <summary><span class="more">Show ${rows.length-2} more ▾</span><span class="less">Show less ▴</span></summary>
+          <summary><span class="more">${esc(t("loc.showMore",{n:rows.length-2}))}</span><span class="less">${esc(t("loc.showLess"))}</span></summary>
           ${rows.slice(2).map(schedRow).join("")}
         </details>` : ""}
     </section>`;
@@ -717,10 +900,10 @@ function renderDate(evs){
   for(const k of keys){
     const list=byDay[k]; const d=list[0].date;
     nav+=`<div class="daychip ${k===state.selDay?"on":""}" data-day="${k}">
-      <div class="mo">${MON[d.getMonth()]}</div>
-      <div class="dw" title="${DOWS[d.getDay()]}">${DOWI[d.getDay()]}</div>
+      <div class="mo">${esc(moShort(d))}</div>
+      <div class="dw" title="${esc(wdShort(d))}">${esc(wdNarrow(d))}</div>
       <div class="dn">${d.getDate()}</div>
-      <div class="cc">${list.length} ev</div>
+      <div class="cc">${esc(t("date.evShort",{n:list.length}))}</div>
     </div>`;
   }
   nav+=`</div>`;
@@ -732,23 +915,23 @@ function renderDate(evs){
   // blocks
   const d0=day[0].date;
   let head=`<div class="datesticky">
-      <h2>${DOW[d0.getDay()]}, ${MON[d0.getMonth()]} ${d0.getDate()}</h2>
-      <p class="dcount">${day.length} event${day.length>1?"s":""} · color-coded by library</p>
+      <h2>${esc(wdLong(d0))}, ${esc(moShort(d0))} ${d0.getDate()}</h2>
+      <p class="dcount">${esc(t("date.count",{n:day.length}))}</p>
     </div>`;
   let blocks=`<div class="dayblocks">`+day.map(e=>{
     const col=e.lib.color;
     return `<div class="block" style="background:${col}">
-      <div class="bt">${fmtTime(e.tp.t)} · ${e.tp.dur} min</div>
+      <div class="bt">${fmtTime(e.tp.t)} · ${esc(t("unit.min",{n:e.tp.dur}))}</div>
       <h3>${esc(e.tp.name)}</h3>
-      <div class="bl">${esc(e.lib.name)} · ${e.dist.toFixed(1)} mi</div>
+      <div class="bl">${esc(e.lib.name)} · ${esc(t("unit.mi",{n:e.dist.toFixed(1)}))}</div>
       <div class="bmeta">
-        ${langTags(e.tp.lang).map(t=>`<span class="btag">${esc(t)}</span>`).join("")}
-        <span class="btag">Ages ${ageLabel(e.tp.aMin,e.tp.aMax)}</span>
-        ${e.older?`<span class="btag">↑ bigger kids</span>`:""}
+        ${langTags(e.tp.lang).map(tag=>`<span class="btag">${esc(tag)}</span>`).join("")}
+        <span class="btag">${esc(t("badge.ages",{label:ageLabel(e.tp.aMin,e.tp.aMax)}))}</span>
+        ${e.older?`<span class="btag">${esc(t("badge.bigger"))}</span>`:""}
       </div>
       <div class="bacts">
-        <a class="bbtn" href="${gcalUrl(e)}" target="_blank" rel="noopener">＋ Calendar</a>
-        <a class="bbtn ghost" href="${esc(eventUrl(e))}" target="_blank" rel="noopener">Event ↗</a>
+        <a class="bbtn" href="${gcalUrl(e)}" target="_blank" rel="noopener">${esc(t("btn.gcal.short"))}</a>
+        <a class="bbtn ghost" href="${esc(eventUrl(e))}" target="_blank" rel="noopener">${esc(t("btn.event.short"))}</a>
       </div>
     </div>`;
   }).join("")+`</div>`;
@@ -756,25 +939,23 @@ function renderDate(evs){
 }
 
 function loadingState(){
-  const msg = locating ? "Finding storytimes near you…" : "Loading storytimes…";
-  return `<div class="empty"><div class="spinner" role="status" aria-label="Loading"></div>
-    <h2>${msg}</h2></div>`;
+  const msg = locating ? t("loading.locating") : t("loading.data");
+  return `<div class="empty"><div class="spinner" role="status" aria-label="${esc(t("a11y.loading"))}"></div>
+    <h2>${esc(msg)}</h2></div>`;
 }
 function errorState(err){
   const msg = esc(String(err && err.message || err));
   return `<div class="empty">
-    <h2>Couldn't load schedule data</h2>
+    <h2>${esc(t("error.title"))}</h2>
     <p>${msg}</p>
-    <p style="margin-top:14px">This page reads its schedule from the <code>${esc(DATA_DIR)}/</code> folder.
-    Make sure <code>${esc(DATA_DIR)}/manifest.js</code>, <code>libraries.js</code>, and each
-    <code>yyyy-mm.js</code> it lists are present next to this file.</p>
+    <p style="margin-top:14px">${t("error.body",{dir:esc(DATA_DIR)})}</p>
   </div>`;
 }
 function emptyState(){
   return `<div class="empty">
-    <h2>No events match yet</h2>
-    <p>Try widening the radius, raising age flexibility, or turning on more languages, days, or times.<br>
-    Heads up: Scripps Miramar Ranch (right in 92131) is closed for renovation until Winter 2026.</p>
+    <h2>${esc(t("empty.title"))}</h2>
+    <p>${esc(t("empty.body"))}<br>
+    ${esc(t("empty.reno"))}</p>
   </div>`;
 }
 
@@ -787,10 +968,10 @@ function render(){
   const libs=new Set(evs.map(e=>e.lib.id)).size;
   const older=evs.filter(e=>e.older).length;
   summaryEl.innerHTML=
-    `<b>${evs.length}</b> events · <b>${libs}</b> libraries · next <b>${state.weeks}</b> weeks`+
-    (older?` · <b>${older}</b> for bigger kids`:"");
+    t("summary.line",{n:evs.length, libs:libs, weeks:state.weeks})+
+    (older? t("summary.older",{n:older}) : "");
   const fsum=document.getElementById("fsum");
-  if(fsum) fsum.textContent=`${evs.length} events`;
+  if(fsum) fsum.textContent=t("fsum",{n:evs.length});
 
   if(state.view==="schedule") app.innerHTML=renderSchedule(evs);
   else if(state.view==="location") app.innerHTML=renderLocation(evs);
@@ -899,10 +1080,8 @@ document.querySelectorAll("#tabs button").forEach(b=>b.addEventListener("click",
   b.classList.add("on"); state.view=b.dataset.view; render();
 }));
 
-document.getElementById("footer").innerHTML=
-  `Schedules are compiled from public library pages and reflect typical recurring storytimes — <b>always confirm the day &amp; time via each event link before you go</b>, since libraries adjust and cancel sessions. `+
-  `<a href="https://sandiego.events.mylibrary.digital/" target="_blank" rel="noopener">SD Public Library</a>, `+
-  `<a href="https://sdcl.bibliocommons.com/v2/events" target="_blank" rel="noopener">SD County Library</a>. `;
+// Footer is localized and painted by applyStaticI18n() → footerHtml() (called on
+// load and on every language switch), so it isn't set here.
 
 // Back-to-top button: appears after scrolling down, returns to the top on click.
 (function(){
@@ -920,8 +1099,10 @@ document.getElementById("footer").innerHTML=
 
 // ---------- INIT ----------------------------------------------------------
 syncColors();
-render();                       // paints the loading state
-syncStickyHeights();            // pin the tabs/date headers just below the filter panel
+setLang(initialLang());         // language: ?lang → localStorage → navigator → en. Sets <html lang>,
+                                // the toggle, static strings + dow chips, then render() + syncStickyHeights().
+document.querySelectorAll(".langtoggle button").forEach(b=>
+  b.addEventListener("click",()=>setLang(b.dataset.setlang)));
 setFiltersEnabled(false);       // filters stay locked until locating resolves
 initLocation();                 // async: recenters on the user's location if allowed
 loadData().then(()=>{
