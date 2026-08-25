@@ -57,6 +57,7 @@
     backdrop-filter:blur(10px);border-bottom:1px solid var(--line);margin:0 -20px 22px;padding:12px 20px;
   }
   .controls{display:flex;flex-wrap:wrap;gap:14px 18px;align-items:flex-end}
+  .controls.locked{opacity:.5;pointer-events:none}  /* inert while locating */
   .filterbar{display:none}  /* mobile-only trigger; desktop shows controls inline */
   .field{display:flex;flex-direction:column;gap:5px}
   .field label{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--faint);font-weight:600}
@@ -257,7 +258,7 @@
         <label for="age">Child age (mo)</label>
         <div class="stepper">
           <button type="button" class="stepbtn" id="ageDec" aria-label="Decrease age">−</button>
-          <input type="number" id="age" min="0" max="60" step="1" value="13" inputmode="numeric">
+          <input type="number" id="age" min="0" max="60" step="1" value="12" inputmode="numeric">
           <button type="button" class="stepbtn" id="ageInc" aria-label="Increase age">+</button>
         </div>
         <span class="hint" id="ageHint" role="status" aria-live="polite">Max is 60</span>
@@ -271,7 +272,7 @@
         <div class="checks" id="langChecks">
           <label class="chk" data-lang="en"><input type="checkbox" checked><span class="dot"></span>English</label>
           <label class="chk" data-lang="es"><input type="checkbox" checked><span class="dot"></span>Spanish</label>
-          <label class="chk" data-lang="other"><input type="checkbox"><span class="dot"></span>Other</label>
+          <label class="chk" data-lang="other"><input type="checkbox" checked><span class="dot"></span>Other</label>
         </div>
       </div>
       <div class="field">
@@ -380,8 +381,8 @@ const SD_CENTROID_ZIP = "92108";
 
 // ---------- STATE ---------------------------------------------------------
 const state = {
-  zip:SD_CENTROID_ZIP, radius:9, age:13, flex:14,
-  langs:{en:true, es:true, other:false},
+  zip:SD_CENTROID_ZIP, radius:9, age:12, flex:14,
+  langs:{en:true, es:true, other:true},
   dows:{0:true,1:true,2:true,3:true,4:true,5:true,6:true},
   times:{am:true, pm:true},
   view:"schedule", weeks:5, selDay:null
@@ -422,11 +423,18 @@ function setZip(z){
   render();
 }
 // Clear the "locating" hold once and repaint (events replace the spinner).
+// Lock/unlock all filter controls (used to keep them inert while locating).
+function setFiltersEnabled(on){
+  const c=document.getElementById("controls"); if(!c) return;
+  c.classList.toggle("locked", !on);
+  c.querySelectorAll("input,button").forEach(el=>{ el.disabled=!on; });
+}
 function finishLocating(){
   if(!locating) return;
   locating=false;
   // Fill the (initially empty) ZIP box with the resolved ZIP — the default if geo didn't set one.
   const el=document.getElementById("zip"); if(el && !el.value) el.value=state.zip;
+  setFiltersEnabled(true);   // filters become usable now that we know the location
   render();
 }
 // Try to center the search on the user's location; otherwise keep the SD centroid default.
@@ -875,6 +883,7 @@ document.getElementById("footer").innerHTML=
 // ---------- INIT ----------------------------------------------------------
 syncColors();
 render();                       // paints the loading state
+setFiltersEnabled(false);       // filters stay locked until locating resolves
 initLocation();                 // async: recenters on the user's location if allowed
 loadData().then(()=>{
   loadState="ready";
