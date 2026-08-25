@@ -247,7 +247,7 @@
     <div class="controls" id="controls">
       <div class="field">
         <label for="zip">Zip</label>
-        <input type="text" id="zip" inputmode="numeric" maxlength="5" value="92108">
+        <input type="text" id="zip" inputmode="numeric" maxlength="5" value="" placeholder="Locating…">
       </div>
       <div class="field">
         <label for="radius">Distance</label>
@@ -422,7 +422,13 @@ function setZip(z){
   render();
 }
 // Clear the "locating" hold once and repaint (events replace the spinner).
-function finishLocating(){ if(locating){ locating=false; render(); } }
+function finishLocating(){
+  if(!locating) return;
+  locating=false;
+  // Fill the (initially empty) ZIP box with the resolved ZIP — the default if geo didn't set one.
+  const el=document.getElementById("zip"); if(el && !el.value) el.value=state.zip;
+  render();
+}
 // Try to center the search on the user's location; otherwise keep the SD centroid default.
 function initLocation(){
   if(!navigator.geolocation){ finishLocating(); return; }
