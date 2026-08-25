@@ -191,6 +191,20 @@ STORYTIME.months["2026-11"] = {
       "note": "Join us for stories, songs, and fun with friends! The first Wednesday of each month will be bilingual preschool storytime."
     },
     {
+      "lib": "lemongro",
+      "name": "Family Storytime",
+      "date": "2026-11-04",
+      "time": "10:30",
+      "dur": 45,
+      "ageMin": 0,
+      "ageMax": 60,
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a89d900db86e4004d86c1df",
+      "note": "Join us for stories, songs, crafts, and fun! Babies, toddlers, and preschoolers are all welcome."
+    },
+    {
       "lib": "ramonaco",
       "name": "Family Storytime",
       "date": "2026-11-04",
@@ -287,6 +301,20 @@ STORYTIME.months["2026-11"] = {
       ],
       "eventId": "6a750f54b44674e2601ca195",
       "note": "Join us for ABC's, 123's, songs, stories, socializing. Lots of fun for kids of all ages and their caregivers!"
+    },
+    {
+      "lib": "encinita",
+      "name": "Toddler Storytime",
+      "date": "2026-11-05",
+      "time": "10:30",
+      "dur": 45,
+      "ageMin": 12,
+      "ageMax": 36,
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a878b212dac6e0037208858",
+      "note": "Come join us for singing, dancing, stories, music, fun and most importantly shaking our sillies out! This program is recommended for toddlers and their caregive"
     },
     {
       "lib": "imperial",
@@ -740,6 +768,20 @@ STORYTIME.months["2026-11"] = {
       "note": "Join us for stories, songs, and fun with friends! The first Wednesday of each month will be bilingual preschool storytime."
     },
     {
+      "lib": "lemongro",
+      "name": "Family Storytime",
+      "date": "2026-11-11",
+      "time": "10:30",
+      "dur": 45,
+      "ageMin": 0,
+      "ageMax": 60,
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a89d900db86e4004d86c1e0",
+      "note": "Join us for stories, songs, crafts, and fun! Babies, toddlers, and preschoolers are all welcome."
+    },
+    {
       "lib": "ramonaco",
       "name": "Family Storytime",
       "date": "2026-11-11",
@@ -1120,6 +1162,20 @@ STORYTIME.months["2026-11"] = {
       "note": "Enjoy stories followed by a craft to make here or take home!"
     },
     {
+      "lib": "crestcou",
+      "name": "Saturday Storytime and Craft",
+      "date": "2026-11-14",
+      "time": "14:00",
+      "dur": 60,
+      "ageMin": 0,
+      "ageMax": 60,
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a3dbad4296ea565de2ecf08",
+      "note": "Visit Crest on select Saturdays to listen to a story and then do a craft! Patrons can do one or the other, or both! This event is open to all ages!"
+    },
+    {
       "lib": "elcajonc",
       "name": "Bilingual Storytime",
       "date": "2026-11-16",
@@ -1348,6 +1404,20 @@ STORYTIME.months["2026-11"] = {
       "note": "Join us for stories, songs, and fun with friends! The first Wednesday of each month will be bilingual preschool storytime."
     },
     {
+      "lib": "lemongro",
+      "name": "Family Storytime",
+      "date": "2026-11-18",
+      "time": "10:30",
+      "dur": 45,
+      "ageMin": 0,
+      "ageMax": 60,
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a89d900db86e4004d86c1e1",
+      "note": "Join us for stories, songs, crafts, and fun! Babies, toddlers, and preschoolers are all welcome."
+    },
+    {
       "lib": "ramonaco",
       "name": "Family Storytime",
       "date": "2026-11-18",
@@ -1417,6 +1487,20 @@ STORYTIME.months["2026-11"] = {
       ],
       "eventId": "6a750f54b44674e2601ca197",
       "note": "Join us for ABC's, 123's, songs, stories, socializing. Lots of fun for kids of all ages and their caregivers!"
+    },
+    {
+      "lib": "encinita",
+      "name": "Toddler Storytime",
+      "date": "2026-11-19",
+      "time": "10:30",
+      "dur": 45,
+      "ageMin": 12,
+      "ageMax": 36,
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a878b212dac6e0037208859",
+      "note": "Come join us for singing, dancing, stories, music, fun and most importantly shaking our sillies out! This program is recommended for toddlers and their caregive"
     },
     {
       "lib": "imperial",
@@ -1714,20 +1798,6 @@ STORYTIME.months["2026-11"] = {
       "note": "Dance along with fun storytime songs! All children are welcome. Geared toward toddlers 18m - 3."
     },
     {
-      "lib": "crestcou",
-      "name": "Saturday Storytime and Craft",
-      "date": "2026-11-21",
-      "time": "14:00",
-      "dur": 90,
-      "ageMin": 0,
-      "ageMax": 60,
-      "lang": [
-        "en"
-      ],
-      "eventId": "6a3dbad4296ea565de2ecf08",
-      "note": "Visit Crest on select Saturdays to listen to a story and then do a craft! Patrons can do one or the other, or both! This event is open to all ages!"
-    },
-    {
       "lib": "elcajonc",
       "name": "Bilingual Storytime",
       "date": "2026-11-23",
@@ -1911,6 +1981,20 @@ STORYTIME.months["2026-11"] = {
       ],
       "eventId": "685f2eccd234473d0022fb21",
       "note": "Join us for stories, songs, and fun with friends! The first Wednesday of each month will be bilingual preschool storytime."
+    },
+    {
+      "lib": "lemongro",
+      "name": "Family Storytime",
+      "date": "2026-11-25",
+      "time": "10:30",
+      "dur": 45,
+      "ageMin": 0,
+      "ageMax": 60,
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a89d900db86e4004d86c1e2",
+      "note": "Join us for stories, songs, crafts, and fun! Babies, toddlers, and preschoolers are all welcome."
     },
     {
       "lib": "ramonaco",

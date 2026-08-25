@@ -344,6 +344,20 @@ STORYTIME.months["2026-09"] = {
       "note": "Grab a blanket and enjoy Story Time out in the park! Our story time events are filled with fun songs to sing and dance to; stories that are vivid and cater to E"
     },
     {
+      "lib": "lemongro",
+      "name": "Family Storytime",
+      "date": "2026-09-02",
+      "time": "10:30",
+      "dur": 30,
+      "ageMin": 0,
+      "ageMax": 60,
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a89d802db86e4004d86c1d1",
+      "note": "Join us for stories, songs, crafts, and fun! Babies, toddlers, and preschoolers are all welcome."
+    },
+    {
       "lib": "otaymesa",
       "name": "Bilingual Storytime / Hora de Cuento Bilingüe",
       "date": "2026-09-02",
@@ -485,6 +499,21 @@ STORYTIME.months["2026-09"] = {
       "note": "Caregivers and their little ones are invited to join our vibrant Baby Storytime featuring: songs, stories, and playtime! WEEKLY WEDNESDAYS starting at 1:00PM."
     },
     {
+      "lib": "borregos",
+      "name": "Bilingual Storytime | Cuentos Bilingües",
+      "date": "2026-09-02",
+      "time": "14:00",
+      "dur": 60,
+      "ageMin": 0,
+      "ageMax": 60,
+      "lang": [
+        "en",
+        "es"
+      ],
+      "eventId": "6a88bdd0b204780029948ebb",
+      "note": "Enjoy songs, rhymes, and stories in English and Spanish, followed by play time! Geared for ages 2-5, but all ages welcome. - Venga a escuchar canciones y cuento"
+    },
+    {
       "lib": "universi",
       "name": "Children's Pajama Signing Storytime",
       "date": "2026-09-02",
@@ -497,20 +526,6 @@ STORYTIME.months["2026-09"] = {
       ],
       "eventId": "344227",
       "note": "Join us for a late afternoon pajama storytime with an engaging seasonal theme for young children including books, music, and bubbles with the addition of Americ"
-    },
-    {
-      "lib": "descanso",
-      "name": "Felt Friends Story Time",
-      "date": "2026-09-02",
-      "time": "17:00",
-      "dur": 30,
-      "ageMin": 36,
-      "ageMax": 144,
-      "lang": [
-        "en"
-      ],
-      "eventId": "6a6e384e3f18b57d52328947",
-      "note": "Join us every week for a different felt friend story time. It's sure to be so much fun!"
     },
     {
       "lib": "carmelva",
@@ -623,6 +638,20 @@ STORYTIME.months["2026-09"] = {
       ],
       "eventId": "6a750f54b44674e2601ca18c",
       "note": "Join us for ABC's, 123's, songs, stories, socializing. Lots of fun for kids of all ages and their caregivers!"
+    },
+    {
+      "lib": "encinita",
+      "name": "Toddler Storytime",
+      "date": "2026-09-03",
+      "time": "10:30",
+      "dur": 45,
+      "ageMin": 12,
+      "ageMax": 36,
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a878bae2dac6e0037208881",
+      "note": "Join us for a joyful children’s storytime featuring special guest Mr. Markus and his lively music show! Get ready for singing, dancing, stories, music, and tons"
     },
     {
       "lib": "imperial",
@@ -1285,20 +1314,6 @@ STORYTIME.months["2026-09"] = {
       "note": "My Live Interactive Video Preschool/Kindergarten Storytimes, good for kids ages 4 to 6, are fun, kinetic, and humorous experiences! I make it a point not just t"
     },
     {
-      "lib": "ranchos2",
-      "name": "Preschool Storytime",
-      "date": "2026-09-08",
-      "time": "10:30",
-      "dur": 45,
-      "ageMin": 36,
-      "ageMax": 60,
-      "lang": [
-        "en"
-      ],
-      "eventId": "6a5574f30e562e280099aef9",
-      "note": "Preschool Storytime is geared for children aged 3-6 years. Join us for stories, songs and a craft."
-    },
-    {
       "lib": "balboa",
       "name": "Storytime at the Library",
       "date": "2026-09-08",
@@ -1607,6 +1622,20 @@ STORYTIME.months["2026-09"] = {
       ],
       "eventId": "372588",
       "note": "Grab a blanket and enjoy Story Time out in the park! Our story time events are filled with fun songs to sing and dance to; stories that are vivid and cater to E"
+    },
+    {
+      "lib": "lemongro",
+      "name": "Family Storytime",
+      "date": "2026-09-09",
+      "time": "10:30",
+      "dur": 45,
+      "ageMin": 0,
+      "ageMax": 60,
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a89d900db86e4004d86c1d7",
+      "note": "Join us for stories, songs, crafts, and fun! Babies, toddlers, and preschoolers are all welcome."
     },
     {
       "lib": "otaymesa",
@@ -1989,20 +2018,6 @@ STORYTIME.months["2026-09"] = {
       "note": "Enjoy storytime for your toddler every Thursday!"
     },
     {
-      "lib": "ranchos2",
-      "name": "Toddler Storytime",
-      "date": "2026-09-10",
-      "time": "10:30",
-      "dur": 45,
-      "ageMin": 12,
-      "ageMax": 36,
-      "lang": [
-        "en"
-      ],
-      "eventId": "6a8338bba821f90037ee6ab6",
-      "note": "Get ready for toddler storytime with songs, movement, and engaging picture books, followed by hands-on learning and crafting. For ages 18 months to 3 years."
-    },
-    {
       "lib": "sancarlo",
       "name": "Storytime for Toddlers & Preschoolers",
       "date": "2026-09-10",
@@ -2324,6 +2339,21 @@ STORYTIME.months["2026-09"] = {
       ],
       "eventId": "695825884a9fd98b7f754296",
       "note": "Dance along with fun storytime songs! All children are welcome. Geared toward toddlers 18m - 3."
+    },
+    {
+      "lib": "pw",
+      "name": "German Bilingual Dance Party Storytime",
+      "date": "2026-09-12",
+      "time": "10:30",
+      "dur": 30,
+      "ageMin": 0,
+      "ageMax": 60,
+      "lang": [
+        "en",
+        "other"
+      ],
+      "eventId": "6a89e83b2dac6e003720e8c9",
+      "note": "Dance along with fun storytime songs in German!"
     },
     {
       "lib": "jacumbac",
@@ -2749,20 +2779,6 @@ STORYTIME.months["2026-09"] = {
       "note": "Learn signs to use with your child! Signing fun with songs, stories, and finger plays as well as tips for using sign language as a preverbal communication tool "
     },
     {
-      "lib": "sm",
-      "name": "Toddler Storytime",
-      "date": "2026-09-16",
-      "time": "10:15",
-      "dur": 30,
-      "ageMin": 12,
-      "ageMax": 36,
-      "lang": [
-        "en"
-      ],
-      "eventId": "",
-      "note": ""
-    },
-    {
       "lib": "alpineco",
       "name": "Storytime",
       "date": "2026-09-16",
@@ -2847,6 +2863,20 @@ STORYTIME.months["2026-09"] = {
       ],
       "eventId": "372589",
       "note": "Grab a blanket and enjoy Story Time out in the park! Our story time events are filled with fun songs to sing and dance to; stories that are vivid and cater to E"
+    },
+    {
+      "lib": "lemongro",
+      "name": "Family Storytime",
+      "date": "2026-09-16",
+      "time": "10:30",
+      "dur": 45,
+      "ageMin": 0,
+      "ageMax": 60,
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a89d900db86e4004d86c1d8",
+      "note": "Join us for stories, songs, crafts, and fun! Babies, toddlers, and preschoolers are all welcome."
     },
     {
       "lib": "otaymesa",
@@ -2962,6 +2992,21 @@ STORYTIME.months["2026-09"] = {
       "note": "Caregivers and their little ones are invited to join our vibrant Baby Storytime featuring: songs, stories, and playtime! WEEKLY WEDNESDAYS starting at 1:00PM."
     },
     {
+      "lib": "borregos",
+      "name": "Bilingual Storytime | Cuentos Bilingües",
+      "date": "2026-09-16",
+      "time": "14:00",
+      "dur": 60,
+      "ageMin": 0,
+      "ageMax": 60,
+      "lang": [
+        "en",
+        "es"
+      ],
+      "eventId": "6a88bdd0b204780029948ebc",
+      "note": "Enjoy songs, rhymes, and stories in English and Spanish, followed by play time! Geared for ages 2-5, but all ages welcome. - Venga a escuchar canciones y cuento"
+    },
+    {
       "lib": "universi",
       "name": "Children's Pajama Signing Storytime",
       "date": "2026-09-16",
@@ -3074,6 +3119,20 @@ STORYTIME.months["2026-09"] = {
       ],
       "eventId": "6a750f54b44674e2601ca18e",
       "note": "Join us for ABC's, 123's, songs, stories, socializing. Lots of fun for kids of all ages and their caregivers!"
+    },
+    {
+      "lib": "encinita",
+      "name": "Toddler Storytime",
+      "date": "2026-09-17",
+      "time": "10:30",
+      "dur": 45,
+      "ageMin": 12,
+      "ageMax": 36,
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a878b212dac6e0037208855",
+      "note": "Encinitas Library welcomes Imagine Creative’s Storytime Theater for a fun, interactive toddler storytime — with caregivers joining the excitement too !"
     },
     {
       "lib": "imperial",
@@ -3398,20 +3457,6 @@ STORYTIME.months["2026-09"] = {
       "note": "Tiny Tots Storytime: Stay & Play is a play group and storytime for kids age 0-5 and their adults. We especially invite nontraditional caregivers (friends, famil"
     },
     {
-      "lib": "sm",
-      "name": "Baby Storytime",
-      "date": "2026-09-18",
-      "time": "10:15",
-      "dur": 30,
-      "ageMin": 0,
-      "ageMax": 18,
-      "lang": [
-        "en"
-      ],
-      "eventId": "",
-      "note": ""
-    },
-    {
       "lib": "alpineco",
       "name": "Baby Storytime",
       "date": "2026-09-18",
@@ -3579,20 +3624,6 @@ STORYTIME.months["2026-09"] = {
       ],
       "eventId": "388048",
       "note": "Glee Club Group Singing, Ages 8-10 Requires registration with Villa Musica"
-    },
-    {
-      "lib": "cm",
-      "name": "Mandarin Chinese Storytime (Babies & Toddlers)",
-      "date": "2026-09-19",
-      "time": "10:00",
-      "dur": 30,
-      "ageMin": 0,
-      "ageMax": 36,
-      "lang": [
-        "other"
-      ],
-      "eventId": "",
-      "note": "Stories & songs in Mandarin."
     },
     {
       "lib": "mm",
@@ -3766,17 +3797,31 @@ STORYTIME.months["2026-09"] = {
     },
     {
       "lib": "rb",
-      "name": "Baby & Toddler Storytime with Ms. Ellie",
-      "date": "2026-09-22",
-      "time": "10:00",
-      "dur": 30,
+      "name": "RB Pajamas Storytime",
+      "date": "2026-09-21",
+      "time": "18:30",
+      "dur": 60,
       "ageMin": 0,
-      "ageMax": 36,
+      "ageMax": 60,
       "lang": [
         "en"
       ],
-      "eventId": "",
-      "note": ""
+      "eventId": "339260",
+      "note": "Kiddos can wear their favorite pajamas for the early evening Monday storytimes featuring children’s books. Incudes the opportunity to follow along to popular ki"
+    },
+    {
+      "lib": "lindavis",
+      "name": "Live Interactive Video Preschool/Kindergarten Storytime with Mr. Luan",
+      "date": "2026-09-22",
+      "time": "10:30",
+      "dur": 45,
+      "ageMin": 36,
+      "ageMax": 60,
+      "lang": [
+        "en"
+      ],
+      "eventId": "324161",
+      "note": "My Live Interactive Video Preschool/Kindergarten Storytimes, good for kids ages 4 to 6, are fun, kinetic, and humorous experiences! I make it a point not just t"
     },
     {
       "lib": "ranchos2",
@@ -3791,6 +3836,48 @@ STORYTIME.months["2026-09"] = {
       ],
       "eventId": "6a5574f30e562e280099aefb",
       "note": "Preschool Storytime is geared for children aged 3-6 years. Join us for stories, songs and a craft."
+    },
+    {
+      "lib": "balboa",
+      "name": "Signing Storytime",
+      "date": "2026-09-22",
+      "time": "11:30",
+      "dur": 30,
+      "ageMin": 0,
+      "ageMax": 60,
+      "lang": [
+        "en"
+      ],
+      "eventId": "314937",
+      "note": "Come join us for a signing storytime at the Balboa Branch Library. Signs at Play’s Jennifer Duncan will teach sign language basics to foster early literacy skil"
+    },
+    {
+      "lib": "lajollar",
+      "name": "Storytime with Ms Teri",
+      "date": "2026-09-22",
+      "time": "12:00",
+      "dur": 30,
+      "ageMin": 0,
+      "ageMax": 60,
+      "lang": [
+        "en"
+      ],
+      "eventId": "324120",
+      "note": "Come one, come all to this story time designed for little ones and their caregivers. Enjoy songs, rhymes, and books with captivating illustrations."
+    },
+    {
+      "lib": "nu",
+      "name": "Toddler Storytime",
+      "date": "2026-09-22",
+      "time": "12:00",
+      "dur": 30,
+      "ageMin": 12,
+      "ageMax": 36,
+      "lang": [
+        "en"
+      ],
+      "eventId": "341025",
+      "note": "Join in as we read, sing, dance, and play at Toddler Storytime! Come and build essential early literacy skills and foster a love of reading."
     },
     {
       "lib": "pw",
@@ -3835,6 +3922,20 @@ STORYTIME.months["2026-09"] = {
       "note": "Snuggle up for an evening of cozy fun with your favorite sleepwear, soothing stories, and songs to help wind down the day."
     },
     {
+      "lib": "pointlom",
+      "name": "Pajama Storytime",
+      "date": "2026-09-22",
+      "time": "17:30",
+      "dur": 30,
+      "ageMin": 0,
+      "ageMax": 60,
+      "lang": [
+        "en"
+      ],
+      "eventId": "322254",
+      "note": "Come enjoy a pajama storytime with us in the cozy, downstairs reading nook! Get ready in your pajamas (or comfy clothes) to enjoy an evening Storytime in the li"
+    },
+    {
       "lib": "springva",
       "name": "Pajama Bilingual Storytime | Cuentos Bilingües en Pijamas",
       "date": "2026-09-22",
@@ -3850,6 +3951,48 @@ STORYTIME.months["2026-09"] = {
       "note": "Join us to Shake your sillies out with music and dancing, followed by a cozy story time in Spanish & English. Everyone is invited to wear your pajamas and bring"
     },
     {
+      "lib": "pacifich",
+      "name": "Pajama Storytime",
+      "date": "2026-09-22",
+      "time": "18:30",
+      "dur": 30,
+      "ageMin": 12,
+      "ageMax": 60,
+      "lang": [
+        "en"
+      ],
+      "eventId": "314566",
+      "note": "Get those slippers kickin' at Pajama Storytime! Join Ms. Maureen every Tuesday from 6:30-7 p.m. for stories and songs selected for toddlers and preschoolers. Sh"
+    },
+    {
+      "lib": "sm",
+      "name": "Pajama Storytime",
+      "date": "2026-09-22",
+      "time": "18:30",
+      "dur": 30,
+      "ageMin": 0,
+      "ageMax": 60,
+      "lang": [
+        "en"
+      ],
+      "eventId": "323324",
+      "note": "Put on your favorite PJs and join Ms. Carrie in the Community Room Tuesday evenings for a pajama storytime."
+    },
+    {
+      "lib": "carmelva",
+      "name": "Family Storytime",
+      "date": "2026-09-23",
+      "time": "10:00",
+      "dur": 30,
+      "ageMin": 0,
+      "ageMax": 60,
+      "lang": [
+        "en"
+      ],
+      "eventId": "316312",
+      "note": "Join us for an exciting morning of stories and songs! This storytime is geared toward ages 3-5, but the whole family is welcome to join in the fun! Programs are"
+    },
+    {
       "lib": "cm",
       "name": "Preschool Storytime",
       "date": "2026-09-23",
@@ -3860,22 +4003,93 @@ STORYTIME.months["2026-09"] = {
       "lang": [
         "en"
       ],
-      "eventId": "",
-      "note": ""
+      "eventId": "319860",
+      "note": "Join us for a fun and educational storytime featuring songs, nursery rhymes, and picture books. Remember, storytime (reading) is important for brain development"
     },
     {
-      "lib": "nu",
-      "name": "Signing Storytime (baby sign language)",
+      "lib": "colleger",
+      "name": "Stay & Play Storytime",
       "date": "2026-09-23",
-      "time": "10:15",
-      "dur": 30,
+      "time": "10:00",
+      "dur": 120,
       "ageMin": 0,
-      "ageMax": 48,
+      "ageMax": 60,
       "lang": [
         "en"
       ],
-      "eventId": "",
-      "note": "Vocabulary through books & signs, ends with bubbles."
+      "eventId": "381392",
+      "note": "Welcome families to Stay and Play! This program is focused towards children 0-5 years old and their caregivers. Every week we will offer snacks and refreshments"
+    },
+    {
+      "lib": "loganhei",
+      "name": "Dance It Out! Bilingual Storytime /¡Baila Conmigo! Hora de cuentos bilingüe",
+      "date": "2026-09-23",
+      "time": "10:00",
+      "dur": 30,
+      "ageMin": 12,
+      "ageMax": 36,
+      "lang": [
+        "en",
+        "es"
+      ],
+      "eventId": "320362",
+      "note": "Join us in this dancing storytime that geared towards toddlers and their parents. Enjoy new and classic stories of all kinds and get ready to get all those wigg"
+    },
+    {
+      "lib": "missionh",
+      "name": "Preschool Storytime",
+      "date": "2026-09-23",
+      "time": "10:00",
+      "dur": 45,
+      "ageMin": 36,
+      "ageMax": 60,
+      "lang": [
+        "en"
+      ],
+      "eventId": "317082",
+      "note": "Dance, sing, laugh, and enjoy engaging stories with Carrie The Librarian! This program is recommended for ages 2-5 but all ages are welcome at this fun weekly p"
+    },
+    {
+      "lib": "nu",
+      "name": "Storytime Stomp",
+      "date": "2026-09-23",
+      "time": "10:00",
+      "dur": 30,
+      "ageMin": 0,
+      "ageMax": 60,
+      "lang": [
+        "en"
+      ],
+      "eventId": "341071",
+      "note": "This lively and interactive program is designed for children of all ages to explore the joy of movement, music, and creative expression. Join the fun and enjoy "
+    },
+    {
+      "lib": "pacificb",
+      "name": "Outdoor Toddler Storytime",
+      "date": "2026-09-23",
+      "time": "10:00",
+      "dur": 30,
+      "ageMin": 12,
+      "ageMax": 36,
+      "lang": [
+        "en"
+      ],
+      "eventId": "327202",
+      "note": "Children and their caregivers are invited to enjoy simple stories, songs and community. Reading practice helps young ones to develop school readiness skills and"
+    },
+    {
+      "lib": "pointlom",
+      "name": "Sing & Sign Toddler Storytime",
+      "date": "2026-09-23",
+      "time": "10:00",
+      "dur": 30,
+      "ageMin": 12,
+      "ageMax": 36,
+      "lang": [
+        "en"
+      ],
+      "eventId": "320116",
+      "note": "Learn signs to use with your child! Signing fun with songs, stories, and finger plays as well as tips for using sign language as a preverbal communication tool "
     },
     {
       "lib": "sm",
@@ -3962,6 +4176,64 @@ STORYTIME.months["2026-09"] = {
       "note": "Join us for stories, songs, and fun with friends! The first Wednesday of each month will be bilingual preschool storytime."
     },
     {
+      "lib": "kensingt",
+      "name": "Story Time",
+      "date": "2026-09-23",
+      "time": "10:30",
+      "dur": 60,
+      "ageMin": 0,
+      "ageMax": 60,
+      "lang": [
+        "en"
+      ],
+      "eventId": "372590",
+      "note": "Grab a blanket and enjoy Story Time out in the park! Our story time events are filled with fun songs to sing and dance to; stories that are vivid and cater to E"
+    },
+    {
+      "lib": "lajollar",
+      "name": "Bilingual Storytime: French (L'Heure de Conte Bilingue: Français)",
+      "date": "2026-09-23",
+      "time": "10:30",
+      "dur": 30,
+      "ageMin": 36,
+      "ageMax": 60,
+      "lang": [
+        "en",
+        "other"
+      ],
+      "eventId": "324391",
+      "note": "This bilingual program is designed for preschool children to experience both English and French in a fun, engaging setting. During each session, we will read st"
+    },
+    {
+      "lib": "lemongro",
+      "name": "Family Storytime",
+      "date": "2026-09-23",
+      "time": "10:30",
+      "dur": 45,
+      "ageMin": 0,
+      "ageMax": 60,
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a89d900db86e4004d86c1d9",
+      "note": "Join us for stories, songs, crafts, and fun! Babies, toddlers, and preschoolers are all welcome."
+    },
+    {
+      "lib": "otaymesa",
+      "name": "Bilingual Storytime / Hora de Cuento Bilingüe",
+      "date": "2026-09-23",
+      "time": "10:30",
+      "dur": 30,
+      "ageMin": 0,
+      "ageMax": 60,
+      "lang": [
+        "en",
+        "es"
+      ],
+      "eventId": "318217",
+      "note": "Families are invited to enjoy engaging stories and fun songs with our Youth Services Librarian, Ms. Jackie, and her jarana. Estamos cordialmente invitando a tod"
+    },
+    {
       "lib": "ramonaco",
       "name": "Family Storytime",
       "date": "2026-09-23",
@@ -4008,14 +4280,28 @@ STORYTIME.months["2026-09"] = {
       "name": "Bumblebee Toddler & Preschool Storytime",
       "date": "2026-09-23",
       "time": "11:00",
-      "dur": 40,
+      "dur": 30,
       "ageMin": 12,
       "ageMax": 60,
       "lang": [
         "en"
       ],
-      "eventId": "",
+      "eventId": "322350",
       "note": "Songs & stories with Auntie Hazel."
+    },
+    {
+      "lib": "lajollar",
+      "name": "Songs and Stories with Ms Amy",
+      "date": "2026-09-23",
+      "time": "12:00",
+      "dur": 60,
+      "ageMin": 0,
+      "ageMax": 60,
+      "lang": [
+        "en"
+      ],
+      "eventId": "391870",
+      "note": "Read along and sing for this fun interactive storytime. We will read picture books, move our bodies, act out stories, and sing fun songs and silly rhymes to bui"
     },
     {
       "lib": "sanmarco",
@@ -4032,18 +4318,130 @@ STORYTIME.months["2026-09"] = {
       "note": "Caregivers and their little ones are invited to join our vibrant Baby Storytime featuring: songs, stories, and playtime! WEEKLY WEDNESDAYS starting at 1:00PM."
     },
     {
-      "lib": "rb",
-      "name": "Preschool Storytime",
-      "date": "2026-09-24",
-      "time": "10:00",
+      "lib": "universi",
+      "name": "Children's Pajama Signing Storytime",
+      "date": "2026-09-23",
+      "time": "16:30",
       "dur": 30,
-      "ageMin": 24,
+      "ageMin": 0,
       "ageMax": 60,
       "lang": [
         "en"
       ],
-      "eventId": "",
-      "note": ""
+      "eventId": "344230",
+      "note": "Join us for a late afternoon pajama storytime with an engaging seasonal theme for young children including books, music, and bubbles with the addition of Americ"
+    },
+    {
+      "lib": "tierrasa",
+      "name": "Preschool Storytime",
+      "date": "2026-09-24",
+      "time": "09:30",
+      "dur": 60,
+      "ageMin": 36,
+      "ageMax": 60,
+      "lang": [
+        "en"
+      ],
+      "eventId": "377360",
+      "note": "Join in as we read, sing, dance, and play at Preschool Storytime! Come and build essential early literacy skills and foster a love of reading. Designed for chil"
+    },
+    {
+      "lib": "carmelva",
+      "name": "Tiny Tot Storytime",
+      "date": "2026-09-24",
+      "time": "10:00",
+      "dur": 30,
+      "ageMin": 0,
+      "ageMax": 60,
+      "lang": [
+        "en"
+      ],
+      "eventId": "316150",
+      "note": "Tiny tots ages 0-2 and their caregivers will enjoy songs, stories, and rhymes that foster early literacy skills. Programs are subject to change."
+    },
+    {
+      "lib": "missionh",
+      "name": "Baby Sign Storytime with Monta Briant",
+      "date": "2026-09-24",
+      "time": "10:00",
+      "dur": 30,
+      "ageMin": 0,
+      "ageMax": 12,
+      "lang": [
+        "en"
+      ],
+      "eventId": "317182",
+      "note": "Join us for \"Sign-a-Story Circle Time\" with Baby Sign Language Basics author, Monta Z. Briant. Parents learn how to use ASL signs for early communication with t"
+    },
+    {
+      "lib": "mountain",
+      "name": "Toddler Storytime",
+      "date": "2026-09-24",
+      "time": "10:00",
+      "dur": 30,
+      "ageMin": 12,
+      "ageMax": 36,
+      "lang": [
+        "en"
+      ],
+      "eventId": "327231",
+      "note": "Join us Thursday mornings at 10am for stories, songs, finger games and more! Each week our librarians will choose books based off themes to get children's imagi"
+    },
+    {
+      "lib": "northcla",
+      "name": "Signing Storytime with Signs at Play",
+      "date": "2026-09-24",
+      "time": "10:00",
+      "dur": 30,
+      "ageMin": 0,
+      "ageMax": 12,
+      "lang": [
+        "en"
+      ],
+      "eventId": "317328",
+      "note": "Children learn simple signing in a fun, storytime format. Miss Jennifer leads a special storytime using the excitement and fun of ASL (American Sign Language) c"
+    },
+    {
+      "lib": "northpar",
+      "name": "Preschool Storytime & Craft",
+      "date": "2026-09-24",
+      "time": "10:00",
+      "dur": 60,
+      "ageMin": 36,
+      "ageMax": 60,
+      "lang": [
+        "en"
+      ],
+      "eventId": "355214",
+      "note": "Please join us with your young ones for Preschool Storytime & Craft! Ms. Sandy will have fun stories, songs, and a special craft to share! This event takes plac"
+    },
+    {
+      "lib": "oakpark",
+      "name": "Story Time",
+      "date": "2026-09-24",
+      "time": "10:00",
+      "dur": 30,
+      "ageMin": 12,
+      "ageMax": 60,
+      "lang": [
+        "en"
+      ],
+      "eventId": "348133",
+      "note": "Come enjoy Story Time filled with stories, music, and a fun craft! Designed especially for toddlers and preschoolers. No registration needed—just drop in and jo"
+    },
+    {
+      "lib": "cityheig",
+      "name": "Baby/Toddler Storytime",
+      "date": "2026-09-24",
+      "time": "10:30",
+      "dur": 60,
+      "ageMin": 0,
+      "ageMax": 36,
+      "lang": [
+        "en"
+      ],
+      "eventId": "335784",
+      "note": "Join us as we read, sing, and dance this special Storytime, which encourages a love of reading and builds essential early literacy skills."
     },
     {
       "lib": "elcajonc",
@@ -4058,6 +4456,34 @@ STORYTIME.months["2026-09"] = {
       ],
       "eventId": "6a750f54b44674e2601ca18f",
       "note": "Join us for ABC's, 123's, songs, stories, socializing. Lots of fun for kids of all ages and their caregivers!"
+    },
+    {
+      "lib": "kensingt",
+      "name": "Story Time",
+      "date": "2026-09-24",
+      "time": "10:30",
+      "dur": 60,
+      "ageMin": 0,
+      "ageMax": 60,
+      "lang": [
+        "en"
+      ],
+      "eventId": "372594",
+      "note": "Grab a blanket and enjoy Story Time out in the park! Our story time events are filled with fun songs to sing and dance to; stories that are vivid and cater to E"
+    },
+    {
+      "lib": "lajollar",
+      "name": "Stay & Play Storytime",
+      "date": "2026-09-24",
+      "time": "10:30",
+      "dur": 60,
+      "ageMin": 0,
+      "ageMax": 60,
+      "lang": [
+        "en"
+      ],
+      "eventId": "390209",
+      "note": "Please join us for Stay & Play Storytime! Enjoy a traditional storytime with books, songs, and flannel board stories. Afterward, everyone is welcome to stay for"
     },
     {
       "lib": "lakeside",
@@ -4088,6 +4514,34 @@ STORYTIME.months["2026-09"] = {
       "note": "Each week will feature one of the following all-ages storytimes: Dance Party Storytime - Music and movement for kids and families. High-energy education through"
     },
     {
+      "lib": "missionv",
+      "name": "Toddler and Preschool Storytime",
+      "date": "2026-09-24",
+      "time": "10:30",
+      "dur": 45,
+      "ageMin": 12,
+      "ageMax": 60,
+      "lang": [
+        "en"
+      ],
+      "eventId": "318167",
+      "note": "Recommended for ages 2-5, this storytime program includes books, songs, games, and early literacy fun! A to-go craft will be provided at the end."
+    },
+    {
+      "lib": "pacifich",
+      "name": "Preschool Storytime",
+      "date": "2026-09-24",
+      "time": "10:30",
+      "dur": 30,
+      "ageMin": 36,
+      "ageMax": 60,
+      "lang": [
+        "en"
+      ],
+      "eventId": "315208",
+      "note": "Preschool storytime is for babies, toddlers, and all preschoolers! Everyone is welcome to join us for a fun and educational storytime featuring songs, rhymes, a"
+    },
+    {
       "lib": "pinevall",
       "name": "Preschool Storytime",
       "date": "2026-09-24",
@@ -4100,6 +4554,20 @@ STORYTIME.months["2026-09"] = {
       ],
       "eventId": "694c6bae1e64afd01e50b8d5",
       "note": "Come join us for a joyful preschool storytime filled with stories, songs, and fun movement activities followed by a fun craft."
+    },
+    {
+      "lib": "pointlom",
+      "name": "Preschool Storytime & Craft",
+      "date": "2026-09-24",
+      "time": "10:30",
+      "dur": 60,
+      "ageMin": 36,
+      "ageMax": 60,
+      "lang": [
+        "en"
+      ],
+      "eventId": "334148",
+      "note": "Join in as we read, sing, dance, and play in this special storytime meant to encourage a love of reading and build essential early literacy skills. Stay for an "
     },
     {
       "lib": "pw",
@@ -4128,6 +4596,20 @@ STORYTIME.months["2026-09"] = {
       ],
       "eventId": "6a8338bba821f90037ee6ab8",
       "note": "Get ready for toddler storytime with songs, movement, and engaging picture books, followed by hands-on learning and crafting. For ages 18 months to 3 years."
+    },
+    {
+      "lib": "sancarlo",
+      "name": "Storytime for Toddlers & Preschoolers",
+      "date": "2026-09-24",
+      "time": "10:30",
+      "dur": 30,
+      "ageMin": 12,
+      "ageMax": 60,
+      "lang": [
+        "en"
+      ],
+      "eventId": "321280",
+      "note": "Join us for a storytime that fosters early literacy! Features books, songs, action rhymes, and finger plays that invite participation. Ages 1-5. Every Thursday."
     },
     {
       "lib": "sanmarco",
@@ -4172,20 +4654,6 @@ STORYTIME.months["2026-09"] = {
       "note": "For babies up to 18 months old. Songs and stories for fun and stimulation of young minds. Followed by playtime and interaction with other babies, as well as con"
     },
     {
-      "lib": "uc",
-      "name": "Toddler Storytime with Ms. Jackie",
-      "date": "2026-09-24",
-      "time": "10:30",
-      "dur": 45,
-      "ageMin": 12,
-      "ageMax": 48,
-      "lang": [
-        "en"
-      ],
-      "eventId": "",
-      "note": "Stories, songs, then craft time."
-    },
-    {
       "lib": "vistacou",
       "name": "Family Storytime",
       "date": "2026-09-24",
@@ -4212,6 +4680,90 @@ STORYTIME.months["2026-09"] = {
       ],
       "eventId": "69e27e56c1cf6f9a7586083a",
       "note": "Join us for stories, songs, and playtime in the library! Little Storytime helps foster a love of reading, build social skills, and promotes physical activity. T"
+    },
+    {
+      "lib": "rb",
+      "name": "RB Morning Storytime",
+      "date": "2026-09-24",
+      "time": "11:00",
+      "dur": 30,
+      "ageMin": 0,
+      "ageMax": 60,
+      "lang": [
+        "en"
+      ],
+      "eventId": "339423",
+      "note": "Please join Ms. Ellie or Ms. Helene for storytime, songs, and some fun! Stay afterward for play time!"
+    },
+    {
+      "lib": "sanysidr",
+      "name": "Baby Sign Storytime",
+      "date": "2026-09-24",
+      "time": "11:30",
+      "dur": 30,
+      "ageMin": 0,
+      "ageMax": 12,
+      "lang": [
+        "en"
+      ],
+      "eventId": "312439",
+      "note": "Learn to use simple ASL signs to open a window into a baby and child's mind, lowering frustration, and enhancing bonding, speech, and literacy with music, stori"
+    },
+    {
+      "lib": "tierrasa",
+      "name": "Preschool Storytime",
+      "date": "2026-09-25",
+      "time": "09:30",
+      "dur": 60,
+      "ageMin": 36,
+      "ageMax": 60,
+      "lang": [
+        "en"
+      ],
+      "eventId": "387468",
+      "note": "Join in as we read, sing, dance, and play at Preschool Storytime! Come and build essential early literacy skills and foster a love of reading. Designed for chil"
+    },
+    {
+      "lib": "cityheig",
+      "name": "Baby Sign Language Storytime",
+      "date": "2026-09-25",
+      "time": "10:00",
+      "dur": 60,
+      "ageMin": 0,
+      "ageMax": 12,
+      "lang": [
+        "en"
+      ],
+      "eventId": "383816",
+      "note": "Learn signs to use with your child! Signing fun with songs, stories, and finger plays as well as tips for using sign language as a communication tool with your "
+    },
+    {
+      "lib": "colleger",
+      "name": "Signing Storytime",
+      "date": "2026-09-25",
+      "time": "10:00",
+      "dur": 45,
+      "ageMin": 0,
+      "ageMax": 60,
+      "lang": [
+        "en"
+      ],
+      "eventId": "374710",
+      "note": "A 45-minute Storytime for young children including books and music with the addition of American Sign Language signs with Jennifer Duncan from Signs at Play. Th"
+    },
+    {
+      "lib": "northcla",
+      "name": "Park Ranger Storytime",
+      "date": "2026-09-25",
+      "time": "10:00",
+      "dur": 60,
+      "ageMin": 0,
+      "ageMax": 60,
+      "lang": [
+        "en"
+      ],
+      "eventId": "333329",
+      "note": "Tiny Tots Storytime: Stay & Play is a play group and storytime for kids age 0-5 and their adults. We especially invite nontraditional caregivers (friends, famil"
     },
     {
       "lib": "sm",
@@ -4270,6 +4822,20 @@ STORYTIME.months["2026-09"] = {
       "note": "Enjoy songs, fingerplays and short stories for your littlest ones. Geared for pre-walkers 0-18 months and their caregivers. Followed by play time, with age appr"
     },
     {
+      "lib": "lindavis",
+      "name": "Preschool Storytime with Mr. Luan (IN-PERSON)",
+      "date": "2026-09-25",
+      "time": "10:30",
+      "dur": 45,
+      "ageMin": 36,
+      "ageMax": 60,
+      "lang": [
+        "en"
+      ],
+      "eventId": "324249",
+      "note": "These Storytimes, good for kids ages 4 to 6, are fun, kinetic, and humorous experiences! I make it a point not just to read books, but to perform them as well! "
+    },
+    {
       "lib": "santeeco",
       "name": "Preschool Storytime",
       "date": "2026-09-25",
@@ -4282,6 +4848,20 @@ STORYTIME.months["2026-09"] = {
       ],
       "eventId": "6a86282a29a7dd0d67452c14",
       "note": "Join us for stories, songs, playtime and fun in the library! Preschool storytime focuses on building early reading skills, learning to follow directions, and en"
+    },
+    {
+      "lib": "uc",
+      "name": "Storytime",
+      "date": "2026-09-25",
+      "time": "10:30",
+      "dur": 60,
+      "ageMin": 12,
+      "ageMax": 36,
+      "lang": [
+        "en"
+      ],
+      "eventId": "316540",
+      "note": "Toddler Storytime"
     },
     {
       "lib": "valleyce",
@@ -4298,6 +4878,20 @@ STORYTIME.months["2026-09"] = {
       "note": "Join us on Fridays for stories, songs, and crafts. Geared for children aged 3-5 years."
     },
     {
+      "lib": "alliedga",
+      "name": "StoryTime Fridays",
+      "date": "2026-09-25",
+      "time": "11:00",
+      "dur": 60,
+      "ageMin": 0,
+      "ageMax": 60,
+      "lang": [
+        "en"
+      ],
+      "eventId": "312334",
+      "note": "All young children and their caregivers are welcome to join us for stories, songs and play. Held outdoors on the grass, bring a blanket or chair. No Registratio"
+    },
+    {
       "lib": "bonitasu",
       "name": "Storytime",
       "date": "2026-09-25",
@@ -4310,6 +4904,34 @@ STORYTIME.months["2026-09"] = {
       ],
       "eventId": "6a56af89daaaf4f51a1fc7c0",
       "note": "Join us on Fridays at 11:00 am for stories and songs."
+    },
+    {
+      "lib": "lajollar",
+      "name": "Signing Storytime",
+      "date": "2026-09-25",
+      "time": "12:00",
+      "dur": 30,
+      "ageMin": 0,
+      "ageMax": 36,
+      "lang": [
+        "en"
+      ],
+      "eventId": "322605",
+      "note": "Join Ms Jennifer from Signs at Play! for weekly sign language learning and fun!Establish non-verbal communication skills with your little one by learning basic "
+    },
+    {
+      "lib": "lindavis",
+      "name": "Glee Club Group Singing - Villa Musica",
+      "date": "2026-09-25",
+      "time": "16:45",
+      "dur": 45,
+      "ageMin": 0,
+      "ageMax": 60,
+      "lang": [
+        "en"
+      ],
+      "eventId": "388049",
+      "note": "Glee Club Group Singing, Ages 8-10 Requires registration with Villa Musica"
     },
     {
       "lib": "cm",
@@ -4620,6 +5242,20 @@ STORYTIME.months["2026-09"] = {
       ],
       "eventId": "685f2eccd234473d0022fb19",
       "note": "Join us for stories, songs, and fun with friends! The first Wednesday of each month will be bilingual preschool storytime."
+    },
+    {
+      "lib": "lemongro",
+      "name": "Family Storytime",
+      "date": "2026-09-30",
+      "time": "10:30",
+      "dur": 45,
+      "ageMin": 0,
+      "ageMax": 60,
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a89d900db86e4004d86c1da",
+      "note": "Join us for stories, songs, crafts, and fun! Babies, toddlers, and preschoolers are all welcome."
     },
     {
       "lib": "ramonaco",

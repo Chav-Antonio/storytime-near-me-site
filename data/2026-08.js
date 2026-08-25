@@ -1963,6 +1963,20 @@ STORYTIME.months["2026-08"] = {
       "note": "Learn about how the Rotary Club helps the community."
     },
     {
+      "lib": "ranchos2",
+      "name": "Baby Storytime and Playdate",
+      "date": "2026-08-27",
+      "time": "10:30",
+      "dur": 60,
+      "ageMin": 0,
+      "ageMax": 12,
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a5575e10e562e280099af18",
+      "note": "Introduce your baby to language and fun with bouncing rhymes, songs, and simple stories. This 30-minute storytime is followed by a friendly baby play date for s"
+    },
+    {
       "lib": "rp",
       "name": "Preschool Storytime",
       "date": "2026-08-27",
@@ -2143,20 +2157,6 @@ STORYTIME.months["2026-08"] = {
       ],
       "eventId": "324247",
       "note": "These Storytimes, good for kids ages 4 to 6, are fun, kinetic, and humorous experiences! I make it a point not just to read books, but to perform them as well! "
-    },
-    {
-      "lib": "ranchos2",
-      "name": "Baby Storytime and Playdate",
-      "date": "2026-08-28",
-      "time": "10:30",
-      "dur": 60,
-      "ageMin": 0,
-      "ageMax": 12,
-      "lang": [
-        "en"
-      ],
-      "eventId": "6a5575e10e562e280099af18",
-      "note": "Introduce your baby to language and fun with bouncing rhymes, songs, and simple stories. This 30-minute storytime is followed by a friendly baby play date for s"
     },
     {
       "lib": "uc",
