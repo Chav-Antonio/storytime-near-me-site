@@ -98,7 +98,7 @@
 
   /* date group */
   .dategroup{margin:0 0 30px}
-  .datehead{display:flex;align-items:baseline;gap:10px;position:sticky;top:132px;z-index:5;
+  .datehead{display:flex;align-items:baseline;gap:10px;position:sticky;top:156px;z-index:5;
             background:color-mix(in srgb,var(--paper) 90%,transparent);padding:6px 0;margin-bottom:6px}
   .datehead h2{font-size:19px;margin:0}
   .datehead .dow{color:var(--accent-ink);font-family:Georgia,serif;font-style:italic}
@@ -155,7 +155,7 @@
   .morerows[open] summary .less{display:inline}
 
   /* by-date view */
-  .datesticky{position:sticky;top:132px;z-index:5;padding:6px 0 8px;margin-bottom:2px;
+  .datesticky{position:sticky;top:156px;z-index:5;padding:6px 0 8px;margin-bottom:2px;
     background:color-mix(in srgb,var(--paper) 94%,transparent);backdrop-filter:blur(10px)}
   .datesticky h2{font-size:22px;margin:0}
   .datesticky .dcount{font-size:14px;color:var(--muted);margin:2px 0 0}
@@ -230,12 +230,13 @@
     .ev .actions{grid-column:auto;flex-direction:row;min-width:0;margin-top:2px}
     .schedrow{grid-template-columns:1fr auto;row-gap:2px}
     .schedrow .btn{grid-column:2;grid-row:1/3}
-    /* View tabs stick just under the filter bar; count already lives in it, so drop the summary */
-    .bar{position:sticky;top:60px;z-index:15;margin:0 -20px 16px;padding:8px 20px;
+    /* View tabs stick just under the whole (pinned) filter panel — expanded or collapsed —
+       so both the filters and the tabs stay put. --panelH/--headH are kept in sync by JS. */
+    .bar{position:sticky;top:var(--panelH,60px);z-index:15;margin:0 -20px 16px;padding:8px 20px;
       background:color-mix(in srgb,var(--paper) 82%,transparent);backdrop-filter:blur(10px);
       border-bottom:1px solid var(--line)}
     .bar .summary{display:none}
-    .datehead,.datesticky{top:120px}
+    .datehead,.datesticky{top:var(--headH,120px)}
   }
   @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
 </style>
@@ -820,13 +821,25 @@ function syncColors(){
   const time={am:"#D98A17",pm:"#6C6CE0"};
   document.querySelectorAll("#timeChecks .chk").forEach(el=>paintChip(el,time[el.dataset.time]));
 }
+// Keep the sticky view-tabs / date headers pinned right below the (pinned) filter panel,
+// whose height changes when the drawer expands/collapses.
+function syncStickyHeights(){
+  const panel=document.getElementById("panel"), bar=document.querySelector(".bar");
+  if(!panel||!bar) return;
+  const ph=panel.offsetHeight;
+  const root=document.documentElement.style;
+  root.setProperty("--panelH", ph+"px");
+  root.setProperty("--headH", (ph + bar.offsetHeight)+"px");
+}
 // Mobile filter drawer: toggle the panel open/closed (CSS hides controls otherwise).
 (function(){
   const panel=document.getElementById("panel"), btn=document.getElementById("filterToggle");
   btn.addEventListener("click",()=>{
     const open=panel.classList.toggle("open");
     btn.setAttribute("aria-expanded",open?"true":"false");
+    syncStickyHeights();
   });
+  window.addEventListener("resize", syncStickyHeights);
 })();
 document.getElementById("zip").addEventListener("input",e=>{
   const v=e.target.value.trim();
@@ -908,6 +921,7 @@ document.getElementById("footer").innerHTML=
 // ---------- INIT ----------------------------------------------------------
 syncColors();
 render();                       // paints the loading state
+syncStickyHeights();            // pin the tabs/date headers just below the filter panel
 setFiltersEnabled(false);       // filters stay locked until locating resolves
 initLocation();                 // async: recenters on the user's location if allowed
 loadData().then(()=>{
