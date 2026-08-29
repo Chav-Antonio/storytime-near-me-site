@@ -93,7 +93,11 @@
   #dowChecks .chk{min-width:38px;justify-content:center}
 
   /* tabs + summary */
-  .bar{display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between;margin:2px 0 20px}
+  /* Pinned below the (sticky) filter panel so the view switcher stays in reach while
+     scrolling; --panelH is kept in sync with the panel's height by syncStickyHeights(). */
+  .bar{display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between;margin:2px 0 20px;
+    position:sticky;top:var(--panelH,64px);z-index:15;
+    background:color-mix(in srgb,var(--paper) 82%,transparent);backdrop-filter:blur(10px)}
   .tabs{display:inline-flex;gap:4px;background:var(--chip-bg);padding:4px;border-radius:12px}
   .tabs button{border:0;background:transparent;color:var(--muted);font-weight:600;font-size:14px;padding:8px 15px;border-radius:9px;cursor:pointer}
   .tabs button.on{background:var(--card);color:var(--ink);box-shadow:var(--shadow)}
@@ -102,7 +106,7 @@
 
   /* date group */
   .dategroup{margin:0 0 30px}
-  .datehead{display:flex;align-items:baseline;gap:10px;position:sticky;top:156px;z-index:5;
+  .datehead{display:flex;align-items:baseline;gap:10px;position:sticky;top:var(--headH,156px);z-index:5;
             background:color-mix(in srgb,var(--paper) 90%,transparent);padding:6px 0;margin-bottom:6px}
   .datehead h2{font-size:19px;margin:0}
   .datehead .dow{color:var(--accent-ink);font-family:Georgia,serif;font-style:italic}
@@ -159,7 +163,7 @@
   .morerows[open] summary .less{display:inline}
 
   /* by-date view */
-  .datesticky{position:sticky;top:156px;z-index:5;padding:6px 0 8px;margin-bottom:2px;
+  .datesticky{position:sticky;top:var(--headH,156px);z-index:5;padding:6px 0 8px;margin-bottom:2px;
     background:color-mix(in srgb,var(--paper) 94%,transparent);backdrop-filter:blur(10px)}
   .datesticky h2{font-size:22px;margin:0}
   .datesticky .dcount{font-size:14px;color:var(--muted);margin:2px 0 0}
@@ -210,6 +214,9 @@
   .totop:hover{filter:brightness(1.06)}
   .totop:active{transform:scale(.94)}
   @media (max-width:640px){
+    /* Collapsing the drawer removes height above the fold; without this the browser's
+       scroll anchoring yanks scrollY down and can trip the re-open threshold (flip-flop). */
+    html{overflow-anchor:none}
     header{padding:22px 0 12px}
     /* Weekday chips: one no-wrap row of 7 equal-width initials */
     .controls .field:has(#dowChecks){flex-basis:100%}
@@ -1018,52 +1025,13 @@ function syncStickyHeights(){
 // hysteresis band between the two thresholds leaves a manual toggle untouched.
 (function(){
   const panel=document.getElementById("panel"), btn=document.getElementById("filterToggle");
-  const controls=document.getElementById("controls");
   const header=document.querySelector("header");
   const mq=window.matchMedia("(max-width:640px)");
-  const reduce=window.matchMedia("(prefers-reduced-motion:reduce)");
-
-  // Slide the drawer to its measured pixel height (varies by screen width, so we
-  // read it live rather than assume a fixed max), keeping the pinned view-tabs glued
-  // to the moving edge via a per-frame --panelH sync. Reduced-motion falls back to
-  // the instant toggle. `cleanup` finalizes an in-flight slide before the next one.
-  let cleanup=null;
-  function slide(open){
-    if(cleanup) cleanup();
-    controls.style.overflow="hidden";
-    controls.style.transition="none";
-    let endH;
-    if(open){
-      panel.classList.add("open");           // display:flex so it can be measured
-      controls.style.height="auto";
-      endH=controls.offsetHeight;            // capped by CSS max-height; scrolls at rest
-      controls.style.height="0px"; controls.style.opacity="0";
-    }else{
-      const startH=controls.offsetHeight;
-      controls.style.display="flex";          // keep visible after .open is removed
-      panel.classList.remove("open");
-      controls.style.height=startH+"px"; controls.style.opacity="1"; endH=0;
-    }
-    void controls.offsetHeight;               // flush the start state before transitioning
-    controls.style.transition="height .22s ease, opacity .22s ease";
-    let raf=requestAnimationFrame(function tick(){ syncStickyHeights(); raf=requestAnimationFrame(tick); });
-    requestAnimationFrame(()=>{ controls.style.height=endH+"px"; controls.style.opacity=open?"1":"0"; });
-    const done=()=>{
-      cleanup=null; cancelAnimationFrame(raf);
-      controls.removeEventListener("transitionend",onEnd);
-      controls.style.transition=controls.style.height=controls.style.opacity="";
-      controls.style.overflow=controls.style.display="";   // hand the resting state back to CSS
-      syncStickyHeights();
-    };
-    const onEnd=e=>{ if(e.target===controls && e.propertyName==="height") done(); };
-    controls.addEventListener("transitionend",onEnd);
-    cleanup=done;
-  }
   function setOpen(open){
     if(open===panel.classList.contains("open")) return;
+    panel.classList.toggle("open",open);
     btn.setAttribute("aria-expanded",open?"true":"false");
-    if(mq.matches && !reduce.matches){ slide(open); }
-    else{ panel.classList.toggle("open",open); syncStickyHeights(); }
+    syncStickyHeights();
   }
   btn.addEventListener("click",()=>setOpen(!panel.classList.contains("open")));
 
@@ -1170,6 +1138,7 @@ initLocation();                 // async: recenters on the user's location if al
 loadData().then(()=>{
   loadState="ready";
   render();
+  syncStickyHeights();          // panel height is settled; re-pin the view bar / date heads
 }).catch(err=>{
   loadState="error"; loadError=err;
   console.error("Data load failed:", err);
