@@ -1013,14 +1013,76 @@ function syncStickyHeights(){
   root.setProperty("--headH", (ph + bar.offsetHeight)+"px");
 }
 // Mobile filter drawer: toggle the panel open/closed (CSS hides controls otherwise).
+// It also auto-collapses (mobile only) once you scroll past the header and re-opens
+// back at the top, so the pinned filters don't hog the screen while browsing. A
+// hysteresis band between the two thresholds leaves a manual toggle untouched.
 (function(){
   const panel=document.getElementById("panel"), btn=document.getElementById("filterToggle");
-  btn.addEventListener("click",()=>{
-    const open=panel.classList.toggle("open");
+  const controls=document.getElementById("controls");
+  const header=document.querySelector("header");
+  const mq=window.matchMedia("(max-width:640px)");
+  const reduce=window.matchMedia("(prefers-reduced-motion:reduce)");
+
+  // Slide the drawer to its measured pixel height (varies by screen width, so we
+  // read it live rather than assume a fixed max), keeping the pinned view-tabs glued
+  // to the moving edge via a per-frame --panelH sync. Reduced-motion falls back to
+  // the instant toggle. `cleanup` finalizes an in-flight slide before the next one.
+  let cleanup=null;
+  function slide(open){
+    if(cleanup) cleanup();
+    controls.style.overflow="hidden";
+    controls.style.transition="none";
+    let endH;
+    if(open){
+      panel.classList.add("open");           // display:flex so it can be measured
+      controls.style.height="auto";
+      endH=controls.offsetHeight;            // capped by CSS max-height; scrolls at rest
+      controls.style.height="0px"; controls.style.opacity="0";
+    }else{
+      const startH=controls.offsetHeight;
+      controls.style.display="flex";          // keep visible after .open is removed
+      panel.classList.remove("open");
+      controls.style.height=startH+"px"; controls.style.opacity="1"; endH=0;
+    }
+    void controls.offsetHeight;               // flush the start state before transitioning
+    controls.style.transition="height .22s ease, opacity .22s ease";
+    let raf=requestAnimationFrame(function tick(){ syncStickyHeights(); raf=requestAnimationFrame(tick); });
+    requestAnimationFrame(()=>{ controls.style.height=endH+"px"; controls.style.opacity=open?"1":"0"; });
+    const done=()=>{
+      cleanup=null; cancelAnimationFrame(raf);
+      controls.removeEventListener("transitionend",onEnd);
+      controls.style.transition=controls.style.height=controls.style.opacity="";
+      controls.style.overflow=controls.style.display="";   // hand the resting state back to CSS
+      syncStickyHeights();
+    };
+    const onEnd=e=>{ if(e.target===controls && e.propertyName==="height") done(); };
+    controls.addEventListener("transitionend",onEnd);
+    cleanup=done;
+  }
+  function setOpen(open){
+    if(open===panel.classList.contains("open")) return;
     btn.setAttribute("aria-expanded",open?"true":"false");
-    syncStickyHeights();
-  });
-  window.addEventListener("resize", syncStickyHeights);
+    if(mq.matches && !reduce.matches){ slide(open); }
+    else{ panel.classList.toggle("open",open); syncStickyHeights(); }
+  }
+  btn.addEventListener("click",()=>setOpen(!panel.classList.contains("open")));
+
+  // Collapse once the header has roughly scrolled away; re-open only right at the top.
+  let collapseAt=140, ticking=false;
+  function measure(){ collapseAt=Math.max(80,(header?header.offsetHeight:140)-24); }
+  function onScroll(){
+    if(ticking) return; ticking=true;
+    requestAnimationFrame(()=>{
+      ticking=false;
+      if(!mq.matches) return;                 // desktop: controls always shown
+      const y=window.scrollY||window.pageYOffset||0;
+      if(y>collapseAt) setOpen(false);
+      else if(y<4) setOpen(true);
+    });
+  }
+  measure();
+  window.addEventListener("scroll", onScroll, {passive:true});
+  window.addEventListener("resize", ()=>{ measure(); syncStickyHeights(); });
 })();
 document.getElementById("zip").addEventListener("input",e=>{
   const v=e.target.value.trim();

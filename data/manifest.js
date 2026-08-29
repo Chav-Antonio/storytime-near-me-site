@@ -2,7 +2,7 @@
 // from file:// (no fetch/CORS). Edit the JSON below and reload.
 window.STORYTIME = window.STORYTIME || {};
 STORYTIME.manifest = {
-  "updated": "2026-08-25",
+  "updated": "2026-08-29",
   "libraries": "libraries.js",
   "months": [
     "2026-08",

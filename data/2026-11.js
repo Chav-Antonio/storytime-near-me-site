@@ -134,6 +134,35 @@ STORYTIME.months["2026-11"] = {
       "note": "A lap sit storytime introducing board book stories, songs, and fingerplays. Geared toward pre-walkers."
     },
     {
+      "lib": "lincolna",
+      "name": "Spanish Bilingual Storytime",
+      "date": "2026-11-03",
+      "time": "15:00",
+      "dur": 60,
+      "ageMin": 0,
+      "ageMax": 60,
+      "lang": [
+        "en",
+        "es"
+      ],
+      "eventId": "6a931a464995480655ecd901",
+      "note": "Join us for a fun and engaging bilingual Storytime featuring stories, songs and rhymes in English and Spanish. Acompananos para disfrutar de cuentos, canciones,"
+    },
+    {
+      "lib": "4s",
+      "name": "Preschool Storytime!",
+      "date": "2026-11-04",
+      "time": "10:30",
+      "dur": 60,
+      "ageMin": 36,
+      "ageMax": 60,
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a907e9c2dac6e0037222592",
+      "note": "Come and join us for Storytime, make friends and enjoy books and songs, here at the 4S Ranch Library. Wednesdays @ 10:30 a.m. in the community room."
+    },
+    {
       "lib": "alpineco",
       "name": "Storytime",
       "date": "2026-11-04",
@@ -313,7 +342,7 @@ STORYTIME.months["2026-11"] = {
       "lang": [
         "en"
       ],
-      "eventId": "6a878b212dac6e0037208858",
+      "eventId": "6a8dd49969166f088b94bead",
       "note": "Come join us for singing, dancing, stories, music, fun and most importantly shaking our sillies out! This program is recommended for toddlers and their caregive"
     },
     {
@@ -483,6 +512,20 @@ STORYTIME.months["2026-11"] = {
       ],
       "eventId": "69e27e56c1cf6f9a75860840",
       "note": "Join us for stories, songs, and playtime in the library! Little Storytime helps foster a love of reading, build social skills, and promotes physical activity. T"
+    },
+    {
+      "lib": "4s",
+      "name": "Baby Storytime!",
+      "date": "2026-11-06",
+      "time": "10:30",
+      "dur": 60,
+      "ageMin": 0,
+      "ageMax": 12,
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a907f803b6c71003e5bcc40",
+      "note": "Calling all caregivers & babies! Come and join us for books, songs, fingerplays & fun! This is a twenty minute Storytime with 20 or so minutes of play time to f"
     },
     {
       "lib": "alpineco",
@@ -739,6 +782,21 @@ STORYTIME.months["2026-11"] = {
       "note": "A storytime introducing basic Baby Sign language, songs, and stories."
     },
     {
+      "lib": "lincolna",
+      "name": "Spanish Bilingual Storytime",
+      "date": "2026-11-10",
+      "time": "15:00",
+      "dur": 60,
+      "ageMin": 0,
+      "ageMax": 60,
+      "lang": [
+        "en",
+        "es"
+      ],
+      "eventId": "6a931a464995480655ecd902",
+      "note": "Join us for a fun and engaging bilingual Storytime featuring stories, songs and rhymes in English and Spanish. Acompananos para disfrutar de cuentos, canciones,"
+    },
+    {
       "lib": "springva",
       "name": "Pajama Bilingual Storytime | Cuentos Bilingües en Pijamas",
       "date": "2026-11-10",
@@ -752,6 +810,20 @@ STORYTIME.months["2026-11"] = {
       ],
       "eventId": "6a7384cd88e9bf280035c001",
       "note": "Join us to Shake your sillies out with music and dancing, followed by a cozy story time in Spanish & English. Everyone is invited to wear your pajamas and bring"
+    },
+    {
+      "lib": "4s",
+      "name": "Preschool Storytime!",
+      "date": "2026-11-11",
+      "time": "10:30",
+      "dur": 60,
+      "ageMin": 36,
+      "ageMax": 60,
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a907e9c2dac6e0037222593",
+      "note": "Come and join us for Storytime, make friends and enjoy books and songs, here at the 4S Ranch Library. Wednesdays @ 10:30 a.m. in the community room."
     },
     {
       "lib": "julianco",
@@ -1020,6 +1092,20 @@ STORYTIME.months["2026-11"] = {
       ],
       "eventId": "69e27e56c1cf6f9a75860841",
       "note": "Join us for stories, songs, and playtime in the library! Little Storytime helps foster a love of reading, build social skills, and promotes physical activity. T"
+    },
+    {
+      "lib": "4s",
+      "name": "Baby Storytime!",
+      "date": "2026-11-13",
+      "time": "10:30",
+      "dur": 60,
+      "ageMin": 0,
+      "ageMax": 12,
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a907f803b6c71003e5bcc41",
+      "note": "Calling all caregivers & babies! Come and join us for books, songs, fingerplays & fun! This is a twenty minute Storytime with 20 or so minutes of play time to f"
     },
     {
       "lib": "alpineco",
@@ -1304,6 +1390,35 @@ STORYTIME.months["2026-11"] = {
       "note": "A lap sit storytime introducing board book stories, songs, and fingerplays. Geared toward pre-walkers."
     },
     {
+      "lib": "lincolna",
+      "name": "Spanish Bilingual Storytime",
+      "date": "2026-11-17",
+      "time": "15:00",
+      "dur": 60,
+      "ageMin": 0,
+      "ageMax": 60,
+      "lang": [
+        "en",
+        "es"
+      ],
+      "eventId": "6a931a464995480655ecd903",
+      "note": "Join us for a fun and engaging bilingual Storytime featuring stories, songs and rhymes in English and Spanish. Acompananos para disfrutar de cuentos, canciones,"
+    },
+    {
+      "lib": "4s",
+      "name": "Preschool Storytime!",
+      "date": "2026-11-18",
+      "time": "10:30",
+      "dur": 60,
+      "ageMin": 36,
+      "ageMax": 60,
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a907e9c2dac6e0037222594",
+      "note": "Come and join us for Storytime, make friends and enjoy books and songs, here at the 4S Ranch Library. Wednesdays @ 10:30 a.m. in the community room."
+    },
+    {
       "lib": "alpineco",
       "name": "Storytime",
       "date": "2026-11-18",
@@ -1499,7 +1614,7 @@ STORYTIME.months["2026-11"] = {
       "lang": [
         "en"
       ],
-      "eventId": "6a878b212dac6e0037208859",
+      "eventId": "6a8dd49969166f088b94beae",
       "note": "Come join us for singing, dancing, stories, music, fun and most importantly shaking our sillies out! This program is recommended for toddlers and their caregive"
     },
     {
@@ -1669,6 +1784,20 @@ STORYTIME.months["2026-11"] = {
       ],
       "eventId": "69e27e56c1cf6f9a75860842",
       "note": "Join us for stories, songs, and playtime in the library! Little Storytime helps foster a love of reading, build social skills, and promotes physical activity. T"
+    },
+    {
+      "lib": "4s",
+      "name": "Baby Storytime!",
+      "date": "2026-11-20",
+      "time": "10:30",
+      "dur": 60,
+      "ageMin": 0,
+      "ageMax": 12,
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a907f803b6c71003e5bcc42",
+      "note": "Calling all caregivers & babies! Come and join us for books, songs, fingerplays & fun! This is a twenty minute Storytime with 20 or so minutes of play time to f"
     },
     {
       "lib": "alpineco",
@@ -1898,6 +2027,21 @@ STORYTIME.months["2026-11"] = {
       "note": "Enjoy songs, fingerplays, books, and more with your baby. All children are welcome. Geared toward pre-walkers."
     },
     {
+      "lib": "lincolna",
+      "name": "Spanish Bilingual Storytime",
+      "date": "2026-11-24",
+      "time": "15:00",
+      "dur": 60,
+      "ageMin": 0,
+      "ageMax": 60,
+      "lang": [
+        "en",
+        "es"
+      ],
+      "eventId": "6a931a464995480655ecd904",
+      "note": "Join us for a fun and engaging bilingual Storytime featuring stories, songs and rhymes in English and Spanish. Acompananos para disfrutar de cuentos, canciones,"
+    },
+    {
       "lib": "encinita",
       "name": "Pajama Storytime",
       "date": "2026-11-24",
@@ -1925,6 +2069,20 @@ STORYTIME.months["2026-11"] = {
       ],
       "eventId": "6a7384cd88e9bf280035c002",
       "note": "Join us to Shake your sillies out with music and dancing, followed by a cozy story time in Spanish & English. Everyone is invited to wear your pajamas and bring"
+    },
+    {
+      "lib": "4s",
+      "name": "Preschool Storytime!",
+      "date": "2026-11-25",
+      "time": "10:30",
+      "dur": 60,
+      "ageMin": 36,
+      "ageMax": 60,
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a907e9c2dac6e0037222595",
+      "note": "Come and join us for Storytime, make friends and enjoy books and songs, here at the 4S Ranch Library. Wednesdays @ 10:30 a.m. in the community room."
     },
     {
       "lib": "alpineco",

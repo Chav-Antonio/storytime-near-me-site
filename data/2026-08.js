@@ -2271,48 +2271,6 @@ STORYTIME.months["2026-08"] = {
       "note": "Please join us for storytime, music, and craft with Mr. Rogelio every Saturday morning in the Children's Area from 10:00AM-10:30AM, followed by Tiny Tot Play fr"
     },
     {
-      "lib": "kensingt",
-      "name": "Mosquito Storytime: Don’t Let the Bugs Bite!",
-      "date": "2026-08-29",
-      "time": "10:30",
-      "dur": 60,
-      "ageMin": 0,
-      "ageMax": 60,
-      "lang": [
-        "en"
-      ],
-      "eventId": "372560",
-      "note": "What goes bzzzz and loves the summer? Mosquitoes! Buzz on by for a special storytime! We’ll explore the lifecycle of mosquitoes, make a fun craft, and share ess"
-    },
-    {
-      "lib": "pw",
-      "name": "Dance Party Storytime",
-      "date": "2026-08-29",
-      "time": "10:30",
-      "dur": 30,
-      "ageMin": 12,
-      "ageMax": 36,
-      "lang": [
-        "en"
-      ],
-      "eventId": "695825884a9fd98b7f754294",
-      "note": "Dance along with fun storytime songs! All children are welcome. Geared toward toddlers 18m - 3."
-    },
-    {
-      "lib": "northpar",
-      "name": "Signing Storytime",
-      "date": "2026-08-29",
-      "time": "11:00",
-      "dur": 30,
-      "ageMin": 0,
-      "ageMax": 60,
-      "lang": [
-        "en"
-      ],
-      "eventId": "355244",
-      "note": "Enjoy some sign language fun for babies, toddlers, and preschoolers with Ms. Jennifer from Signs at Play! Come learn some simple signs and songs at this fun wee"
-    },
-    {
       "lib": "oakpark",
       "name": "Baby Sign Language Storytime",
       "date": "2026-08-29",
