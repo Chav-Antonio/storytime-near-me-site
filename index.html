@@ -90,7 +90,13 @@
   .chk.on{color:#fff;border-color:transparent}
   .chk .dot{width:9px;height:9px;border-radius:50%}
   .chk.on .dot{display:none}  /* fill already shows state; drop the dot so the label centers */
-  #dowChecks .chk{min-width:38px;justify-content:center}
+  #dowChecks .chk{min-width:42px;min-height:40px;justify-content:center}
+  /* Day-of-week header: label on the left, an adaptive link — "Select all" when nothing is
+     picked, "Clear" once one or more days are on */
+  .dowhead{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+  .dowall{border:0;background:none;padding:0;cursor:pointer;font-size:11px;font-weight:700;
+    letter-spacing:.04em;text-transform:uppercase;color:var(--accent-ink)}
+  .dowall:hover{text-decoration:underline}
 
   /* tabs + summary */
   /* Pinned below the (sticky) filter panel so the view switcher stays in reach while
@@ -229,7 +235,7 @@
     /* Weekday chips: one no-wrap row of 7 equal-width initials */
     .controls .field:has(#dowChecks){flex-basis:100%}
     #dowChecks{flex-wrap:nowrap;gap:5px}
-    #dowChecks .chk{flex:1 1 0;min-width:0;padding:6px 2px;gap:0}
+    #dowChecks .chk{flex:1 1 0;min-width:0;min-height:44px;padding:0 2px;gap:0;font-size:14px}
     #dowChecks .chk .dot{display:none}
     /* Collapsible filter drawer: a slim sticky trigger, controls hidden until opened */
     .filterbar{display:flex;align-items:center;gap:8px;width:100%;border:0;background:transparent;
@@ -306,27 +312,30 @@
         <label data-i18n="filter.langs">Languages</label>
         <div class="checks" id="langChecks">
           <label class="chk" data-lang="en"><input type="checkbox" checked><span class="dot"></span><span data-i18n="lang.en">English</span></label>
-          <label class="chk" data-lang="es"><input type="checkbox" checked><span class="dot"></span><span data-i18n="lang.es">Spanish</span></label>
-          <label class="chk" data-lang="other"><input type="checkbox" checked><span class="dot"></span><span data-i18n="lang.other">Other</span></label>
+          <label class="chk" data-lang="es"><input type="checkbox"><span class="dot"></span><span data-i18n="lang.es">Spanish</span></label>
+          <label class="chk" data-lang="other"><input type="checkbox"><span class="dot"></span><span data-i18n="lang.other">Other</span></label>
         </div>
       </div>
       <div class="field">
-        <label data-i18n="filter.dow">Day of week</label>
+        <div class="dowhead">
+          <label data-i18n="filter.dow">Day of week</label>
+          <button type="button" class="dowall" id="dowAll">Clear</button>
+        </div>
         <div class="checks" id="dowChecks">
-          <label class="chk" data-dow="1" title="Monday"><input type="checkbox" checked aria-label="Monday"><span class="dot"></span><span class="dl">M</span></label>
-          <label class="chk" data-dow="2" title="Tuesday"><input type="checkbox" checked aria-label="Tuesday"><span class="dot"></span><span class="dl">T</span></label>
-          <label class="chk" data-dow="3" title="Wednesday"><input type="checkbox" checked aria-label="Wednesday"><span class="dot"></span><span class="dl">W</span></label>
-          <label class="chk" data-dow="4" title="Thursday"><input type="checkbox" checked aria-label="Thursday"><span class="dot"></span><span class="dl">T</span></label>
-          <label class="chk" data-dow="5" title="Friday"><input type="checkbox" checked aria-label="Friday"><span class="dot"></span><span class="dl">F</span></label>
-          <label class="chk" data-dow="6" title="Saturday"><input type="checkbox" checked aria-label="Saturday"><span class="dot"></span><span class="dl">S</span></label>
-          <label class="chk" data-dow="0" title="Sunday"><input type="checkbox" checked aria-label="Sunday"><span class="dot"></span><span class="dl">S</span></label>
+          <label class="chk" data-dow="1" title="Monday"><input type="checkbox" aria-label="Monday"><span class="dot"></span><span class="dl">Mo</span></label>
+          <label class="chk" data-dow="2" title="Tuesday"><input type="checkbox" aria-label="Tuesday"><span class="dot"></span><span class="dl">Tu</span></label>
+          <label class="chk" data-dow="3" title="Wednesday"><input type="checkbox" aria-label="Wednesday"><span class="dot"></span><span class="dl">We</span></label>
+          <label class="chk" data-dow="4" title="Thursday"><input type="checkbox" aria-label="Thursday"><span class="dot"></span><span class="dl">Th</span></label>
+          <label class="chk" data-dow="5" title="Friday"><input type="checkbox" aria-label="Friday"><span class="dot"></span><span class="dl">Fr</span></label>
+          <label class="chk" data-dow="6" title="Saturday"><input type="checkbox" aria-label="Saturday"><span class="dot"></span><span class="dl">Sa</span></label>
+          <label class="chk" data-dow="0" title="Sunday"><input type="checkbox" aria-label="Sunday"><span class="dot"></span><span class="dl">Su</span></label>
         </div>
       </div>
       <div class="field">
         <label data-i18n="filter.time">Time of day</label>
         <div class="checks" id="timeChecks">
-          <label class="chk" data-time="am"><input type="checkbox" checked><span class="dot"></span><span data-i18n="time.am">AM</span></label>
-          <label class="chk" data-time="pm"><input type="checkbox" checked><span class="dot"></span><span data-i18n="time.pm">PM</span></label>
+          <label class="chk" data-time="am"><input type="checkbox"><span class="dot"></span><span data-i18n="time.am">AM</span></label>
+          <label class="chk" data-time="pm"><input type="checkbox"><span class="dot"></span><span data-i18n="time.pm">PM</span></label>
         </div>
       </div>
     </div>
@@ -420,9 +429,11 @@ const SD_CENTROID_ZIP = "92108";
 const state = {
   lang:"en",
   zip:SD_CENTROID_ZIP, radius:9, age:12, flex:14,
-  langs:{en:true, es:true, other:true},
-  dows:{0:true,1:true,2:true,3:true,4:true,5:true,6:true},
-  times:{am:true, pm:true},
+  langs:{en:true, es:false, other:false},
+  // Day filter: starts on today's weekday only; a day shows only if its chip is selected (none = no events).
+  dows:(()=>{const o={0:false,1:false,2:false,3:false,4:false,5:false,6:false};o[new Date().getDay()]=true;return o;})(),
+  // Time filter: default to the current half of the day — AM in the morning, PM from noon on.
+  times:(()=>{const h=new Date().getHours(); return {am:h<12, pm:h>=12};})(),
   view:"schedule", weeks:5, selDay:null
 };
 
@@ -466,6 +477,7 @@ const STRINGS = {
     "filter.flex":"Age flexibility",
     "filter.langs":"Languages",
     "filter.dow":"Day of week",
+    "dow.selectAll":"Select all","dow.clear":"Clear",
     "filter.time":"Time of day",
     "lang.en":"English","lang.es":"Spanish","lang.other":"Other","lang.mandarin":"Mandarin",
     "time.am":"AM","time.pm":"PM",
@@ -513,6 +525,7 @@ const STRINGS = {
     "filter.flex":"Rango de edad",
     "filter.langs":"Idiomas",
     "filter.dow":"Día de la semana",
+    "dow.selectAll":"Seleccionar todo","dow.clear":"Borrar",
     "filter.time":"Hora",
     "lang.en":"Inglés","lang.es":"Español","lang.other":"Otro","lang.mandarin":"Mandarín",
     "time.am":"AM","time.pm":"PM",
@@ -570,11 +583,13 @@ function applyStaticI18n(){
     .forEach(([da,dom])=>document.querySelectorAll("["+da+"]").forEach(el=>el.setAttribute(dom, t(el.getAttribute(da)))));
   const f=document.getElementById("footer"); if(f) f.innerHTML=footerHtml();
 }
-// Weekday chips: single-letter glyph + title/aria localized via Intl (0=Sun..6=Sat).
+// Weekday chips: two-letter glyph (unambiguous, unlike the old M/T/T/S/S) + title/aria
+// localized via Intl (0=Sun..6=Sat).
 function localizeDowChips(){
   document.querySelectorAll("#dowChecks .chk").forEach(el=>{
     const rd=new Date(2024,0,7 + (+el.dataset.dow));   // Jan 7 2024 = Sunday; +dow lands on the day
-    const dl=el.querySelector(".dl"); if(dl) dl.textContent=wdNarrow(rd);
+    const two=wdShort(rd).slice(0,2);                  // Mon→Mo, lun.→lu — distinct in EN and ES
+    const dl=el.querySelector(".dl"); if(dl) dl.textContent=two.charAt(0).toUpperCase()+two.slice(1);
     const full=wdLong(rd);
     el.title=full;
     const inp=el.querySelector("input"); if(inp) inp.setAttribute("aria-label", full);
@@ -602,6 +617,7 @@ function setLang(lang){
     b.setAttribute("aria-pressed", b.dataset.setlang===state.lang ? "true":"false"));
   applyStaticI18n();
   localizeDowChips();
+  updateDowBtn();
   render();
   syncStickyHeights();
 }
@@ -787,7 +803,7 @@ function applyFilters(all){
     if(!evLangs.some(x=>langSel.includes(x))) return false;
     // age overlap between [aLo,aHi] and [aMin,aMax]
     if(e.tp.aMax < aLo || e.tp.aMin > aHi) return false;
-    // day of week: individual Sun–Sat toggles (Weekdays/Weekends drive these)
+    // day of week: Sun–Sat toggles; a day passes only if its chip is selected
     if(!state.dows[e.date.getDay()]) return false;
     // time of day: am / pm
     const slot = e.start.getHours() < 12 ? "am" : "pm";
@@ -1029,15 +1045,22 @@ function paintChip(el,c){
 }
 function syncColors(){
   const lang={en:"#3E88C7",es:"#E8654F",other:"#7BA23F"};
-  document.querySelectorAll("#langChecks .chk").forEach(el=>paintChip(el,lang[el.dataset.lang]));
+  document.querySelectorAll("#langChecks .chk").forEach(el=>{
+    el.querySelector("input").checked=!!state.langs[el.dataset.lang];
+    paintChip(el,lang[el.dataset.lang]);
+  });
   // weekend days red, weekdays blue
   document.querySelectorAll("#dowChecks .chk").forEach(el=>{
     const d=+el.dataset.dow;
     el.querySelector("input").checked=!!state.dows[d];
     paintChip(el,(d===0||d===6)?"#E8654F":"#3E88C7");
   });
+  updateDowBtn();
   const time={am:"#D98A17",pm:"#6C6CE0"};
-  document.querySelectorAll("#timeChecks .chk").forEach(el=>paintChip(el,time[el.dataset.time]));
+  document.querySelectorAll("#timeChecks .chk").forEach(el=>{
+    el.querySelector("input").checked=!!state.times[el.dataset.time];
+    paintChip(el,time[el.dataset.time]);
+  });
 }
 // Keep the sticky view-tabs / date headers pinned right below the (pinned) filter panel,
 // whose height changes when the drawer expands/collapses.
@@ -1130,6 +1153,21 @@ document.querySelectorAll("#dowChecks .chk").forEach(el=>{
     state.dows[+el.dataset.dow]=el.querySelector("input").checked; syncColors(); render();
   });
 });
+// Set the day selection to an exact set of weekdays (replaces whatever was picked).
+function setDows(days){
+  for(let d=0; d<7; d++) state.dows[d]=days.includes(d);
+  syncColors(); render();
+}
+// Adaptive header link: "Select all" while nothing is picked, "Clear" once any day is on.
+// Called from syncColors (state changes) and setLang (language switch).
+function updateDowBtn(){
+  const btn=document.getElementById("dowAll"); if(!btn) return;
+  const none=!Object.values(state.dows).some(Boolean);
+  btn.dataset.act=none?"all":"clear";
+  btn.textContent=t(none?"dow.selectAll":"dow.clear");
+}
+document.getElementById("dowAll").addEventListener("click",e=>
+  setDows(e.currentTarget.dataset.act==="clear" ? [] : [0,1,2,3,4,5,6]));
 document.querySelectorAll("#timeChecks .chk").forEach(el=>{
   el.querySelector("input").addEventListener("change",()=>{
     state.times[el.dataset.time]=el.querySelector("input").checked; syncColors(); render();
