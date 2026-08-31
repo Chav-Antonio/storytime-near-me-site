@@ -187,23 +187,27 @@
   .daychip .cc{font-size:11px;color:var(--faint);font-weight:600}
   .daychip.on .cc{color:color-mix(in srgb,var(--paper) 70%,transparent)}
   .daychip.empty{opacity:.45}
-  .legend{display:flex;flex-wrap:wrap;gap:8px 14px;margin:6px 0 20px;font-size:12.5px}
-  .legend .li{display:inline-flex;align-items:center;gap:6px;color:var(--muted)}
-  .legend .li .dot{width:11px;height:11px;border-radius:3px}
   .dayblocks{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
-  .block{border-radius:12px;padding:14px 15px;color:#fff;box-shadow:var(--shadow);position:relative;overflow:hidden}
-  .block .bt{font-variant-numeric:tabular-nums;font-weight:700;font-size:14px;opacity:.95}
-  .block h3{margin:2px 0 6px;font-size:17px;color:#fff}
-  .block h3 a{color:inherit;text-decoration:none;display:inline-flex;align-items:baseline;gap:4px}
-  .block h3 a .ic{width:.72em;height:.72em;flex:none;opacity:.9}
-  .block h3 a:hover{text-decoration:underline}
-  .block .bl{font-size:13px;font-weight:600;opacity:.95}
-  .block .bmeta{display:flex;flex-wrap:wrap;gap:6px;margin-top:9px}
-  .block .btag{font-size:11px;font-weight:600;background:rgba(255,255,255,.22);color:#fff;padding:2px 8px;border-radius:20px}
-  .block .bacts{display:flex;gap:7px;margin-top:12px}
-  .block .bbtn{font-size:12px;font-weight:700;padding:6px 10px;border-radius:8px;background:rgba(255,255,255,.95);color:#222;text-align:center}
-  .block .bbtn:hover{text-decoration:none;background:#fff}
-  .block .bbtn.ghost{background:rgba(255,255,255,.16);color:#fff;border:1px solid rgba(255,255,255,.5)}
+  /* Light card + a thin library-color stripe (matches .loccard) — legible on any library
+     color, unlike the old full-color fill with white text. --bcol carries the lib color. */
+  .block{position:relative;background:var(--card);border:1px solid var(--line);
+    border-left:5px solid var(--bcol,var(--accent));border-radius:12px;padding:14px 16px;box-shadow:var(--shadow)}
+  .block .bt{font-variant-numeric:tabular-nums;font-weight:700;font-size:14px;color:var(--ink)}
+  .block .bt small{color:var(--muted);font-weight:600}
+  .block h3{margin:3px 0 3px;font-size:17px}
+  .block h3 a{color:var(--ink);text-decoration:none;display:inline-flex;align-items:baseline;gap:4px}
+  .block h3 a .ic{width:.7em;height:.7em;flex:none;color:var(--faint)}
+  .block h3 a:hover{color:var(--accent-ink)}
+  .block h3 a:hover .ic{color:var(--accent)}
+  .block .bl{font-size:13px;font-weight:700;color:var(--ink);display:flex;align-items:center;gap:7px}
+  .block .bl .dot{width:9px;height:9px;border-radius:50%;background:var(--bcol,var(--accent));flex:none}
+  .block .bl .mi{color:var(--muted);font-weight:600}
+  .block .bmeta{display:flex;flex-wrap:wrap;gap:6px;margin-top:11px;align-items:center}
+  .block .btag{font-size:11px;font-weight:600;padding:2px 8px;border-radius:20px;background:var(--chip-bg);color:var(--muted)}
+  .block .btag.lang{background:color-mix(in srgb,var(--accent) 15%,transparent);color:var(--accent-ink)}
+  .block .bbtn{margin-left:auto;display:inline-flex;align-items:center;gap:5px;font-size:12.5px;font-weight:700;color:var(--accent-ink)}
+  .block .bbtn svg{width:15px;height:15px}
+  .block .bbtn:hover{color:var(--accent);text-decoration:none}
 
   .empty{text-align:center;padding:60px 20px;color:var(--muted)}
   .empty h2{font-size:22px;color:var(--ink);margin:0 0 6px}
@@ -486,7 +490,7 @@ const STRINGS = {
     "loc.map":"Open {name} in maps","loc.call":"Call",
     "loc.showMore":"Show {n} more ▾","loc.showLess":"Show less ▴","loc.ages":"ages {label}",
     "schedule.count":v=>`${v.n} event${v.n===1?"":"s"}`,
-    "date.count":v=>`${v.n} event${v.n===1?"":"s"} · color-coded by library`,
+    "date.count":v=>`${v.n} event${v.n===1?"":"s"}`,
     "date.evShort":"{n} ev",
     "summary.line":"<b>{n}</b> events · <b>{libs}</b> libraries · next <b>{weeks}</b> weeks",
     "fsum":"{n} events",
@@ -954,12 +958,8 @@ function renderDate(evs){
     </div>`;
   }
   nav+=`</div>`;
-  // legend for libs present on selected day
-  const day=byDay[state.selDay].sort((a,b)=>a.start-b.start);
-  const libsToday=[...new Set(day.map(e=>e.lib.id))].map(id=>LIB[id]);
-  let legend=`<div class="legend">`+libsToday.map(l=>
-    `<span class="li"><span class="dot" style="background:${l.color}"></span>${esc(l.name)}</span>`).join("")+`</div>`;
   // blocks
+  const day=byDay[state.selDay].sort((a,b)=>a.start-b.start);
   const d0=day[0].date;
   let head=`<div class="datesticky">
       <h2>${esc(wdLong(d0))}, ${esc(moShort(d0))} ${d0.getDate()}</h2>
@@ -967,20 +967,18 @@ function renderDate(evs){
     </div>`;
   let blocks=`<div class="dayblocks">`+day.map(e=>{
     const col=e.lib.color;
-    return `<div class="block" style="background:${col}">
-      <div class="bt">${fmtTime(e.tp.t)} · ${esc(t("unit.min",{n:e.tp.dur}))}</div>
+    return `<div class="block" style="--bcol:${col}">
+      <div class="bt">${fmtTime(e.tp.t)} <small>· ${esc(t("unit.min",{n:e.tp.dur}))}</small></div>
       <h3><a href="${esc(eventUrl(e))}" target="_blank" rel="noopener">${esc(e.tp.name)}${ICON.ext}</a></h3>
-      <div class="bl">${esc(e.lib.name)} · ${esc(t("unit.mi",{n:e.dist.toFixed(1)}))}</div>
+      <div class="bl"><span class="dot"></span><span>${esc(e.lib.name)} <span class="mi">· ${esc(t("unit.mi",{n:e.dist.toFixed(1)}))}</span></span></div>
       <div class="bmeta">
-        ${langTags(e.tp.lang).map(tag=>`<span class="btag">${esc(tag)}</span>`).join("")}
+        ${langTags(e.tp.lang).map(tag=>`<span class="btag lang">${esc(tag)}</span>`).join("")}
         <span class="btag">${esc(t("badge.ages",{label:agesLabel(e.tp.ages)}))}</span>
-      </div>
-      <div class="bacts">
-        <a class="bbtn" href="${gcalUrl(e)}" target="_blank" rel="noopener">${esc(t("btn.gcal.short"))}</a>
+        <a class="bbtn" href="${gcalUrl(e)}" target="_blank" rel="noopener">${ICON.cal}${esc(t("btn.gcal.short"))}</a>
       </div>
     </div>`;
   }).join("")+`</div>`;
-  return nav+legend+head+blocks;
+  return nav+head+blocks;
 }
 
 function loadingState(){
