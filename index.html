@@ -72,17 +72,6 @@
   input[type=range]{width:130px;accent-color:var(--accent);margin:0}
   .rangewrap{display:flex;align-items:center;gap:9px}
   .rangewrap .val{font-size:13px;color:var(--muted);min-width:58px}
-  .stepper{display:flex;align-items:center;gap:6px}
-  .stepper input[type=number]{width:52px;text-align:center;-moz-appearance:textfield}
-  .stepper input[type=number]::-webkit-outer-spin-button,
-  .stepper input[type=number]::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
-  .field .hint{font-size:11px;color:#e0554b;font-weight:600;display:none}
-  .field .hint.show{display:block}
-  .stepbtn{width:34px;height:36px;flex:0 0 auto;border:1px solid var(--line-strong);border-radius:9px;
-    background:var(--card);color:var(--ink);font-size:19px;line-height:1;font-weight:600;cursor:pointer;
-    display:inline-flex;align-items:center;justify-content:center;padding:0}
-  .stepbtn:hover{border-color:var(--accent)}
-  .stepbtn:active{background:var(--chip-bg)}
   .checks{display:flex;flex-wrap:wrap;gap:6px}
   .chk{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:600;color:var(--muted);
        border:1px solid var(--line-strong);background:var(--card);border-radius:20px;padding:5px 11px;cursor:pointer;user-select:none}
@@ -134,8 +123,6 @@
   .tag{font-size:11.5px;font-weight:600;padding:2px 8px;border-radius:20px;background:var(--chip-bg);color:var(--muted);letter-spacing:.02em}
   .tag.lang{background:color-mix(in srgb,var(--accent) 15%,transparent);color:var(--accent-ink)}
   .tag.age{border:1px solid var(--line-strong);background:transparent}
-  .tag.older{background:color-mix(in srgb,#3E88C7 16%,transparent);color:#2f6ea8}
-  :root[data-theme="dark"] .tag.older,:root:not([data-theme="light"]) .tag.older{color:#8fbde8}
   .calbtn{position:absolute;top:11px;right:11px;width:32px;height:32px;flex:none;
        display:inline-flex;align-items:center;justify-content:center;
        border:1px solid var(--line-strong);border-radius:9px;background:var(--card);color:var(--accent-ink)}
@@ -308,17 +295,12 @@
         <div class="rangewrap"><input type="range" id="radius" min="1" max="20" step="1" value="9"><span class="val" id="radiusV">9 mi</span></div>
       </div>
       <div class="field">
-        <label for="age" data-i18n="filter.age">Child age (mo)</label>
-        <div class="stepper">
-          <button type="button" class="stepbtn" id="ageDec" aria-label="Decrease age">−</button>
-          <input type="number" id="age" min="0" max="60" step="1" value="12" inputmode="numeric">
-          <button type="button" class="stepbtn" id="ageInc" aria-label="Increase age">+</button>
+        <label data-i18n="filter.ages">Age group</label>
+        <div class="checks" id="ageChecks">
+          <label class="chk" data-age="baby"><input type="checkbox"><span class="dot"></span><span data-i18n="age.baby">Baby</span></label>
+          <label class="chk" data-age="toddler"><input type="checkbox" checked><span class="dot"></span><span data-i18n="age.toddler">Toddler</span></label>
+          <label class="chk" data-age="preschool"><input type="checkbox"><span class="dot"></span><span data-i18n="age.preschool">Preschool</span></label>
         </div>
-        <span class="hint" id="ageHint" role="status" aria-live="polite" data-i18n="filter.age.max">Max is 60</span>
-      </div>
-      <div class="field">
-        <label for="flex" data-i18n="filter.flex">Age flexibility</label>
-        <div class="rangewrap"><input type="range" id="flex" min="0" max="36" step="1" value="14"><span class="val" id="flexV">±14 mo</span></div>
       </div>
       <div class="field">
         <label data-i18n="filter.langs">Languages</label>
@@ -440,7 +422,9 @@ const SD_CENTROID_ZIP = "92108";
 // ---------- STATE ---------------------------------------------------------
 const state = {
   lang:"en",
-  zip:SD_CENTROID_ZIP, radius:9, age:12, flex:14,
+  zip:SD_CENTROID_ZIP, radius:9,
+  // Age filter: three groups (baby 0–12mo, toddler 12–36mo, preschool 36–60mo); toddler on by default.
+  ages:{baby:false, toddler:true, preschool:false},
   langs:{en:true, es:false, other:false},
   // Day filter: starts on today's weekday only; a day shows only if its chip is selected (none = no events).
   dows:(()=>{const o={0:false,1:false,2:false,3:false,4:false,5:false,6:false};o[new Date().getDay()]=true;return o;})(),
@@ -484,9 +468,9 @@ const STRINGS = {
     "filter.zip":"Zip",
     "filter.zip.locating":"Locating…",
     "filter.distance":"Distance",
-    "filter.age":"Child age (mo)",
-    "filter.age.max":"Max is 60",
-    "filter.flex":"Age flexibility",
+    "filter.ages":"Age group",
+    "age.baby":"Baby","age.toddler":"Toddler","age.preschool":"Preschool",
+    "ages.all":"All ages",
     "filter.langs":"Languages",
     "filter.dow":"Day of week",
     "dow.selectAll":"Select all","dow.clear":"Clear",
@@ -495,9 +479,7 @@ const STRINGS = {
     "time.am":"AM","time.pm":"PM",
     "tab.schedule":"Schedule","tab.location":"By location","tab.date":"By date",
     "badge.ages":"Ages {label}",
-    "badge.bigger":"↑ bigger kids",
     "badge.bilingual":"Bilingual EN·ES",
-    "schedrow.bigger":"bigger kids",
     "unit.min":"{n} min","unit.mi":"{n} mi",
     "btn.gcal":"＋ Google Calendar","btn.gcal.short":"＋ Calendar",
     "btn.eventPage":"Event page ↗","btn.event.short":"Event ↗","btn.details":"Details ↗",
@@ -506,16 +488,14 @@ const STRINGS = {
     "schedule.count":v=>`${v.n} event${v.n===1?"":"s"}`,
     "date.count":v=>`${v.n} event${v.n===1?"":"s"} · color-coded by library`,
     "date.evShort":"{n} ev",
-    "age.birth":"birth","age.y":"y","age.mo":"mo",
     "summary.line":"<b>{n}</b> events · <b>{libs}</b> libraries · next <b>{weeks}</b> weeks",
-    "summary.older":" · <b>{n}</b> for bigger kids",
     "fsum":"{n} events",
     "loading.locating":"Finding storytimes near you…",
     "loading.data":"Loading storytimes…",
     "error.title":"Couldn't load schedule data",
     "error.body":"This page reads its schedule from the <code>{dir}/</code> folder. Make sure <code>{dir}/manifest.js</code>, <code>libraries.js</code>, and each <code>yyyy-mm.js</code> it lists are present next to this file.",
     "empty.title":"No events match yet",
-    "empty.body":"Try widening the radius, raising age flexibility, or turning on more languages, days, or times.",
+    "empty.body":"Try widening the radius, selecting more age groups, or turning on more languages, days, or times.",
     "empty.reno":"Heads up: Scripps Miramar Ranch (right in 92131) is closed for renovation until Winter 2026.",
     "footer.body":"Schedules are compiled from public library pages and reflect typical recurring storytimes — <b>always confirm the day &amp; time via each event link before you go</b>, since libraries adjust and cancel sessions. {links}",
     "footer.linkCity":"SD Public Library","footer.linkCounty":"SD County Library",
@@ -532,9 +512,9 @@ const STRINGS = {
     "filter.zip":"Código postal",
     "filter.zip.locating":"Localizando…",
     "filter.distance":"Distancia",
-    "filter.age":"Edad (meses)",
-    "filter.age.max":"El máximo es 60",
-    "filter.flex":"Rango de edad",
+    "filter.ages":"Grupo de edad",
+    "age.baby":"0-1","age.toddler":"1-3","age.preschool":"3-5",
+    "ages.all":"Todas las edades",
     "filter.langs":"Idiomas",
     "filter.dow":"Día de la semana",
     "dow.selectAll":"Seleccionar todo","dow.clear":"Borrar",
@@ -543,9 +523,7 @@ const STRINGS = {
     "time.am":"AM","time.pm":"PM",
     "tab.schedule":"Horario","tab.location":"Por ubicación","tab.date":"Por fecha",
     "badge.ages":"Edades {label}",
-    "badge.bigger":"↑ niños mayores",
     "badge.bilingual":"Bilingüe EN·ES",
-    "schedrow.bigger":"niños mayores",
     "unit.min":"{n} min","unit.mi":"{n} mi",
     "btn.gcal":"＋ Google Calendar","btn.gcal.short":"＋ Calendario",
     "btn.eventPage":"Página del evento ↗","btn.event.short":"Evento ↗","btn.details":"Detalles ↗",
@@ -554,16 +532,14 @@ const STRINGS = {
     "schedule.count":v=>`${v.n} evento${v.n===1?"":"s"}`,
     "date.count":v=>`${v.n} evento${v.n===1?"":"s"}`,
     "date.evShort":"{n} ev",
-    "age.birth":"nacimiento","age.y":"a","age.mo":"m",
     "summary.line":"<b>{n}</b> eventos · <b>{libs}</b> bibliotecas · próximas <b>{weeks}</b> semanas",
-    "summary.older":" · <b>{n}</b> para niños mayores",
     "fsum":"{n} eventos",
     "loading.locating":"Buscando eventos cerca de ti…",
     "loading.data":"Cargando eventos…",
     "error.title":"No se pudieron cargar los datos del horario",
     "error.body":"Esta página lee su horario de la carpeta <code>{dir}/</code>. Asegúrate de que <code>{dir}/manifest.js</code>, <code>libraries.js</code> y cada <code>yyyy-mm.js</code> que enumera estén junto a este archivo.",
     "empty.title":"Aún no hay eventos que coincidan",
-    "empty.body":"Intenta ampliar el radio, subir la flexibilidad de edad o activar más idiomas, días u horarios.",
+    "empty.body":"Intenta ampliar el radio, seleccionar más grupos de edad o activar más idiomas, días u horarios.",
     "empty.reno":"Aviso: Scripps Miramar Ranch (en 92131) está cerrada por renovación hasta el invierno de 2026.",
     "footer.body":"Los horarios se recopilan de páginas públicas de bibliotecas y reflejan las horas del cuento habituales — <b>confirma siempre el día y la hora en el enlace de cada evento antes de ir</b>, ya que las bibliotecas ajustan y cancelan sesiones. {links}",
     "footer.linkCity":"Biblioteca Pública de SD","footer.linkCounty":"Biblioteca del Condado de SD",
@@ -692,11 +668,21 @@ function fmtTime(tm){
   // to keep the app's existing "10:00 am" styling.
   return dtf({hour:"numeric",minute:"2-digit",hour12:true}).format(d).toLowerCase();
 }
-function ageLabel(min,max){
-  const y=t("age.y"), mo=t("age.mo");
-  const f=n=> n%12===0 ? `${n/12}${y}` : (n<24? `${n}${mo}` : `${(n/12).toFixed(1).replace(".0","")}${y}`);
-  if(min===0) return `${t("age.birth")}–${f(max)}`;
-  return `${f(min)}–${f(max)}`;
+// The three age groups, in ascending order. Each spans a half-open month band so
+// a [12,36] event maps to toddler only, not to both neighbours.
+const AGE_GROUPS = ["baby","toddler","preschool"];
+const AGE_BANDS  = { baby:[0,12], toddler:[12,36], preschool:[36,60] };
+// Map a legacy numeric [min,max] month span to the group ids it overlaps. Used as
+// a back-compat fallback for old data files that predate the `ages` array.
+function spanToGroups(min,max){
+  const lo=min??0, hi=max??60;
+  return AGE_GROUPS.filter(g=>{ const [a,b]=AGE_BANDS[g]; return lo<b && hi>a; });
+}
+// Human label for an event's groups: their names in order, or "All ages" when all three.
+function agesLabel(groups){
+  const g=(groups||[]).filter(x=>AGE_BANDS[x]);
+  if(g.length>=AGE_GROUPS.length) return t("ages.all");
+  return AGE_GROUPS.filter(x=>g.includes(x)).map(x=>t("age."+x)).join(" · ");
 }
 function langTags(arr){
   if(arr.length>1) return [t("badge.bilingual")];
@@ -761,9 +747,13 @@ function normalize(ev){
   const dur = ev.dur ?? 30;
   const start = new Date(date); start.setHours(h, m, 0, 0);
   const finish = new Date(start.getTime() + dur*60000);
+  // Prefer the scraped `ages` array; fall back to a legacy [ageMin,ageMax] span
+  // for old-schema files. Events tagged no group are shown as "all ages".
+  const ages = (ev.ages && ev.ages.length) ? ev.ages.filter(g=>AGE_BANDS[g])
+             : spanToGroups(ev.ageMin, ev.ageMax);
   const tp = {
     name: ev.name, t: time, dur,
-    aMin: ev.ageMin ?? 0, aMax: ev.ageMax ?? 60,
+    ages, ageText: ev.ageText || "",
     lang: (ev.lang && ev.lang.length) ? ev.lang : ["en"],
     eventId: ev.eventId || "",     // deep-links to the exact event when known
     url: ev.url || "",             // optional explicit override
@@ -803,7 +793,6 @@ function mapsUrl(l){
 // ---------- FILTER --------------------------------------------------------
 function applyFilters(all){
   const langSel = Object.entries(state.langs).filter(([,v])=>v).map(([k])=>k);
-  const aLo = state.age-state.flex, aHi = state.age+state.flex;
   const today = new Date(); today.setHours(0,0,0,0);
   const end = new Date(today); end.setDate(end.getDate()+state.weeks*7); end.setHours(23,59,59,999);
   return all.filter(e=>{
@@ -813,8 +802,8 @@ function applyFilters(all){
     // language: event langs intersect selection (en/es explicit, else 'other')
     const evLangs = e.tp.lang.map(x=> (x==="en"||x==="es")?x:"other");
     if(!evLangs.some(x=>langSel.includes(x))) return false;
-    // age overlap between [aLo,aHi] and [aMin,aMax]
-    if(e.tp.aMax < aLo || e.tp.aMin > aHi) return false;
+    // age group: event passes if any of its groups is selected
+    if(!e.tp.ages.some(g=>state.ages[g])) return false;
     // day of week: Sun–Sat toggles; a day passes only if its chip is selected
     if(!state.dows[e.date.getDay()]) return false;
     // time of day: am / pm
@@ -822,8 +811,6 @@ function applyFilters(all){
     if(!state.times[slot]) return false;
     return true;
   }).map(e=>{
-    e.older = e.tp.aMin > state.age;      // aimed at kids older than her
-    e.younger = e.tp.aMax < state.age;    // aimed at younger
     e.dist = libDist(e.lib);
     return e;
   });
@@ -833,7 +820,7 @@ function gcalUrl(e){
   const f=d=>`${d.getFullYear()}${pad(d.getMonth()+1)}${pad(d.getDate())}T${pad(d.getHours())}${pad(d.getMinutes())}00`;
   const note=e.tp.note?` ${e.tp.note}`:"";
   const details=t("gcal.details",{name:e.tp.name, lib:e.lib.name, note,
-    label:ageLabel(e.tp.aMin,e.tp.aMax), url:eventUrl(e)});
+    label:agesLabel(e.tp.ages), url:eventUrl(e)});
   // Build manually so the slash between start/end times stays a literal "/"
   // (URLSearchParams encodes it to %2F, which Google's TEMPLATE parser rejects).
   const q=[
@@ -857,15 +844,14 @@ function evCard(e){
   const tcol=`color-mix(in srgb, ${col} 68%, var(--ink))`;
   // Language pill only earns its space when it isn't the (near-universal) English default.
   const showLang = e.tp.lang.length>1 || (e.tp.lang[0] && e.tp.lang[0]!=="en");
-  const pills = (showLang?`<span class="tag lang">${esc(langTags(e.tp.lang)[0])}</span>`:"")
-    + (e.older?`<span class="tag older">${esc(t("badge.bigger"))}</span>`:"");
+  const pills = (showLang?`<span class="tag lang">${esc(langTags(e.tp.lang)[0])}</span>`:"");
   return `<article class="ev" style="border-left-color:${col}">
     <div class="time" style="color:${tcol}">${fmtTime(e.tp.t)}<small>${esc(t("unit.min",{n:e.tp.dur}))}</small></div>
     <div class="body">
       <h3><a href="${esc(eventUrl(e))}" target="_blank" rel="noopener">${esc(e.tp.name)}${ICON.ext}</a></h3>
       <div class="meta">
         <span class="loc">${esc(e.lib.name)}</span>
-        <span>· ${esc(t("unit.mi",{n:e.dist.toFixed(1)}))} · ${esc(ageLabel(e.tp.aMin,e.tp.aMax))}</span>
+        <span>· ${esc(t("unit.mi",{n:e.dist.toFixed(1)}))} · ${esc(agesLabel(e.tp.ages))}</span>
         ${pills}
       </div>
     </div>
@@ -897,7 +883,7 @@ function renderSchedule(evs){
 function schedRow(e){
   return `<div class="schedrow">
     <span class="d">${esc(wdShort(e.date))} ${esc(moShort(e.date))} ${e.date.getDate()} · ${fmtTime(e.tp.t)}</span>
-    <span class="n">${esc(e.tp.name)}<div class="sub">${langTags(e.tp.lang).map(esc).join(" · ")} · ${esc(t("loc.ages",{label:ageLabel(e.tp.aMin,e.tp.aMax)}))}${e.older?" · "+esc(t("schedrow.bigger")):""}</div></span>
+    <span class="n">${esc(e.tp.name)}<div class="sub">${langTags(e.tp.lang).map(esc).join(" · ")} · ${esc(t("loc.ages",{label:agesLabel(e.tp.ages)}))}</div></span>
     <a class="btn" href="${esc(eventUrl(e))}" target="_blank" rel="noopener">${esc(t("btn.details"))}</a>
   </div>`;
 }
@@ -987,8 +973,7 @@ function renderDate(evs){
       <div class="bl">${esc(e.lib.name)} · ${esc(t("unit.mi",{n:e.dist.toFixed(1)}))}</div>
       <div class="bmeta">
         ${langTags(e.tp.lang).map(tag=>`<span class="btag">${esc(tag)}</span>`).join("")}
-        <span class="btag">${esc(t("badge.ages",{label:ageLabel(e.tp.aMin,e.tp.aMax)}))}</span>
-        ${e.older?`<span class="btag">${esc(t("badge.bigger"))}</span>`:""}
+        <span class="btag">${esc(t("badge.ages",{label:agesLabel(e.tp.ages)}))}</span>
       </div>
       <div class="bacts">
         <a class="bbtn" href="${gcalUrl(e)}" target="_blank" rel="noopener">${esc(t("btn.gcal.short"))}</a>
@@ -1026,10 +1011,8 @@ function render(){
 
   const evs=applyFilters(ALL);
   const libs=new Set(evs.map(e=>e.lib.id)).size;
-  const older=evs.filter(e=>e.older).length;
   summaryEl.innerHTML=
-    t("summary.line",{n:evs.length, libs:libs, weeks:state.weeks})+
-    (older? t("summary.older",{n:older}) : "");
+    t("summary.line",{n:evs.length, libs:libs, weeks:state.weeks});
   const fsum=document.getElementById("fsum");
   if(fsum) fsum.textContent=t("fsum",{n:evs.length});
 
@@ -1051,6 +1034,11 @@ function paintChip(el,c){
   el.style.background=on?c:""; el.style.borderColor=on?"transparent":"";
 }
 function syncColors(){
+  const age={baby:"#E8654F",toddler:"#D98A17",preschool:"#7BA23F"};
+  document.querySelectorAll("#ageChecks .chk").forEach(el=>{
+    el.querySelector("input").checked=!!state.ages[el.dataset.age];
+    paintChip(el,age[el.dataset.age]);
+  });
   const lang={en:"#3E88C7",es:"#E8654F",other:"#7BA23F"};
   document.querySelectorAll("#langChecks .chk").forEach(el=>{
     el.querySelector("input").checked=!!state.langs[el.dataset.lang];
@@ -1124,32 +1112,11 @@ function bindRange(id,key,fmt){
   out.textContent=fmt(el.value);
 }
 bindRange("radius","radius",v=>`${v} mi`);
-bindRange("flex","flex",v=>`±${v} mo`);
-// Child age: number input with −/+ steppers, clamped to 0–60 months.
-(function(){
-  const el=document.getElementById("age");
-  const hint=document.getElementById("ageHint");
-  let hintTimer=null;
-  const flashMax=()=>{                       // show "Max is 60" red, hide 5s later
-    hint.classList.add("show");
-    clearTimeout(hintTimer);
-    hintTimer=setTimeout(()=>hint.classList.remove("show"),5000);
-  };
-  const clamp=v=>Math.max(0,Math.min(60,v));
-  const commit=v=>{
-    if(v>60) flashMax();                     // only when they overshoot the max
-    v=clamp(v); el.value=v; state.age=v; render();
-  };
-  el.addEventListener("input",()=>{
-    if(el.value==="") return;              // let the field go empty while editing
-    const v=parseInt(el.value,10);
-    if(isNaN(v)){ el.value=state.age; return; }
-    commit(v);                              // clamp + rewrite the digits immediately
+document.querySelectorAll("#ageChecks .chk").forEach(el=>{
+  el.querySelector("input").addEventListener("change",()=>{
+    state.ages[el.dataset.age]=el.querySelector("input").checked; syncColors(); render();
   });
-  el.addEventListener("blur",()=>{ let v=parseInt(el.value,10); commit(isNaN(v)?0:v); });
-  document.getElementById("ageDec").addEventListener("click",()=>commit((parseInt(el.value,10)||0)-1));
-  document.getElementById("ageInc").addEventListener("click",()=>commit((parseInt(el.value,10)||0)+1));
-})();
+});
 document.querySelectorAll("#langChecks .chk").forEach(el=>{
   el.querySelector("input").addEventListener("change",()=>{
     state.langs[el.dataset.lang]=el.querySelector("input").checked; syncColors(); render();

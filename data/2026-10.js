@@ -11,8 +11,11 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-01",
       "time": "10:00",
       "dur": 30,
-      "ageMin": 24,
-      "ageMax": 60,
+      "ages": [
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -25,8 +28,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-01",
       "time": "10:30",
       "dur": 60,
-      "ageMin": 36,
-      "ageMax": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Preschool Storytime",
       "lang": [
         "en"
       ],
@@ -39,8 +44,12 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-01",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "…ories, socializing. Lots of fun for kids of all ages and their caregivers!",
       "lang": [
         "en"
       ],
@@ -53,8 +62,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-01",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 12,
-      "ageMax": 36,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "Toddler Storytime",
       "lang": [
         "en"
       ],
@@ -67,8 +78,12 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-01",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "…heatre storytime. Families with children of all ages are welcome.",
       "lang": [
         "en"
       ],
@@ -81,8 +96,12 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-01",
       "time": "10:30",
       "dur": 60,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "All Ages Storytime",
       "lang": [
         "en"
       ],
@@ -95,8 +114,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-01",
       "time": "10:30",
       "dur": 60,
-      "ageMin": 36,
-      "ageMax": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Preschool Storytime",
       "lang": [
         "en"
       ],
@@ -109,8 +130,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-01",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 12,
-      "ageMax": 36,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "Rocking Toddler Storytime",
       "lang": [
         "en"
       ],
@@ -123,8 +146,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-01",
       "time": "10:30",
       "dur": 45,
-      "ageMin": 12,
-      "ageMax": 36,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "Toddler Storytime",
       "lang": [
         "en"
       ],
@@ -137,8 +162,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-01",
       "time": "10:30",
       "dur": 45,
-      "ageMin": 0,
-      "ageMax": 12,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -151,8 +178,12 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-01",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "Family Storytime",
       "lang": [
         "en"
       ],
@@ -165,8 +196,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-01",
       "time": "10:30",
       "dur": 60,
-      "ageMin": 12,
-      "ageMax": 36,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "Toddler Storytime",
       "lang": [
         "en"
       ],
@@ -179,8 +212,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-01",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 12,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -193,8 +228,11 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-01",
       "time": "10:30",
       "dur": 45,
-      "ageMin": 12,
-      "ageMax": 48,
+      "ages": [
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -207,8 +245,12 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-01",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "Family Storytime",
       "lang": [
         "en"
       ],
@@ -221,8 +263,11 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-01",
       "time": "11:00",
       "dur": 60,
-      "ageMin": 0,
-      "ageMax": 36,
+      "ages": [
+        "baby",
+        "toddler"
+      ],
+      "ageText": "…activity. This activity is friendly towards babies and toddlers along with their families.",
       "lang": [
         "en"
       ],
@@ -235,8 +280,11 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-02",
       "time": "10:15",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 18,
+      "ages": [
+        "baby",
+        "toddler"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -249,8 +297,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-02",
       "time": "10:30",
       "dur": 60,
-      "ageMin": 0,
-      "ageMax": 12,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "Baby Storytime!",
       "lang": [
         "en"
       ],
@@ -263,8 +313,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-02",
       "time": "10:30",
       "dur": 60,
-      "ageMin": 0,
-      "ageMax": 12,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -277,8 +329,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-02",
       "time": "10:30",
       "dur": 90,
-      "ageMin": 12,
-      "ageMax": 36,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "Toddler Time",
       "lang": [
         "en"
       ],
@@ -291,8 +345,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-02",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 12,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -305,8 +361,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-02",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 12,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -319,8 +377,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-02",
       "time": "10:30",
       "dur": 60,
-      "ageMin": 36,
-      "ageMax": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Preschool Storytime",
       "lang": [
         "en"
       ],
@@ -333,8 +393,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-02",
       "time": "10:30",
       "dur": 60,
-      "ageMin": 36,
-      "ageMax": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Preschool Story Time",
       "lang": [
         "en"
       ],
@@ -347,8 +409,12 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-02",
       "time": "11:00",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -361,8 +427,12 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-02",
       "time": "13:00",
       "dur": 120,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -375,8 +445,11 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-03",
       "time": "10:00",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 36,
+      "ages": [
+        "baby",
+        "toddler"
+      ],
+      "ageText": "",
       "lang": [
         "other"
       ],
@@ -389,8 +462,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-03",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 12,
-      "ageMax": 36,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "…gs! All children are welcome. Geared toward toddlers 18m - 3.",
       "lang": [
         "en"
       ],
@@ -403,8 +478,12 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-05",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "…books and rhymes in English and in Spanish! All ages welcome. Acompáñenos y disfrute de cancione…",
       "lang": [
         "en",
         "es"
@@ -418,8 +497,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-05",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 12,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -432,8 +513,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-05",
       "time": "10:30",
       "dur": 45,
-      "ageMin": 0,
-      "ageMax": 12,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -446,8 +529,12 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-05",
       "time": "10:30",
       "dur": 60,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "Family story time conducted in Japanese -- all age…",
       "lang": [
         "en",
         "other"
@@ -461,8 +548,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-05",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 36,
-      "ageMax": 144,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
       "lang": [
         "en"
       ],
@@ -475,8 +564,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-05",
       "time": "11:00",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 12,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -489,8 +580,11 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-06",
       "time": "10:00",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 36,
+      "ages": [
+        "baby",
+        "toddler"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -503,8 +597,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-06",
       "time": "10:30",
       "dur": 45,
-      "ageMin": 36,
-      "ageMax": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Preschool Storytime",
       "lang": [
         "en"
       ],
@@ -517,8 +613,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-06",
       "time": "13:00",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 12,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "Bouncing Baby Storytime",
       "lang": [
         "en"
       ],
@@ -531,8 +629,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-06",
       "time": "13:00",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 12,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -545,8 +645,12 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-06",
       "time": "15:00",
       "dur": 60,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "",
       "lang": [
         "en",
         "es"
@@ -560,8 +664,11 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-07",
       "time": "10:00",
       "dur": 30,
-      "ageMin": 24,
-      "ageMax": 60,
+      "ages": [
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -574,8 +681,12 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-07",
       "time": "10:15",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 48,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -588,8 +699,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-07",
       "time": "10:15",
       "dur": 30,
-      "ageMin": 12,
-      "ageMax": 36,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -602,8 +715,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-07",
       "time": "10:30",
       "dur": 60,
-      "ageMin": 36,
-      "ageMax": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Preschool Storytime!",
       "lang": [
         "en"
       ],
@@ -616,8 +731,12 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-07",
       "time": "10:30",
       "dur": 60,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -630,8 +749,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-07",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 12,
-      "ageMax": 36,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "Toddler Storytime",
       "lang": [
         "en"
       ],
@@ -644,8 +765,12 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-07",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "…owed by play time! Geared for ages 1-3, but all ages welcome. Every 1st & 3rd Wednesday of the m…",
       "lang": [
         "en",
         "es"
@@ -659,8 +784,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-07",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 36,
-      "ageMax": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Preschool Storytime",
       "lang": [
         "en"
       ],
@@ -673,8 +800,12 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-07",
       "time": "10:30",
       "dur": 45,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "Family Storytime",
       "lang": [
         "en"
       ],
@@ -687,8 +818,12 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-07",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "Family Storytime",
       "lang": [
         "en"
       ],
@@ -701,8 +836,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-07",
       "time": "10:30",
       "dur": 45,
-      "ageMin": 0,
-      "ageMax": 12,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "Baby Storytime and Playdate",
       "lang": [
         "en"
       ],
@@ -715,8 +852,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-07",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 12,
-      "ageMax": 36,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "Toddler Storytime Yoga",
       "lang": [
         "en"
       ],
@@ -729,8 +868,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-07",
       "time": "11:00",
       "dur": 30,
-      "ageMin": 36,
-      "ageMax": 144,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
       "lang": [
         "en"
       ],
@@ -743,8 +884,11 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-07",
       "time": "11:00",
       "dur": 40,
-      "ageMin": 12,
-      "ageMax": 60,
+      "ages": [
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -757,8 +901,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-07",
       "time": "13:00",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 12,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -771,8 +917,11 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-08",
       "time": "10:00",
       "dur": 30,
-      "ageMin": 24,
-      "ageMax": 60,
+      "ages": [
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -785,8 +934,12 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-08",
       "time": "10:30",
       "dur": 60,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "…books and rhymes in English and in Spanish! All ages welcome. Acompáñenos y disfrute de cancione…",
       "lang": [
         "en",
         "es"
@@ -800,8 +953,12 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-08",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "…ories, socializing. Lots of fun for kids of all ages and their caregivers!",
       "lang": [
         "en"
       ],
@@ -814,8 +971,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-08",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 12,
-      "ageMax": 36,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "Toddler Storytime",
       "lang": [
         "en"
       ],
@@ -828,8 +987,11 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-08",
       "time": "10:30",
       "dur": 60,
-      "ageMin": 0,
-      "ageMax": 36,
+      "ages": [
+        "baby",
+        "toddler"
+      ],
+      "ageText": "Designed for babies and toddlers, this action-packed storytime…",
       "lang": [
         "en"
       ],
@@ -842,8 +1004,12 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-08",
       "time": "10:30",
       "dur": 60,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "All Ages Storytime with Kathryn the Grape",
       "lang": [
         "en"
       ],
@@ -856,8 +1022,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-08",
       "time": "10:30",
       "dur": 60,
-      "ageMin": 36,
-      "ageMax": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Preschool Storytime",
       "lang": [
         "en"
       ],
@@ -870,8 +1038,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-08",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 12,
-      "ageMax": 36,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "Rocking Toddler Storytime",
       "lang": [
         "en"
       ],
@@ -884,8 +1054,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-08",
       "time": "10:30",
       "dur": 45,
-      "ageMin": 12,
-      "ageMax": 36,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "Toddler Storytime",
       "lang": [
         "en"
       ],
@@ -898,8 +1070,12 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-08",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "Family Storytime",
       "lang": [
         "en"
       ],
@@ -912,8 +1088,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-08",
       "time": "10:30",
       "dur": 60,
-      "ageMin": 12,
-      "ageMax": 36,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "Toddler Storytime",
       "lang": [
         "en"
       ],
@@ -926,8 +1104,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-08",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 12,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -940,8 +1120,11 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-08",
       "time": "10:30",
       "dur": 45,
-      "ageMin": 12,
-      "ageMax": 48,
+      "ages": [
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -954,8 +1137,12 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-08",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "",
       "lang": [
         "en",
         "es"
@@ -969,8 +1156,11 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-08",
       "time": "11:00",
       "dur": 60,
-      "ageMin": 0,
-      "ageMax": 36,
+      "ages": [
+        "baby",
+        "toddler"
+      ],
+      "ageText": "…activity. This activity is friendly towards babies and toddlers along with their families.",
       "lang": [
         "en"
       ],
@@ -983,8 +1173,11 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-09",
       "time": "10:15",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 18,
+      "ages": [
+        "baby",
+        "toddler"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -997,8 +1190,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-09",
       "time": "10:30",
       "dur": 60,
-      "ageMin": 0,
-      "ageMax": 12,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "Baby Storytime!",
       "lang": [
         "en"
       ],
@@ -1011,8 +1206,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-09",
       "time": "10:30",
       "dur": 60,
-      "ageMin": 0,
-      "ageMax": 12,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -1025,8 +1222,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-09",
       "time": "10:30",
       "dur": 90,
-      "ageMin": 12,
-      "ageMax": 36,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "Toddler Time",
       "lang": [
         "en"
       ],
@@ -1039,8 +1238,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-09",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 12,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -1053,8 +1254,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-09",
       "time": "10:30",
       "dur": 60,
-      "ageMin": 36,
-      "ageMax": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Preschool Storytime",
       "lang": [
         "en"
       ],
@@ -1067,8 +1270,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-09",
       "time": "10:30",
       "dur": 60,
-      "ageMin": 36,
-      "ageMax": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Preschool Story Time",
       "lang": [
         "en"
       ],
@@ -1081,8 +1286,12 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-09",
       "time": "11:00",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -1095,8 +1304,11 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-10",
       "time": "10:00",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 36,
+      "ages": [
+        "baby",
+        "toddler"
+      ],
+      "ageText": "",
       "lang": [
         "other"
       ],
@@ -1109,8 +1321,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-10",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 12,
-      "ageMax": 36,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "…gs! All children are welcome. Geared toward toddlers 18m - 3.",
       "lang": [
         "en"
       ],
@@ -1123,8 +1337,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-10",
       "time": "11:00",
       "dur": 60,
-      "ageMin": 36,
-      "ageMax": 144,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
       "lang": [
         "en"
       ],
@@ -1137,8 +1353,12 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-12",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "…books and rhymes in English and in Spanish! All ages welcome. Acompáñenos y disfrute de cancione…",
       "lang": [
         "en",
         "es"
@@ -1152,8 +1372,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-12",
       "time": "10:30",
       "dur": 45,
-      "ageMin": 0,
-      "ageMax": 12,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "You and baby, birth to 12 months old, will learn how to…",
       "lang": [
         "en"
       ],
@@ -1166,8 +1388,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-12",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 12,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -1180,8 +1404,12 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-12",
       "time": "10:30",
       "dur": 60,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "Family story time conducted in Japanese -- all age…",
       "lang": [
         "en",
         "other"
@@ -1195,8 +1423,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-12",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 12,
-      "ageMax": 36,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "Toddler Storytime",
       "lang": [
         "en"
       ],
@@ -1209,8 +1439,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-12",
       "time": "11:00",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 12,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -1223,8 +1455,11 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-13",
       "time": "10:00",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 36,
+      "ages": [
+        "baby",
+        "toddler"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -1237,8 +1472,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-13",
       "time": "10:30",
       "dur": 45,
-      "ageMin": 36,
-      "ageMax": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Preschool Storytime",
       "lang": [
         "en"
       ],
@@ -1251,8 +1488,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-13",
       "time": "13:00",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 12,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "Bouncing Baby Storytime",
       "lang": [
         "en"
       ],
@@ -1265,8 +1504,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-13",
       "time": "13:00",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 12,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "Baby Sign Storytime",
       "lang": [
         "en"
       ],
@@ -1279,8 +1520,12 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-13",
       "time": "15:00",
       "dur": 60,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "",
       "lang": [
         "en",
         "es"
@@ -1294,8 +1539,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-13",
       "time": "18:00",
       "dur": 30,
-      "ageMin": 36,
-      "ageMax": 144,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
       "lang": [
         "en",
         "es"
@@ -1309,8 +1556,11 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-14",
       "time": "10:00",
       "dur": 30,
-      "ageMin": 24,
-      "ageMax": 60,
+      "ages": [
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -1323,8 +1573,12 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-14",
       "time": "10:15",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 48,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -1337,8 +1591,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-14",
       "time": "10:15",
       "dur": 30,
-      "ageMin": 12,
-      "ageMax": 36,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -1351,8 +1607,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-14",
       "time": "10:30",
       "dur": 60,
-      "ageMin": 36,
-      "ageMax": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Preschool Storytime!",
       "lang": [
         "en"
       ],
@@ -1365,8 +1623,12 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-14",
       "time": "10:30",
       "dur": 60,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -1379,8 +1641,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-14",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 12,
-      "ageMax": 36,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "Toddler Storytime",
       "lang": [
         "en"
       ],
@@ -1393,8 +1657,12 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-14",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "Family Storytime",
       "lang": [
         "en"
       ],
@@ -1407,8 +1675,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-14",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 36,
-      "ageMax": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Preschool Storytime",
       "lang": [
         "en"
       ],
@@ -1421,8 +1691,12 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-14",
       "time": "10:30",
       "dur": 45,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "Family Storytime",
       "lang": [
         "en"
       ],
@@ -1435,8 +1709,12 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-14",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "Family Storytime",
       "lang": [
         "en"
       ],
@@ -1449,8 +1727,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-14",
       "time": "10:30",
       "dur": 45,
-      "ageMin": 0,
-      "ageMax": 12,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "Baby Storytime and Playdate",
       "lang": [
         "en"
       ],
@@ -1463,8 +1743,12 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-14",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -1477,8 +1761,11 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-14",
       "time": "11:00",
       "dur": 40,
-      "ageMin": 12,
-      "ageMax": 60,
+      "ages": [
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -1491,8 +1778,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-14",
       "time": "13:00",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 12,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -1505,8 +1794,11 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-15",
       "time": "10:00",
       "dur": 30,
-      "ageMin": 24,
-      "ageMax": 60,
+      "ages": [
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -1519,8 +1811,12 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-15",
       "time": "10:30",
       "dur": 60,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "…books and rhymes in English and in Spanish! All ages welcome. Acompáñenos y disfrute de cancione…",
       "lang": [
         "en",
         "es"
@@ -1534,8 +1830,12 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-15",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "…ories, socializing. Lots of fun for kids of all ages and their caregivers!",
       "lang": [
         "en"
       ],
@@ -1548,8 +1848,12 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-15",
       "time": "10:30",
       "dur": 45,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -1562,8 +1866,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-15",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 12,
-      "ageMax": 36,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "Toddler Storytime",
       "lang": [
         "en"
       ],
@@ -1576,8 +1882,11 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-15",
       "time": "10:30",
       "dur": 60,
-      "ageMin": 0,
-      "ageMax": 36,
+      "ages": [
+        "baby",
+        "toddler"
+      ],
+      "ageText": "Designed for babies and toddlers, this action-packed storytime…",
       "lang": [
         "en"
       ],
@@ -1590,8 +1899,12 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-15",
       "time": "10:30",
       "dur": 60,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "All Ages Storytime",
       "lang": [
         "en"
       ],
@@ -1604,8 +1917,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-15",
       "time": "10:30",
       "dur": 60,
-      "ageMin": 36,
-      "ageMax": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Preschool Storytime",
       "lang": [
         "en"
       ],
@@ -1618,8 +1933,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-15",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 12,
-      "ageMax": 36,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "Rocking Toddler Storytime",
       "lang": [
         "en"
       ],
@@ -1632,8 +1949,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-15",
       "time": "10:30",
       "dur": 45,
-      "ageMin": 12,
-      "ageMax": 36,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "Toddler Storytime",
       "lang": [
         "en"
       ],
@@ -1646,8 +1965,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-15",
       "time": "10:30",
       "dur": 45,
-      "ageMin": 0,
-      "ageMax": 12,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -1660,8 +1981,12 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-15",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "Family Storytime",
       "lang": [
         "en"
       ],
@@ -1674,8 +1999,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-15",
       "time": "10:30",
       "dur": 60,
-      "ageMin": 12,
-      "ageMax": 36,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "Toddler Storytime",
       "lang": [
         "en"
       ],
@@ -1688,8 +2015,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-15",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 12,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -1702,8 +2031,11 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-15",
       "time": "10:30",
       "dur": 45,
-      "ageMin": 12,
-      "ageMax": 48,
+      "ages": [
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -1716,8 +2048,12 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-15",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "Family Storytime",
       "lang": [
         "en"
       ],
@@ -1730,8 +2066,11 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-15",
       "time": "11:00",
       "dur": 60,
-      "ageMin": 0,
-      "ageMax": 36,
+      "ages": [
+        "baby",
+        "toddler"
+      ],
+      "ageText": "…activity. This activity is friendly towards babies and toddlers along with their families.",
       "lang": [
         "en"
       ],
@@ -1744,8 +2083,11 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-16",
       "time": "10:15",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 18,
+      "ages": [
+        "baby",
+        "toddler"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -1758,8 +2100,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-16",
       "time": "10:30",
       "dur": 60,
-      "ageMin": 0,
-      "ageMax": 12,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "Baby Storytime!",
       "lang": [
         "en"
       ],
@@ -1772,8 +2116,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-16",
       "time": "10:30",
       "dur": 60,
-      "ageMin": 0,
-      "ageMax": 12,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -1786,8 +2132,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-16",
       "time": "10:30",
       "dur": 90,
-      "ageMin": 12,
-      "ageMax": 36,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "Toddler Time",
       "lang": [
         "en"
       ],
@@ -1800,8 +2148,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-16",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 12,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -1814,8 +2164,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-16",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 12,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "Bilingual Baby Storytime",
       "lang": [
         "en",
         "es"
@@ -1829,8 +2181,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-16",
       "time": "10:30",
       "dur": 60,
-      "ageMin": 36,
-      "ageMax": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Preschool Storytime",
       "lang": [
         "en"
       ],
@@ -1843,8 +2197,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-16",
       "time": "10:30",
       "dur": 60,
-      "ageMin": 36,
-      "ageMax": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Preschool Story Time",
       "lang": [
         "en"
       ],
@@ -1857,8 +2213,12 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-16",
       "time": "11:00",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -1871,8 +2231,11 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-17",
       "time": "10:00",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 36,
+      "ages": [
+        "baby",
+        "toddler"
+      ],
+      "ageText": "",
       "lang": [
         "other"
       ],
@@ -1885,8 +2248,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-17",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 12,
-      "ageMax": 36,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "…gs! All children are welcome. Geared toward toddlers 18m - 3.",
       "lang": [
         "en"
       ],
@@ -1899,8 +2264,12 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-17",
       "time": "14:00",
       "dur": 90,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "…r the other, or both! This event is open to all ages!",
       "lang": [
         "en"
       ],
@@ -1913,8 +2282,12 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-19",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "…books and rhymes in English and in Spanish! All ages welcome. Acompáñenos y disfrute de cancione…",
       "lang": [
         "en",
         "es"
@@ -1928,8 +2301,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-19",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 12,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -1942,8 +2317,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-19",
       "time": "10:30",
       "dur": 45,
-      "ageMin": 0,
-      "ageMax": 12,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -1956,8 +2333,12 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-19",
       "time": "10:30",
       "dur": 60,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "Family story time conducted in Japanese -- all age…",
       "lang": [
         "en",
         "other"
@@ -1971,8 +2352,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-19",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 12,
-      "ageMax": 36,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "Toddler Storytime",
       "lang": [
         "en"
       ],
@@ -1985,8 +2368,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-19",
       "time": "11:00",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 12,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -1999,8 +2384,11 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-20",
       "time": "10:00",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 36,
+      "ages": [
+        "baby",
+        "toddler"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -2013,8 +2401,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-20",
       "time": "10:30",
       "dur": 45,
-      "ageMin": 36,
-      "ageMax": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Preschool Storytime",
       "lang": [
         "en"
       ],
@@ -2027,8 +2417,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-20",
       "time": "13:00",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 12,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "Bouncing Baby Storytime",
       "lang": [
         "en"
       ],
@@ -2041,8 +2433,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-20",
       "time": "13:00",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 12,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -2055,8 +2449,12 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-20",
       "time": "15:00",
       "dur": 60,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "",
       "lang": [
         "en",
         "es"
@@ -2070,8 +2468,11 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-21",
       "time": "10:00",
       "dur": 30,
-      "ageMin": 24,
-      "ageMax": 60,
+      "ages": [
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -2084,8 +2485,12 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-21",
       "time": "10:15",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 48,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -2098,8 +2503,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-21",
       "time": "10:15",
       "dur": 30,
-      "ageMin": 12,
-      "ageMax": 36,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -2112,8 +2519,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-21",
       "time": "10:30",
       "dur": 60,
-      "ageMin": 36,
-      "ageMax": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Preschool Storytime!",
       "lang": [
         "en"
       ],
@@ -2126,8 +2535,12 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-21",
       "time": "10:30",
       "dur": 60,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -2140,8 +2553,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-21",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 12,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -2154,8 +2569,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-21",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 12,
-      "ageMax": 36,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "Toddler Storytime",
       "lang": [
         "en"
       ],
@@ -2168,8 +2585,12 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-21",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "Family Storytime",
       "lang": [
         "en"
       ],
@@ -2182,8 +2603,12 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-21",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "…owed by play time! Geared for ages 1-3, but all ages welcome. Every 1st & 3rd Wednesday of the m…",
       "lang": [
         "en",
         "es"
@@ -2197,8 +2622,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-21",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 36,
-      "ageMax": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Preschool Storytime",
       "lang": [
         "en"
       ],
@@ -2211,8 +2638,12 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-21",
       "time": "10:30",
       "dur": 45,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "Family Storytime",
       "lang": [
         "en"
       ],
@@ -2225,8 +2656,12 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-21",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "Family Storytime",
       "lang": [
         "en"
       ],
@@ -2239,8 +2674,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-21",
       "time": "10:30",
       "dur": 45,
-      "ageMin": 0,
-      "ageMax": 12,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "Baby Storytime and Playdate",
       "lang": [
         "en"
       ],
@@ -2253,8 +2690,11 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-21",
       "time": "11:00",
       "dur": 40,
-      "ageMin": 12,
-      "ageMax": 60,
+      "ages": [
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -2267,8 +2707,12 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-21",
       "time": "13:00",
       "dur": 120,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -2281,8 +2725,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-21",
       "time": "13:00",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 12,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -2295,8 +2741,11 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-22",
       "time": "10:00",
       "dur": 30,
-      "ageMin": 24,
-      "ageMax": 60,
+      "ages": [
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -2309,8 +2758,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-22",
       "time": "10:30",
       "dur": 60,
-      "ageMin": 36,
-      "ageMax": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Preschool Storytime",
       "lang": [
         "en"
       ],
@@ -2323,8 +2774,12 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-22",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "…ories, socializing. Lots of fun for kids of all ages and their caregivers!",
       "lang": [
         "en"
       ],
@@ -2337,8 +2792,11 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-22",
       "time": "10:30",
       "dur": 60,
-      "ageMin": 0,
-      "ageMax": 36,
+      "ages": [
+        "baby",
+        "toddler"
+      ],
+      "ageText": "Designed for babies and toddlers, this action-packed storytime…",
       "lang": [
         "en"
       ],
@@ -2351,8 +2809,12 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-22",
       "time": "10:30",
       "dur": 60,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "All Ages Storytime",
       "lang": [
         "en"
       ],
@@ -2365,8 +2827,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-22",
       "time": "10:30",
       "dur": 60,
-      "ageMin": 36,
-      "ageMax": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Preschool Storytime",
       "lang": [
         "en"
       ],
@@ -2379,8 +2843,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-22",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 12,
-      "ageMax": 36,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "Rocking Toddler Storytime",
       "lang": [
         "en"
       ],
@@ -2393,8 +2859,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-22",
       "time": "10:30",
       "dur": 45,
-      "ageMin": 12,
-      "ageMax": 36,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "Toddler Storytime",
       "lang": [
         "en"
       ],
@@ -2407,8 +2875,12 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-22",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "Family Storytime",
       "lang": [
         "en"
       ],
@@ -2421,8 +2893,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-22",
       "time": "10:30",
       "dur": 60,
-      "ageMin": 12,
-      "ageMax": 36,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "Toddler Storytime",
       "lang": [
         "en"
       ],
@@ -2435,8 +2909,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-22",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 12,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -2449,8 +2925,11 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-22",
       "time": "10:30",
       "dur": 45,
-      "ageMin": 12,
-      "ageMax": 48,
+      "ages": [
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -2463,8 +2942,12 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-22",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "Family Storytime",
       "lang": [
         "en"
       ],
@@ -2477,8 +2960,11 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-22",
       "time": "11:00",
       "dur": 60,
-      "ageMin": 0,
-      "ageMax": 36,
+      "ages": [
+        "baby",
+        "toddler"
+      ],
+      "ageText": "…activity. This activity is friendly towards babies and toddlers along with their families.",
       "lang": [
         "en"
       ],
@@ -2491,8 +2977,11 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-23",
       "time": "10:15",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 18,
+      "ages": [
+        "baby",
+        "toddler"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -2505,8 +2994,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-23",
       "time": "10:30",
       "dur": 60,
-      "ageMin": 0,
-      "ageMax": 12,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "Baby Storytime!",
       "lang": [
         "en"
       ],
@@ -2519,8 +3010,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-23",
       "time": "10:30",
       "dur": 60,
-      "ageMin": 0,
-      "ageMax": 12,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -2533,8 +3026,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-23",
       "time": "10:30",
       "dur": 90,
-      "ageMin": 12,
-      "ageMax": 36,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "Toddler Time",
       "lang": [
         "en"
       ],
@@ -2547,8 +3042,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-23",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 12,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -2561,8 +3058,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-23",
       "time": "10:30",
       "dur": 60,
-      "ageMin": 36,
-      "ageMax": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Preschool Storytime",
       "lang": [
         "en"
       ],
@@ -2575,8 +3074,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-23",
       "time": "10:30",
       "dur": 60,
-      "ageMin": 36,
-      "ageMax": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Preschool Story Time",
       "lang": [
         "en"
       ],
@@ -2589,8 +3090,12 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-23",
       "time": "11:00",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -2603,8 +3108,11 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-24",
       "time": "10:00",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 36,
+      "ages": [
+        "baby",
+        "toddler"
+      ],
+      "ageText": "",
       "lang": [
         "other"
       ],
@@ -2617,8 +3125,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-24",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 12,
-      "ageMax": 36,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "…gs! All children are welcome. Geared toward toddlers 18m - 3.",
       "lang": [
         "en"
       ],
@@ -2631,8 +3141,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-24",
       "time": "11:00",
       "dur": 60,
-      "ageMin": 36,
-      "ageMax": 144,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
       "lang": [
         "en"
       ],
@@ -2645,8 +3157,12 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-26",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "…books and rhymes in English and in Spanish! All ages welcome. Acompáñenos y disfrute de cancione…",
       "lang": [
         "en",
         "es"
@@ -2660,8 +3176,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-26",
       "time": "10:30",
       "dur": 45,
-      "ageMin": 0,
-      "ageMax": 12,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "You and baby, birth to 12 months old, will learn how to…",
       "lang": [
         "en"
       ],
@@ -2674,8 +3192,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-26",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 12,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -2688,8 +3208,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-26",
       "time": "10:30",
       "dur": 45,
-      "ageMin": 0,
-      "ageMax": 12,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -2702,8 +3224,12 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-26",
       "time": "10:30",
       "dur": 60,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "Family story time conducted in Japanese -- all age…",
       "lang": [
         "en",
         "other"
@@ -2717,8 +3243,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-26",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 12,
-      "ageMax": 36,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "Toddler Storytime",
       "lang": [
         "en"
       ],
@@ -2731,8 +3259,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-26",
       "time": "11:00",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 12,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -2745,8 +3275,11 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-27",
       "time": "10:00",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 36,
+      "ages": [
+        "baby",
+        "toddler"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -2759,8 +3292,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-27",
       "time": "10:30",
       "dur": 45,
-      "ageMin": 36,
-      "ageMax": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Preschool Storytime",
       "lang": [
         "en"
       ],
@@ -2773,8 +3308,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-27",
       "time": "13:00",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 12,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "Bouncing Baby Storytime",
       "lang": [
         "en"
       ],
@@ -2787,8 +3324,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-27",
       "time": "13:00",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 12,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -2801,8 +3340,12 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-27",
       "time": "15:00",
       "dur": 60,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "",
       "lang": [
         "en",
         "es"
@@ -2816,8 +3359,12 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-27",
       "time": "17:30",
       "dur": 45,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -2830,8 +3377,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-27",
       "time": "18:00",
       "dur": 30,
-      "ageMin": 36,
-      "ageMax": 144,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
       "lang": [
         "en",
         "es"
@@ -2845,8 +3394,11 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-28",
       "time": "10:00",
       "dur": 30,
-      "ageMin": 24,
-      "ageMax": 60,
+      "ages": [
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -2859,8 +3411,12 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-28",
       "time": "10:15",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 48,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -2873,8 +3429,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-28",
       "time": "10:15",
       "dur": 30,
-      "ageMin": 12,
-      "ageMax": 36,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -2887,8 +3445,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-28",
       "time": "10:30",
       "dur": 60,
-      "ageMin": 36,
-      "ageMax": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Preschool Storytime!",
       "lang": [
         "en"
       ],
@@ -2901,8 +3461,12 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-28",
       "time": "10:30",
       "dur": 60,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -2915,8 +3479,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-28",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 12,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -2929,8 +3495,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-28",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 12,
-      "ageMax": 36,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "Toddler Storytime",
       "lang": [
         "en"
       ],
@@ -2943,8 +3511,12 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-28",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "Family Storytime",
       "lang": [
         "en"
       ],
@@ -2957,8 +3529,12 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-28",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "…ongs, silliness, and surprises. Perfect for toddlers, preschoolers, and early elementary-aged k…",
       "lang": [
         "en"
       ],
@@ -2971,8 +3547,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-28",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 36,
-      "ageMax": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Preschool Storytime",
       "lang": [
         "en"
       ],
@@ -2985,8 +3563,12 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-28",
       "time": "10:30",
       "dur": 45,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "Family Storytime",
       "lang": [
         "en"
       ],
@@ -2999,8 +3581,12 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-28",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "Family Storytime",
       "lang": [
         "en"
       ],
@@ -3013,8 +3599,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-28",
       "time": "10:30",
       "dur": 45,
-      "ageMin": 0,
-      "ageMax": 12,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "Baby Storytime and Playdate",
       "lang": [
         "en"
       ],
@@ -3027,8 +3615,12 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-28",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -3041,8 +3633,11 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-28",
       "time": "11:00",
       "dur": 40,
-      "ageMin": 12,
-      "ageMax": 60,
+      "ages": [
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -3055,8 +3650,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-28",
       "time": "13:00",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 12,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -3069,8 +3666,11 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-29",
       "time": "10:00",
       "dur": 30,
-      "ageMin": 24,
-      "ageMax": 60,
+      "ages": [
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -3083,8 +3683,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-29",
       "time": "10:30",
       "dur": 60,
-      "ageMin": 36,
-      "ageMax": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Preschool Storytime",
       "lang": [
         "en"
       ],
@@ -3097,8 +3699,12 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-29",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "…ories, socializing. Lots of fun for kids of all ages and their caregivers!",
       "lang": [
         "en"
       ],
@@ -3111,8 +3717,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-29",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 12,
-      "ageMax": 36,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "Toddler Storytime",
       "lang": [
         "en"
       ],
@@ -3125,8 +3733,11 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-29",
       "time": "10:30",
       "dur": 60,
-      "ageMin": 0,
-      "ageMax": 36,
+      "ages": [
+        "baby",
+        "toddler"
+      ],
+      "ageText": "Designed for babies and toddlers, this action-packed storytime…",
       "lang": [
         "en"
       ],
@@ -3139,8 +3750,12 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-29",
       "time": "10:30",
       "dur": 60,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "All Ages Storytime",
       "lang": [
         "en"
       ],
@@ -3153,8 +3768,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-29",
       "time": "10:30",
       "dur": 60,
-      "ageMin": 36,
-      "ageMax": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Preschool Storytime",
       "lang": [
         "en"
       ],
@@ -3167,8 +3784,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-29",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 12,
-      "ageMax": 36,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "Rocking Toddler Storytime",
       "lang": [
         "en"
       ],
@@ -3181,8 +3800,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-29",
       "time": "10:30",
       "dur": 45,
-      "ageMin": 12,
-      "ageMax": 36,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "Toddler Storytime",
       "lang": [
         "en"
       ],
@@ -3195,8 +3816,12 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-29",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "Family Storytime",
       "lang": [
         "en"
       ],
@@ -3209,8 +3834,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-29",
       "time": "10:30",
       "dur": 60,
-      "ageMin": 12,
-      "ageMax": 36,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "Toddler Storytime",
       "lang": [
         "en"
       ],
@@ -3223,8 +3850,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-29",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 12,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -3237,8 +3866,11 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-29",
       "time": "10:30",
       "dur": 45,
-      "ageMin": 12,
-      "ageMax": 48,
+      "ages": [
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -3251,8 +3883,12 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-29",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "Family Storytime",
       "lang": [
         "en"
       ],
@@ -3265,8 +3901,11 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-29",
       "time": "11:00",
       "dur": 60,
-      "ageMin": 0,
-      "ageMax": 36,
+      "ages": [
+        "baby",
+        "toddler"
+      ],
+      "ageText": "…activity. This activity is friendly towards babies and toddlers along with their families.",
       "lang": [
         "en"
       ],
@@ -3279,8 +3918,11 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-30",
       "time": "10:15",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 18,
+      "ages": [
+        "baby",
+        "toddler"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -3293,8 +3935,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-30",
       "time": "10:30",
       "dur": 60,
-      "ageMin": 0,
-      "ageMax": 12,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "Baby Storytime!",
       "lang": [
         "en"
       ],
@@ -3307,8 +3951,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-30",
       "time": "10:30",
       "dur": 60,
-      "ageMin": 0,
-      "ageMax": 12,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -3321,8 +3967,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-30",
       "time": "10:30",
       "dur": 90,
-      "ageMin": 12,
-      "ageMax": 36,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "Toddler Time",
       "lang": [
         "en"
       ],
@@ -3335,8 +3983,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-30",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 12,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -3349,8 +3999,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-30",
       "time": "10:30",
       "dur": 60,
-      "ageMin": 36,
-      "ageMax": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Preschool Storytime",
       "lang": [
         "en"
       ],
@@ -3363,8 +4015,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-30",
       "time": "10:30",
       "dur": 60,
-      "ageMin": 36,
-      "ageMax": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Preschool Story Time",
       "lang": [
         "en"
       ],
@@ -3377,8 +4031,12 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-30",
       "time": "11:00",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -3391,8 +4049,11 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-31",
       "time": "10:00",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 36,
+      "ages": [
+        "baby",
+        "toddler"
+      ],
+      "ageText": "",
       "lang": [
         "other"
       ],
@@ -3405,8 +4066,10 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-31",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 12,
-      "ageMax": 36,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "…gs! All children are welcome. Geared toward toddlers 18m - 3.",
       "lang": [
         "en"
       ],
@@ -3419,8 +4082,12 @@ STORYTIME.months["2026-10"] = {
       "date": "2026-10-31",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],

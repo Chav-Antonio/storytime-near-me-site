@@ -11,8 +11,10 @@ STORYTIME.months["2027-01"] = {
       "date": "2027-01-01",
       "time": "10:30",
       "dur": 60,
-      "ageMin": 36,
-      "ageMax": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -25,8 +27,12 @@ STORYTIME.months["2027-01"] = {
       "date": "2027-01-04",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "",
       "lang": [
         "en",
         "es"
@@ -40,8 +46,10 @@ STORYTIME.months["2027-01"] = {
       "date": "2027-01-04",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 12,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -54,8 +62,10 @@ STORYTIME.months["2027-01"] = {
       "date": "2027-01-04",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 12,
-      "ageMax": 36,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -68,8 +78,10 @@ STORYTIME.months["2027-01"] = {
       "date": "2027-01-06",
       "time": "10:30",
       "dur": 60,
-      "ageMin": 0,
-      "ageMax": 12,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -82,8 +94,10 @@ STORYTIME.months["2027-01"] = {
       "date": "2027-01-06",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 36,
-      "ageMax": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "",
       "lang": [
         "en",
         "es"
@@ -97,8 +111,12 @@ STORYTIME.months["2027-01"] = {
       "date": "2027-01-06",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "",
       "lang": [
         "en",
         "es"
@@ -112,8 +130,12 @@ STORYTIME.months["2027-01"] = {
       "date": "2027-01-06",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -126,8 +148,10 @@ STORYTIME.months["2027-01"] = {
       "date": "2027-01-06",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 12,
-      "ageMax": 36,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -140,8 +164,10 @@ STORYTIME.months["2027-01"] = {
       "date": "2027-01-07",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 12,
-      "ageMax": 36,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -154,8 +180,10 @@ STORYTIME.months["2027-01"] = {
       "date": "2027-01-07",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 12,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -168,8 +196,10 @@ STORYTIME.months["2027-01"] = {
       "date": "2027-01-08",
       "time": "10:30",
       "dur": 90,
-      "ageMin": 12,
-      "ageMax": 36,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -182,8 +212,10 @@ STORYTIME.months["2027-01"] = {
       "date": "2027-01-08",
       "time": "10:30",
       "dur": 60,
-      "ageMin": 0,
-      "ageMax": 12,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -196,8 +228,10 @@ STORYTIME.months["2027-01"] = {
       "date": "2027-01-08",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 12,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -210,8 +244,10 @@ STORYTIME.months["2027-01"] = {
       "date": "2027-01-08",
       "time": "10:30",
       "dur": 60,
-      "ageMin": 36,
-      "ageMax": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -224,8 +260,10 @@ STORYTIME.months["2027-01"] = {
       "date": "2027-01-09",
       "time": "11:00",
       "dur": 60,
-      "ageMin": 36,
-      "ageMax": 144,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -238,8 +276,12 @@ STORYTIME.months["2027-01"] = {
       "date": "2027-01-11",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "",
       "lang": [
         "en",
         "es"
@@ -253,8 +295,10 @@ STORYTIME.months["2027-01"] = {
       "date": "2027-01-11",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 12,
-      "ageMax": 36,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -267,8 +311,10 @@ STORYTIME.months["2027-01"] = {
       "date": "2027-01-13",
       "time": "10:30",
       "dur": 60,
-      "ageMin": 0,
-      "ageMax": 12,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -281,8 +327,10 @@ STORYTIME.months["2027-01"] = {
       "date": "2027-01-13",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 36,
-      "ageMax": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "",
       "lang": [
         "en",
         "es"
@@ -296,8 +344,12 @@ STORYTIME.months["2027-01"] = {
       "date": "2027-01-13",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -310,8 +362,12 @@ STORYTIME.months["2027-01"] = {
       "date": "2027-01-13",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -324,8 +380,10 @@ STORYTIME.months["2027-01"] = {
       "date": "2027-01-14",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 12,
-      "ageMax": 36,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -338,8 +396,11 @@ STORYTIME.months["2027-01"] = {
       "date": "2027-01-14",
       "time": "10:30",
       "dur": 60,
-      "ageMin": 0,
-      "ageMax": 36,
+      "ages": [
+        "baby",
+        "toddler"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -352,8 +413,10 @@ STORYTIME.months["2027-01"] = {
       "date": "2027-01-14",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 12,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -366,8 +429,10 @@ STORYTIME.months["2027-01"] = {
       "date": "2027-01-15",
       "time": "10:30",
       "dur": 90,
-      "ageMin": 12,
-      "ageMax": 36,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -380,8 +445,10 @@ STORYTIME.months["2027-01"] = {
       "date": "2027-01-15",
       "time": "10:30",
       "dur": 60,
-      "ageMin": 0,
-      "ageMax": 12,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -394,8 +461,10 @@ STORYTIME.months["2027-01"] = {
       "date": "2027-01-15",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 12,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -408,8 +477,10 @@ STORYTIME.months["2027-01"] = {
       "date": "2027-01-15",
       "time": "10:30",
       "dur": 60,
-      "ageMin": 36,
-      "ageMax": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -422,8 +493,10 @@ STORYTIME.months["2027-01"] = {
       "date": "2027-01-20",
       "time": "10:30",
       "dur": 60,
-      "ageMin": 0,
-      "ageMax": 12,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -436,8 +509,10 @@ STORYTIME.months["2027-01"] = {
       "date": "2027-01-20",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 36,
-      "ageMax": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "",
       "lang": [
         "en",
         "es"
@@ -451,8 +526,12 @@ STORYTIME.months["2027-01"] = {
       "date": "2027-01-20",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -465,8 +544,12 @@ STORYTIME.months["2027-01"] = {
       "date": "2027-01-20",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "",
       "lang": [
         "en",
         "es"
@@ -480,8 +563,12 @@ STORYTIME.months["2027-01"] = {
       "date": "2027-01-20",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -494,8 +581,10 @@ STORYTIME.months["2027-01"] = {
       "date": "2027-01-21",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 12,
-      "ageMax": 36,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -508,8 +597,11 @@ STORYTIME.months["2027-01"] = {
       "date": "2027-01-21",
       "time": "10:30",
       "dur": 60,
-      "ageMin": 0,
-      "ageMax": 36,
+      "ages": [
+        "baby",
+        "toddler"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -522,8 +614,10 @@ STORYTIME.months["2027-01"] = {
       "date": "2027-01-21",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 12,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -536,8 +630,10 @@ STORYTIME.months["2027-01"] = {
       "date": "2027-01-22",
       "time": "10:30",
       "dur": 90,
-      "ageMin": 12,
-      "ageMax": 36,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -550,8 +646,10 @@ STORYTIME.months["2027-01"] = {
       "date": "2027-01-22",
       "time": "10:30",
       "dur": 60,
-      "ageMin": 0,
-      "ageMax": 12,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -564,8 +662,10 @@ STORYTIME.months["2027-01"] = {
       "date": "2027-01-22",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 12,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -578,8 +678,10 @@ STORYTIME.months["2027-01"] = {
       "date": "2027-01-22",
       "time": "10:30",
       "dur": 60,
-      "ageMin": 36,
-      "ageMax": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -592,8 +694,10 @@ STORYTIME.months["2027-01"] = {
       "date": "2027-01-23",
       "time": "11:00",
       "dur": 60,
-      "ageMin": 36,
-      "ageMax": 144,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -606,8 +710,12 @@ STORYTIME.months["2027-01"] = {
       "date": "2027-01-25",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "",
       "lang": [
         "en",
         "es"
@@ -621,8 +729,10 @@ STORYTIME.months["2027-01"] = {
       "date": "2027-01-25",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 12,
-      "ageMax": 36,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -635,8 +745,10 @@ STORYTIME.months["2027-01"] = {
       "date": "2027-01-27",
       "time": "10:30",
       "dur": 60,
-      "ageMin": 0,
-      "ageMax": 12,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -649,8 +761,10 @@ STORYTIME.months["2027-01"] = {
       "date": "2027-01-27",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 36,
-      "ageMax": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "",
       "lang": [
         "en",
         "es"
@@ -664,8 +778,12 @@ STORYTIME.months["2027-01"] = {
       "date": "2027-01-27",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -678,8 +796,12 @@ STORYTIME.months["2027-01"] = {
       "date": "2027-01-27",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -692,8 +814,11 @@ STORYTIME.months["2027-01"] = {
       "date": "2027-01-28",
       "time": "10:30",
       "dur": 60,
-      "ageMin": 0,
-      "ageMax": 36,
+      "ages": [
+        "baby",
+        "toddler"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -706,8 +831,10 @@ STORYTIME.months["2027-01"] = {
       "date": "2027-01-28",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 12,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -720,8 +847,10 @@ STORYTIME.months["2027-01"] = {
       "date": "2027-01-29",
       "time": "10:30",
       "dur": 90,
-      "ageMin": 12,
-      "ageMax": 36,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -734,8 +863,10 @@ STORYTIME.months["2027-01"] = {
       "date": "2027-01-29",
       "time": "10:30",
       "dur": 60,
-      "ageMin": 0,
-      "ageMax": 12,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -748,8 +879,10 @@ STORYTIME.months["2027-01"] = {
       "date": "2027-01-29",
       "time": "10:30",
       "dur": 30,
-      "ageMin": 0,
-      "ageMax": 12,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
@@ -762,8 +895,10 @@ STORYTIME.months["2027-01"] = {
       "date": "2027-01-29",
       "time": "10:30",
       "dur": 60,
-      "ageMin": 36,
-      "ageMax": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "",
       "lang": [
         "en"
       ],
