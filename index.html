@@ -14,6 +14,8 @@
     --chip-bg:#F2EFEA; --shadow:0 1px 2px rgba(30,25,20,.05),0 6px 18px rgba(30,25,20,.06);
     --good:#3f9a5c; --warn-bg:#FBEFD8; --warn-ink:#8a5a12;
     --wknd:#E8654F; --wkdy:#3E88C7;
+    /* Scheme 1 (Sunrise): age carries amber, language carries teal — filter chip → card pill. */
+    --age-bg:#FAEEDA; --age-ink:#854F0B; --lang-bg:#E1F5EE; --lang-ink:#0F6E56;
   }
   @media (prefers-color-scheme: dark){
     :root:not([data-theme="light"]){
@@ -21,6 +23,7 @@
       --line:#2B2F38; --line-strong:#3A3F4A; --accent:#F27C67; --accent-ink:#F9A794;
       --chip-bg:#262A32; --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 22px rgba(0,0,0,.35);
       --warn-bg:#38301C; --warn-ink:#E8C583;
+      --age-bg:#3A2E16; --age-ink:#FAC775; --lang-bg:#123A30; --lang-ink:#5DCAA5;
     }
   }
   :root[data-theme="dark"]{
@@ -70,7 +73,9 @@
   }
   .field .val{font-variant-numeric:tabular-nums}
   input[type=range]{width:130px;accent-color:var(--accent);margin:0}
-  .rangewrap{display:flex;align-items:center;gap:9px}
+  /* Match the ZIP input's height (33px) and center the slider, so the Distance field is the
+     same height as the Zip field — labels line up and the slider sits at the input's center. */
+  .rangewrap{display:flex;align-items:center;gap:9px;min-height:33px}
   .rangewrap .val{font-size:13px;color:var(--muted);min-width:58px}
   .checks{display:flex;flex-wrap:wrap;gap:6px}
   .chk{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:600;color:var(--muted);
@@ -79,6 +84,9 @@
   .chk.on{color:#fff;border-color:transparent}
   .chk .dot{width:9px;height:9px;border-radius:50%}
   .chk.on .dot{display:none}  /* fill already shows state; drop the dot so the label centers */
+  /* Neutral chips (day/time): no category color — selected = ink/paper swap, works both themes. */
+  .chk.neu .dot{display:none}
+  .chk.on.neu{background:var(--ink);color:var(--paper);border-color:transparent}
   #dowChecks .chk{min-width:42px;min-height:40px;justify-content:center}
   /* Day-of-week header: label on the left, an adaptive link — "Select all" when nothing is
      picked, "Clear" once one or more days are on */
@@ -114,20 +122,31 @@
   .ev .time{font-variant-numeric:tabular-nums;font-weight:700;font-size:15px;letter-spacing:.01em}
   .ev .time small{display:block;font-weight:500;color:var(--faint);font-size:12px}
   .ev .body h3{font-size:17px;margin:0 0 4px;padding-right:36px}
-  .ev .body h3 a{color:inherit;text-decoration:none;display:inline-flex;align-items:baseline;gap:4px}
-  .ev .body h3 a .ic{width:.72em;height:.72em;flex:none;color:var(--faint)}
-  .ev .body h3 a:hover{color:var(--accent-ink)}
-  .ev .body h3 a:hover .ic{color:var(--accent)}
-  .ev .meta{display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center;font-size:13px;color:var(--muted)}
-  .ev .loc{font-weight:600;color:var(--ink)}
+  .ev .body h3 a{color:inherit;text-decoration:underline;text-decoration-color:var(--line-strong);text-decoration-thickness:1px;text-underline-offset:2px}
+  .ev .body h3 a:hover{color:var(--accent-ink);text-decoration-color:var(--accent)}
+  /* Two rows: library + distance on top, language/age pills below. Gap matches the By-date
+     view's .bmeta margin-top (11px) so the three views feel consistent. */
+  .ev .meta{display:flex;flex-direction:column;gap:11px;font-size:13px;color:var(--muted)}
+  .ev .metatop{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px}
+  .ev .metapills{display:flex;flex-wrap:wrap;align-items:center;gap:5px}
+  .ev a.loc{font-weight:600;color:var(--ink);text-decoration:underline;text-decoration-color:var(--line-strong);text-decoration-thickness:1px;text-underline-offset:2px}
+  .ev a.loc:hover{color:var(--accent-ink);text-decoration-color:var(--accent)}
+  .ev span.loc{font-weight:600;color:var(--ink)}
   .tag{font-size:11.5px;font-weight:600;padding:2px 8px;border-radius:20px;background:var(--chip-bg);color:var(--muted);letter-spacing:.02em}
-  .tag.lang{background:color-mix(in srgb,var(--accent) 15%,transparent);color:var(--accent-ink)}
-  .tag.age{border:1px solid var(--line-strong);background:transparent}
-  .calbtn{position:absolute;top:11px;right:11px;width:32px;height:32px;flex:none;
+  .tag.lang{background:var(--lang-bg);color:var(--lang-ink)}
+  .tag.age{background:var(--age-bg);color:var(--age-ink)}
+  .calbtn{width:32px;height:32px;flex:none;
        display:inline-flex;align-items:center;justify-content:center;
        border:1px solid var(--line-strong);border-radius:9px;background:var(--card);color:var(--accent-ink)}
   .calbtn svg{width:17px;height:17px}
   .calbtn:hover{border-color:var(--accent);color:var(--accent);text-decoration:none}
+  /* In the card views the calendar button floats top-right; in By-location rows it sits inline. */
+  .ev .calbtn,.block .calbtn{position:absolute;top:11px;right:11px}
+  /* Reusable distance pill (pin + miles), shared across all three views. */
+  .distpill{flex:none;display:inline-flex;align-items:center;gap:4px;font-size:12.5px;font-weight:700;
+       color:var(--ink);background:var(--chip-bg);border-radius:999px;padding:3px 9px}
+  .distpill svg{width:1em;height:1em;flex:none}
+  .distpill .pin{display:inline-flex}
   .btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;font-size:12.5px;font-weight:600;
        padding:7px 11px;border-radius:9px;border:1px solid var(--line-strong);background:var(--card);color:var(--ink);cursor:pointer;white-space:nowrap;text-align:center}
   .btn:hover{border-color:var(--accent);text-decoration:none;color:var(--accent-ink)}
@@ -139,14 +158,14 @@
   .loccard .ic{width:1em;height:1em;flex:none}
   /* header row: identity (dot + linked name) on the left, distance pill on the right */
   .loccard .lhead{display:flex;gap:12px;align-items:center;justify-content:space-between}
-  .loccard h2{font-size:20px;font-weight:800;letter-spacing:-.01em;margin:0;min-width:0;display:flex;align-items:center;gap:9px}
-  .loccard h2 .dot{width:12px;height:12px;border-radius:50%;flex:none}
-  .loccard h2 a{color:inherit;text-decoration:none;display:inline-flex;align-items:center;gap:5px;min-width:0}
-  .loccard h2 a .name{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-  .loccard h2 a .ic{color:var(--faint)}
+  /* Dot aligns to the first line (flex-start + margin) so the name can wrap to 2 lines
+     instead of truncating with an ellipsis on narrow screens. */
+  .loccard h2{font-size:20px;font-weight:800;letter-spacing:-.01em;margin:0;min-width:0;display:flex;align-items:flex-start;gap:9px}
+  .loccard h2 .dot{width:12px;height:12px;border-radius:50%;flex:none;margin-top:6px}
+  .loccard h2 a{color:inherit;text-decoration:none;display:inline-flex;align-items:flex-start;gap:5px;min-width:0}
+  .loccard h2 a .name{text-decoration:underline;text-decoration-color:var(--line-strong);text-decoration-thickness:1px;text-underline-offset:2px}
   .loccard h2 a:hover{color:var(--accent-ink)}
-  .loccard h2 a:hover .ic{color:var(--accent)}
-  .loccard .dist{flex:none;display:inline-flex;align-items:center;gap:4px;font-size:13px;font-weight:700;color:var(--ink);background:var(--chip-bg);border-radius:999px;padding:4px 11px}
+  .loccard h2 a:hover .name{text-decoration-color:var(--accent)}
   /* meta row: map + phone actions and the system tag, closed by a hairline that sets the header off from the event list */
   .loccard .meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px 14px;font-size:13px;margin:9px 0 0;padding-bottom:12px;border-bottom:1px solid var(--line)}
   .loccard .meta a{display:inline-flex;align-items:center;gap:5px;color:var(--accent-ink)}
@@ -158,7 +177,9 @@
   .schedrow{display:grid;grid-template-columns:172px 1fr auto;gap:14px;align-items:center;padding:10px 2px;border-top:1px dashed var(--line)}
   .schedrow .d{font-weight:700;font-size:14px;white-space:nowrap}
   .schedrow .n{font-size:14.5px}
-  .schedrow .n .sub{color:var(--muted);font-size:12.5px}
+  .schedrow .n a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--line-strong);text-decoration-thickness:1px;text-underline-offset:2px}
+  .schedrow .n a:hover{color:var(--accent-ink);text-decoration-color:var(--accent)}
+  .schedrow .n .sub{display:flex;flex-wrap:wrap;gap:5px;margin-top:11px}
   .morerows summary{display:inline-flex;align-items:center;gap:6px;margin-top:8px;padding:7px 12px;
        font-size:13px;font-weight:600;color:var(--accent-ink);cursor:pointer;user-select:none;
        border:1px solid var(--line-strong);border-radius:20px;list-style:none;width:max-content}
@@ -194,17 +215,18 @@
     border-left:5px solid var(--bcol,var(--accent));border-radius:12px;padding:14px 16px;box-shadow:var(--shadow)}
   .block .bt{font-variant-numeric:tabular-nums;font-weight:700;font-size:14px;color:var(--ink)}
   .block .bt small{color:var(--muted);font-weight:600}
-  .block h3{margin:3px 0 3px;font-size:17px}
-  .block h3 a{color:var(--ink);text-decoration:none;display:inline-flex;align-items:baseline;gap:4px}
-  .block h3 a .ic{width:.7em;height:.7em;flex:none;color:var(--faint)}
-  .block h3 a:hover{color:var(--accent-ink)}
-  .block h3 a:hover .ic{color:var(--accent)}
-  .block .bl{font-size:13px;font-weight:700;color:var(--ink);display:flex;align-items:center;gap:7px}
+  .block h3{margin:3px 0 3px;font-size:17px;padding-right:38px}
+  .block h3 a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--line-strong);text-decoration-thickness:1px;text-underline-offset:2px}
+  .block h3 a:hover{color:var(--accent-ink);text-decoration-color:var(--accent)}
+  .block .bl{font-size:13px;font-weight:700;color:var(--ink);display:flex;flex-wrap:wrap;align-items:center;gap:7px}
+  .block .bl a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--line-strong);text-decoration-thickness:1px;text-underline-offset:2px}
+  .block .bl a:hover{color:var(--accent-ink);text-decoration-color:var(--accent)}
   .block .bl .dot{width:9px;height:9px;border-radius:50%;background:var(--bcol,var(--accent));flex:none}
   .block .bl .mi{color:var(--muted);font-weight:600}
   .block .bmeta{display:flex;flex-wrap:wrap;gap:6px;margin-top:11px;align-items:center}
   .block .btag{font-size:11px;font-weight:600;padding:2px 8px;border-radius:20px;background:var(--chip-bg);color:var(--muted)}
-  .block .btag.lang{background:color-mix(in srgb,var(--accent) 15%,transparent);color:var(--accent-ink)}
+  .block .btag.lang{background:var(--lang-bg);color:var(--lang-ink)}
+  .block .btag.age{background:var(--age-bg);color:var(--age-ink)}
   .block .bbtn{margin-left:auto;display:inline-flex;align-items:center;gap:5px;font-size:12.5px;font-weight:700;color:var(--accent-ink)}
   .block .bbtn svg{width:15px;height:15px}
   .block .bbtn:hover{color:var(--accent);text-decoration:none}
@@ -257,7 +279,7 @@
     .ev .time small::before{content:"·\00a0"}
     .ev .body h3{padding-right:0}
     .schedrow{grid-template-columns:1fr auto;row-gap:2px}
-    .schedrow .btn{grid-column:2;grid-row:1/3}
+    .schedrow .calbtn{grid-column:2;grid-row:1/3}
     /* View tabs stick just under the whole (pinned) filter panel — expanded or collapsed —
        so both the filters and the tabs stay put. --panelH/--headH are kept in sync by JS. */
     .bar{position:sticky;top:var(--panelH,60px);z-index:15;margin:0 -20px 16px;padding:8px 20px;
@@ -265,6 +287,10 @@
       border-bottom:1px solid var(--line)}
     .bar .summary{display:none}
     .datehead,.datesticky{top:var(--headH,120px)}
+    /* Solid (not translucent) on mobile so a card scrolling underneath doesn't ghost through
+       the pinned date header. Desktop keeps its frosted look, where the overlap reads fine. */
+    .datehead{background:var(--paper)}
+    .datesticky{background:var(--paper);backdrop-filter:none}
   }
   @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
 </style>
@@ -296,7 +322,7 @@
       </div>
       <div class="field">
         <label for="radius" data-i18n="filter.distance">Distance</label>
-        <div class="rangewrap"><input type="range" id="radius" min="1" max="20" step="1" value="9"><span class="val" id="radiusV">9 mi</span></div>
+        <div class="rangewrap"><input type="range" id="radius" min="1" max="20" step="1" value="15"><span class="val" id="radiusV">15 mi</span></div>
       </div>
       <div class="field">
         <label data-i18n="filter.ages">Age group</label>
@@ -370,7 +396,9 @@ const DATA_DIR = "data";
 window.STORYTIME = window.STORYTIME || {};
 
 // Fallback palette if a library record has no explicit color.
-const PALETTE = ["#E8654F","#2FA6A0","#6C6CE0","#D98A17","#4C9F5A","#C2569E","#3E88C7","#9A7B3A","#D2504E","#7BA23F"];
+// Scheme 1 carries amber (age) + teal (language) into the card pills, so those hues are kept
+// out of the library-identity rotation — a card never wears the same hue as a pill.
+const PALETTE = ["#E8654F","#6C6CE0","#4C9F5A","#C2569E","#3E88C7","#D2504E","#7BA23F"];
 
 // ZIP centroids used for the radius filter — all of San Diego County
 // (city + county), so any local home ZIP resolves to a real centroid
@@ -426,14 +454,15 @@ const SD_CENTROID_ZIP = "92108";
 // ---------- STATE ---------------------------------------------------------
 const state = {
   lang:"en",
-  zip:SD_CENTROID_ZIP, radius:9,
+  zip:SD_CENTROID_ZIP, radius:15,
   // Age filter: three groups (baby 0–12mo, toddler 12–36mo, preschool 36–60mo); toddler on by default.
   ages:{baby:false, toddler:true, preschool:false},
   langs:{en:true, es:false, other:false},
-  // Day filter: starts on today's weekday only; a day shows only if its chip is selected (none = no events).
-  dows:(()=>{const o={0:false,1:false,2:false,3:false,4:false,5:false,6:false};o[new Date().getDay()]=true;return o;})(),
-  // Time filter: default to the current half of the day — AM in the morning, PM from noon on.
-  times:(()=>{const h=new Date().getHours(); return {am:h<12, pm:h>=12};})(),
+  // Day filter: default to today's weekday; on Sundays (few storytimes run) also pre-select
+  // Monday so the first load isn't empty. A day shows only if its chip is selected.
+  dows:(()=>{const o={0:false,1:false,2:false,3:false,4:false,5:false,6:false};const d=new Date().getDay();o[d]=true;if(d===0)o[1]=true;return o;})(),
+  // Time filter: both halves of the day on by default, so the first load always shows results.
+  times:{am:true, pm:true},
   view:"schedule", weeks:5, selDay:null
 };
 
@@ -461,6 +490,8 @@ function dtf(opts){                                   // Intl.DateTimeFormat, me
 const wdLong   = d => dtf({weekday:"long"}).format(d);    // was DOW  (Sunday…)
 const wdShort  = d => dtf({weekday:"short"}).format(d);   // was DOWS (Sun…)
 const wdNarrow = d => dtf({weekday:"narrow"}).format(d);  // was DOWI (S/M/T…; es-US: L/M/M/J/V/S/D)
+// Two-letter weekday (Mon→Mo, Tue→Tu; es lun.→Lu) — unambiguous unlike the narrow single letter.
+const wdTwo    = d => { const s=wdShort(d).slice(0,2); return s.charAt(0).toUpperCase()+s.slice(1); };
 const moShort  = d => dtf({month:"short"}).format(d);     // was MON  (Jan…)
 
 const STRINGS = {
@@ -580,8 +611,7 @@ function applyStaticI18n(){
 function localizeDowChips(){
   document.querySelectorAll("#dowChecks .chk").forEach(el=>{
     const rd=new Date(2024,0,7 + (+el.dataset.dow));   // Jan 7 2024 = Sunday; +dow lands on the day
-    const two=wdShort(rd).slice(0,2);                  // Mon→Mo, lun.→lu — distinct in EN and ES
-    const dl=el.querySelector(".dl"); if(dl) dl.textContent=two.charAt(0).toUpperCase()+two.slice(1);
+    const dl=el.querySelector(".dl"); if(dl) dl.textContent=wdTwo(rd);   // Mon→Mo, lun.→Lu (shared helper)
     const full=wdLong(rd);
     el.title=full;
     const inp=el.querySelector("input"); if(inp) inp.setAttribute("aria-label", full);
@@ -842,21 +872,41 @@ function gcalUrl(e){
 const app=document.getElementById("app");
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 
+// Distance pill (pin + miles), shared by all three views. The pin takes the library color.
+function distPill(mi,col){
+  return `<span class="distpill"><span class="pin" style="color:${col}">${ICON.pin}</span>${esc(t("unit.mi",{n:mi.toFixed(1)}))}</span>`;
+}
+// A library-page link (or plain text when the library has no linkable page).
+function libLink(l,cls){
+  const url=l.web||l.events;
+  const c=cls?` class="${cls}"`:"";
+  return url
+    ? `<a${c} href="${esc(url)}" target="_blank" rel="noopener">${esc(l.name)}</a>`
+    : `<span${c}>${esc(l.name)}</span>`;
+}
+// Language badge(s) for an event. English-only is hidden as the near-universal default;
+// Spanish, Mandarin and bilingual events still get a pill. `cls` picks the pill class so
+// each view keeps its own (schedule/location use "tag", by-date uses "btag").
+function langPills(langs,cls){
+  const showLang = langs.length>1 || (langs[0] && langs[0]!=="en");
+  if(!showLang) return "";
+  const c = cls || "tag";
+  return langTags(langs).map(tag=>`<span class="${c} lang">${esc(tag)}</span>`).join("");
+}
+
 function evCard(e){
   const col=e.lib.color;
   // Time takes the library's identity color, darkened toward the ink so it stays legible on white.
   const tcol=`color-mix(in srgb, ${col} 68%, var(--ink))`;
-  // Language pill only earns its space when it isn't the (near-universal) English default.
-  const showLang = e.tp.lang.length>1 || (e.tp.lang[0] && e.tp.lang[0]!=="en");
-  const pills = (showLang?`<span class="tag lang">${esc(langTags(e.tp.lang)[0])}</span>`:"");
+  // Language + age badges, same pill treatment as the By-date view (lang first, then ages).
+  const pills = langPills(e.tp.lang) + `<span class="tag age">${esc(agesLabel(e.tp.ages))}</span>`;
   return `<article class="ev" style="border-left-color:${col}">
     <div class="time" style="color:${tcol}">${fmtTime(e.tp.t)}<small>${esc(t("unit.min",{n:e.tp.dur}))}</small></div>
     <div class="body">
-      <h3><a href="${esc(eventUrl(e))}" target="_blank" rel="noopener">${esc(e.tp.name)}${ICON.ext}</a></h3>
+      <h3><a href="${esc(eventUrl(e))}" target="_blank" rel="noopener">${esc(e.tp.name)}</a></h3>
       <div class="meta">
-        <span class="loc">${esc(e.lib.name)}</span>
-        <span>· ${esc(t("unit.mi",{n:e.dist.toFixed(1)}))} · ${esc(agesLabel(e.tp.ages))}</span>
-        ${pills}
+        <div class="metatop">${libLink(e.lib,"loc")}${distPill(e.dist,col)}</div>
+        <div class="metapills">${pills}</div>
       </div>
     </div>
     <a class="calbtn" href="${gcalUrl(e)}" target="_blank" rel="noopener" title="${esc(t("btn.gcal"))}" aria-label="${esc(t("btn.gcal"))}">${ICON.cal}</a>
@@ -887,8 +937,8 @@ function renderSchedule(evs){
 function schedRow(e){
   return `<div class="schedrow">
     <span class="d">${esc(wdShort(e.date))} ${esc(moShort(e.date))} ${e.date.getDate()} · ${fmtTime(e.tp.t)}</span>
-    <span class="n">${esc(e.tp.name)}<div class="sub">${langTags(e.tp.lang).map(esc).join(" · ")} · ${esc(t("loc.ages",{label:agesLabel(e.tp.ages)}))}</div></span>
-    <a class="btn" href="${esc(eventUrl(e))}" target="_blank" rel="noopener">${esc(t("btn.details"))}</a>
+    <span class="n"><a href="${esc(eventUrl(e))}" target="_blank" rel="noopener">${esc(e.tp.name)}</a><div class="sub">${langPills(e.tp.lang)}<span class="tag age">${esc(agesLabel(e.tp.ages))}</span></div></span>
+    <a class="calbtn" href="${gcalUrl(e)}" target="_blank" rel="noopener" title="${esc(t("btn.gcal"))}" aria-label="${esc(t("btn.gcal"))}">${ICON.cal}</a>
   </div>`;
 }
 // Inline stroke icons for the By-location header (currentColor, sized in em via .ic).
@@ -916,13 +966,13 @@ function renderLocation(evs){
     any=true;
     // Name links to the library page; a trailing ↗ icon signals that (option A).
     const nameHtml = l.web
-      ? `<a href="${esc(l.web)}" target="_blank" rel="noopener"><span class="name">${esc(l.name)}</span>${ICON.ext}</a>`
+      ? `<a href="${esc(l.web)}" target="_blank" rel="noopener"><span class="name">${esc(l.name)}</span></a>`
       : `<span class="name">${esc(l.name)}</span>`;
     const street = esc(l.addr.split(",")[0]);
     h+=`<section class="loccard" style="border-left-color:${col}">
       <div class="lhead">
         <h2><span class="dot" style="background:${col}"></span>${nameHtml}</h2>
-        <span class="dist"><span style="color:${col};display:inline-flex">${ICON.pin}</span>${esc(t("unit.mi",{n:libDist(l).toFixed(1)}))}</span>
+        ${distPill(libDist(l),col)}
       </div>
       <p class="meta">
         <a class="maplink" href="${esc(mapsUrl(l))}" target="_blank" rel="noopener" title="${esc(t("loc.map",{name:l.name}))}">${ICON.map}${street}</a>
@@ -952,7 +1002,7 @@ function renderDate(evs){
     const list=byDay[k]; const d=list[0].date;
     nav+=`<div class="daychip ${k===state.selDay?"on":""}" data-day="${k}">
       <div class="mo">${esc(moShort(d))}</div>
-      <div class="dw" title="${esc(wdShort(d))}">${esc(wdNarrow(d))}</div>
+      <div class="dw" title="${esc(wdLong(d))}">${esc(wdTwo(d))}</div>
       <div class="dn">${d.getDate()}</div>
       <div class="cc">${esc(t("date.evShort",{n:list.length}))}</div>
     </div>`;
@@ -969,13 +1019,13 @@ function renderDate(evs){
     const col=e.lib.color;
     return `<div class="block" style="--bcol:${col}">
       <div class="bt">${fmtTime(e.tp.t)} <small>· ${esc(t("unit.min",{n:e.tp.dur}))}</small></div>
-      <h3><a href="${esc(eventUrl(e))}" target="_blank" rel="noopener">${esc(e.tp.name)}${ICON.ext}</a></h3>
-      <div class="bl"><span class="dot"></span><span>${esc(e.lib.name)} <span class="mi">· ${esc(t("unit.mi",{n:e.dist.toFixed(1)}))}</span></span></div>
+      <h3><a href="${esc(eventUrl(e))}" target="_blank" rel="noopener">${esc(e.tp.name)}</a></h3>
+      <div class="bl"><span class="dot"></span>${libLink(e.lib)}${distPill(e.dist,col)}</div>
       <div class="bmeta">
-        ${langTags(e.tp.lang).map(tag=>`<span class="btag lang">${esc(tag)}</span>`).join("")}
-        <span class="btag">${esc(t("badge.ages",{label:agesLabel(e.tp.ages)}))}</span>
-        <a class="bbtn" href="${gcalUrl(e)}" target="_blank" rel="noopener">${ICON.cal}${esc(t("btn.gcal.short"))}</a>
+        ${langPills(e.tp.lang,"btag")}
+        <span class="btag age">${esc(agesLabel(e.tp.ages))}</span>
       </div>
+      <a class="calbtn" href="${gcalUrl(e)}" target="_blank" rel="noopener" title="${esc(t("btn.gcal"))}" aria-label="${esc(t("btn.gcal"))}">${ICON.cal}</a>
     </div>`;
   }).join("")+`</div>`;
   return nav+head+blocks;
@@ -1026,33 +1076,43 @@ function render(){
 }
 
 // ---------- CONTROLS WIRING ----------------------------------------------
+// Paint a chip. `c` is either {bg,fg} for a color-carrying dimension (age/language) or
+// null for a neutral dimension (day/time), whose selected state is the ink/paper swap.
 function paintChip(el,c){
   const on=el.querySelector("input").checked; el.classList.toggle("on",on);
-  el.querySelector(".dot").style.background=c;
-  el.style.background=on?c:""; el.style.borderColor=on?"transparent":"";
+  const dot=el.querySelector(".dot");
+  if(c){
+    el.classList.remove("neu");
+    if(dot) dot.style.background=c.fg;                 // crisp family dot when unselected
+    el.style.background=on?c.bg:""; el.style.color=on?c.fg:""; el.style.borderColor=on?"transparent":"";
+  }else{
+    el.classList.add("neu");
+    if(dot) dot.style.background="";
+    el.style.background=""; el.style.color=""; el.style.borderColor="";  // CSS .chk.on.neu drives it
+  }
 }
 function syncColors(){
-  const age={baby:"#E8654F",toddler:"#D98A17",preschool:"#7BA23F"};
+  // Scheme 1: age dimension = amber shades (light→deep), matches the card's amber ages pill.
+  const age={baby:{bg:"#FAEEDA",fg:"#854F0B"},toddler:{bg:"#FAC775",fg:"#633806"},preschool:{bg:"#BA7517",fg:"#fff"}};
   document.querySelectorAll("#ageChecks .chk").forEach(el=>{
     el.querySelector("input").checked=!!state.ages[el.dataset.age];
     paintChip(el,age[el.dataset.age]);
   });
-  const lang={en:"#3E88C7",es:"#E8654F",other:"#7BA23F"};
+  // Language dimension = teal shades, matches the card's teal language pill.
+  const lang={en:{bg:"#E1F5EE",fg:"#0F6E56"},es:{bg:"#9FE1CB",fg:"#0F6E56"},other:{bg:"#0F6E56",fg:"#fff"}};
   document.querySelectorAll("#langChecks .chk").forEach(el=>{
     el.querySelector("input").checked=!!state.langs[el.dataset.lang];
     paintChip(el,lang[el.dataset.lang]);
   });
-  // weekend days red, weekdays blue
+  // Day + time are neutral (no category color) — selected state is the ink/paper swap.
   document.querySelectorAll("#dowChecks .chk").forEach(el=>{
-    const d=+el.dataset.dow;
-    el.querySelector("input").checked=!!state.dows[d];
-    paintChip(el,(d===0||d===6)?"#E8654F":"#3E88C7");
+    el.querySelector("input").checked=!!state.dows[+el.dataset.dow];
+    paintChip(el,null);
   });
   updateDowBtn();
-  const time={am:"#D98A17",pm:"#6C6CE0"};
   document.querySelectorAll("#timeChecks .chk").forEach(el=>{
     el.querySelector("input").checked=!!state.times[el.dataset.time];
-    paintChip(el,time[el.dataset.time]);
+    paintChip(el,null);
   });
 }
 // Keep the sticky view-tabs / date headers pinned right below the (pinned) filter panel,
