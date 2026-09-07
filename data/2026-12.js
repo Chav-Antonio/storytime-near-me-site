@@ -14,7 +14,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Preschool Storytime",
       "lang": [
         "en"
       ],
@@ -30,7 +30,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "baby"
       ],
-      "ageText": "",
+      "ageText": "Bouncing Baby Storytime",
       "lang": [
         "en"
       ],
@@ -46,12 +46,28 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "baby"
       ],
-      "ageText": "",
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
       "eventId": "6a2d92bbf56bd86e00b69567",
       "note": "A lap sit storytime introducing board book stories, songs, and fingerplays. Geared toward pre-walkers."
+    },
+    {
+      "lib": "4s",
+      "name": "Preschool Storytime!",
+      "date": "2026-12-02",
+      "time": "10:30",
+      "dur": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Preschool Storytime!",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a907e9c2dac6e0037222596",
+      "note": "Come and join us for Storytime, make friends and enjoy books and songs, here at the 4S Ranch Library. Wednesdays @ 10:30 a.m. in the community room."
     },
     {
       "lib": "cardiffb",
@@ -62,7 +78,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "baby"
       ],
-      "ageText": "",
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -78,7 +94,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "toddler"
       ],
-      "ageText": "",
+      "ageText": "Toddler Storytime",
       "lang": [
         "en"
       ],
@@ -94,7 +110,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Bilingual Preschool Storytime",
       "lang": [
         "en",
         "es"
@@ -113,7 +129,7 @@ STORYTIME.months["2026-12"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "…owed by play time! Geared for ages 1-3, but all ages welcome. Every 1st & 3rd Wednesday of the m…",
       "lang": [
         "en",
         "es"
@@ -130,12 +146,30 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Preschool Storytime",
       "lang": [
         "en"
       ],
       "eventId": "685f2eccd234473d0022fb22",
       "note": "Join us for stories, songs, and fun with friends! The first Wednesday of each month will be bilingual preschool storytime."
+    },
+    {
+      "lib": "lemongro",
+      "name": "Family Storytime",
+      "date": "2026-12-02",
+      "time": "10:30",
+      "dur": 45,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "Family Storytime",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a89d900db86e4004d86c1e3",
+      "note": "Join us for stories, songs, crafts, and fun! Babies, toddlers, and preschoolers are all welcome."
     },
     {
       "lib": "ramonaco",
@@ -148,7 +182,7 @@ STORYTIME.months["2026-12"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Family Storytime",
       "lang": [
         "en"
       ],
@@ -164,7 +198,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "baby"
       ],
-      "ageText": "",
+      "ageText": "Baby Storytime and Playdate",
       "lang": [
         "en"
       ],
@@ -180,7 +214,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "toddler"
       ],
-      "ageText": "",
+      "ageText": "Toddler Storytime Yoga",
       "lang": [
         "en"
       ],
@@ -196,7 +230,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Kids",
       "lang": [
         "en"
       ],
@@ -208,16 +242,16 @@ STORYTIME.months["2026-12"] = {
       "name": "Preschool Storytime",
       "date": "2026-12-03",
       "time": "10:30",
-      "dur": 60,
+      "dur": 30,
       "ages": [
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Preschool Storytime",
       "lang": [
         "en"
       ],
-      "eventId": "6a594356fa641fe01af3b1be",
-      "note": "Join us for a story, songs and dancing! Best for ages 2-4; no sign-up required."
+      "eventId": "6a99b5fb60ccaf01c0232555",
+      "note": "Join us for stories, songs and dancing! Best for ages 2-4; no sign-up required."
     },
     {
       "lib": "elcajonc",
@@ -230,12 +264,28 @@ STORYTIME.months["2026-12"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "…ories, socializing. Lots of fun for kids of all ages and their caregivers!",
       "lang": [
         "en"
       ],
       "eventId": "6a750f54b44674e2601ca199",
       "note": "Join us for ABC's, 123's, songs, stories, socializing. Lots of fun for kids of all ages and their caregivers!"
+    },
+    {
+      "lib": "encinita",
+      "name": "Toddler Storytime",
+      "date": "2026-12-03",
+      "time": "10:30",
+      "dur": 45,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "Toddler Storytime",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a8dd49969166f088b94beaf",
+      "note": "Come join us for singing, dancing, stories, music, fun and most importantly shaking our sillies out! This program is recommended for toddlers and their caregive"
     },
     {
       "lib": "imperial",
@@ -246,7 +296,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "toddler"
       ],
-      "ageText": "",
+      "ageText": "Toddler Storytime",
       "lang": [
         "en"
       ],
@@ -264,7 +314,7 @@ STORYTIME.months["2026-12"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "…heatre storytime. Families with children of all ages are welcome.",
       "lang": [
         "en"
       ],
@@ -280,7 +330,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Preschool Storytime",
       "lang": [
         "en"
       ],
@@ -296,7 +346,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "toddler"
       ],
-      "ageText": "",
+      "ageText": "Rocking Toddler Storytime",
       "lang": [
         "en"
       ],
@@ -312,7 +362,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "toddler"
       ],
-      "ageText": "",
+      "ageText": "Toddler Storytime",
       "lang": [
         "en"
       ],
@@ -328,7 +378,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "baby"
       ],
-      "ageText": "",
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -344,7 +394,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "toddler"
       ],
-      "ageText": "",
+      "ageText": "Toddler Storytime",
       "lang": [
         "en"
       ],
@@ -360,7 +410,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "baby"
       ],
-      "ageText": "",
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -378,7 +428,7 @@ STORYTIME.months["2026-12"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Family Storytime",
       "lang": [
         "en"
       ],
@@ -395,12 +445,28 @@ STORYTIME.months["2026-12"] = {
         "baby",
         "toddler"
       ],
-      "ageText": "",
+      "ageText": "…activity. This activity is friendly towards babies and toddlers along with their families.",
       "lang": [
         "en"
       ],
       "eventId": "69e27e56c1cf6f9a75860843",
       "note": "Join us for stories, songs, and playtime in the library! Little Storytime helps foster a love of reading, build social skills, and promotes physical activity. T"
+    },
+    {
+      "lib": "4s",
+      "name": "Baby Storytime!",
+      "date": "2026-12-04",
+      "time": "10:30",
+      "dur": 60,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "Baby Storytime!",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a907f803b6c71003e5bcc44",
+      "note": "Calling all caregivers & babies! Come and join us for books, songs, fingerplays & fun! This is a twenty minute Storytime with 20 or so minutes of play time to f"
     },
     {
       "lib": "cardiffb",
@@ -411,7 +477,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "toddler"
       ],
-      "ageText": "",
+      "ageText": "Toddler Time",
       "lang": [
         "en"
       ],
@@ -427,7 +493,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "baby"
       ],
-      "ageText": "",
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -443,7 +509,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "baby"
       ],
-      "ageText": "",
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -459,7 +525,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "baby"
       ],
-      "ageText": "",
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -475,7 +541,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Preschool Storytime",
       "lang": [
         "en"
       ],
@@ -491,7 +557,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Preschool Story Time",
       "lang": [
         "en"
       ],
@@ -543,7 +609,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "toddler"
       ],
-      "ageText": "",
+      "ageText": "…gs! All children are welcome. Geared toward toddlers 18m - 3.",
       "lang": [
         "en"
       ],
@@ -561,7 +627,7 @@ STORYTIME.months["2026-12"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "…books and rhymes in English and in Spanish! All ages welcome. Acompáñenos y disfrute de cancione…",
       "lang": [
         "en",
         "es"
@@ -578,7 +644,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "baby"
       ],
-      "ageText": "",
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -596,7 +662,7 @@ STORYTIME.months["2026-12"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Family story time conducted in Japanese -- all age…",
       "lang": [
         "en",
         "other"
@@ -613,7 +679,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "toddler"
       ],
-      "ageText": "",
+      "ageText": "Toddler Storytime",
       "lang": [
         "en"
       ],
@@ -629,7 +695,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "baby"
       ],
-      "ageText": "",
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -645,7 +711,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Preschool Storytime",
       "lang": [
         "en"
       ],
@@ -661,7 +727,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "baby"
       ],
-      "ageText": "",
+      "ageText": "Bouncing Baby Storytime",
       "lang": [
         "en"
       ],
@@ -677,7 +743,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "baby"
       ],
-      "ageText": "",
+      "ageText": "Baby Sign Storytime",
       "lang": [
         "en"
       ],
@@ -693,13 +759,29 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Kids",
       "lang": [
         "en",
         "es"
       ],
       "eventId": "6a7384cd88e9bf280035c003",
       "note": "Join us to Shake your sillies out with music and dancing, followed by a cozy story time in Spanish & English. Everyone is invited to wear your pajamas and bring"
+    },
+    {
+      "lib": "4s",
+      "name": "Preschool Storytime!",
+      "date": "2026-12-09",
+      "time": "10:30",
+      "dur": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Preschool Storytime!",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a907e9c2dac6e0037222597",
+      "note": "Come and join us for Storytime, make friends and enjoy books and songs, here at the 4S Ranch Library. Wednesdays @ 10:30 a.m. in the community room."
     },
     {
       "lib": "delmarco",
@@ -710,7 +792,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "toddler"
       ],
-      "ageText": "",
+      "ageText": "Toddler Storytime",
       "lang": [
         "en"
       ],
@@ -726,7 +808,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Bilingual Preschool Storytime",
       "lang": [
         "en",
         "es"
@@ -745,7 +827,7 @@ STORYTIME.months["2026-12"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Family Storytime",
       "lang": [
         "en"
       ],
@@ -761,12 +843,30 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Preschool Storytime",
       "lang": [
         "en"
       ],
       "eventId": "685f2eccd234473d0022fb23",
       "note": "Join us for stories, songs, and fun with friends! The first Wednesday of each month will be bilingual preschool storytime."
+    },
+    {
+      "lib": "lemongro",
+      "name": "Family Storytime",
+      "date": "2026-12-09",
+      "time": "10:30",
+      "dur": 45,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "Family Storytime",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a89d900db86e4004d86c1e4",
+      "note": "Join us for stories, songs, crafts, and fun! Babies, toddlers, and preschoolers are all welcome."
     },
     {
       "lib": "ramonaco",
@@ -779,7 +879,7 @@ STORYTIME.months["2026-12"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Family Storytime",
       "lang": [
         "en"
       ],
@@ -795,7 +895,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "baby"
       ],
-      "ageText": "",
+      "ageText": "Baby Storytime and Playdate",
       "lang": [
         "en"
       ],
@@ -825,16 +925,16 @@ STORYTIME.months["2026-12"] = {
       "name": "Preschool Storytime",
       "date": "2026-12-10",
       "time": "10:30",
-      "dur": 60,
+      "dur": 30,
       "ages": [
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Preschool Storytime",
       "lang": [
         "en"
       ],
-      "eventId": "6a594356fa641fe01af3b1bf",
-      "note": "Join us for a story, songs and dancing! Best for ages 2-4; no sign-up required."
+      "eventId": "6a99b5fb60ccaf01c0232556",
+      "note": "Join us for stories, songs and dancing! Best for ages 2-4; no sign-up required."
     },
     {
       "lib": "elcajonc",
@@ -847,7 +947,7 @@ STORYTIME.months["2026-12"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "…ories, socializing. Lots of fun for kids of all ages and their caregivers!",
       "lang": [
         "en"
       ],
@@ -863,7 +963,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "toddler"
       ],
-      "ageText": "",
+      "ageText": "Toddler Storytime",
       "lang": [
         "en"
       ],
@@ -880,7 +980,7 @@ STORYTIME.months["2026-12"] = {
         "baby",
         "toddler"
       ],
-      "ageText": "",
+      "ageText": "Designed for babies and toddlers, this action-packed storytime…",
       "lang": [
         "en"
       ],
@@ -896,7 +996,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Preschool Storytime",
       "lang": [
         "en"
       ],
@@ -912,7 +1012,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "toddler"
       ],
-      "ageText": "",
+      "ageText": "Rocking Toddler Storytime",
       "lang": [
         "en"
       ],
@@ -928,7 +1028,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "toddler"
       ],
-      "ageText": "",
+      "ageText": "Toddler Storytime",
       "lang": [
         "en"
       ],
@@ -944,7 +1044,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "toddler"
       ],
-      "ageText": "",
+      "ageText": "Toddler Storytime",
       "lang": [
         "en"
       ],
@@ -960,7 +1060,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "baby"
       ],
-      "ageText": "",
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -996,12 +1096,28 @@ STORYTIME.months["2026-12"] = {
         "baby",
         "toddler"
       ],
-      "ageText": "",
+      "ageText": "…activity. This activity is friendly towards babies and toddlers along with their families.",
       "lang": [
         "en"
       ],
       "eventId": "69e27e56c1cf6f9a75860844",
       "note": "Join us for stories, songs, and playtime in the library! Little Storytime helps foster a love of reading, build social skills, and promotes physical activity. T"
+    },
+    {
+      "lib": "4s",
+      "name": "Baby Storytime!",
+      "date": "2026-12-11",
+      "time": "10:30",
+      "dur": 60,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "Baby Storytime!",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a907f803b6c71003e5bcc45",
+      "note": "Calling all caregivers & babies! Come and join us for books, songs, fingerplays & fun! This is a twenty minute Storytime with 20 or so minutes of play time to f"
     },
     {
       "lib": "cardiffb",
@@ -1012,7 +1128,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "toddler"
       ],
-      "ageText": "",
+      "ageText": "Toddler Time",
       "lang": [
         "en"
       ],
@@ -1028,7 +1144,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "baby"
       ],
-      "ageText": "",
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -1044,7 +1160,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "baby"
       ],
-      "ageText": "",
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -1060,7 +1176,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Preschool Storytime",
       "lang": [
         "en"
       ],
@@ -1076,7 +1192,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Preschool Story Time",
       "lang": [
         "en"
       ],
@@ -1110,7 +1226,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "toddler"
       ],
-      "ageText": "",
+      "ageText": "…gs! All children are welcome. Geared toward toddlers 18m - 3.",
       "lang": [
         "en"
       ],
@@ -1144,7 +1260,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Kids",
       "lang": [
         "en"
       ],
@@ -1162,7 +1278,7 @@ STORYTIME.months["2026-12"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "…books and rhymes in English and in Spanish! All ages welcome. Acompáñenos y disfrute de cancione…",
       "lang": [
         "en",
         "es"
@@ -1179,7 +1295,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "baby"
       ],
-      "ageText": "",
+      "ageText": "You and baby, birth to 12 months old, will learn how to…",
       "lang": [
         "en"
       ],
@@ -1195,7 +1311,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "baby"
       ],
-      "ageText": "",
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -1213,7 +1329,7 @@ STORYTIME.months["2026-12"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Family story time conducted in Japanese -- all age…",
       "lang": [
         "en",
         "other"
@@ -1230,7 +1346,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "toddler"
       ],
-      "ageText": "",
+      "ageText": "Toddler Storytime",
       "lang": [
         "en"
       ],
@@ -1246,7 +1362,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "baby"
       ],
-      "ageText": "",
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -1262,7 +1378,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Preschool Storytime",
       "lang": [
         "en"
       ],
@@ -1278,7 +1394,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "baby"
       ],
-      "ageText": "",
+      "ageText": "Bouncing Baby Storytime",
       "lang": [
         "en"
       ],
@@ -1294,12 +1410,28 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "baby"
       ],
-      "ageText": "",
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
       "eventId": "6a2d92bbf56bd86e00b69568",
       "note": "A lap sit storytime introducing board book stories, songs, and fingerplays. Geared toward pre-walkers."
+    },
+    {
+      "lib": "4s",
+      "name": "Preschool Storytime!",
+      "date": "2026-12-16",
+      "time": "10:30",
+      "dur": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Preschool Storytime!",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a907e9c2dac6e0037222598",
+      "note": "Come and join us for Storytime, make friends and enjoy books and songs, here at the 4S Ranch Library. Wednesdays @ 10:30 a.m. in the community room."
     },
     {
       "lib": "cardiffb",
@@ -1310,7 +1442,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "baby"
       ],
-      "ageText": "",
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -1326,7 +1458,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "toddler"
       ],
-      "ageText": "",
+      "ageText": "Toddler Storytime",
       "lang": [
         "en"
       ],
@@ -1342,7 +1474,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Bilingual Preschool Storytime",
       "lang": [
         "en",
         "es"
@@ -1361,7 +1493,7 @@ STORYTIME.months["2026-12"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "…owed by play time! Geared for ages 1-3, but all ages welcome. Every 1st & 3rd Wednesday of the m…",
       "lang": [
         "en",
         "es"
@@ -1378,12 +1510,30 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Preschool Storytime",
       "lang": [
         "en"
       ],
       "eventId": "685f2eccd234473d0022fb24",
       "note": "Join us for stories, songs, and fun with friends! The first Wednesday of each month will be bilingual preschool storytime."
+    },
+    {
+      "lib": "lemongro",
+      "name": "Family Storytime",
+      "date": "2026-12-16",
+      "time": "10:30",
+      "dur": 45,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "Family Storytime",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a89d900db86e4004d86c1e5",
+      "note": "Join us for stories, songs, crafts, and fun! Babies, toddlers, and preschoolers are all welcome."
     },
     {
       "lib": "ramonaco",
@@ -1396,7 +1546,7 @@ STORYTIME.months["2026-12"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Family Storytime",
       "lang": [
         "en"
       ],
@@ -1412,7 +1562,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "baby"
       ],
-      "ageText": "",
+      "ageText": "Baby Storytime and Playdate",
       "lang": [
         "en"
       ],
@@ -1448,12 +1598,28 @@ STORYTIME.months["2026-12"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "…ories, socializing. Lots of fun for kids of all ages and their caregivers!",
       "lang": [
         "en"
       ],
       "eventId": "6a750f54b44674e2601ca19b",
       "note": "Join us for ABC's, 123's, songs, stories, socializing. Lots of fun for kids of all ages and their caregivers!"
+    },
+    {
+      "lib": "encinita",
+      "name": "Toddler Storytime",
+      "date": "2026-12-17",
+      "time": "10:30",
+      "dur": 45,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "Toddler Storytime",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a8dd49969166f088b94beb0",
+      "note": "Come join us for singing, dancing, stories, music, fun and most importantly shaking our sillies out! This program is recommended for toddlers and their caregive"
     },
     {
       "lib": "imperial",
@@ -1464,7 +1630,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "toddler"
       ],
-      "ageText": "",
+      "ageText": "Toddler Storytime",
       "lang": [
         "en"
       ],
@@ -1480,7 +1646,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Preschool Storytime",
       "lang": [
         "en"
       ],
@@ -1496,7 +1662,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "toddler"
       ],
-      "ageText": "",
+      "ageText": "Rocking Toddler Storytime",
       "lang": [
         "en"
       ],
@@ -1512,7 +1678,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "toddler"
       ],
-      "ageText": "",
+      "ageText": "Toddler Storytime",
       "lang": [
         "en"
       ],
@@ -1528,7 +1694,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "baby"
       ],
-      "ageText": "",
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -1544,7 +1710,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "toddler"
       ],
-      "ageText": "",
+      "ageText": "Toddler Storytime",
       "lang": [
         "en"
       ],
@@ -1560,7 +1726,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "baby"
       ],
-      "ageText": "",
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -1578,7 +1744,7 @@ STORYTIME.months["2026-12"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Family Storytime",
       "lang": [
         "en"
       ],
@@ -1595,12 +1761,28 @@ STORYTIME.months["2026-12"] = {
         "baby",
         "toddler"
       ],
-      "ageText": "",
+      "ageText": "…activity. This activity is friendly towards babies and toddlers along with their families.",
       "lang": [
         "en"
       ],
       "eventId": "69e27e56c1cf6f9a75860845",
       "note": "Join us for stories, songs, and playtime in the library! Little Storytime helps foster a love of reading, build social skills, and promotes physical activity. T"
+    },
+    {
+      "lib": "4s",
+      "name": "Baby Storytime!",
+      "date": "2026-12-18",
+      "time": "10:30",
+      "dur": 60,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "Baby Storytime!",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a907f803b6c71003e5bcc46",
+      "note": "Calling all caregivers & babies! Come and join us for books, songs, fingerplays & fun! This is a twenty minute Storytime with 20 or so minutes of play time to f"
     },
     {
       "lib": "cardiffb",
@@ -1611,7 +1793,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "toddler"
       ],
-      "ageText": "",
+      "ageText": "Toddler Time",
       "lang": [
         "en"
       ],
@@ -1627,7 +1809,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "baby"
       ],
-      "ageText": "",
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -1643,7 +1825,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "baby"
       ],
-      "ageText": "",
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -1659,7 +1841,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "baby"
       ],
-      "ageText": "",
+      "ageText": "Bilingual Baby Storytime",
       "lang": [
         "en",
         "es"
@@ -1676,7 +1858,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Preschool Storytime",
       "lang": [
         "en"
       ],
@@ -1692,7 +1874,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Preschool Story Time",
       "lang": [
         "en"
       ],
@@ -1726,7 +1908,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "toddler"
       ],
-      "ageText": "",
+      "ageText": "…gs! All children are welcome. Geared toward toddlers 18m - 3.",
       "lang": [
         "en"
       ],
@@ -1744,7 +1926,7 @@ STORYTIME.months["2026-12"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "…r the other, or both! This event is open to all ages!",
       "lang": [
         "en"
       ],
@@ -1760,7 +1942,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "baby"
       ],
-      "ageText": "",
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -1776,7 +1958,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "baby"
       ],
-      "ageText": "",
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -1792,7 +1974,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "baby"
       ],
-      "ageText": "",
+      "ageText": "Bouncing Baby Storytime",
       "lang": [
         "en"
       ],
@@ -1826,7 +2008,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Kids",
       "lang": [
         "en",
         "es"
@@ -1843,7 +2025,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "baby"
       ],
-      "ageText": "",
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -1859,7 +2041,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "toddler"
       ],
-      "ageText": "",
+      "ageText": "Toddler Storytime",
       "lang": [
         "en"
       ],
@@ -1875,12 +2057,30 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Preschool Storytime",
       "lang": [
         "en"
       ],
       "eventId": "685f2eccd234473d0022fb25",
       "note": "Join us for stories, songs, and fun with friends! The first Wednesday of each month will be bilingual preschool storytime."
+    },
+    {
+      "lib": "lemongro",
+      "name": "Family Storytime",
+      "date": "2026-12-23",
+      "time": "10:30",
+      "dur": 45,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "Family Storytime",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a89d900db86e4004d86c1e6",
+      "note": "Join us for stories, songs, crafts, and fun! Babies, toddlers, and preschoolers are all welcome."
     },
     {
       "lib": "ramonaco",
@@ -1893,7 +2093,7 @@ STORYTIME.months["2026-12"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Family Storytime",
       "lang": [
         "en"
       ],
@@ -1905,16 +2105,16 @@ STORYTIME.months["2026-12"] = {
       "name": "Preschool Storytime",
       "date": "2026-12-24",
       "time": "10:30",
-      "dur": 60,
+      "dur": 30,
       "ages": [
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Preschool Storytime",
       "lang": [
         "en"
       ],
-      "eventId": "6a594356fa641fe01af3b1c0",
-      "note": "Join us for a story, songs and dancing! Best for ages 2-4; no sign-up required."
+      "eventId": "6a99b5fb60ccaf01c0232557",
+      "note": "Join us for stories, songs and dancing! Best for ages 2-4; no sign-up required."
     },
     {
       "lib": "imperial",
@@ -1925,7 +2125,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "toddler"
       ],
-      "ageText": "",
+      "ageText": "Toddler Storytime",
       "lang": [
         "en"
       ],
@@ -1941,7 +2141,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Preschool Storytime",
       "lang": [
         "en"
       ],
@@ -1957,7 +2157,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "toddler"
       ],
-      "ageText": "",
+      "ageText": "Rocking Toddler Storytime",
       "lang": [
         "en"
       ],
@@ -1973,7 +2173,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "toddler"
       ],
-      "ageText": "",
+      "ageText": "…gs! All children are welcome. Geared toward toddlers 18m - 3.",
       "lang": [
         "en"
       ],
@@ -1989,7 +2189,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Kids",
       "lang": [
         "en"
       ],
@@ -2005,7 +2205,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "baby"
       ],
-      "ageText": "",
+      "ageText": "You and baby, birth to 12 months old, will learn how to…",
       "lang": [
         "en"
       ],
@@ -2021,7 +2221,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "baby"
       ],
-      "ageText": "",
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -2037,7 +2237,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "baby"
       ],
-      "ageText": "",
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -2053,7 +2253,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "baby"
       ],
-      "ageText": "",
+      "ageText": "Bouncing Baby Storytime",
       "lang": [
         "en"
       ],
@@ -2069,7 +2269,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "baby"
       ],
-      "ageText": "",
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -2085,7 +2285,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "toddler"
       ],
-      "ageText": "",
+      "ageText": "Toddler Storytime",
       "lang": [
         "en"
       ],
@@ -2101,12 +2301,30 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Preschool Storytime",
       "lang": [
         "en"
       ],
       "eventId": "685f2eccd234473d0022fb26",
       "note": "Join us for stories, songs, and fun with friends! The first Wednesday of each month will be bilingual preschool storytime."
+    },
+    {
+      "lib": "lemongro",
+      "name": "Family Storytime",
+      "date": "2026-12-30",
+      "time": "10:30",
+      "dur": 45,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "Family Storytime",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a89d900db86e4004d86c1e7",
+      "note": "Join us for stories, songs, crafts, and fun! Babies, toddlers, and preschoolers are all welcome."
     },
     {
       "lib": "ramonaco",
@@ -2119,7 +2337,7 @@ STORYTIME.months["2026-12"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Family Storytime",
       "lang": [
         "en"
       ],
@@ -2131,16 +2349,16 @@ STORYTIME.months["2026-12"] = {
       "name": "Preschool Storytime",
       "date": "2026-12-31",
       "time": "10:30",
-      "dur": 60,
+      "dur": 30,
       "ages": [
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Preschool Storytime",
       "lang": [
         "en"
       ],
-      "eventId": "6a594356fa641fe01af3b1c1",
-      "note": "Join us for a story, songs and dancing! Best for ages 2-4; no sign-up required."
+      "eventId": "6a99b5fb60ccaf01c0232558",
+      "note": "Join us for stories, songs and dancing! Best for ages 2-4; no sign-up required."
     },
     {
       "lib": "imperial",
@@ -2151,7 +2369,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "toddler"
       ],
-      "ageText": "",
+      "ageText": "Toddler Storytime",
       "lang": [
         "en"
       ],
@@ -2167,7 +2385,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Preschool Storytime",
       "lang": [
         "en"
       ],
@@ -2183,7 +2401,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "toddler"
       ],
-      "ageText": "",
+      "ageText": "Rocking Toddler Storytime",
       "lang": [
         "en"
       ],

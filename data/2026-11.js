@@ -364,7 +364,7 @@ STORYTIME.months["2026-11"] = {
       "name": "Preschool Storytime",
       "date": "2026-11-05",
       "time": "10:30",
-      "dur": 60,
+      "dur": 30,
       "ages": [
         "preschool"
       ],
@@ -372,8 +372,8 @@ STORYTIME.months["2026-11"] = {
       "lang": [
         "en"
       ],
-      "eventId": "6a594356fa641fe01af3b1bb",
-      "note": "Join us for a story, songs and dancing! Best for ages 2-4; no sign-up required."
+      "eventId": "6a99b5fb60ccaf01c0232553",
+      "note": "Join us for stories, songs and dancing! Best for ages 2-4; no sign-up required."
     },
     {
       "lib": "elcajonc",
@@ -1031,22 +1031,6 @@ STORYTIME.months["2026-11"] = {
       "note": "Join us for a fun morning of storytime and songs. All families are welcome!"
     },
     {
-      "lib": "ranchos2",
-      "name": "Baby Storytime and Playdate",
-      "date": "2026-11-11",
-      "time": "10:30",
-      "dur": 45,
-      "ages": [
-        "baby"
-      ],
-      "ageText": "Baby Storytime and Playdate",
-      "lang": [
-        "en"
-      ],
-      "eventId": "6a8338ff3f18f80030bbb506",
-      "note": "Introduce your baby to language and fun with bouncing rhymes, songs, and simple stories. This 30-minute storytime is followed by a friendly baby play date for s"
-    },
-    {
       "lib": "sanmarco",
       "name": "Baby Storytime",
       "date": "2026-11-11",
@@ -1086,7 +1070,7 @@ STORYTIME.months["2026-11"] = {
       "name": "Preschool Storytime",
       "date": "2026-11-12",
       "time": "10:30",
-      "dur": 60,
+      "dur": 30,
       "ages": [
         "preschool"
       ],
@@ -1094,8 +1078,8 @@ STORYTIME.months["2026-11"] = {
       "lang": [
         "en"
       ],
-      "eventId": "6a594356fa641fe01af3b1bc",
-      "note": "Join us for a story, songs and dancing! Best for ages 2-4; no sign-up required."
+      "eventId": "6a99b5fb60ccaf01c0232554",
+      "note": "Join us for stories, songs and dancing! Best for ages 2-4; no sign-up required."
     },
     {
       "lib": "elcajonc",
