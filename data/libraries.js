@@ -4,6 +4,22 @@
 window.STORYTIME = window.STORYTIME || {};
 STORYTIME.libraries = [
   {
+    "id": "central",
+    "name": "San Diego Central Library",
+    "sys": "SD Public Library",
+    "color": "#E8B84B",
+    "addr": "330 Park Blvd., San Diego 92101",
+    "lat": 32.7072,
+    "lng": -117.1544,
+    "phone": "619-236-5800",
+    "web": "https://www.sandiego.gov/public-library/central-library",
+    "fb": null,
+    "note": null,
+    "closeDate": null,
+    "system": "city",
+    "events": "https://sandiego.events.mylibrary.digital/?locations=1065"
+  },
+  {
     "id": "alliedga",
     "name": "Allied Gardens/Benjamin Library",
     "sys": "SD Public Library",
