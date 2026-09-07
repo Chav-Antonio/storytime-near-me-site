@@ -924,8 +924,8 @@ function renderSchedule(evs){
   const keys=Object.keys(byDay).sort();
   let h="";
   for(const k of keys){
-    // within a day: closest first, then earliest time as the tiebreaker
-    const list=byDay[k].sort((a,b)=> (a.dist-b.dist) || (a.start-b.start));
+    // within a day: earliest time first, then closest as the tiebreaker
+    const list=byDay[k].sort((a,b)=> (a.start-b.start) || (a.dist-b.dist));
     const d=list[0].date;
     h+=`<section class="dategroup">
       <div class="datehead">
@@ -958,9 +958,11 @@ function renderLocation(evs){
   // group by lib, only libs that have any matching event (plus always-note the closed home library if in radius)
   const byLib={};
   evs.forEach(e=>{ (byLib[e.lib.id]=byLib[e.lib.id]||[]).push(e); });
-  // ordering: by distance
+  // ordering: by each library's soonest upcoming event, then proximity as the
+  // tiebreaker. Libraries with no events in view (shown only for a l.note) sort last.
+  const nextStart = id => { const r=byLib[id]; return (r&&r.length) ? Math.min(...r.map(e=>+e.start)) : Infinity; };
   const libIds=LIBS.filter(l=>libDist(l)<=state.radius+0.05)
-                   .sort((a,b)=>libDist(a)-libDist(b)).map(l=>l.id);
+                   .sort((a,b)=> (nextStart(a.id)-nextStart(b.id)) || (libDist(a)-libDist(b))).map(l=>l.id);
   let h="";
   let any=false;
   for(const id of libIds){
@@ -1014,8 +1016,8 @@ function renderDate(evs){
   }
   nav+=`</div>`;
   // blocks
-  // within the selected day: closest first, then earliest time as the tiebreaker
-  const day=byDay[state.selDay].sort((a,b)=> (a.dist-b.dist) || (a.start-b.start));
+  // within the selected day: earliest time first, then closest as the tiebreaker
+  const day=byDay[state.selDay].sort((a,b)=> (a.start-b.start) || (a.dist-b.dist));
   const d0=day[0].date;
   let head=`<div class="datesticky">
       <h2>${esc(wdLong(d0))}, ${esc(moShort(d0))} ${d0.getDate()}</h2>
