@@ -924,7 +924,8 @@ function renderSchedule(evs){
   const keys=Object.keys(byDay).sort();
   let h="";
   for(const k of keys){
-    const list=byDay[k].sort((a,b)=>a.start-b.start);
+    // within a day: closest first, then earliest time as the tiebreaker
+    const list=byDay[k].sort((a,b)=> (a.dist-b.dist) || (a.start-b.start));
     const d=list[0].date;
     h+=`<section class="dategroup">
       <div class="datehead">
@@ -1013,7 +1014,8 @@ function renderDate(evs){
   }
   nav+=`</div>`;
   // blocks
-  const day=byDay[state.selDay].sort((a,b)=>a.start-b.start);
+  // within the selected day: closest first, then earliest time as the tiebreaker
+  const day=byDay[state.selDay].sort((a,b)=> (a.dist-b.dist) || (a.start-b.start));
   const d0=day[0].date;
   let head=`<div class="datesticky">
       <h2>${esc(wdLong(d0))}, ${esc(moShort(d0))} ${d0.getDate()}</h2>
