@@ -17,7 +17,7 @@ STORYTIME.months["2026-08"] = {
       ],
       "ageText": "",
       "lang": [
-        "other"
+        "zh"
       ],
       "eventId": "",
       "note": "Stories & songs in Mandarin."
@@ -318,7 +318,7 @@ STORYTIME.months["2026-08"] = {
       ],
       "ageText": "",
       "lang": [
-        "other"
+        "zh"
       ],
       "eventId": "",
       "note": "Stories & songs in Mandarin."
@@ -619,7 +619,7 @@ STORYTIME.months["2026-08"] = {
       ],
       "ageText": "",
       "lang": [
-        "other"
+        "zh"
       ],
       "eventId": "",
       "note": "Stories & songs in Mandarin."
@@ -1382,7 +1382,7 @@ STORYTIME.months["2026-08"] = {
       "ageText": "",
       "lang": [
         "en",
-        "other"
+        "de"
       ],
       "eventId": "6a593a10f213992f00c4c9c9",
       "note": "Dance along with fun storytime songs in German!"
@@ -1501,7 +1501,7 @@ STORYTIME.months["2026-08"] = {
       "ageText": "",
       "lang": [
         "en",
-        "other"
+        "ja"
       ],
       "eventId": "6a5678b8daaaf4f51a1fbb0c",
       "note": "Family story time conducted in Japanese -- all ages welcome. Listen to stories and sing songs, all in Japanese! Each week, storytime will end with a fun craft."
@@ -2030,7 +2030,7 @@ STORYTIME.months["2026-08"] = {
       "ageText": "",
       "lang": [
         "en",
-        "other"
+        "fr"
       ],
       "eventId": "324390",
       "note": "This bilingual program is designed for preschool children to experience both English and French in a fun, engaging setting. During each session, we will read st"
@@ -2829,7 +2829,7 @@ STORYTIME.months["2026-08"] = {
       "ageText": "Family story time conducted in Japanese -- all age…",
       "lang": [
         "en",
-        "other"
+        "ja"
       ],
       "eventId": "6a5678b8daaaf4f51a1fbb0d",
       "note": "Family story time conducted in Japanese -- all ages welcome. Listen to stories and sing songs, all in Japanese! Each week, storytime will end with a fun craft."

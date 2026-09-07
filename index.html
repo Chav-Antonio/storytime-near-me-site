@@ -512,11 +512,15 @@ const STRINGS = {
     "filter.dow":"Day of week",
     "dow.selectAll":"Select all","dow.clear":"Clear",
     "filter.time":"Time of day",
-    "lang.en":"English","lang.es":"Spanish","lang.other":"Other","lang.mandarin":"Mandarin",
+    "lang.en":"English","lang.es":"Spanish","lang.other":"Other",
+    "lang.zh":"Mandarin","lang.vi":"Vietnamese","lang.ko":"Korean","lang.tl":"Tagalog",
+    "lang.ar":"Arabic","lang.fr":"French","lang.ja":"Japanese","lang.hi":"Hindi",
+    "lang.pa":"Punjabi","lang.ru":"Russian","lang.so":"Somali","lang.de":"German",
     "time.am":"AM","time.pm":"PM",
     "tab.schedule":"Schedule","tab.location":"By location","tab.date":"By date",
     "badge.ages":"Ages {label}",
-    "badge.bilingual":"Bilingual EN·ES",
+    "badge.bilingual":"Bilingual",
+    "badge.bilingualN":v=>`Bilingual ${v.codes}`,
     "unit.min":"{n} min","unit.mi":"{n} mi",
     "btn.gcal":"＋ Google Calendar","btn.gcal.short":"＋ Calendar",
     "btn.eventPage":"Event page ↗","btn.event.short":"Event ↗","btn.details":"Details ↗",
@@ -557,11 +561,15 @@ const STRINGS = {
     "filter.dow":"Día de la semana",
     "dow.selectAll":"Seleccionar todo","dow.clear":"Borrar",
     "filter.time":"Hora",
-    "lang.en":"Inglés","lang.es":"Español","lang.other":"Otro","lang.mandarin":"Mandarín",
+    "lang.en":"Inglés","lang.es":"Español","lang.other":"Otro",
+    "lang.zh":"Mandarín","lang.vi":"Vietnamita","lang.ko":"Coreano","lang.tl":"Tagalo",
+    "lang.ar":"Árabe","lang.fr":"Francés","lang.ja":"Japonés","lang.hi":"Hindi",
+    "lang.pa":"Punyabí","lang.ru":"Ruso","lang.so":"Somalí","lang.de":"Alemán",
     "time.am":"AM","time.pm":"PM",
     "tab.schedule":"Horario","tab.location":"Por ubicación","tab.date":"Por fecha",
     "badge.ages":"Edades {label}",
-    "badge.bilingual":"Bilingüe EN·ES",
+    "badge.bilingual":"Bilingüe",
+    "badge.bilingualN":v=>`Bilingüe ${v.codes}`,
     "unit.min":"{n} min","unit.mi":"{n} mi",
     "btn.gcal":"＋ Google Calendar","btn.gcal.short":"＋ Calendario",
     "btn.eventPage":"Página del evento ↗","btn.event.short":"Evento ↗","btn.details":"Detalles ↗",
@@ -722,9 +730,21 @@ function agesLabel(groups){
   if(g.length>=AGE_GROUPS.length) return t("ages.all");
   return AGE_GROUPS.filter(x=>g.includes(x)).map(x=>t("age."+x)).join(" · ");
 }
+// Human name for a language code, falling back to the generic "Other" for any
+// code we don't have a dedicated string for.
+function langName(code){
+  const k = "lang."+code, s = t(k);
+  return s===k ? t("lang.other") : s;
+}
 function langTags(arr){
-  if(arr.length>1) return [t("badge.bilingual")];
-  return arr.map(x=> x==="en"?t("lang.en"):x==="es"?t("lang.es"):t("lang.mandarin"));
+  if(arr.length>1){
+    const codes = arr.map(c=>c.toUpperCase());
+    // Named languages get a compact "Bilingual EN·DE" badge; if one side is the
+    // generic "other" bucket, drop to a plain "Bilingual" rather than "EN·OTHER".
+    return codes.includes("OTHER") ? [t("badge.bilingual")]
+                                   : [t("badge.bilingualN",{codes:codes.join("·")})];
+  }
+  return arr.map(langName);
 }
 function pad(n){ return String(n).padStart(2,"0"); }
 function dateKey(d){ return `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`; }

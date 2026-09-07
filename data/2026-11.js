@@ -86,7 +86,7 @@ STORYTIME.months["2026-11"] = {
       "ageText": "Family story time conducted in Japanese -- all age…",
       "lang": [
         "en",
-        "other"
+        "ja"
       ],
       "eventId": "6a5678b8daaaf4f51a1fbb16",
       "note": "Family story time conducted in Japanese -- all ages welcome. Listen to stories and sing songs, all in Japanese! Each week, storytime will end with a fun craft."
@@ -1569,7 +1569,7 @@ STORYTIME.months["2026-11"] = {
       "ageText": "Family story time conducted in Japanese -- all age…",
       "lang": [
         "en",
-        "other"
+        "ja"
       ],
       "eventId": "6a5678b8daaaf4f51a1fbb17",
       "note": "Family story time conducted in Japanese -- all ages welcome. Listen to stories and sing songs, all in Japanese! Each week, storytime will end with a fun craft."
@@ -2926,7 +2926,7 @@ STORYTIME.months["2026-11"] = {
       "ageText": "Family story time conducted in Japanese -- all age…",
       "lang": [
         "en",
-        "other"
+        "ja"
       ],
       "eventId": "6a5678b8daaaf4f51a1fbb18",
       "note": "Family story time conducted in Japanese -- all ages welcome. Listen to stories and sing songs, all in Japanese! Each week, storytime will end with a fun craft."
@@ -4314,7 +4314,7 @@ STORYTIME.months["2026-11"] = {
       "ageText": "Family story time conducted in Japanese -- all age…",
       "lang": [
         "en",
-        "other"
+        "ja"
       ],
       "eventId": "6a5678b8daaaf4f51a1fbb19",
       "note": "Family story time conducted in Japanese -- all ages welcome. Listen to stories and sing songs, all in Japanese! Each week, storytime will end with a fun craft."
@@ -5096,7 +5096,7 @@ STORYTIME.months["2026-11"] = {
       "ageText": "Family story time conducted in Japanese -- all age…",
       "lang": [
         "en",
-        "other"
+        "ja"
       ],
       "eventId": "6a5678b8daaaf4f51a1fbb1a",
       "note": "Family story time conducted in Japanese -- all ages welcome. Listen to stories and sing songs, all in Japanese! Each week, storytime will end with a fun craft."

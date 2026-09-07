@@ -1413,7 +1413,7 @@ STORYTIME.months["2026-09"] = {
       ],
       "ageText": "…s Canndy. This program is for children, but all ages are welcome. Please note that this is not a…",
       "lang": [
-        "other"
+        "zh"
       ],
       "eventId": "317642",
       "note": "Stories & songs in Mandarin."
@@ -1432,7 +1432,7 @@ STORYTIME.months["2026-09"] = {
       "ageText": "",
       "lang": [
         "en",
-        "other"
+        "hi"
       ],
       "eventId": "321517",
       "note": "Join us for a Bilingual Hindi-English Story Time, music, crafts and play!"
@@ -3796,7 +3796,7 @@ STORYTIME.months["2026-09"] = {
       "ageText": "",
       "lang": [
         "en",
-        "other"
+        "de"
       ],
       "eventId": "6a89e83b2dac6e003720e8c9",
       "note": "Dance along with fun storytime songs in German!"
@@ -4032,7 +4032,7 @@ STORYTIME.months["2026-09"] = {
       "ageText": "Family story time conducted in Japanese -- all age…",
       "lang": [
         "en",
-        "other"
+        "ja"
       ],
       "eventId": "6a5678b8daaaf4f51a1fbb0f",
       "note": "Family story time conducted in Japanese -- all ages welcome. Listen to stories and sing songs, all in Japanese! Each week, storytime will end with a fun craft."
@@ -6415,7 +6415,7 @@ STORYTIME.months["2026-09"] = {
       ],
       "ageText": "…he Community Room in the Mira Mesa Library. All ages are welcome! Th story time will be on the 3…",
       "lang": [
-        "other"
+        "zh"
       ],
       "eventId": "362767",
       "note": "Join us for Mandarin Chinese stories and songs with Ms. Canndy at the Community Room in the Mira Mesa Library. All ages are welcome! Th story time will be on th"
@@ -6726,7 +6726,7 @@ STORYTIME.months["2026-09"] = {
       "ageText": "Family story time conducted in Japanese -- all age…",
       "lang": [
         "en",
-        "other"
+        "ja"
       ],
       "eventId": "6a5678b8daaaf4f51a1fbb10",
       "note": "Family story time conducted in Japanese -- all ages welcome. Listen to stories and sing songs, all in Japanese! Each week, storytime will end with a fun craft."
@@ -7651,7 +7651,7 @@ STORYTIME.months["2026-09"] = {
       "ageText": "This bilingual program is designed for preschool children to experience both English and Fre…",
       "lang": [
         "en",
-        "other"
+        "fr"
       ],
       "eventId": "324391",
       "note": "This bilingual program is designed for preschool children to experience both English and French in a fun, engaging setting. During each session, we will read st"
@@ -9248,7 +9248,7 @@ STORYTIME.months["2026-09"] = {
       "ageText": "Family story time conducted in Japanese -- all age…",
       "lang": [
         "en",
-        "other"
+        "ja"
       ],
       "eventId": "6a5678b8daaaf4f51a1fbb11",
       "note": "Family story time conducted in Japanese -- all ages welcome. Listen to stories and sing songs, all in Japanese! Each week, storytime will end with a fun craft."

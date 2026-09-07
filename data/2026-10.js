@@ -1137,7 +1137,7 @@ STORYTIME.months["2026-10"] = {
       "ageText": "",
       "lang": [
         "en",
-        "other"
+        "hi"
       ],
       "eventId": "321518",
       "note": "Join us for a Bilingual Hindi-English Story Time, music, crafts and play!"
@@ -1460,7 +1460,7 @@ STORYTIME.months["2026-10"] = {
       "ageText": "Family story time conducted in Japanese -- all age…",
       "lang": [
         "en",
-        "other"
+        "ja"
       ],
       "eventId": "6a5678b8daaaf4f51a1fbb12",
       "note": "Family story time conducted in Japanese -- all ages welcome. Listen to stories and sing songs, all in Japanese! Each week, storytime will end with a fun craft."
@@ -3372,7 +3372,7 @@ STORYTIME.months["2026-10"] = {
       ],
       "ageText": "",
       "lang": [
-        "other"
+        "zh"
       ],
       "eventId": "",
       "note": "Stories & songs in Mandarin."
@@ -3554,7 +3554,7 @@ STORYTIME.months["2026-10"] = {
       "ageText": "Family story time conducted in Japanese -- all age…",
       "lang": [
         "en",
-        "other"
+        "ja"
       ],
       "eventId": "6a5678b8daaaf4f51a1fbb13",
       "note": "Family story time conducted in Japanese -- all ages welcome. Listen to stories and sing songs, all in Japanese! Each week, storytime will end with a fun craft."
@@ -5000,7 +5000,7 @@ STORYTIME.months["2026-10"] = {
       ],
       "ageText": "",
       "lang": [
-        "other"
+        "zh"
       ],
       "eventId": "",
       "note": "Stories & songs in Mandarin."
@@ -5170,7 +5170,7 @@ STORYTIME.months["2026-10"] = {
       "ageText": "Family story time conducted in Japanese -- all age…",
       "lang": [
         "en",
-        "other"
+        "ja"
       ],
       "eventId": "6a5678b8daaaf4f51a1fbb14",
       "note": "Family story time conducted in Japanese -- all ages welcome. Listen to stories and sing songs, all in Japanese! Each week, storytime will end with a fun craft."
@@ -6459,7 +6459,7 @@ STORYTIME.months["2026-10"] = {
       ],
       "ageText": "",
       "lang": [
-        "other"
+        "zh"
       ],
       "eventId": "",
       "note": "Stories & songs in Mandarin."
@@ -6625,7 +6625,7 @@ STORYTIME.months["2026-10"] = {
       "ageText": "Family story time conducted in Japanese -- all age…",
       "lang": [
         "en",
-        "other"
+        "ja"
       ],
       "eventId": "6a5678b8daaaf4f51a1fbb15",
       "note": "Family story time conducted in Japanese -- all ages welcome. Listen to stories and sing songs, all in Japanese! Each week, storytime will end with a fun craft."
@@ -8057,7 +8057,7 @@ STORYTIME.months["2026-10"] = {
       ],
       "ageText": "",
       "lang": [
-        "other"
+        "zh"
       ],
       "eventId": "",
       "note": "Stories & songs in Mandarin."
