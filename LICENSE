@@ -1,0 +1,25 @@
+Copyright (c) 2026 Zavech, LLC. All rights reserved.
+
+This software and its source code (the "Software") are proprietary and
+confidential. The Software is made publicly viewable solely to operate the
+Storytime Near Me website; publication of the source does not grant any
+license to use it.
+
+No permission is granted to any person to copy, modify, merge, publish,
+distribute, sublicense, republish, host, or create derivative works of the
+Software, in whole or in part, by any means, without the prior written
+permission of the copyright holder.
+
+The event schedule data included in this repository is aggregated from
+publicly available San Diego city and county library calendars. That
+underlying data is not claimed as proprietary; this license covers the
+Software — its HTML, CSS, JavaScript, scraper, and the particular
+compilation, structure, and presentation of the data herein.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF,
+OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
