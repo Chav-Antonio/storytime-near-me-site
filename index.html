@@ -1150,8 +1150,15 @@ function syncStickyHeights(){
       ticking=false;
       if(!mq.matches) return;                 // desktop: controls always shown
       const y=window.scrollY||window.pageYOffset||0;
-      if(y>collapseAt) setOpen(false);
-      else if(y<4) setOpen(true);
+      if(y<4){ setOpen(true); return; }       // at the very top: filters always shown
+      // Collapsing frees the controls' height. On a short page (e.g. one event in the
+      // By-date view) that snaps scrollY back to the top, which re-opens the drawer — a
+      // flip-flop that swallows the scroll gesture. Only auto-collapse when the page is
+      // still scrolled past the collapse point after that height is removed.
+      const controls=document.getElementById("controls");
+      const freed=(panel.classList.contains("open") && controls) ? controls.offsetHeight : 0;
+      const maxAfterCollapse=document.documentElement.scrollHeight - freed - window.innerHeight;
+      if(y>collapseAt && maxAfterCollapse>collapseAt) setOpen(false);
     });
   }
   measure();
