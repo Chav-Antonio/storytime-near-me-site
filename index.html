@@ -978,11 +978,12 @@ function renderLocation(evs){
   // group by lib, only libs that have any matching event (plus always-note the closed home library if in radius)
   const byLib={};
   evs.forEach(e=>{ (byLib[e.lib.id]=byLib[e.lib.id]||[]).push(e); });
-  // ordering: by each library's soonest upcoming event, then proximity as the
-  // tiebreaker. Libraries with no events in view (shown only for a l.note) sort last.
+  // ordering: nearest library first, with each library's soonest upcoming event
+  // as the tiebreaker. Libraries with no events in view (shown only for a l.note)
+  // still sort by distance; their nextStart is Infinity but only breaks ties.
   const nextStart = id => { const r=byLib[id]; return (r&&r.length) ? Math.min(...r.map(e=>+e.start)) : Infinity; };
   const libIds=LIBS.filter(l=>libDist(l)<=state.radius+0.05)
-                   .sort((a,b)=> (nextStart(a.id)-nextStart(b.id)) || (libDist(a)-libDist(b))).map(l=>l.id);
+                   .sort((a,b)=> (libDist(a)-libDist(b)) || (nextStart(a.id)-nextStart(b.id))).map(l=>l.id);
   let h="";
   let any=false;
   for(const id of libIds){
