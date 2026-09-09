@@ -301,22 +301,6 @@ STORYTIME.months["2026-11"] = {
       "note": "Each week, STEAM Explorers dive into a new and exciting challenge that blends science, technology, engineering, art, and math. These hands-on activities encoura"
     },
     {
-      "lib": "julianco",
-      "name": "Afterschool Craft",
-      "date": "2026-11-03",
-      "time": "15:00",
-      "dur": 60,
-      "ages": [
-        "preschool"
-      ],
-      "ageText": "Kids",
-      "lang": [
-        "en"
-      ],
-      "eventId": "6a8f2cd729a7dd0d6746d6b4",
-      "note": "Join us in the Kids' Area for a fun craft. All materials provided, while supplies last."
-    },
-    {
       "lib": "lincolna",
       "name": "Spanish Bilingual Storytime",
       "date": "2026-11-03",
@@ -477,7 +461,7 @@ STORYTIME.months["2026-11"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "…th interactive music classes that encourage family bonding, at-home learning, and future music…",
+      "ageText": "ChIMES: An Early Childhood Music Program",
       "lang": [
         "en"
       ],
@@ -770,19 +754,21 @@ STORYTIME.months["2026-11"] = {
     },
     {
       "lib": "encinita",
-      "name": "Toddler Storytime",
+      "name": "Tooth Fairy Storytime",
       "date": "2026-11-05",
       "time": "10:30",
-      "dur": 45,
+      "dur": 30,
       "ages": [
-        "toddler"
+        "baby",
+        "toddler",
+        "preschool"
       ],
-      "ageText": "Toddler Storytime",
+      "ageText": "",
       "lang": [
         "en"
       ],
-      "eventId": "6a8dd49969166f088b94bead",
-      "note": "Come join us for singing, dancing, stories, music, fun and most importantly shaking our sillies out! This program is recommended for toddlers and their caregive"
+      "eventId": "6aa084c56562d02296858337",
+      "note": "The Tooth Fairy is making a special morning visit to the Encinitas Library! Join us for a magical storytime designed for children ages 2–3 and their caregivers,"
     },
     {
       "lib": "imperial",
@@ -1115,6 +1101,22 @@ STORYTIME.months["2026-11"] = {
       "note": "Enjoy a free hour of Lego fun! Featuring weekly challenges, Let’s Create!"
     },
     {
+      "lib": "sanmarco",
+      "name": "Tots and Blocks",
+      "date": "2026-11-06",
+      "time": "10:00",
+      "dur": 60,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "Tots and Blocks",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a6a58970e562e28009d5bfd",
+      "note": "Bring your little ones for play time at the library! Children 0-5 and their caregivers are encouraged to play with the toys provided by the library. *Toys only "
+    },
+    {
       "lib": "4s",
       "name": "Baby Storytime!",
       "date": "2026-11-06",
@@ -1311,6 +1313,24 @@ STORYTIME.months["2026-11"] = {
       "note": "Join us on Fridays at 11:00 am for stories and songs."
     },
     {
+      "lib": "sanmarco",
+      "name": "Sensory-Friendly Storytime",
+      "date": "2026-11-06",
+      "time": "11:30",
+      "dur": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "…s for exploration. Geared for ages 1-3, but all ages are welcome. This program will be co-lead b…",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6aa0ac76e1fb8f13578c55a1",
+      "note": "Join us for an inclusive storytime designed for children who benefit from a sensory-friendly environment. Each session features themed stories, hands-on activit"
+    },
+    {
       "lib": "pw",
       "name": "Love on a Leash",
       "date": "2026-11-06",
@@ -1487,6 +1507,22 @@ STORYTIME.months["2026-11"] = {
       ],
       "eventId": "6a9a156e60ccaf01c0234a5c",
       "note": "Craft activities and building challenges with LEGO bricks, geared for kids ages 4 and up. Offered by local high school students. No registration required."
+    },
+    {
+      "lib": "pw",
+      "name": "Kids' Watercolor Class",
+      "date": "2026-11-08",
+      "time": "14:00",
+      "dur": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6aa06eda648f481be43ae410",
+      "note": "Kids are welcome to learn how to paint with watercolors. This Free program is geared towards elementary age students. Limited Space."
     },
     {
       "lib": "elcajonc",
@@ -1770,22 +1806,6 @@ STORYTIME.months["2026-11"] = {
       "note": "Come have fun at the library while making a cool craft. A different craft each time, while supplies last. Ven y divertirse en la biblioteca. Una manualidad nuev"
     },
     {
-      "lib": "julianco",
-      "name": "Afterschool Craft",
-      "date": "2026-11-10",
-      "time": "15:00",
-      "dur": 60,
-      "ages": [
-        "preschool"
-      ],
-      "ageText": "Kids",
-      "lang": [
-        "en"
-      ],
-      "eventId": "6a8f2cd729a7dd0d6746d6b5",
-      "note": "Join us in the Kids' Area for a fun craft. All materials provided, while supplies last."
-    },
-    {
       "lib": "lincolna",
       "name": "Spanish Bilingual Storytime",
       "date": "2026-11-10",
@@ -1969,24 +1989,6 @@ STORYTIME.months["2026-11"] = {
       ],
       "eventId": "6a6a58430e562e28009d5b9d",
       "note": "Caregivers and their little ones are invited to join our vibrant Baby Storytime featuring: songs, stories, and playtime! WEEKLY WEDNESDAYS starting at 1:00PM."
-    },
-    {
-      "lib": "encinita",
-      "name": "Doggie Tales",
-      "date": "2026-11-11",
-      "time": "15:00",
-      "dur": 60,
-      "ages": [
-        "baby",
-        "toddler",
-        "preschool"
-      ],
-      "ageText": "…ting patiently to hear stories! Children of all ages are welcomed to come practice their reading…",
-      "lang": [
-        "en"
-      ],
-      "eventId": "69582b26e3e3999b5c0572ae",
-      "note": "Friendly, Love on a Leash, therapy dogs are waiting patiently to hear stories! Children of all ages are welcomed to come practice their reading skills and make "
     },
     {
       "lib": "imperial",
@@ -2403,6 +2405,22 @@ STORYTIME.months["2026-11"] = {
       "note": "Join us for an Audiobook Listening Party! Are you daring enough to participate in our audiobook listening party featuring a tale about a mysterious abandoned ho"
     },
     {
+      "lib": "sanmarco",
+      "name": "Tots and Blocks",
+      "date": "2026-11-13",
+      "time": "10:00",
+      "dur": 60,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "Tots and Blocks",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a6a58970e562e28009d5bfe",
+      "note": "Bring your little ones for play time at the library! Children 0-5 and their caregivers are encouraged to play with the toys provided by the library. *Toys only "
+    },
+    {
       "lib": "4s",
       "name": "Baby Storytime!",
       "date": "2026-11-13",
@@ -2523,10 +2541,9 @@ STORYTIME.months["2026-11"] = {
       "time": "10:30",
       "dur": 60,
       "ages": [
-        "toddler",
-        "preschool"
+        "toddler"
       ],
-      "ageText": "A fun art program for toddlers and preschoolers to explore colors, crafts…",
+      "ageText": "Tiny Tots Art",
       "lang": [
         "en"
       ],
@@ -3139,22 +3156,6 @@ STORYTIME.months["2026-11"] = {
       ],
       "eventId": "6a55771df4e5db3d00c18ed2",
       "note": "Each week, STEAM Explorers dive into a new and exciting challenge that blends science, technology, engineering, art, and math. These hands-on activities encoura"
-    },
-    {
-      "lib": "julianco",
-      "name": "Afterschool Craft",
-      "date": "2026-11-17",
-      "time": "15:00",
-      "dur": 60,
-      "ages": [
-        "preschool"
-      ],
-      "ageText": "Kids",
-      "lang": [
-        "en"
-      ],
-      "eventId": "6a8f2cd729a7dd0d6746d6b6",
-      "note": "Join us in the Kids' Area for a fun craft. All materials provided, while supplies last."
     },
     {
       "lib": "lincolna",
@@ -4466,22 +4467,6 @@ STORYTIME.months["2026-11"] = {
       "note": "Each week, STEAM Explorers dive into a new and exciting challenge that blends science, technology, engineering, art, and math. These hands-on activities encoura"
     },
     {
-      "lib": "julianco",
-      "name": "Afterschool Craft",
-      "date": "2026-11-24",
-      "time": "15:00",
-      "dur": 60,
-      "ages": [
-        "preschool"
-      ],
-      "ageText": "Kids",
-      "lang": [
-        "en"
-      ],
-      "eventId": "6a8f2cd729a7dd0d6746d6b7",
-      "note": "Join us in the Kids' Area for a fun craft. All materials provided, while supplies last."
-    },
-    {
       "lib": "lincolna",
       "name": "Spanish Bilingual Storytime",
       "date": "2026-11-24",
@@ -4891,10 +4876,9 @@ STORYTIME.months["2026-11"] = {
       "time": "10:30",
       "dur": 60,
       "ages": [
-        "toddler",
-        "preschool"
+        "toddler"
       ],
-      "ageText": "A fun art program for toddlers and preschoolers to explore colors, crafts…",
+      "ageText": "Tiny Tots Art",
       "lang": [
         "en"
       ],

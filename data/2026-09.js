@@ -1538,392 +1538,6 @@ STORYTIME.months["2026-09"] = {
       "note": "Bring your imagination and we’ll supply the LEGOs!"
     },
     {
-      "lib": "lindavis",
-      "name": "Live Interactive Video Preschool/Kindergarten Storytime with Mr. Luan",
-      "date": "2026-09-08",
-      "time": "10:30",
-      "dur": 45,
-      "ages": [
-        "preschool"
-      ],
-      "ageText": "Live Interactive Video Preschool/Kindergarten Storytime with Mr. Luan",
-      "lang": [
-        "en"
-      ],
-      "eventId": "324159",
-      "note": "My Live Interactive Video Preschool/Kindergarten Storytimes, good for kids ages 4 to 6, are fun, kinetic, and humorous experiences! I make it a point not just t"
-    },
-    {
-      "lib": "ranchos2",
-      "name": "Puppet Show",
-      "date": "2026-09-08",
-      "time": "10:30",
-      "dur": 45,
-      "ages": [
-        "baby",
-        "toddler",
-        "preschool"
-      ],
-      "ageText": "…illy characters and a performance the whole family will enjoy.",
-      "lang": [
-        "en"
-      ],
-      "eventId": "6a5574f30e562e280099aef9",
-      "note": "Join us for a fun-filled Puppet Show brought to life by the RSF Library Staff! Get ready for silly characters and a performance the whole family will enjoy."
-    },
-    {
-      "lib": "balboa",
-      "name": "Storytime",
-      "date": "2026-09-08",
-      "time": "11:30",
-      "dur": 30,
-      "ages": [
-        "toddler"
-      ],
-      "ageText": "…fts, giveaways & more! Afterwards, stay for Toddler Happy Hour. For children and their caregive…",
-      "lang": [
-        "en"
-      ],
-      "eventId": "312812",
-      "note": "Join us for indoor Storytime at the Balboa Library. We’ll read fun stories and sing songs. There will be take-home crafts, giveaways & more! Afterwards, stay fo"
-    },
-    {
-      "lib": "mountain",
-      "name": "Music and Motion",
-      "date": "2026-09-08",
-      "time": "11:30",
-      "dur": 45,
-      "ages": [
-        "baby",
-        "toddler"
-      ],
-      "ageText": "…tion! This program is designed to introduce babies and toddlers to music, dance and instrument…",
-      "lang": [
-        "en"
-      ],
-      "eventId": "326981",
-      "note": "Come join us every Tuesday at 11:30am for Music and Motion! This program is designed to introduce babies and toddlers to music, dance and instruments. We will l"
-    },
-    {
-      "lib": "balboa",
-      "name": "Toddler Happy Hour",
-      "date": "2026-09-08",
-      "time": "12:00",
-      "dur": 45,
-      "ages": [
-        "toddler"
-      ],
-      "ageText": "Toddler Happy Hour",
-      "lang": [
-        "en"
-      ],
-      "eventId": "312891",
-      "note": "Come join us for Toddler Happy Hour! Right after Storytime, parents and caregivers with young children can come and meet their neighbors! Age-appropriate toys a"
-    },
-    {
-      "lib": "lajollar",
-      "name": "Storytime with Ms Teri",
-      "date": "2026-09-08",
-      "time": "12:00",
-      "dur": 30,
-      "ages": [
-        "baby",
-        "toddler",
-        "preschool"
-      ],
-      "ageText": "",
-      "lang": [
-        "en"
-      ],
-      "eventId": "324118",
-      "note": "Come one, come all to this story time designed for little ones and their caregivers. Enjoy songs, rhymes, and books with captivating illustrations."
-    },
-    {
-      "lib": "nu",
-      "name": "Toddler Storytime",
-      "date": "2026-09-08",
-      "time": "12:00",
-      "dur": 30,
-      "ages": [
-        "toddler"
-      ],
-      "ageText": "Toddler Storytime",
-      "lang": [
-        "en"
-      ],
-      "eventId": "341024",
-      "note": "Join in as we read, sing, dance, and play at Toddler Storytime! Come and build essential early literacy skills and foster a love of reading."
-    },
-    {
-      "lib": "nu",
-      "name": "Stay and Play",
-      "date": "2026-09-08",
-      "time": "12:30",
-      "dur": 30,
-      "ages": [
-        "baby",
-        "toddler"
-      ],
-      "ageText": "…and Play is a relaxed playtime designed for babies, toddlers, and their caregivers. Little one…",
-      "lang": [
-        "en"
-      ],
-      "eventId": "341006",
-      "note": "Stay and Play is a relaxed playtime designed for babies, toddlers, and their caregivers. Little ones can explore toys, practice new skills, and interact with ot"
-    },
-    {
-      "lib": "pw",
-      "name": "Baby Fitness with My Gym",
-      "date": "2026-09-08",
-      "time": "13:00",
-      "dur": 30,
-      "ages": [
-        "baby"
-      ],
-      "ageText": "Baby Fitness with My Gym",
-      "lang": [
-        "en"
-      ],
-      "eventId": "6a8f3bd1db86e4004d874231",
-      "note": "Enjoy songs dance, puppets and more with My Gym. Required liability waivers will be available right before the start of the class."
-    },
-    {
-      "lib": "sanmarco",
-      "name": "Preschool Dance Party",
-      "date": "2026-09-08",
-      "time": "13:00",
-      "dur": 30,
-      "ages": [
-        "preschool"
-      ],
-      "ageText": "Preschool Dance Party",
-      "lang": [
-        "en"
-      ],
-      "eventId": "6a6a57bfe9de6536001f24b9",
-      "note": "Are you ready for a Preschool Dance Party?! Enjoy music, singing, and dancing to all kinds of family-friendly tunes. WEEKLY ON TUESDAYS starting 1:00 PM. Geared"
-    },
-    {
-      "lib": "vistacou",
-      "name": "Baby Sign Storytime",
-      "date": "2026-09-08",
-      "time": "13:00",
-      "dur": 30,
-      "ages": [
-        "baby"
-      ],
-      "ageText": "Baby Sign Storytime",
-      "lang": [
-        "en"
-      ],
-      "eventId": "6a2d9361f56bd86e00b69581",
-      "note": "A storytime introducing basic Baby Sign language, songs, and stories."
-    },
-    {
-      "lib": "springva",
-      "name": "Crafts for Kids/Manualidades para Niños",
-      "date": "2026-09-08",
-      "time": "13:15",
-      "dur": 60,
-      "ages": [
-        "preschool"
-      ],
-      "ageText": "Kids",
-      "lang": [
-        "en",
-        "es"
-      ],
-      "eventId": "6a0b631a3246e7b84b4fde68",
-      "note": "Come have fun at the library while making a cool craft. A different craft each time, while supplies last. Ven y divertirse en la biblioteca. Una manualidad nuev"
-    },
-    {
-      "lib": "alliedga",
-      "name": "Lego Club",
-      "date": "2026-09-08",
-      "time": "14:30",
-      "dur": 60,
-      "ages": [
-        "baby",
-        "toddler",
-        "preschool"
-      ],
-      "ageText": "…d our collection to build something unique. All ages welcome.",
-      "lang": [
-        "en"
-      ],
-      "eventId": "332611",
-      "note": "Free play with LEGO bricks and Duplos. Use your creativity and our collection to build something unique. All ages welcome."
-    },
-    {
-      "lib": "ranchos2",
-      "name": "STEAM Explorers",
-      "date": "2026-09-08",
-      "time": "14:30",
-      "dur": 60,
-      "ages": [
-        "preschool"
-      ],
-      "ageText": "Kids",
-      "lang": [
-        "en"
-      ],
-      "eventId": "6a55771df4e5db3d00c18ec9",
-      "note": "Each week, STEAM Explorers dive into a new and exciting challenge that blends science, technology, engineering, art, and math. These hands-on activities encoura"
-    },
-    {
-      "lib": "julianco",
-      "name": "Afterschool Craft",
-      "date": "2026-09-08",
-      "time": "15:00",
-      "dur": 60,
-      "ages": [
-        "preschool"
-      ],
-      "ageText": "Kids",
-      "lang": [
-        "en"
-      ],
-      "eventId": "6a8f2cd729a7dd0d6746d6ac",
-      "note": "Join us in the Kids' Area for a fun craft. All materials provided, while supplies last."
-    },
-    {
-      "lib": "potreroc",
-      "name": "Children's Craft Hour",
-      "date": "2026-09-08",
-      "time": "15:00",
-      "dur": 60,
-      "ages": [
-        "preschool"
-      ],
-      "ageText": "Kids",
-      "lang": [
-        "en",
-        "es"
-      ],
-      "eventId": "6a936ed9aafa61002960222c",
-      "note": "Stop by the library and create a fun craft you can take home afterwards. This program is free, while supplies last!"
-    },
-    {
-      "lib": "santeeco",
-      "name": "Library Learners",
-      "date": "2026-09-08",
-      "time": "15:00",
-      "dur": 60,
-      "ages": [
-        "preschool"
-      ],
-      "ageText": "Kids",
-      "lang": [
-        "en"
-      ],
-      "eventId": "6a8629dd29a7dd0d67452cf1",
-      "note": "Children in grades K-5 are invited to join us at the library every Tuesday for a different activity! Supplies are guaranteed for the first 30 participants. 1st "
-    },
-    {
-      "lib": "4s",
-      "name": "ART INSTRUCTION FOR CHILDREN",
-      "date": "2026-09-08",
-      "time": "16:00",
-      "dur": 60,
-      "ages": [
-        "preschool"
-      ],
-      "ageText": "Kids",
-      "lang": [
-        "en"
-      ],
-      "eventId": "6a8ce67758433600542b3df4",
-      "note": "Come join us for a fun art class! Del Norte High School art students provide art instruction in collaboration with the National Arts Honors Society and Art Care"
-    },
-    {
-      "lib": "lajollar",
-      "name": "Drop-In Craft Tuesdays",
-      "date": "2026-09-08",
-      "time": "16:00",
-      "dur": 60,
-      "ages": [
-        "baby",
-        "toddler",
-        "preschool"
-      ],
-      "ageText": "Join us for drop-in craft Tuesdays. Kids of all ages can make a craft to take with them. All sup…",
-      "lang": [
-        "en"
-      ],
-      "eventId": "326487",
-      "note": "Join us for drop-in craft Tuesdays. Kids of all ages can make a craft to take with them. All supplies provided. No reservations needed."
-    },
-    {
-      "lib": "pointlom",
-      "name": "Pajama Storytime",
-      "date": "2026-09-08",
-      "time": "17:30",
-      "dur": 30,
-      "ages": [
-        "baby",
-        "toddler",
-        "preschool"
-      ],
-      "ageText": "",
-      "lang": [
-        "en"
-      ],
-      "eventId": "322252",
-      "note": "Come enjoy a pajama storytime with us in the cozy, downstairs reading nook! Get ready in your pajamas (or comfy clothes) to enjoy an evening Storytime in the li"
-    },
-    {
-      "lib": "springva",
-      "name": "Pajama Bilingual Storytime | Cuentos Bilingües en Pijamas",
-      "date": "2026-09-08",
-      "time": "18:00",
-      "dur": 30,
-      "ages": [
-        "preschool"
-      ],
-      "ageText": "Kids",
-      "lang": [
-        "en",
-        "es"
-      ],
-      "eventId": "6a738446c7e02e3d006e1d35",
-      "note": "Join us to Shake your sillies out with music and dancing, followed by a cozy story time in Spanish & English. Everyone is invited to wear your pajamas and bring"
-    },
-    {
-      "lib": "pacifich",
-      "name": "Pajama Storytime",
-      "date": "2026-09-08",
-      "time": "18:30",
-      "dur": 30,
-      "ages": [
-        "toddler",
-        "preschool"
-      ],
-      "ageText": "…0-7 p.m. for stories and songs selected for toddlers and preschoolers. Shhhh! Don’t tell them w…",
-      "lang": [
-        "en"
-      ],
-      "eventId": "314564",
-      "note": "Get those slippers kickin' at Pajama Storytime! Join Ms. Maureen every Tuesday from 6:30-7 p.m. for stories and songs selected for toddlers and preschoolers. Sh"
-    },
-    {
-      "lib": "sm",
-      "name": "Pajama Storytime",
-      "date": "2026-09-08",
-      "time": "18:30",
-      "dur": 30,
-      "ages": [
-        "baby",
-        "toddler",
-        "preschool"
-      ],
-      "ageText": "",
-      "lang": [
-        "en"
-      ],
-      "eventId": "323322",
-      "note": "Put on your favorite PJs and join Ms. Carrie in the Community Room Tuesday evenings for a pajama storytime."
-    },
-    {
       "lib": "carmelva",
       "name": "Family Storytime",
       "date": "2026-09-09",
@@ -1968,7 +1582,7 @@ STORYTIME.months["2026-09"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Stay & Play Storytime",
       "lang": [
         "en"
       ],
@@ -2136,7 +1750,7 @@ STORYTIME.months["2026-09"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "…th interactive music classes that encourage family bonding, at-home learning, and future music…",
+      "ageText": "ChIMES: An Early Childhood Music Program",
       "lang": [
         "en"
       ],
@@ -2154,7 +1768,7 @@ STORYTIME.months["2026-09"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "…ay with Ms. Jennifer (sign language fun for babies, toddlers, and preschoolers) 3rd week is Ba…",
+      "ageText": "Stay and Play Storytime at Central Library",
       "lang": [
         "en"
       ],
@@ -2335,6 +1949,22 @@ STORYTIME.months["2026-09"] = {
       "note": "Introduce your baby to language and fun with bouncing rhymes, songs, and simple stories. This 30-minute storytime is followed by a friendly baby play date for s"
     },
     {
+      "lib": "skylineh",
+      "name": "Tiny Tots University/Universidad de Pequeños",
+      "date": "2026-09-09",
+      "time": "10:30",
+      "dur": 60,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "Tiny Tots University/Universidad de Pequeños",
+      "lang": [
+        "en"
+      ],
+      "eventId": "400868",
+      "note": "This is a storytime that supports cognitive, social and language development. Focusing on incorporating sensory playtime. Sensory-friendly. Let's learn together"
+    },
+    {
       "lib": "mm",
       "name": "Bumblebee Toddler and Preschool Story Time",
       "date": "2026-09-09",
@@ -2352,6 +1982,24 @@ STORYTIME.months["2026-09"] = {
       "note": "Songs & stories with Auntie Hazel."
     },
     {
+      "lib": "cityheig",
+      "name": "Early Childhood Music",
+      "date": "2026-09-09",
+      "time": "11:30",
+      "dur": 105,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "Early Childhood Music",
+      "lang": [
+        "en"
+      ],
+      "eventId": "345762",
+      "note": "Introduce your child to musical learning through free classes from Villa Musica. Register online with Villa Musica: Early Childhood Music Registration . Classes"
+    },
+    {
       "lib": "lajollar",
       "name": "Songs and Stories with Ms Amy",
       "date": "2026-09-09",
@@ -2362,7 +2010,7 @@ STORYTIME.months["2026-09"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "…nguage. The storytime will be followed by a stay and play. Geared towards children ages 5 and under.",
       "lang": [
         "en"
       ],
@@ -2526,11 +2174,9 @@ STORYTIME.months["2026-09"] = {
       "time": "10:00",
       "dur": 30,
       "ages": [
-        "baby",
-        "toddler",
-        "preschool"
+        "toddler"
       ],
-      "ageText": "",
+      "ageText": "Tiny Tot Storytime",
       "lang": [
         "en"
       ],
@@ -2687,6 +2333,24 @@ STORYTIME.months["2026-09"] = {
       "note": "Join us for stories, songs and dancing! Best for ages 2-4; no sign-up required."
     },
     {
+      "lib": "carmelva",
+      "name": "Stay and Play",
+      "date": "2026-09-10",
+      "time": "10:30",
+      "dur": 30,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "Stay and Play",
+      "lang": [
+        "en"
+      ],
+      "eventId": "316228",
+      "note": "Join us every Thursday following Tiny Tot Storytime for Stay and Play! This program is geared towards children 0-3 years old and their caregivers. There will be"
+    },
+    {
       "lib": "cityheig",
       "name": "Baby/Toddler Storytime",
       "date": "2026-09-10",
@@ -2784,7 +2448,7 @@ STORYTIME.months["2026-09"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Stay & Play Storytime",
       "lang": [
         "en"
       ],
@@ -3113,6 +2777,24 @@ STORYTIME.months["2026-09"] = {
       "note": "Please join Ms. Ellie or Ms. Helene for storytime, songs, and some fun! Stay afterward for play time!"
     },
     {
+      "lib": "rb",
+      "name": "RB Stay and Play",
+      "date": "2026-09-10",
+      "time": "11:30",
+      "dur": 30,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "RB Stay and Play",
+      "lang": [
+        "en"
+      ],
+      "eventId": "339526",
+      "note": "After the Morning Storytime, we will be hosting a Stay and Play! Parents and Caregivers, play with your children or watch them as they play with other children."
+    },
+    {
       "lib": "pw",
       "name": "Crafternoon",
       "date": "2026-09-10",
@@ -3271,7 +2953,7 @@ STORYTIME.months["2026-09"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "…invite nontraditional caregivers (friends, family members, and neighbors) who care for childr…",
+      "ageText": "Tiny Tots Storytime: Stay & Play",
       "lang": [
         "en"
       ],
@@ -3293,6 +2975,22 @@ STORYTIME.months["2026-09"] = {
       ],
       "eventId": "355185",
       "note": "We invite you to join our Baby Dance Party, singing and dancing along with Ms. Andrea from Dance to Evolve! We will have songs, movement and tons of fun for you"
+    },
+    {
+      "lib": "sanmarco",
+      "name": "Tots and Blocks",
+      "date": "2026-09-11",
+      "time": "10:00",
+      "dur": 60,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "Tots and Blocks",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a6a58970e562e28009d5bf5",
+      "note": "Bring your little ones for play time at the library! Children 0-5 and their caregivers are encouraged to play with the toys provided by the library. *Toys only "
     },
     {
       "lib": "4s",
@@ -3701,11 +3399,9 @@ STORYTIME.months["2026-09"] = {
       "time": "10:00",
       "dur": 30,
       "ages": [
-        "baby",
-        "toddler",
-        "preschool"
+        "toddler"
       ],
-      "ageText": "",
+      "ageText": "…en's Area from 10:00AM-10:30AM, followed by Tiny Tot Play from 10:30AM-12PM",
       "lang": [
         "en"
       ],
@@ -3772,10 +3468,9 @@ STORYTIME.months["2026-09"] = {
       "time": "10:30",
       "dur": 90,
       "ages": [
-        "baby",
         "toddler"
       ],
-      "ageText": "Babies & Toddlers- Let's Play! Engage curiosity, e…",
+      "ageText": "Tiny Tot Play",
       "lang": [
         "en"
       ],
@@ -4421,22 +4116,6 @@ STORYTIME.months["2026-09"] = {
       "note": "Each week, STEAM Explorers dive into a new and exciting challenge that blends science, technology, engineering, art, and math. These hands-on activities encoura"
     },
     {
-      "lib": "julianco",
-      "name": "Afterschool Craft",
-      "date": "2026-09-15",
-      "time": "15:00",
-      "dur": 60,
-      "ages": [
-        "preschool"
-      ],
-      "ageText": "Kids",
-      "lang": [
-        "en"
-      ],
-      "eventId": "6a8f2cd729a7dd0d6746d6ad",
-      "note": "Join us in the Kids' Area for a fun craft. All materials provided, while supplies last."
-    },
-    {
       "lib": "lincolna",
       "name": "Spanish Bilingual Storytime",
       "date": "2026-09-15",
@@ -4521,24 +4200,6 @@ STORYTIME.months["2026-09"] = {
       ],
       "eventId": "326488",
       "note": "Join us for drop-in craft Tuesdays. Kids of all ages can make a craft to take with them. All supplies provided. No reservations needed."
-    },
-    {
-      "lib": "pacifich",
-      "name": "Afterschool Movie Time",
-      "date": "2026-09-15",
-      "time": "16:00",
-      "dur": 90,
-      "ages": [
-        "baby",
-        "toddler",
-        "preschool"
-      ],
-      "ageText": "…our friends, blankets, pillows, and snacks. All ages welcome! In this very special film, an extr…",
-      "lang": [
-        "en"
-      ],
-      "eventId": "328057",
-      "note": "Enjoy an afterschool movie! Bring your friends, blankets, pillows, and snacks. All ages welcome! In this very special film, an extraordinary family, the Madriga"
     },
     {
       "lib": "skylineh",
@@ -4710,7 +4371,7 @@ STORYTIME.months["2026-09"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Stay & Play Storytime",
       "lang": [
         "en"
       ],
@@ -4880,7 +4541,7 @@ STORYTIME.months["2026-09"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "…ay with Ms. Jennifer (sign language fun for babies, toddlers, and preschoolers) 3rd week is Ba…",
+      "ageText": "Stay and Play Storytime at Central Library",
       "lang": [
         "en"
       ],
@@ -5083,6 +4744,24 @@ STORYTIME.months["2026-09"] = {
       "note": "Songs & stories with Auntie Hazel."
     },
     {
+      "lib": "cityheig",
+      "name": "Early Childhood Music",
+      "date": "2026-09-16",
+      "time": "11:30",
+      "dur": 105,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "Early Childhood Music",
+      "lang": [
+        "en"
+      ],
+      "eventId": "345763",
+      "note": "Introduce your child to musical learning through free classes from Villa Musica. Register online with Villa Musica: Early Childhood Music Registration . Classes"
+    },
+    {
       "lib": "lajollar",
       "name": "Songs and Stories with Ms Amy",
       "date": "2026-09-16",
@@ -5093,7 +4772,7 @@ STORYTIME.months["2026-09"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "…nguage. The storytime will be followed by a stay and play. Geared towards children ages 5 and under.",
       "lang": [
         "en"
       ],
@@ -5260,11 +4939,9 @@ STORYTIME.months["2026-09"] = {
       "time": "10:00",
       "dur": 30,
       "ages": [
-        "baby",
-        "toddler",
-        "preschool"
+        "toddler"
       ],
-      "ageText": "",
+      "ageText": "Tiny Tot Storytime",
       "lang": [
         "en"
       ],
@@ -5282,7 +4959,7 @@ STORYTIME.months["2026-09"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "…te Nuestra Cultura with a special bilingual stay and play storytime with Señorita Melissa! Join us fo…",
       "lang": [
         "en",
         "es"
@@ -5394,6 +5071,24 @@ STORYTIME.months["2026-09"] = {
       "note": "Join us for songs, books and rhymes in English and in Spanish! All ages welcome. Acompáñenos y disfrute de canciones, libros y rimas en inglés y en español. ¡To"
     },
     {
+      "lib": "carmelva",
+      "name": "Stay and Play",
+      "date": "2026-09-17",
+      "time": "10:30",
+      "dur": 30,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "Stay and Play",
+      "lang": [
+        "en"
+      ],
+      "eventId": "316229",
+      "note": "Join us every Thursday following Tiny Tot Storytime for Stay and Play! This program is geared towards children 0-3 years old and their caregivers. There will be"
+    },
+    {
       "lib": "cityheig",
       "name": "Baby/Toddler Storytime",
       "date": "2026-09-17",
@@ -5489,7 +5184,7 @@ STORYTIME.months["2026-09"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Stay & Play Storytime",
       "lang": [
         "en"
       ],
@@ -5635,22 +5330,6 @@ STORYTIME.months["2026-09"] = {
       "note": "Get ready for toddler storytime with songs, movement, and engaging picture books, followed by hands-on learning and crafting. For ages 18 months to 3 years."
     },
     {
-      "lib": "ranchosa",
-      "name": "Baby Storytime",
-      "date": "2026-09-17",
-      "time": "10:30",
-      "dur": 45,
-      "ages": [
-        "baby"
-      ],
-      "ageText": "Baby Storytime",
-      "lang": [
-        "en"
-      ],
-      "eventId": "6a2093ee2ea730c17ab41d36",
-      "note": "Join us for stories, songs and movement activities for babies."
-    },
-    {
       "lib": "sancarlo",
       "name": "Storytime for Toddlers & Preschoolers",
       "date": "2026-09-17",
@@ -5787,7 +5466,7 @@ STORYTIME.months["2026-09"] = {
     },
     {
       "lib": "rb",
-      "name": "RB Morning Storytime",
+      "name": "Kamishibai Storytime",
       "date": "2026-09-17",
       "time": "11:00",
       "dur": 30,
@@ -5818,6 +5497,24 @@ STORYTIME.months["2026-09"] = {
       ],
       "eventId": "327575",
       "note": "Signing Storytime with Jennifer Duncan of Signs at Play is a fun event for families with young children, combining the joy of stories with the added element of "
+    },
+    {
+      "lib": "rb",
+      "name": "RB Stay and Play",
+      "date": "2026-09-17",
+      "time": "11:30",
+      "dur": 30,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "RB Stay and Play",
+      "lang": [
+        "en"
+      ],
+      "eventId": "339527",
+      "note": "After the Morning Storytime, we will be hosting a Stay and Play! Parents and Caregivers, play with your children or watch them as they play with other children."
     },
     {
       "lib": "sanysidr",
@@ -5969,6 +5666,24 @@ STORYTIME.months["2026-09"] = {
       "note": "A 45-minute Storytime for young children including books and music with the addition of American Sign Language signs with Jennifer Duncan from Signs at Play. Th"
     },
     {
+      "lib": "mountain",
+      "name": "Stay and Play",
+      "date": "2026-09-18",
+      "time": "10:00",
+      "dur": 90,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "Stay and Play",
+      "lang": [
+        "en"
+      ],
+      "eventId": "327267",
+      "note": "Welcome families to Stay and Play. This program is focused towards children 0-5 years old and their caregivers. Every week we will offer free play, snack and a "
+    },
+    {
       "lib": "northcla",
       "name": "Tiny Tots Storytime: Stay & Play",
       "date": "2026-09-18",
@@ -5979,7 +5694,7 @@ STORYTIME.months["2026-09"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "…invite nontraditional caregivers (friends, family members, and neighbors) who care for childr…",
+      "ageText": "Tiny Tots Storytime: Stay & Play",
       "lang": [
         "en"
       ],
@@ -6001,6 +5716,22 @@ STORYTIME.months["2026-09"] = {
       ],
       "eventId": "355186",
       "note": "We invite you to join our Baby Dance Party, singing and dancing along with Ms. Andrea from Dance to Evolve! We will have songs, movement and tons of fun for you"
+    },
+    {
+      "lib": "sanmarco",
+      "name": "Tots and Blocks",
+      "date": "2026-09-18",
+      "time": "10:00",
+      "dur": 60,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "Tots and Blocks",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a6a58970e562e28009d5bf6",
+      "note": "Bring your little ones for play time at the library! Children 0-5 and their caregivers are encouraged to play with the toys provided by the library. *Toys only "
     },
     {
       "lib": "4s",
@@ -6107,10 +5838,9 @@ STORYTIME.months["2026-09"] = {
       "time": "10:30",
       "dur": 60,
       "ages": [
-        "toddler",
-        "preschool"
+        "toddler"
       ],
-      "ageText": "A fun art program for toddlers and preschoolers to explore colors, crafts…",
+      "ageText": "Tiny Tots Art",
       "lang": [
         "en"
       ],
@@ -6445,11 +6175,9 @@ STORYTIME.months["2026-09"] = {
       "time": "10:00",
       "dur": 30,
       "ages": [
-        "baby",
-        "toddler",
-        "preschool"
+        "toddler"
       ],
-      "ageText": "",
+      "ageText": "…en's Area from 10:00AM-10:30AM, followed by Tiny Tot Play from 10:30AM-12PM",
       "lang": [
         "en"
       ],
@@ -6497,10 +6225,9 @@ STORYTIME.months["2026-09"] = {
       "time": "10:30",
       "dur": 90,
       "ages": [
-        "baby",
         "toddler"
       ],
-      "ageText": "Babies & Toddlers- Let's Play! Engage curiosity, e…",
+      "ageText": "Tiny Tot Play",
       "lang": [
         "en"
       ],
@@ -7094,22 +6821,6 @@ STORYTIME.months["2026-09"] = {
       "note": "Each week, STEAM Explorers dive into a new and exciting challenge that blends science, technology, engineering, art, and math. These hands-on activities encoura"
     },
     {
-      "lib": "julianco",
-      "name": "Afterschool Craft",
-      "date": "2026-09-22",
-      "time": "15:00",
-      "dur": 60,
-      "ages": [
-        "preschool"
-      ],
-      "ageText": "Kids",
-      "lang": [
-        "en"
-      ],
-      "eventId": "6a8f2cd729a7dd0d6746d6ae",
-      "note": "Join us in the Kids' Area for a fun craft. All materials provided, while supplies last."
-    },
-    {
       "lib": "lincolna",
       "name": "Spanish Bilingual Storytime",
       "date": "2026-09-22",
@@ -7364,7 +7075,7 @@ STORYTIME.months["2026-09"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Stay & Play Storytime: Mosquito Storytime",
       "lang": [
         "en"
       ],
@@ -7548,7 +7259,7 @@ STORYTIME.months["2026-09"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "…ay with Ms. Jennifer (sign language fun for babies, toddlers, and preschoolers) 3rd week is Ba…",
+      "ageText": "Stay and Play Storytime at Central Library",
       "lang": [
         "en"
       ],
@@ -7764,6 +7475,22 @@ STORYTIME.months["2026-09"] = {
       "note": "Introduce your baby to language and fun with bouncing rhymes, songs, and simple stories. This 30-minute storytime is followed by a friendly baby play date for s"
     },
     {
+      "lib": "skylineh",
+      "name": "Tiny Tots University/Universidad de Pequeños",
+      "date": "2026-09-23",
+      "time": "10:30",
+      "dur": 60,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "Tiny Tots University/Universidad de Pequeños",
+      "lang": [
+        "en"
+      ],
+      "eventId": "400869",
+      "note": "This is a storytime that supports cognitive, social and language development. Focusing on incorporating sensory playtime. Sensory-friendly. Let's learn together"
+    },
+    {
       "lib": "mm",
       "name": "Bumblebee Toddler and Preschool Story Time",
       "date": "2026-09-23",
@@ -7781,6 +7508,24 @@ STORYTIME.months["2026-09"] = {
       "note": "Songs & stories with Auntie Hazel."
     },
     {
+      "lib": "cityheig",
+      "name": "Early Childhood Music",
+      "date": "2026-09-23",
+      "time": "11:30",
+      "dur": 105,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "Early Childhood Music",
+      "lang": [
+        "en"
+      ],
+      "eventId": "345764",
+      "note": "Introduce your child to musical learning through free classes from Villa Musica. Register online with Villa Musica: Early Childhood Music Registration . Classes"
+    },
+    {
       "lib": "lajollar",
       "name": "Songs and Stories with Ms Amy",
       "date": "2026-09-23",
@@ -7791,7 +7536,7 @@ STORYTIME.months["2026-09"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "…nguage. The storytime will be followed by a stay and play. Geared towards children ages 5 and under.",
       "lang": [
         "en"
       ],
@@ -7955,11 +7700,9 @@ STORYTIME.months["2026-09"] = {
       "time": "10:00",
       "dur": 30,
       "ages": [
-        "baby",
-        "toddler",
-        "preschool"
+        "toddler"
       ],
-      "ageText": "",
+      "ageText": "Tiny Tot Storytime",
       "lang": [
         "en"
       ],
@@ -8081,6 +7824,41 @@ STORYTIME.months["2026-09"] = {
       "note": "Toddlers & Tunes Come join in the fun with this music & movement program for Toddlers! With one story in the beginning of the program, the rest of the hour we a"
     },
     {
+      "lib": "carmelva",
+      "name": "Stay and Play",
+      "date": "2026-09-24",
+      "time": "10:30",
+      "dur": 30,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "Stay and Play",
+      "lang": [
+        "en"
+      ],
+      "eventId": "316230",
+      "note": "Join us every Thursday following Tiny Tot Storytime for Stay and Play! This program is geared towards children 0-3 years old and their caregivers. There will be"
+    },
+    {
+      "lib": "central",
+      "name": "Little Learners",
+      "date": "2026-09-24",
+      "time": "10:30",
+      "dur": 60,
+      "ages": [
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "Little Learners",
+      "lang": [
+        "en"
+      ],
+      "eventId": "350885",
+      "note": "Sensory and early literacy play for little learners and their caregivers (Caregiver participation required for ages 1.5-5 years due to sensory bin activities)"
+    },
+    {
       "lib": "cityheig",
       "name": "Baby/Toddler Storytime",
       "date": "2026-09-24",
@@ -8116,6 +7894,22 @@ STORYTIME.months["2026-09"] = {
       "note": "Join us for ABC's, 123's, songs, stories, socializing. Lots of fun for kids of all ages and their caregivers!"
     },
     {
+      "lib": "imperial",
+      "name": "Nature Tots",
+      "date": "2026-09-24",
+      "time": "10:30",
+      "dur": 45,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "Nature Tots",
+      "lang": [
+        "en"
+      ],
+      "eventId": "69fa9ac4703c33630025b9ac",
+      "note": "Listen to a nature-themed story followed by a craft or activity! Presented in partnership with the department of US Fish and Wildlife and the City of Imperial B"
+    },
+    {
       "lib": "kensingt",
       "name": "Story Time at the Park",
       "date": "2026-09-24",
@@ -8144,7 +7938,7 @@ STORYTIME.months["2026-09"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Stay & Play Storytime",
       "lang": [
         "en"
       ],
@@ -8454,6 +8248,24 @@ STORYTIME.months["2026-09"] = {
       "note": "Please join Ms. Ellie or Ms. Helene for storytime, songs, and some fun! Stay afterward for play time!"
     },
     {
+      "lib": "rb",
+      "name": "RB Stay and Play",
+      "date": "2026-09-24",
+      "time": "11:30",
+      "dur": 30,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "RB Stay and Play",
+      "lang": [
+        "en"
+      ],
+      "eventId": "339528",
+      "note": "After the Morning Storytime, we will be hosting a Stay and Play! Parents and Caregivers, play with your children or watch them as they play with other children."
+    },
+    {
       "lib": "sanysidr",
       "name": "Baby Sign Storytime",
       "date": "2026-09-24",
@@ -8610,7 +8422,7 @@ STORYTIME.months["2026-09"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "…invite nontraditional caregivers (friends, family members, and neighbors) who care for childr…",
+      "ageText": "Tiny Tots Storytime: Stay & Play is a play group and…",
       "lang": [
         "en"
       ],
@@ -8632,6 +8444,22 @@ STORYTIME.months["2026-09"] = {
       ],
       "eventId": "355187",
       "note": "We invite you to join our Baby Dance Party, singing and dancing along with Ms. Andrea from Dance to Evolve! We will have songs, movement and tons of fun for you"
+    },
+    {
+      "lib": "sanmarco",
+      "name": "Tots and Blocks",
+      "date": "2026-09-25",
+      "time": "10:00",
+      "dur": 60,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "Tots and Blocks",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a6a58970e562e28009d5bf7",
+      "note": "Bring your little ones for play time at the library! Children 0-5 and their caregivers are encouraged to play with the toys provided by the library. *Toys only "
     },
     {
       "lib": "4s",
@@ -8997,24 +8825,6 @@ STORYTIME.months["2026-09"] = {
       ],
       "eventId": "698285bd707481383708c538",
       "note": "Come in with the kids and enjoy a self guided craft that's available all day long. Each week features a different theme. We look forward to seeing you here."
-    },
-    {
-      "lib": "central",
-      "name": "Saturday Stories at Central Library",
-      "date": "2026-09-26",
-      "time": "10:30",
-      "dur": 30,
-      "ages": [
-        "baby",
-        "toddler",
-        "preschool"
-      ],
-      "ageText": "…y skills and make positive connections with family, friends, and our community. The first Satu…",
-      "lang": [
-        "en"
-      ],
-      "eventId": "404511",
-      "note": "Start your weekend with a fun Storytime at the Central Library! We will read stories, sing songs, dance, and enjoy BUBBLES together. Parents and caregivers, thi"
     },
     {
       "lib": "cm",
@@ -9602,22 +9412,6 @@ STORYTIME.months["2026-09"] = {
       "note": "Each week, STEAM Explorers dive into a new and exciting challenge that blends science, technology, engineering, art, and math. These hands-on activities encoura"
     },
     {
-      "lib": "julianco",
-      "name": "Afterschool Craft",
-      "date": "2026-09-29",
-      "time": "15:00",
-      "dur": 60,
-      "ages": [
-        "preschool"
-      ],
-      "ageText": "Kids",
-      "lang": [
-        "en"
-      ],
-      "eventId": "6a8f2cd729a7dd0d6746d6af",
-      "note": "Join us in the Kids' Area for a fun craft. All materials provided, while supplies last."
-    },
-    {
       "lib": "lincolna",
       "name": "Spanish Bilingual Storytime",
       "date": "2026-09-29",
@@ -9833,9 +9627,11 @@ STORYTIME.months["2026-09"] = {
       "time": "10:00",
       "dur": 120,
       "ages": [
+        "baby",
+        "toddler",
         "preschool"
       ],
-      "ageText": "…orld of classical ballet for kids in grades Pre-K through 5th. Welcome families to Stay and P…",
+      "ageText": "Stay & Play Storytime: A Book and a Ballerina Storytime",
       "lang": [
         "en"
       ],
@@ -10003,7 +9799,7 @@ STORYTIME.months["2026-09"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "…ay with Ms. Jennifer (sign language fun for babies, toddlers, and preschoolers) 3rd week is Ba…",
+      "ageText": "Stay and Play Storytime at Central Library",
       "lang": [
         "en"
       ],
@@ -10235,6 +10031,24 @@ STORYTIME.months["2026-09"] = {
       "note": "Songs & stories with Auntie Hazel."
     },
     {
+      "lib": "cityheig",
+      "name": "Early Childhood Music",
+      "date": "2026-09-30",
+      "time": "11:30",
+      "dur": 105,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "Early Childhood Music",
+      "lang": [
+        "en"
+      ],
+      "eventId": "345765",
+      "note": "Introduce your child to musical learning through free classes from Villa Musica. Register online with Villa Musica: Early Childhood Music Registration . Classes"
+    },
+    {
       "lib": "lajollar",
       "name": "Songs and Stories with Ms Amy",
       "date": "2026-09-30",
@@ -10245,7 +10059,7 @@ STORYTIME.months["2026-09"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "…nguage. The storytime will be followed by a stay and play. Geared towards children ages 5 and under.",
       "lang": [
         "en"
       ],

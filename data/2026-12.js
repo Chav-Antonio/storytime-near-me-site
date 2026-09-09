@@ -87,22 +87,6 @@ STORYTIME.months["2026-12"] = {
       "note": "Each week, STEAM Explorers dive into a new and exciting challenge that blends science, technology, engineering, art, and math. These hands-on activities encoura"
     },
     {
-      "lib": "julianco",
-      "name": "Afterschool Craft",
-      "date": "2026-12-01",
-      "time": "15:00",
-      "dur": 60,
-      "ages": [
-        "preschool"
-      ],
-      "ageText": "Kids",
-      "lang": [
-        "en"
-      ],
-      "eventId": "6a8f2cd729a7dd0d6746d6b8",
-      "note": "Join us in the Kids' Area for a fun craft. All materials provided, while supplies last."
-    },
-    {
       "lib": "potreroc",
       "name": "Children's Craft Hour",
       "date": "2026-12-01",
@@ -1402,22 +1386,6 @@ STORYTIME.months["2026-12"] = {
       "note": "Each week, STEAM Explorers dive into a new and exciting challenge that blends science, technology, engineering, art, and math. These hands-on activities encoura"
     },
     {
-      "lib": "julianco",
-      "name": "Afterschool Craft",
-      "date": "2026-12-08",
-      "time": "15:00",
-      "dur": 60,
-      "ages": [
-        "preschool"
-      ],
-      "ageText": "Kids",
-      "lang": [
-        "en"
-      ],
-      "eventId": "6a8f2cd729a7dd0d6746d6b9",
-      "note": "Join us in the Kids' Area for a fun craft. All materials provided, while supplies last."
-    },
-    {
       "lib": "potreroc",
       "name": "Children's Craft Hour",
       "date": "2026-12-08",
@@ -1526,7 +1494,7 @@ STORYTIME.months["2026-12"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "…th interactive music classes that encourage family bonding, at-home learning, and future music…",
+      "ageText": "ChIMES: An Early Childhood Music Program",
       "lang": [
         "en"
       ],
@@ -2168,10 +2136,9 @@ STORYTIME.months["2026-12"] = {
       "time": "10:30",
       "dur": 60,
       "ages": [
-        "toddler",
-        "preschool"
+        "toddler"
       ],
-      "ageText": "A fun art program for toddlers and preschoolers to explore colors, crafts…",
+      "ageText": "Tiny Tots Art",
       "lang": [
         "en"
       ],
@@ -2275,6 +2242,24 @@ STORYTIME.months["2026-12"] = {
       ],
       "eventId": "6a56af89daaaf4f51a1fc7ca",
       "note": "Join us on Fridays at 11:00 am for stories and songs."
+    },
+    {
+      "lib": "sanmarco",
+      "name": "Sensory-Friendly Storytime",
+      "date": "2026-12-11",
+      "time": "11:30",
+      "dur": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "…s for exploration. Geared for ages 1-3, but all ages are welcome. This program will be co-lead b…",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6aa0ac76e1fb8f13578c55a2",
+      "note": "Join us for an inclusive storytime designed for children who benefit from a sensory-friendly environment. Each session features themed stories, hands-on activit"
     },
     {
       "lib": "pw",
@@ -2702,22 +2687,6 @@ STORYTIME.months["2026-12"] = {
       ],
       "eventId": "6a55771df4e5db3d00c18ed6",
       "note": "Each week, STEAM Explorers dive into a new and exciting challenge that blends science, technology, engineering, art, and math. These hands-on activities encoura"
-    },
-    {
-      "lib": "julianco",
-      "name": "Afterschool Craft",
-      "date": "2026-12-15",
-      "time": "15:00",
-      "dur": 60,
-      "ages": [
-        "preschool"
-      ],
-      "ageText": "Kids",
-      "lang": [
-        "en"
-      ],
-      "eventId": "6a8f2cd729a7dd0d6746d6ba",
-      "note": "Join us in the Kids' Area for a fun craft. All materials provided, while supplies last."
     },
     {
       "lib": "potreroc",
@@ -3688,22 +3657,6 @@ STORYTIME.months["2026-12"] = {
       "note": "Enjoy songs, fingerplays, books, and more with your baby. All children are welcome. Geared toward pre-walkers."
     },
     {
-      "lib": "julianco",
-      "name": "Afterschool Craft",
-      "date": "2026-12-22",
-      "time": "15:00",
-      "dur": 60,
-      "ages": [
-        "preschool"
-      ],
-      "ageText": "Kids",
-      "lang": [
-        "en"
-      ],
-      "eventId": "6a8f2cd729a7dd0d6746d6bb",
-      "note": "Join us in the Kids' Area for a fun craft. All materials provided, while supplies last."
-    },
-    {
       "lib": "potreroc",
       "name": "Children's Craft Hour",
       "date": "2026-12-22",
@@ -3719,24 +3672,6 @@ STORYTIME.months["2026-12"] = {
       ],
       "eventId": "6a936ed9aafa61002960223b",
       "note": "Stop by the library and create a fun craft you can take home afterwards. This program is free, while supplies last!"
-    },
-    {
-      "lib": "encinita",
-      "name": "Pajama Storytime",
-      "date": "2026-12-22",
-      "time": "17:30",
-      "dur": 45,
-      "ages": [
-        "baby",
-        "toddler",
-        "preschool"
-      ],
-      "ageText": "",
-      "lang": [
-        "en"
-      ],
-      "eventId": "6a6152cff213992f00c64ee1",
-      "note": "Snuggle up for an evening of cozy fun with your favorite sleepwear, soothing stories, and songs to help wind down the day."
     },
     {
       "lib": "springva",
@@ -4024,10 +3959,9 @@ STORYTIME.months["2026-12"] = {
       "time": "10:30",
       "dur": 60,
       "ages": [
-        "toddler",
-        "preschool"
+        "toddler"
       ],
-      "ageText": "A fun art program for toddlers and preschoolers to explore colors, crafts…",
+      "ageText": "Tiny Tots Art",
       "lang": [
         "en"
       ],
@@ -4131,22 +4065,6 @@ STORYTIME.months["2026-12"] = {
       "note": "Enjoy stories followed by a craft to make here or take home!"
     },
     {
-      "lib": "encinita",
-      "name": "Signing Storytime",
-      "date": "2026-12-28",
-      "time": "10:30",
-      "dur": 45,
-      "ages": [
-        "baby"
-      ],
-      "ageText": "You and baby, birth to 12 months old, will learn how to…",
-      "lang": [
-        "en"
-      ],
-      "eventId": "69014f6d64ad59251cba1fc1",
-      "note": "You and baby, birth to 12 months old, will learn how to communicate with signs long before speech is possible, while enjoying music, stories, bubbles, new frien"
-    },
-    {
       "lib": "julianco",
       "name": "Baby Storytime",
       "date": "2026-12-28",
@@ -4225,22 +4143,6 @@ STORYTIME.months["2026-12"] = {
       ],
       "eventId": "6a3d83ea4407827f8aa7611f",
       "note": "Enjoy songs, fingerplays, books, and more with your baby. All children are welcome. Geared toward pre-walkers."
-    },
-    {
-      "lib": "julianco",
-      "name": "Afterschool Craft",
-      "date": "2026-12-29",
-      "time": "15:00",
-      "dur": 60,
-      "ages": [
-        "preschool"
-      ],
-      "ageText": "Kids",
-      "lang": [
-        "en"
-      ],
-      "eventId": "6a8f2cd729a7dd0d6746d6bc",
-      "note": "Join us in the Kids' Area for a fun craft. All materials provided, while supplies last."
     },
     {
       "lib": "potreroc",
