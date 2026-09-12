@@ -10,6 +10,7 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="manifest" href="site.webmanifest">
 <meta name="theme-color" content="#14161C">
+<script>try{var _t=localStorage.getItem("stny.theme");if(_t==="light"||_t==="dark")document.documentElement.setAttribute("data-theme",_t);}catch(e){}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -38,7 +39,9 @@
       --wordmark-accent:#FFD666;
     }
   }
+  :root[data-theme="light"]{color-scheme:light}
   :root[data-theme="dark"]{
+    color-scheme:dark;
     --paper:#14161C; --card:#1D2026; --ink:#ECEAE4; --muted:#A2ABB8; --faint:#727C89;
     --line:#2B2F38; --line-strong:#3A3F4A; --accent:#F27C67; --accent-ink:#F9A794;
     --chip-bg:#262A32; --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 22px rgba(0,0,0,.35);
@@ -61,20 +64,35 @@
   :focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:6px}
 
   /* header */
-  header{padding:34px 0 18px}
-  .eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-ink);font-weight:700}
+  header{padding:30px 0 20px}
+  /* Top row: brand lockup on the left, language/settings control pinned top-right. */
+  .headtop{display:flex;align-items:center;justify-content:space-between;gap:12px 16px}
   /* Brand lockup: book+heart mark + two-tone wordmark (matches the logo assets). */
-  .brand{display:flex;align-items:center;gap:14px;margin:.24em 0 .12em}
+  .brand{display:flex;align-items:center;gap:14px;margin:0}
   .brand .mark{width:clamp(44px,7vw,60px);height:auto;flex:0 0 auto;color:var(--ink)}
   .brand h1{margin:0}
   .wordmark .accent{color:var(--wordmark-accent)}
   h1{font-size:clamp(30px,5vw,44px);margin:.24em 0 .12em;text-wrap:balance;line-height:1.05}
-  .lede{color:var(--muted);max-width:60ch;font-size:16.5px}
+  .lede{color:var(--muted);max-width:60ch;font-size:16.5px;margin:.55em 0 0}
   .lede b{color:var(--ink);font-weight:600}
-  .eyebrowrow{display:flex;align-items:center;justify-content:space-between;gap:10px 14px;flex-wrap:wrap}
-  .langtoggle{display:inline-flex;gap:2px;background:var(--chip-bg);padding:3px;border-radius:10px;flex:0 0 auto}
-  .langtoggle button{border:0;background:transparent;color:var(--muted);font-weight:700;font-size:12px;letter-spacing:.04em;padding:5px 11px;border-radius:7px;cursor:pointer}
-  .langtoggle button[aria-pressed="true"]{background:var(--card);color:var(--ink);box-shadow:var(--shadow)}
+  /* Settings menu: gear button (top-right) opening language + appearance controls. */
+  .settings{position:relative;flex:0 0 auto}
+  /* Ghost treatment: no border/fill — a muted icon that recedes; a soft chip circle on hover/focus. */
+  .gearbtn{width:40px;height:40px;display:grid;place-items:center;border:1px solid transparent;
+    background:transparent;color:var(--muted);border-radius:11px;cursor:pointer;padding:0;
+    transition:background .15s,color .15s}
+  .gearbtn:hover{background:var(--chip-bg);color:var(--ink)}
+  .gearbtn[aria-expanded="true"]{background:var(--chip-bg);color:var(--ink)}
+  .gearbtn svg{width:20px;height:20px;display:block}
+  .menu{position:absolute;top:calc(100% + 10px);right:0;width:224px;background:var(--card);
+    border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);padding:12px;z-index:60}
+  .menu[hidden]{display:none}
+  .menu .mlabel{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--faint);font-weight:700;margin:0 4px 7px}
+  .menu .seg + .mlabel{margin-top:14px}
+  .seg{display:flex;gap:4px;background:var(--chip-bg);padding:4px;border-radius:11px}
+  .seg button{flex:1;border:0;background:transparent;color:var(--muted);font-weight:700;font-size:13px;
+    padding:7px 6px;border-radius:8px;cursor:pointer;white-space:nowrap}
+  .seg button[aria-pressed="true"]{background:var(--card);color:var(--ink);box-shadow:var(--shadow)}
 
   /* controls */
   .panel{
@@ -316,14 +334,8 @@
 
 <div class="wrap">
   <header>
-    <div class="eyebrowrow">
-      <div class="eyebrow" data-i18n="header.eyebrow">Free Library Events · San Diego</div>
-      <div class="langtoggle" role="group" aria-label="Language / Idioma">
-        <button type="button" data-setlang="en" aria-pressed="true">EN</button>
-        <button type="button" data-setlang="es" aria-pressed="false">ES</button>
-      </div>
-    </div>
-    <div class="brand">
+    <div class="headtop">
+      <div class="brand">
       <svg class="mark" viewBox="0 0 100 90" role="img" aria-label="Find Story Time">
         <path d="M50,25 C40,18 20,16 9,20 C6,21 5,23 5,26 L5,66 C5,69 7,71 10,70 C22,66 40,68 50,74 Z" fill="#FFD666"/>
         <path d="M50,25 C60,18 80,16 91,20 C94,21 95,23 95,26 L95,66 C95,69 93,71 90,70 C78,66 60,68 50,74 Z" fill="#FFD666"/>
@@ -333,8 +345,28 @@
         </g>
       </svg>
       <h1 class="wordmark">Find <span class="accent">Story Time</span></h1>
+      </div>
+      <div class="settings">
+        <button type="button" class="gearbtn" id="gearBtn" aria-haspopup="true" aria-expanded="false"
+                aria-controls="settingsMenu" data-i18n-aria="settings.label">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+        </button>
+        <div class="menu" id="settingsMenu" role="dialog" data-i18n-aria="settings.label" hidden>
+          <div class="mlabel" data-i18n="settings.language">Language</div>
+          <div class="seg" role="group" data-i18n-aria="settings.language">
+            <button type="button" data-setlang="en" aria-pressed="true">English</button>
+            <button type="button" data-setlang="es" aria-pressed="false">Español</button>
+          </div>
+          <div class="mlabel" data-i18n="settings.appearance">Appearance</div>
+          <div class="seg" role="group" data-i18n-aria="settings.appearance">
+            <button type="button" data-settheme="light" aria-pressed="false" data-i18n="theme.light">Light</button>
+            <button type="button" data-settheme="dark" aria-pressed="false" data-i18n="theme.dark">Dark</button>
+            <button type="button" data-settheme="system" aria-pressed="true" data-i18n="theme.system">System</button>
+          </div>
+        </div>
+      </div>
     </div>
-    <p class="lede" data-i18n="header.lede">Baby/toddler library events.</p>
+    <p class="lede" data-i18n="header.lede">Free San Diego library events for ages 0–5 — storytimes, crafts, music &amp; play.</p>
   </header>
 
   <div class="panel open" id="panel">
@@ -525,9 +557,14 @@ const moShort  = d => dtf({month:"short"}).format(d);     // was MON  (Jan…)
 
 const STRINGS = {
   en:{
-    "header.eyebrow":"Free Library Events · San Diego",
     "header.title":"Find Story Time",
-    "header.lede":"Storytimes, crafts, music & play for ages 0–5.",
+    "header.lede":"Free San Diego library events for ages 0–5 — storytimes, crafts, music & play.",
+    "settings.label":"Settings",
+    "settings.language":"Language",
+    "settings.appearance":"Appearance",
+    "theme.light":"Light",
+    "theme.dark":"Dark",
+    "theme.system":"System",
     "filter.heading":"Filters",
     "filter.zip":"Zip",
     "filter.zip.locating":"Locating…",
@@ -574,9 +611,14 @@ const STRINGS = {
     "gcal.details":"{name} at {lib}.{note}\n\nAges {label}. Free library event.\nDetails: {url}"
   },
   es:{
-    "header.eyebrow":"Eventos gratis en la biblioteca · San Diego",
     "header.title":"Find Story Time",
-    "header.lede":"Cuentos, manualidades, música y juego para edades 0–5.",
+    "header.lede":"Eventos gratis de biblioteca en San Diego para edades 0–5: cuentos, manualidades, música y juego.",
+    "settings.label":"Ajustes",
+    "settings.language":"Idioma",
+    "settings.appearance":"Apariencia",
+    "theme.light":"Claro",
+    "theme.dark":"Oscuro",
+    "theme.system":"Sistema",
     "filter.heading":"Filtros",
     "filter.zip":"Código postal",
     "filter.zip.locating":"Localizando…",
@@ -668,13 +710,46 @@ function initialLang(){
   const navs=navigator.languages||[navigator.language||""];
   return navs.some(l=>String(l).toLowerCase().startsWith("es")) ? "es" : "en";
 }
+// Theme preference: "light" | "dark" | "system" (default). Persisted to localStorage.
+// "system" clears data-theme so the prefers-color-scheme media query governs; a forced
+// choice sets data-theme, which the CSS honors over the OS setting.
+function initialTheme(){
+  try{ const s=localStorage.getItem("stny.theme"); if(s==="light"||s==="dark"||s==="system") return s; }catch(e){}
+  return "system";
+}
+function setTheme(pref){
+  pref = (pref==="light"||pref==="dark") ? pref : "system";
+  try{ localStorage.setItem("stny.theme", pref); }catch(e){}
+  const root=document.documentElement;
+  if(pref==="system") root.removeAttribute("data-theme"); else root.setAttribute("data-theme", pref);
+  document.querySelectorAll("[data-settheme]").forEach(b=>
+    b.setAttribute("aria-pressed", b.dataset.settheme===pref ? "true":"false"));
+  const dark = pref==="dark" || (pref==="system" && matchMedia("(prefers-color-scheme: dark)").matches);
+  const m=document.querySelector('meta[name="theme-color"]'); if(m) m.setAttribute("content", dark?"#14161C":"#FBFAF9");
+}
+// Keep the browser chrome color (and nothing else — CSS handles the rest) in step when the
+// OS flips while the user is on "system".
+matchMedia("(prefers-color-scheme: dark)").addEventListener("change",()=>{ if(initialTheme()==="system") setTheme("system"); });
+
+// Settings dropdown: open/close the gear menu, close on outside click or Escape.
+(function(){
+  const btn=document.getElementById("gearBtn"), menu=document.getElementById("settingsMenu");
+  if(!btn||!menu) return;
+  const open=o=>{ menu.hidden=!o; btn.setAttribute("aria-expanded", String(o)); };
+  btn.addEventListener("click",e=>{ e.stopPropagation(); open(menu.hidden); });
+  document.addEventListener("click",e=>{ if(!menu.hidden && !menu.contains(e.target) && !btn.contains(e.target)) open(false); });
+  document.addEventListener("keydown",e=>{ if(e.key==="Escape" && !menu.hidden){ open(false); btn.focus(); } });
+  document.querySelectorAll("[data-settheme]").forEach(b=>
+    b.addEventListener("click",()=>setTheme(b.dataset.settheme)));
+})();
+
 // Switch UI language: persist, reflect in <html lang> + URL, retranslate, repaint.
 function setLang(lang){
   state.lang = (lang==="es") ? "es" : "en";
   try{ localStorage.setItem("stny.lang", state.lang); }catch(e){}
   document.documentElement.lang = state.lang;
   try{ const u=new URL(location.href); u.searchParams.set("lang", state.lang); history.replaceState(null,"",u); }catch(e){}
-  document.querySelectorAll(".langtoggle button").forEach(b=>
+  document.querySelectorAll("[data-setlang]").forEach(b=>
     b.setAttribute("aria-pressed", b.dataset.setlang===state.lang ? "true":"false"));
   applyStaticI18n();
   localizeDowChips();
@@ -1292,9 +1367,10 @@ document.querySelectorAll("#tabs button").forEach(b=>b.addEventListener("click",
 
 // ---------- INIT ----------------------------------------------------------
 syncColors();
+setTheme(initialTheme());       // appearance: localStorage → system. Sets data-theme + menu state.
 setLang(initialLang());         // language: ?lang → localStorage → navigator → en. Sets <html lang>,
-                                // the toggle, static strings + dow chips, then render() + syncStickyHeights().
-document.querySelectorAll(".langtoggle button").forEach(b=>
+                                // the menu buttons, static strings + dow chips, then render() + syncStickyHeights().
+document.querySelectorAll("[data-setlang]").forEach(b=>
   b.addEventListener("click",()=>setLang(b.dataset.setlang)));
 setFiltersEnabled(false);       // filters stay locked until locating resolves
 initLocation();                 // async: recenters on the user's location if allowed
