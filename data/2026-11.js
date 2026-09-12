@@ -638,6 +638,22 @@ STORYTIME.months["2026-11"] = {
       "note": "Caregivers and their little ones are invited to join our vibrant Baby Storytime featuring: songs, stories, and playtime! WEEKLY WEDNESDAYS starting at 1:00PM."
     },
     {
+      "lib": "ramonaco",
+      "name": "Cool Cursive Club",
+      "date": "2026-11-04",
+      "time": "15:00",
+      "dur": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6aa3161e7825b400640666af",
+      "note": "Learn and level up your cursive skills as we explore cursive handwriting with Marsha. (Geared for ages 5+)"
+    },
+    {
       "lib": "vistacou",
       "name": "Kids' Crafternoon",
       "date": "2026-11-04",
@@ -1102,6 +1118,40 @@ STORYTIME.months["2026-11"] = {
     },
     {
       "lib": "sanmarco",
+      "name": "Kids Coloring Corner",
+      "date": "2026-11-05",
+      "time": "16:00",
+      "dur": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "…THURSDAY OF THE MONTH. 4-5 PM. Children of all ages welcome.",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6aa4574aab7a8e0037c11f1e",
+      "note": "Express your creativity through coloring! Coloring pages and art supplies will be provided. FIRST THURSDAY OF THE MONTH. 4-5 PM. Children of all ages welcome."
+    },
+    {
+      "lib": "cardiffb",
+      "name": "Toddler Time",
+      "date": "2026-11-06",
+      "time": "10:00",
+      "dur": 120,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "Toddler Time",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a594440fa641fe01af3b1d8",
+      "note": "Enjoy an open sensory play program with your toddler or preschooler with play-doh, blocks, sensory sand, shakers, and more!"
+    },
+    {
+      "lib": "sanmarco",
       "name": "Tots and Blocks",
       "date": "2026-11-06",
       "time": "10:00",
@@ -1147,22 +1197,6 @@ STORYTIME.months["2026-11"] = {
       ],
       "eventId": "69d818a8ad384e40edb9f1bf",
       "note": "Babies experience the sounds and structure of language through rhythm, rhyme, and repetition. Plan on a fifteen-minute program with time for baby and caregiver "
-    },
-    {
-      "lib": "cardiffb",
-      "name": "Toddler Time",
-      "date": "2026-11-06",
-      "time": "10:30",
-      "dur": 90,
-      "ages": [
-        "toddler"
-      ],
-      "ageText": "Toddler Time",
-      "lang": [
-        "en"
-      ],
-      "eventId": "6a594440fa641fe01af3b1d8",
-      "note": "Enjoy an open sensory play program with your toddler or preschooler with play-doh, blocks, sensory sand, shakers, and more!"
     },
     {
       "lib": "delmarco",
@@ -1314,7 +1348,7 @@ STORYTIME.months["2026-11"] = {
     },
     {
       "lib": "sanmarco",
-      "name": "Sensory-Friendly Storytime",
+      "name": "Sensory Storytime",
       "date": "2026-11-06",
       "time": "11:30",
       "dur": 60,
@@ -1425,8 +1459,24 @@ STORYTIME.months["2026-11"] = {
       "lang": [
         "en"
       ],
-      "eventId": "6a2358182ea730c17ab4b162",
-      "note": "Paws to Read: Come read to a real furry friend! 1st SATURDAY every MONTH! 11am-12noon."
+      "eventId": "6aa44ff0ab7a8e0037c11bb7",
+      "note": "Come read to a real furry friend, the first and third Saturdays each month!"
+    },
+    {
+      "lib": "borregos",
+      "name": "Kids' Lego Club!",
+      "date": "2026-11-07",
+      "time": "11:00",
+      "dur": 120,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6aa491e756fe62004a2f7b28",
+      "note": "Use your creativity and our collection of Legos to build whatever your heart desires! Creations will be displayed at the library for 2 weeks, between club meeti"
     },
     {
       "lib": "delmarco",
@@ -1612,19 +1662,19 @@ STORYTIME.months["2026-11"] = {
     },
     {
       "lib": "solanabe",
-      "name": "Toddler Storytime",
+      "name": "SPECIAL: Storytime with the San Diego Humane Society",
       "date": "2026-11-09",
       "time": "10:30",
       "dur": 30,
       "ages": [
-        "toddler"
+        "preschool"
       ],
-      "ageText": "Toddler Storytime",
+      "ageText": "Kids",
       "lang": [
         "en"
       ],
-      "eventId": "69fe7482f56bd86e00ae7dcd",
-      "note": "For toddlers 1.5 (walking) - 3 years. Come and join the fun with stories, songs, and crafts."
+      "eventId": "6aa1fbb7ab7a8e0037c0add4",
+      "note": "This special storytime will be with the San Diego Humane Society. Kids will enjoy listening to a story, singing songs, and learning the best ways to safely and "
     },
     {
       "lib": "vistacou",
@@ -2005,6 +2055,22 @@ STORYTIME.months["2026-11"] = {
       ],
       "eventId": "69fa9600f56bd86e00add5bc",
       "note": "Use your imagination to complete a brick building challenge with Lego bricks or build whatever you'd like! Hosted in partnership with the City of Imperial Beach"
+    },
+    {
+      "lib": "ramonaco",
+      "name": "Cool Cursive Club",
+      "date": "2026-11-11",
+      "time": "15:00",
+      "dur": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6aa3161e7825b400640666b0",
+      "note": "Learn and level up your cursive skills as we explore cursive handwriting with Marsha. (Geared for ages 5+)"
     },
     {
       "lib": "4s",
@@ -2405,6 +2471,22 @@ STORYTIME.months["2026-11"] = {
       "note": "Join us for an Audiobook Listening Party! Are you daring enough to participate in our audiobook listening party featuring a tale about a mysterious abandoned ho"
     },
     {
+      "lib": "cardiffb",
+      "name": "Toddler Time",
+      "date": "2026-11-13",
+      "time": "10:00",
+      "dur": 120,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "Toddler Time",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a594440fa641fe01af3b1d9",
+      "note": "Enjoy an open sensory play program with your toddler or preschooler with play-doh, blocks, sensory sand, shakers, and more!"
+    },
+    {
       "lib": "sanmarco",
       "name": "Tots and Blocks",
       "date": "2026-11-13",
@@ -2451,22 +2533,6 @@ STORYTIME.months["2026-11"] = {
       ],
       "eventId": "69d818a8ad384e40edb9f1c0",
       "note": "Babies experience the sounds and structure of language through rhythm, rhyme, and repetition. Plan on a fifteen-minute program with time for baby and caregiver "
-    },
-    {
-      "lib": "cardiffb",
-      "name": "Toddler Time",
-      "date": "2026-11-13",
-      "time": "10:30",
-      "dur": 90,
-      "ages": [
-        "toddler"
-      ],
-      "ageText": "Toddler Time",
-      "lang": [
-        "en"
-      ],
-      "eventId": "6a594440fa641fe01af3b1d9",
-      "note": "Enjoy an open sensory play program with your toddler or preschooler with play-doh, blocks, sensory sand, shakers, and more!"
     },
     {
       "lib": "delmarco",
@@ -2795,6 +2861,23 @@ STORYTIME.months["2026-11"] = {
       ],
       "eventId": "6a88bc1f69166f088b93e157",
       "note": "Use your creativity and our collection of Legos to build whatever your heart desires! Creations will be displayed at the library for 2 weeks, between club meeti"
+    },
+    {
+      "lib": "borregos",
+      "name": "Crafts for Kids/Manualidades para Niños",
+      "date": "2026-11-14",
+      "time": "11:00",
+      "dur": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en",
+        "es"
+      ],
+      "eventId": "6aa5773256fe62004a2f8708",
+      "note": "Come have fun at the library while making a cool craft. A different craft each time, while supplies last. Ven y divertirse en la biblioteca. Una manualidad nuev"
     },
     {
       "lib": "jacumbac",
@@ -3430,6 +3513,22 @@ STORYTIME.months["2026-11"] = {
       "note": "Introduce your baby to language and fun with bouncing rhymes, songs, and simple stories. This 30-minute storytime is followed by a friendly baby play date for s"
     },
     {
+      "lib": "ramonaco",
+      "name": "Cool Cursive Club",
+      "date": "2026-11-18",
+      "time": "15:00",
+      "dur": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6aa3161e7825b400640666b1",
+      "note": "Learn and level up your cursive skills as we explore cursive handwriting with Marsha. (Geared for ages 5+)"
+    },
+    {
       "lib": "vistacou",
       "name": "Kids' Crafternoon",
       "date": "2026-11-18",
@@ -3876,6 +3975,22 @@ STORYTIME.months["2026-11"] = {
       "note": "Enjoy a free hour of Lego fun! Featuring weekly challenges, Let’s Create!"
     },
     {
+      "lib": "cardiffb",
+      "name": "Toddler Time",
+      "date": "2026-11-20",
+      "time": "10:00",
+      "dur": 120,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "Toddler Time",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a594440fa641fe01af3b1da",
+      "note": "Enjoy an open sensory play program with your toddler or preschooler with play-doh, blocks, sensory sand, shakers, and more!"
+    },
+    {
       "lib": "4s",
       "name": "Baby Storytime!",
       "date": "2026-11-20",
@@ -3906,22 +4021,6 @@ STORYTIME.months["2026-11"] = {
       ],
       "eventId": "69d818a8ad384e40edb9f1c1",
       "note": "Babies experience the sounds and structure of language through rhythm, rhyme, and repetition. Plan on a fifteen-minute program with time for baby and caregiver "
-    },
-    {
-      "lib": "cardiffb",
-      "name": "Toddler Time",
-      "date": "2026-11-20",
-      "time": "10:30",
-      "dur": 90,
-      "ages": [
-        "toddler"
-      ],
-      "ageText": "Toddler Time",
-      "lang": [
-        "en"
-      ],
-      "eventId": "6a594440fa641fe01af3b1da",
-      "note": "Enjoy an open sensory play program with your toddler or preschooler with play-doh, blocks, sensory sand, shakers, and more!"
     },
     {
       "lib": "delmarco",
@@ -4040,19 +4139,19 @@ STORYTIME.months["2026-11"] = {
     },
     {
       "lib": "solanabe",
-      "name": "Dance Party",
+      "name": "Franklin & Friends at the Library",
       "date": "2026-11-20",
       "time": "10:30",
       "dur": 30,
       "ages": [
-        "toddler"
+        "preschool"
       ],
-      "ageText": "…ldren's area. All children are welcome. For toddlers 18 months - 3 years old. Together let's sh…",
+      "ageText": "Kids",
       "lang": [
         "en"
       ],
-      "eventId": "6a59451c7b79214226a90abf",
-      "note": "Join us for a fun dance party in the Children's area. All children are welcome. For toddlers 18 months - 3 years old. Together let's shake our sillies, row the "
+      "eventId": "6aa431d386d8450031155974",
+      "note": "Join us for stories with Franklin, the tortoise from the Nature Center of San Elijo Lagoon Ecological Reserve. Hosted by Park Rangers from the Parks & Recreatio"
     },
     {
       "lib": "valleyce",
@@ -4185,6 +4284,57 @@ STORYTIME.months["2026-11"] = {
       ],
       "eventId": "695825884a9fd98b7f7542a0",
       "note": "Dance along with fun storytime songs! All children are welcome. Geared toward toddlers 18m - 3."
+    },
+    {
+      "lib": "pw",
+      "name": "German Bilingual Dance Party Storytime",
+      "date": "2026-11-21",
+      "time": "10:30",
+      "dur": 30,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "",
+      "lang": [
+        "en",
+        "de"
+      ],
+      "eventId": "6aa1a84ed9692700553436a2",
+      "note": "Dance along with fun storytime songs in German!"
+    },
+    {
+      "lib": "4s",
+      "name": "Paws to Read",
+      "date": "2026-11-21",
+      "time": "11:00",
+      "dur": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6aa44ff0ab7a8e0037c11bb8",
+      "note": "Come read to a real furry friend, the first and third Saturdays each month!"
+    },
+    {
+      "lib": "borregos",
+      "name": "Kids' Lego Club!",
+      "date": "2026-11-21",
+      "time": "11:00",
+      "dur": 120,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6aa491e756fe62004a2f7b29",
+      "note": "Use your creativity and our collection of Legos to build whatever your heart desires! Creations will be displayed at the library for 2 weeks, between club meeti"
     },
     {
       "lib": "fallbroo",
@@ -4740,6 +4890,22 @@ STORYTIME.months["2026-11"] = {
       "note": "Use your imagination to complete a brick building challenge with Lego bricks or build whatever you'd like! Hosted in partnership with the City of Imperial Beach"
     },
     {
+      "lib": "ramonaco",
+      "name": "Cool Cursive Club",
+      "date": "2026-11-25",
+      "time": "15:00",
+      "dur": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6aa3161e7825b400640666b2",
+      "note": "Learn and level up your cursive skills as we explore cursive handwriting with Marsha. (Geared for ages 5+)"
+    },
+    {
       "lib": "alpineco",
       "name": "Lego Club",
       "date": "2026-11-25",
@@ -4870,6 +5036,22 @@ STORYTIME.months["2026-11"] = {
       "note": "Kids are welcome to drop in and get creative at our weekly 'buffet-style' craft session! We'll provide all the supplies, just bring your imagination."
     },
     {
+      "lib": "cardiffb",
+      "name": "Toddler Time",
+      "date": "2026-11-27",
+      "time": "10:00",
+      "dur": 120,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "Toddler Time",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6aa1e20b8cf597003f927239",
+      "note": "Enjoy an open sensory play program with your toddler or preschooler with play-doh, blocks, sensory sand, shakers, and more!"
+    },
+    {
       "lib": "lemongro",
       "name": "Tiny Tots Art",
       "date": "2026-11-27",
@@ -4998,6 +5180,23 @@ STORYTIME.months["2026-11"] = {
       ],
       "eventId": "6a88bc1f69166f088b93e158",
       "note": "Use your creativity and our collection of Legos to build whatever your heart desires! Creations will be displayed at the library for 2 weeks, between club meeti"
+    },
+    {
+      "lib": "borregos",
+      "name": "Crafts for Kids/Manualidades para Niños",
+      "date": "2026-11-28",
+      "time": "11:00",
+      "dur": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en",
+        "es"
+      ],
+      "eventId": "6aa5773256fe62004a2f8709",
+      "note": "Come have fun at the library while making a cool craft. A different craft each time, while supplies last. Ven y divertirse en la biblioteca. Una manualidad nuev"
     },
     {
       "lib": "jacumbac",

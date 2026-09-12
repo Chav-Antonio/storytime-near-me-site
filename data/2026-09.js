@@ -3377,38 +3377,6 @@ STORYTIME.months["2026-09"] = {
       "note": "Glee Club Group Singing, Ages 8-10 Requires registration with Villa Musica"
     },
     {
-      "lib": "descanso",
-      "name": "Make & Take Craft",
-      "date": "2026-09-12",
-      "time": "08:00",
-      "dur": 60,
-      "ages": [
-        "preschool"
-      ],
-      "ageText": "Kids",
-      "lang": [
-        "en"
-      ],
-      "eventId": "698285bd707481383708c536",
-      "note": "Come in with the kids and enjoy a self guided craft that's available all day long. Each week features a different theme. We look forward to seeing you here."
-    },
-    {
-      "lib": "paradise",
-      "name": "Storytime & Craft",
-      "date": "2026-09-12",
-      "time": "10:00",
-      "dur": 30,
-      "ages": [
-        "toddler"
-      ],
-      "ageText": "…en's Area from 10:00AM-10:30AM, followed by Tiny Tot Play from 10:30AM-12PM",
-      "lang": [
-        "en"
-      ],
-      "eventId": "404551",
-      "note": "Please join us for storytime, music, and craft with Mr. Rogelio every Saturday morning in the Children's Area from 10:00AM-10:30AM, followed by Tiny Tot Play fr"
-    },
-    {
       "lib": "central",
       "name": "Saturday Stories at Central Library",
       "date": "2026-09-12",
@@ -3479,22 +3447,19 @@ STORYTIME.months["2026-09"] = {
     },
     {
       "lib": "pw",
-      "name": "German Bilingual Dance Party Storytime",
+      "name": "Dance Party Storytime",
       "date": "2026-09-12",
       "time": "10:30",
       "dur": 30,
       "ages": [
-        "baby",
-        "toddler",
-        "preschool"
+        "toddler"
       ],
-      "ageText": "",
+      "ageText": "…gs! All children are welcome. Geared toward toddlers 18m - 3.",
       "lang": [
-        "en",
-        "de"
+        "en"
       ],
-      "eventId": "6a89e83b2dac6e003720e8c9",
-      "note": "Dance along with fun storytime songs in German!"
+      "eventId": "6aa1a88da29f1b002adbe7fc",
+      "note": "Dance along with fun storytime songs! All children are welcome. Geared toward toddlers 18m - 3."
     },
     {
       "lib": "4s",
@@ -5544,7 +5509,7 @@ STORYTIME.months["2026-09"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "…nd pins. All supplies will be provided, and all ages are welcome. For ages 12 and below, an adul…",
+      "ageText": "…es last. All supplies will be provided, and all ages are welcome. For ages 12 and below, an adul…",
       "lang": [
         "en"
       ],
@@ -5630,6 +5595,22 @@ STORYTIME.months["2026-09"] = {
       ],
       "eventId": "6a52ab940d65ac36003f0af4",
       "note": "Simple science experiments for kids 5-10 years old."
+    },
+    {
+      "lib": "cardiffb",
+      "name": "Toddler Time",
+      "date": "2026-09-18",
+      "time": "10:00",
+      "dur": 120,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "Toddler Time",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a51642417f387c203a4b416",
+      "note": "Enjoy an open sensory play program with your toddler or preschooler with play-doh, blocks, sensory sand, shakers, and more!"
     },
     {
       "lib": "cityheig",
@@ -5764,22 +5745,6 @@ STORYTIME.months["2026-09"] = {
       ],
       "eventId": "69d818a8ad384e40edb9f1b8",
       "note": "Babies experience the sounds and structure of language through rhythm, rhyme, and repetition. Plan on a fifteen-minute program with time for baby and caregiver "
-    },
-    {
-      "lib": "cardiffb",
-      "name": "Toddler Time",
-      "date": "2026-09-18",
-      "time": "10:30",
-      "dur": 90,
-      "ages": [
-        "toddler"
-      ],
-      "ageText": "Toddler Time",
-      "lang": [
-        "en"
-      ],
-      "eventId": "6a51642417f387c203a4b416",
-      "note": "Enjoy an open sensory play program with your toddler or preschooler with play-doh, blocks, sensory sand, shakers, and more!"
     },
     {
       "lib": "delmarco",
@@ -8362,6 +8327,22 @@ STORYTIME.months["2026-09"] = {
       "note": "Simple science experiments for kids 5-10 years old."
     },
     {
+      "lib": "4s",
+      "name": "Electrical Circuits Workshop",
+      "date": "2026-09-24",
+      "time": "16:15",
+      "dur": 90,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6aa32b5a4b3b06003082e4a8",
+      "note": "Team Optics DNHS Robotics. A hands-on workshop for kids! Learn about circuit basics like current, resistance, and voltage Kids build their own circuits to take "
+    },
+    {
       "lib": "tierrasa",
       "name": "Preschool Storytime",
       "date": "2026-09-25",
@@ -8376,6 +8357,22 @@ STORYTIME.months["2026-09"] = {
       ],
       "eventId": "387468",
       "note": "Join in as we read, sing, dance, and play at Preschool Storytime! Come and build essential early literacy skills and foster a love of reading. Designed for chil"
+    },
+    {
+      "lib": "cardiffb",
+      "name": "Toddler Time",
+      "date": "2026-09-25",
+      "time": "10:00",
+      "dur": 120,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "Toddler Time",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a51642417f387c203a4b417",
+      "note": "Enjoy an open sensory play program with your toddler or preschooler with play-doh, blocks, sensory sand, shakers, and more!"
     },
     {
       "lib": "cityheig",
@@ -8494,22 +8491,6 @@ STORYTIME.months["2026-09"] = {
       "note": "Babies experience the sounds and structure of language through rhythm, rhyme, and repetition. Plan on a fifteen-minute program with time for baby and caregiver "
     },
     {
-      "lib": "cardiffb",
-      "name": "Toddler Time",
-      "date": "2026-09-25",
-      "time": "10:30",
-      "dur": 90,
-      "ages": [
-        "toddler"
-      ],
-      "ageText": "Toddler Time",
-      "lang": [
-        "en"
-      ],
-      "eventId": "6a51642417f387c203a4b417",
-      "note": "Enjoy an open sensory play program with your toddler or preschooler with play-doh, blocks, sensory sand, shakers, and more!"
-    },
-    {
       "lib": "delmarco",
       "name": "Family Play Time",
       "date": "2026-09-25",
@@ -8625,19 +8606,19 @@ STORYTIME.months["2026-09"] = {
     },
     {
       "lib": "solanabe",
-      "name": "Dance Party",
+      "name": "Franklin & Friends at the Library",
       "date": "2026-09-25",
       "time": "10:30",
       "dur": 30,
       "ages": [
-        "toddler"
+        "preschool"
       ],
-      "ageText": "…ldren's area. All children are welcome. For toddlers 18 months - 3 years old. Together let's sh…",
+      "ageText": "Kids",
       "lang": [
         "en"
       ],
-      "eventId": "6a59451c7b79214226a90ab7",
-      "note": "Join us for a fun dance party in the Children's area. All children are welcome. For toddlers 18 months - 3 years old. Together let's shake our sillies, row the "
+      "eventId": "6aa431876074830038263bac",
+      "note": "Join us for stories with Franklin, the tortoise from the Nature Center of San Elijo Lagoon Ecological Reserve. Hosted by Park Rangers from the Parks & Recreatio"
     },
     {
       "lib": "uc",
