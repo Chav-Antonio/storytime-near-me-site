@@ -150,6 +150,21 @@
   .gx{margin-left:6px;flex:0 0 auto;background:none;border:0;color:inherit;cursor:pointer;
     font-size:20px;line-height:1;opacity:.7;padding:0 2px}
   .gx:hover{opacity:1}
+  /* Retry-in-progress spinner (in the "Use my location" button). */
+  .gspin{width:13px;height:13px;flex:none;border:2px solid currentColor;border-right-color:transparent;
+    border-radius:50%;display:inline-block;animation:gspin .7s linear infinite}
+  @keyframes gspin{to{transform:rotate(360deg)}}
+  /* Inline result of a retry ("Still blocked" / "Couldn't access location"). */
+  .geostatus{display:inline-flex;align-items:center;gap:5px;font-size:12.5px;font-weight:800;color:var(--accent-ink)}
+  .geostatus svg{width:14px;height:14px;flex:none}
+  /* "How to turn location on" disclosure — native <details>, browser-agnostic steps. */
+  .geohowto{margin-top:10px;border-top:1px dashed color-mix(in srgb,var(--warn-ink) 30%,transparent);padding-top:9px}
+  .geohowto > summary{cursor:pointer;font-weight:800;font-size:12.5px;list-style:none;display:inline-flex;align-items:center;gap:6px}
+  .geohowto > summary::-webkit-details-marker{display:none}
+  .geohowto > summary .chev{transition:transform .15s}
+  .geohowto[open] > summary .chev{transform:rotate(90deg)}
+  .geohowto ol{margin:8px 0 2px;padding-left:20px;font-size:13px;line-height:1.6}
+  @media (prefers-reduced-motion:reduce){ .gspin{animation:none} .geohowto > summary .chev{transition:none} }
   /* ZIP field nudge: when auto-locate failed we leave the box empty and ring it, so the
      remedy (type a ZIP) is where the eye lands. Driven by syncZipField(). */
   .field.flagged input{border-color:var(--accent);box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 26%,transparent)}
@@ -211,6 +226,12 @@
   .distpill .pin{display:inline-flex}
   /* Estimated distance (origin is a guess): muted + dashed ring so it reads as tentative, with cursor hint for the tooltip. */
   .distpill.approx{color:var(--muted);background:transparent;border:1px dashed var(--line-strong);cursor:help}
+  /* Clickable variant: the pill is a map deep-link. Accent ring + ink on hover; never
+     underlined (the .block .bl a / generic link rules would otherwise strike the chip). */
+  a.distpill,.block .bl a.distpill{cursor:pointer;text-decoration:none}
+  a.distpill:hover,.block .bl a.distpill:hover{color:var(--accent-ink);box-shadow:inset 0 0 0 1px var(--accent);text-decoration:none}
+  a.distpill.approx{cursor:pointer}
+  a.distpill.approx:hover{border-color:var(--accent);box-shadow:none}
   .btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;font-size:12.5px;font-weight:600;
        padding:7px 11px;border-radius:9px;border:1px solid var(--line-strong);background:var(--card);color:var(--ink);cursor:pointer;white-space:nowrap;text-align:center}
   .btn:hover{border-color:var(--accent);text-decoration:none;color:var(--accent-ink)}
@@ -561,6 +582,10 @@ const state = {
   // Geolocation outcome: null while pending/OK; "denied" | "unavailable" | "insecure"
   // once auto-locate fails, which drives the fallback notice + ZIP-field nudge.
   geoStatus:null, geoDismissed:false, geoRetrying:false,
+  // Denied-retry handling: geoBlocked (browser hard-blocks, from the Permissions API) hides
+  // the dead retry and shows how-to; geoRetryFailed drives the inline "still blocked" line;
+  // geoShowHowto opens the how-to steps after a failed retry.
+  geoBlocked:false, geoRetryFailed:false, geoShowHowto:false,
   // True once we have a real origin (geo fix adopted, or a ZIP the parent typed). While
   // false we're on the SD-centroid guess: the radius filter is relaxed so nothing local is
   // hidden, and distances render as estimates. See locUnknown() / applyFilters / distPill.
@@ -649,6 +674,14 @@ const STRINGS = {
     "geo.retrying":"Locating…",
     "geo.enterZip":"Enter ZIP",
     "geo.dismiss":"Dismiss",
+    "geo.blocked.msg":"<b>Location is blocked for this site.</b> Your browser is set to deny it, so we can't ask again from here. Turn it on in settings, or enter your ZIP.",
+    "geo.blocked.status":"Still blocked",
+    "geo.retry.failed":"Couldn't access location",
+    "geo.howto.title":"How to turn location on",
+    "geo.howto.step1":"Click the lock or tune icon just left of the web address.",
+    "geo.howto.step2":"Open Site settings (or Permissions).",
+    "geo.howto.step3":"Set Location to Allow.",
+    "geo.howto.step4":"Reload the page, or press Use my location again.",
     "error.title":"Couldn't load schedule data",
     "error.body":"This page reads its schedule from the <code>{dir}/</code> folder. Make sure <code>{dir}/manifest.js</code>, <code>libraries.js</code>, and each <code>yyyy-mm.js</code> it lists are present next to this file.",
     "empty.title":"No events match yet",
@@ -715,6 +748,14 @@ const STRINGS = {
     "geo.retrying":"Localizando…",
     "geo.enterZip":"Ingresar código postal",
     "geo.dismiss":"Descartar",
+    "geo.blocked.msg":"<b>La ubicación está bloqueada para este sitio.</b> Tu navegador está configurado para denegarla, así que no podemos volver a pedirla desde aquí. Actívala en la configuración o ingresa tu código postal.",
+    "geo.blocked.status":"Sigue bloqueada",
+    "geo.retry.failed":"No se pudo acceder a la ubicación",
+    "geo.howto.title":"Cómo activar la ubicación",
+    "geo.howto.step1":"Haz clic en el icono de candado o ajustes a la izquierda de la dirección web.",
+    "geo.howto.step2":"Abre Configuración del sitio (o Permisos).",
+    "geo.howto.step3":"Cambia Ubicación a Permitir.",
+    "geo.howto.step4":"Recarga la página o presiona Usar mi ubicación de nuevo.",
     "error.title":"No se pudieron cargar los datos del horario",
     "error.body":"Esta página lee su horario de la carpeta <code>{dir}/</code>. Asegúrate de que <code>{dir}/manifest.js</code>, <code>libraries.js</code> y cada <code>yyyy-mm.js</code> que enumera estén junto a este archivo.",
     "empty.title":"Aún no hay eventos que coincidan",
@@ -862,11 +903,29 @@ function finishLocating(){
 // Map a GeolocationPositionError to our geoStatus reason (code 1 = permission denied;
 // 2 = position unavailable, 3 = timeout — both surface as "unavailable").
 function geoReason(err){ return (err && err.code===1) ? "denied" : "unavailable"; }
+// Learn whether the browser is *hard-blocking* geolocation (Permissions API). When it is, a
+// retry can't re-prompt, so the notice guides to settings instead of offering a dead button.
+// The onchange keeps it live — if the parent flips it to Allow in settings we auto-retry.
+// Unsupported (e.g. older Safari) → geoBlocked stays false and we fall back to retry+feedback.
+function checkGeoPermission(){
+  if(!navigator.permissions || !navigator.permissions.query) return;
+  let q; try{ q=navigator.permissions.query({name:"geolocation"}); }catch(e){ return; }
+  if(!q || !q.then) return;
+  q.then(st=>{
+    state.geoBlocked = (st.state==="denied");
+    st.onchange = ()=>{
+      state.geoBlocked = (st.state==="denied");
+      if(st.state==="granted" && !state.locKnown) retryLocation(); else render();
+    };
+    render();
+  }).catch(()=>{});
+}
 // Try to center the search on the user's location; otherwise keep the SD centroid default
 // and record why so we can tell the parent (see renderGeoNotice).
 function initLocation(){
   // Geolocation needs a secure context; file:// and plain http can't use it at all.
   if(!navigator.geolocation || !window.isSecureContext){ state.geoStatus="insecure"; finishLocating(); return; }
+  checkGeoPermission();   // detect an already-blocked permission up front
   navigator.geolocation.getCurrentPosition(
     pos=>{
       const {zip,dist}=nearestZip(pos.coords.latitude,pos.coords.longitude);
@@ -875,7 +934,7 @@ function initLocation(){
       if(zip && dist<=30){ setZip(zip); state.locKnown=true; }
       finishLocating();
     },
-    err=>{ state.geoStatus=geoReason(err); finishLocating(); },   // denied / unavailable / timeout
+    err=>{ state.geoStatus=geoReason(err); checkGeoPermission(); finishLocating(); },   // denied / unavailable / timeout
     {enableHighAccuracy:false, timeout:8000, maximumAge:600000}
   );
   setTimeout(()=>{ if(locating){ if(!state.geoStatus) state.geoStatus="unavailable"; finishLocating(); } }, 9000);
@@ -884,15 +943,23 @@ function initLocation(){
 // initial pass this forces a fresh fix (maximumAge:0) and repaints as it goes.
 function retryLocation(){
   if(!navigator.geolocation || !window.isSecureContext) return;
-  state.geoRetrying=true; render();
+  state.geoRetrying=true; state.geoRetryFailed=false; render();   // spinner state so the click registers
   navigator.geolocation.getCurrentPosition(
     pos=>{
       state.geoRetrying=false;
       const {zip,dist}=nearestZip(pos.coords.latitude,pos.coords.longitude);
-      if(zip && dist<=30){ state.geoStatus=null; state.geoDismissed=false; state.locKnown=true; setZip(zip); }  // setZip repaints
-      else { state.geoStatus="unavailable"; render(); }
+      if(zip && dist<=30){   // got them: clear the whole failed-location state
+        state.geoStatus=null; state.geoDismissed=false; state.locKnown=true;
+        state.geoBlocked=false; state.geoShowHowto=false; state.geoRetryFailed=false;
+        setZip(zip);   // repaints
+      } else { state.geoStatus="unavailable"; state.geoBlocked=false; render(); }  // granted but not near SD
     },
-    err=>{ state.geoRetrying=false; state.geoStatus=geoReason(err); render(); },
+    err=>{
+      state.geoRetrying=false; state.geoStatus=geoReason(err); state.geoRetryFailed=true;
+      if(state.geoStatus==="denied") state.geoShowHowto=true;   // a denial after an explicit click → guide to settings
+      checkGeoPermission();   // refresh geoBlocked (hides the dead retry if the browser is hard-blocking)
+      render();
+    },
     {enableHighAccuracy:false, timeout:8000, maximumAge:0}
   );
 }
@@ -1025,16 +1092,17 @@ function eventUrl(e){
 }
 
 // A map deep-link for a library's location. Apple users (iOS/macOS) get Apple
-// Maps; everyone else (incl. Android) gets Google Maps. Coordinates keep the
-// pin exact; the name labels it.
+// Maps; everyone else (incl. Android) gets Google Maps. We search by name +
+// street address so the map resolves to the actual library place (labelled POI,
+// business hours, reviews) rather than dropping a bare pin at raw coordinates.
 function isAppleDevice(){
   return /iPhone|iPad|iPod|Macintosh|Mac OS X/i.test(navigator.userAgent||"");
 }
 function mapsUrl(l){
-  const q=encodeURIComponent(l.name);
+  const q=encodeURIComponent(`${l.name}, ${l.addr}`);
   return isAppleDevice()
-    ? `https://maps.apple.com/?ll=${l.lat},${l.lng}&q=${q}`
-    : `https://www.google.com/maps/search/?api=1&query=${l.lat},${l.lng}`;
+    ? `https://maps.apple.com/?q=${q}`
+    : `https://www.google.com/maps/search/?api=1&query=${q}`;
 }
 
 // ---------- FILTER --------------------------------------------------------
@@ -1094,8 +1162,9 @@ const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",
 // Distance pill (pin + miles), shared by all three views. The pin takes the library color.
 // While the origin is only a guess (locUnknown), distances are estimates from central San
 // Diego, not from the parent — round to whole miles ("about 9 mi") and explain on hover, so
-// there's no false precision.
-function distPill(mi,col){
+// there's no false precision. When a library is passed, the whole pill doubles as a map
+// deep-link (its pin already reads as "location"), giving every view a link to the location.
+function distPill(mi,col,lib){
   const approx=locUnknown();
   let txt;
   if(approx){                                  // estimate: round off the false precision ("about 9 mi")
@@ -1104,8 +1173,13 @@ function distPill(mi,col){
   } else {
     txt = t("unit.mi",{n:mi.toFixed(1)});
   }
+  const cls=`distpill${approx?" approx":""}`;
+  const inner=`<span class="pin" style="color:${col}">${ICON.pin}</span>${esc(txt)}`;
+  if(lib){
+    return `<a class="${cls} map" href="${esc(mapsUrl(lib))}" target="_blank" rel="noopener" title="${esc(t("loc.map",{name:lib.name}))}">${inner}</a>`;
+  }
   const attr=approx?` title="${esc(t("dist.approx.title"))}"`:"";
-  return `<span class="distpill${approx?" approx":""}"${attr}><span class="pin" style="color:${col}">${ICON.pin}</span>${esc(txt)}</span>`;
+  return `<span class="${cls}"${attr}>${inner}</span>`;
 }
 // A library-page link (or plain text when the library has no linkable page).
 function libLink(l,cls){
@@ -1136,7 +1210,7 @@ function evCard(e){
     <div class="body">
       <h3><a href="${esc(eventUrl(e))}" target="_blank" rel="noopener">${esc(e.tp.name)}</a></h3>
       <div class="meta">
-        <div class="metatop">${libLink(e.lib,"loc")}${distPill(e.dist,col)}</div>
+        <div class="metatop">${libLink(e.lib,"loc")}${distPill(e.dist,col,e.lib)}</div>
         <div class="metapills">${pills}</div>
       </div>
     </div>
@@ -1207,7 +1281,7 @@ function renderLocation(evs){
     h+=`<section class="loccard" style="border-left-color:${col}">
       <div class="lhead">
         <h2><span class="dot" style="background:${col}"></span>${nameHtml}</h2>
-        ${distPill(libDist(l),col)}
+        ${distPill(libDist(l),col,l)}
       </div>
       <p class="meta">
         <a class="maplink" href="${esc(mapsUrl(l))}" target="_blank" rel="noopener" title="${esc(t("loc.map",{name:l.name}))}">${ICON.map}${street}</a>
@@ -1256,7 +1330,7 @@ function renderDate(evs){
     return `<div class="block" style="--bcol:${col}">
       <div class="bt">${fmtTime(e.tp.t)} <small>· ${esc(t("unit.min",{n:e.tp.dur}))}</small></div>
       <h3><a href="${esc(eventUrl(e))}" target="_blank" rel="noopener">${esc(e.tp.name)}</a></h3>
-      <div class="bl"><span class="dot"></span>${libLink(e.lib)}${distPill(e.dist,col)}</div>
+      <div class="bl"><span class="dot"></span>${libLink(e.lib)}${distPill(e.dist,col,e.lib)}</div>
       <div class="bmeta">
         ${langPills(e.tp.lang,"btag")}
         <span class="btag age">${esc(agesLabel(e.tp.ages))}</span>
@@ -1288,9 +1362,11 @@ function emptyState(){
   </div>`;
 }
 
-// SVGs for the geo notice (warn triangle + crosshair pin), inline so there's no ICON coupling.
+// SVGs for the geo notice, inline so there's no ICON coupling.
 const GEO_WARN=`<svg class="gicon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4"/><path d="M12 17h.01"/><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/></svg>`;
 const GEO_PIN=`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/><circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="2.5" fill="currentColor"/></svg>`;
+const GEO_X=`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg>`;
+const GEO_CHEV=`<svg class="chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg>`;
 
 // Paint (or hide) the fallback-location banner and wire its buttons. Rebuilt on every
 // render() so it re-wires cleanly after innerHTML rebuilds elsewhere.
@@ -1299,14 +1375,30 @@ function renderGeoNotice(){
   const show = state.geoStatus && !state.geoDismissed && loadState!=="loading" && !locating;
   if(!show){ host.hidden=true; host.innerHTML=""; return; }
   host.hidden=false;
-  // Retry only makes sense where the API can actually run (not insecure / no API).
-  const canRetry = navigator.geolocation && window.isSecureContext && state.geoStatus!=="insecure";
+  const apiOk = navigator.geolocation && window.isSecureContext && state.geoStatus!=="insecure";
+  const blocked = !!state.geoBlocked;             // browser hard-blocks: a retry can't re-prompt
+  const canRetry = apiOk && !blocked;
+  const msgKey = blocked ? "geo.blocked.msg" : ("geo."+state.geoStatus+".msg");
+  const retryInner = state.geoRetrying
+    ? `<span class="gspin" aria-hidden="true"></span>${esc(t("geo.retrying"))}`   // spinner + "Locating…"
+    : `${GEO_PIN}${esc(t("geo.retry"))}`;
   const retryBtn = canRetry
-    ? `<button type="button" class="gbtn solid" id="geoRetry"${state.geoRetrying?" disabled":""}>${GEO_PIN}${esc(state.geoRetrying?t("geo.retrying"):t("geo.retry"))}</button>`
+    ? `<button type="button" class="gbtn solid" id="geoRetry"${state.geoRetrying?" disabled":""}>${retryInner}</button>`
     : "";
-  host.innerHTML=`<div class="geobanner" role="status">${GEO_WARN}
-    <div class="gtxt">${t("geo."+state.geoStatus+".msg")}
-      <div class="gact">${retryBtn}<button type="button" class="gbtn" id="geoZip">${esc(t("geo.enterZip"))}</button></div>
+  const statusLine = (state.geoRetryFailed && !state.geoRetrying)
+    ? `<span class="geostatus">${GEO_X}${esc(t(blocked?"geo.blocked.status":"geo.retry.failed"))}</span>`
+    : "";
+  // How-to steps: present when blocked or after a failed retry; auto-open once a retry has failed.
+  const howto = (blocked || state.geoShowHowto)
+    ? `<details class="geohowto"${state.geoShowHowto?" open":""}>
+        <summary>${GEO_CHEV}${esc(t("geo.howto.title"))}</summary>
+        <ol><li>${esc(t("geo.howto.step1"))}</li><li>${esc(t("geo.howto.step2"))}</li><li>${esc(t("geo.howto.step3"))}</li><li>${esc(t("geo.howto.step4"))}</li></ol>
+      </details>`
+    : "";
+  host.innerHTML=`<div class="geobanner" role="status" aria-live="polite">${GEO_WARN}
+    <div class="gtxt">${t(msgKey)}
+      <div class="gact">${retryBtn}<button type="button" class="gbtn" id="geoZip">${esc(t("geo.enterZip"))}</button>${statusLine}</div>
+      ${howto}
     </div>
     <button type="button" class="gx" id="geoX" aria-label="${esc(t("geo.dismiss"))}">×</button>
   </div>`;
