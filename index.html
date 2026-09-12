@@ -5,6 +5,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title data-i18n="doc.title">Storytime Near Me</title>
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#14161C">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>:root{color-scheme:light dark}html,body{margin:0}img{max-width:100%}</style>
 </head>
 <body>
@@ -17,6 +25,8 @@
     --wknd:#E8654F; --wkdy:#3E88C7;
     /* Scheme 1 (Sunrise): age carries amber, language carries teal — filter chip → card pill. */
     --age-bg:#FAEEDA; --age-ink:#854F0B; --lang-bg:#E1F5EE; --lang-ink:#0F6E56;
+    /* Wordmark "Story Time" accent — navy on light (per light-bg lockup), book-yellow on dark. */
+    --wordmark-accent:var(--ink);
   }
   @media (prefers-color-scheme: dark){
     :root:not([data-theme="light"]){
@@ -25,6 +35,7 @@
       --chip-bg:#262A32; --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 22px rgba(0,0,0,.35);
       --warn-bg:#38301C; --warn-ink:#E8C583;
       --age-bg:#3A2E16; --age-ink:#FAC775; --lang-bg:#123A30; --lang-ink:#5DCAA5;
+      --wordmark-accent:#FFD666;
     }
   }
   :root[data-theme="dark"]{
@@ -32,17 +43,18 @@
     --line:#2B2F38; --line-strong:#3A3F4A; --accent:#F27C67; --accent-ink:#F9A794;
     --chip-bg:#262A32; --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 22px rgba(0,0,0,.35);
     --warn-bg:#38301C; --warn-ink:#E8C583;
+    --wordmark-accent:#FFD666;
   }
 
   *{box-sizing:border-box}
   html,body{margin:0}
   body{
     background:var(--paper); color:var(--ink);
-    font:400 16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    font:400 16px/1.5 "Nunito",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
     -webkit-font-smoothing:antialiased;
   }
   .wrap{max-width:1080px;margin:0 auto;padding:0 20px 80px}
-  h1,h2,h3{font-family:Georgia,"Iowan Old Style","Times New Roman",serif;font-weight:600;letter-spacing:-.01em}
+  h1,h2,h3{font-family:"Baloo 2","Nunito",system-ui,sans-serif;font-weight:800;letter-spacing:-.01em}
   a{color:var(--accent-ink);text-decoration:none}
   a:hover{text-decoration:underline}
   button{font-family:inherit}
@@ -50,7 +62,12 @@
 
   /* header */
   header{padding:34px 0 18px}
-  .eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-ink);font-weight:600}
+  .eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-ink);font-weight:700}
+  /* Brand lockup: book+heart mark + two-tone wordmark (matches the logo assets). */
+  .brand{display:flex;align-items:center;gap:14px;margin:.24em 0 .12em}
+  .brand .mark{width:clamp(44px,7vw,60px);height:auto;flex:0 0 auto;color:var(--ink)}
+  .brand h1{margin:0}
+  .wordmark .accent{color:var(--wordmark-accent)}
   h1{font-size:clamp(30px,5vw,44px);margin:.24em 0 .12em;text-wrap:balance;line-height:1.05}
   .lede{color:var(--muted);max-width:60ch;font-size:16.5px}
   .lede b{color:var(--ink);font-weight:600}
@@ -113,7 +130,7 @@
   .datehead{display:flex;align-items:baseline;gap:10px;position:sticky;top:var(--headH,156px);z-index:5;
             background:color-mix(in srgb,var(--paper) 90%,transparent);padding:6px 0;margin-bottom:6px}
   .datehead h2{font-size:19px;margin:0}
-  .datehead .dow{color:var(--accent-ink);font-family:Georgia,serif;font-style:italic}
+  .datehead .dow{color:var(--accent-ink);font-family:"Baloo 2","Nunito",sans-serif;font-weight:800}
   .datehead .cnt{font-size:12px;color:var(--faint);font-weight:600;letter-spacing:.04em;text-transform:uppercase}
 
   /* event card */
@@ -306,7 +323,17 @@
         <button type="button" data-setlang="es" aria-pressed="false">ES</button>
       </div>
     </div>
-    <h1 data-i18n="header.title">Find Story Time</h1>
+    <div class="brand">
+      <svg class="mark" viewBox="0 0 100 90" role="img" aria-label="Find Story Time">
+        <path d="M50,25 C40,18 20,16 9,20 C6,21 5,23 5,26 L5,66 C5,69 7,71 10,70 C22,66 40,68 50,74 Z" fill="#FFD666"/>
+        <path d="M50,25 C60,18 80,16 91,20 C94,21 95,23 95,26 L95,66 C95,69 93,71 90,70 C78,66 60,68 50,74 Z" fill="#FFD666"/>
+        <path d="M50,25 L50,74" stroke="#FAC775" stroke-width="3" stroke-linecap="round"/>
+        <g transform="translate(33,30) scale(1.4)">
+          <path d="M12,21 C9,18 3,13 3,8 C3,5 5,3 8,3 C10,3 11.5,4.5 12,6 C12.5,4.5 14,3 16,3 C19,3 21,5 21,8 C21,13 15,18 12,21 Z" fill="#F79AC0"/>
+        </g>
+      </svg>
+      <h1 class="wordmark">Find <span class="accent">Story Time</span></h1>
+    </div>
     <p class="lede" data-i18n="header.lede">Baby/toddler library events.</p>
   </header>
 
