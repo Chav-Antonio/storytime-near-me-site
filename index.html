@@ -131,6 +131,32 @@
     letter-spacing:.04em;text-transform:uppercase;color:var(--accent-ink)}
   .dowall:hover{text-decoration:underline}
 
+  /* geolocation-failed notice: warm amber banner (reuses --warn tokens), sitting
+     between the filter panel and the view bar. */
+  .geonotice{margin:0 0 18px}
+  .geonotice[hidden]{display:none}
+  .geobanner{display:flex;align-items:flex-start;gap:11px;background:var(--warn-bg);color:var(--warn-ink);
+    border:1px solid color-mix(in srgb,var(--warn-ink) 26%,transparent);border-radius:11px;
+    padding:11px 13px;font-size:14px;line-height:1.45}
+  .geobanner .gicon{flex:0 0 auto;width:18px;height:18px;margin-top:1px}
+  .geobanner .gtxt{flex:1;min-width:0}
+  .geobanner .gtxt b{font-weight:800}
+  .geobanner .gact{display:flex;gap:8px;flex-wrap:wrap;margin-top:9px}
+  .gbtn{font:inherit;font-size:13px;font-weight:800;border-radius:8px;padding:5px 11px;cursor:pointer;
+    border:1px solid currentColor;background:transparent;color:inherit;display:inline-flex;align-items:center;gap:6px}
+  .gbtn.solid{background:var(--warn-ink);color:var(--warn-bg);border-color:transparent}
+  .gbtn[disabled]{opacity:.6;cursor:default}
+  .gbtn svg{width:14px;height:14px}
+  .gx{margin-left:6px;flex:0 0 auto;background:none;border:0;color:inherit;cursor:pointer;
+    font-size:20px;line-height:1;opacity:.7;padding:0 2px}
+  .gx:hover{opacity:1}
+  /* ZIP field nudge: when auto-locate failed we leave the box empty and ring it, so the
+     remedy (type a ZIP) is where the eye lands. Driven by syncZipField(). */
+  .field.flagged input{border-color:var(--accent);box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 26%,transparent)}
+  .field.flagged label{color:var(--accent-ink)}
+  /* Distance control dimmed while its filter is inert (no real origin yet). */
+  .field.inactive{opacity:.45}
+
   /* tabs + summary */
   /* Pinned below the (sticky) filter panel so the view switcher stays in reach while
      scrolling; --panelH is kept in sync with the panel's height by syncStickyHeights(). */
@@ -183,6 +209,8 @@
        color:var(--ink);background:var(--chip-bg);border-radius:999px;padding:3px 9px}
   .distpill svg{width:1em;height:1em;flex:none}
   .distpill .pin{display:inline-flex}
+  /* Estimated distance (origin is a guess): muted + dashed ring so it reads as tentative, with cursor hint for the tooltip. */
+  .distpill.approx{color:var(--muted);background:transparent;border:1px dashed var(--line-strong);cursor:help}
   .btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;font-size:12.5px;font-weight:600;
        padding:7px 11px;border-radius:9px;border:1px solid var(--line-strong);background:var(--card);color:var(--ink);cursor:pointer;white-space:nowrap;text-align:center}
   .btn:hover{border-color:var(--accent);text-decoration:none;color:var(--accent-ink)}
@@ -426,6 +454,11 @@
     </div>
   </div>
 
+  <!-- Geolocation-failed notice (banner + retry). Painted by renderGeoNotice() when
+       state.geoStatus is set; hidden otherwise. Lives outside #app so it survives
+       render()'s innerHTML rebuild, and above .bar so it reads before the results. -->
+  <div class="geonotice" id="geoNotice" hidden></div>
+
   <div class="bar">
     <div class="tabs" id="tabs">
       <button data-view="schedule" class="on" data-i18n="tab.schedule">Schedule</button>
@@ -524,7 +557,14 @@ const state = {
   dows:(()=>{const o={0:false,1:false,2:false,3:false,4:false,5:false,6:false};const d=new Date().getDay();o[d]=true;if(d===0)o[1]=true;return o;})(),
   // Time filter: both halves of the day on by default, so the first load always shows results.
   times:{am:true, pm:true},
-  view:"schedule", weeks:5, selDay:null
+  view:"schedule", weeks:5, selDay:null,
+  // Geolocation outcome: null while pending/OK; "denied" | "unavailable" | "insecure"
+  // once auto-locate fails, which drives the fallback notice + ZIP-field nudge.
+  geoStatus:null, geoDismissed:false, geoRetrying:false,
+  // True once we have a real origin (geo fix adopted, or a ZIP the parent typed). While
+  // false we're on the SD-centroid guess: the radius filter is relaxed so nothing local is
+  // hidden, and distances render as estimates. See locUnknown() / applyFilters / distPill.
+  locKnown:false
 };
 
 // Populated at runtime from ./data
@@ -568,6 +608,8 @@ const STRINGS = {
     "filter.heading":"Filters",
     "filter.zip":"Zip",
     "filter.zip.locating":"Locating…",
+    "filter.zip.cta":"Enter ZIP for distances",
+    "filter.zip.example":"e.g. 92103",
     "filter.distance":"Distance",
     "filter.ages":"Age group",
     "age.baby":"Baby","age.toddler":"Toddler","age.preschool":"Preschool",
@@ -586,6 +628,8 @@ const STRINGS = {
     "badge.bilingual":"Bilingual",
     "badge.bilingualN":v=>`Bilingual ${v.codes}`,
     "unit.min":"{n} min","unit.mi":"{n} mi",
+    "dist.approx":"about {n} mi","dist.approx.near":"under 1 mi",
+    "dist.approx.title":"Estimated from central San Diego. Enter your ZIP for exact distances.",
     "btn.gcal":"＋ Google Calendar","btn.gcal.short":"＋ Calendar",
     "btn.eventPage":"Event page ↗","btn.event.short":"Event ↗","btn.details":"Details ↗",
     "loc.map":"Open {name} in maps","loc.call":"Call",
@@ -597,6 +641,14 @@ const STRINGS = {
     "fsum":"{n} events",
     "loading.locating":"Finding events near you…",
     "loading.data":"Loading events…",
+    // geo.*.msg hold HTML (a <b> lead), inserted without esc() like summary.line / footer.body.
+    "geo.denied.msg":"<b>Location access is off.</b> Showing programs near central San Diego. Turn it on, or enter your ZIP for closer matches.",
+    "geo.unavailable.msg":"<b>Couldn't find your location.</b> Showing programs near central San Diego. Try again, or enter your ZIP for closer matches.",
+    "geo.insecure.msg":"<b>Location isn't available here.</b> Showing programs near central San Diego — enter your ZIP for closer matches.",
+    "geo.retry":"Use my location",
+    "geo.retrying":"Locating…",
+    "geo.enterZip":"Enter ZIP",
+    "geo.dismiss":"Dismiss",
     "error.title":"Couldn't load schedule data",
     "error.body":"This page reads its schedule from the <code>{dir}/</code> folder. Make sure <code>{dir}/manifest.js</code>, <code>libraries.js</code>, and each <code>yyyy-mm.js</code> it lists are present next to this file.",
     "empty.title":"No events match yet",
@@ -622,6 +674,8 @@ const STRINGS = {
     "filter.heading":"Filtros",
     "filter.zip":"Código postal",
     "filter.zip.locating":"Localizando…",
+    "filter.zip.cta":"Ingresa tu código postal",
+    "filter.zip.example":"ej. 92103",
     "filter.distance":"Distancia",
     "filter.ages":"Grupo de edad",
     "age.baby":"0-1","age.toddler":"1-3","age.preschool":"3-5",
@@ -640,6 +694,8 @@ const STRINGS = {
     "badge.bilingual":"Bilingüe",
     "badge.bilingualN":v=>`Bilingüe ${v.codes}`,
     "unit.min":"{n} min","unit.mi":"{n} mi",
+    "dist.approx":"aprox. {n} mi","dist.approx.near":"menos de 1 mi",
+    "dist.approx.title":"Estimada desde el centro de San Diego. Ingresa tu código postal para distancias exactas.",
     "btn.gcal":"＋ Google Calendar","btn.gcal.short":"＋ Calendario",
     "btn.eventPage":"Página del evento ↗","btn.event.short":"Evento ↗","btn.details":"Detalles ↗",
     "loc.map":"Abrir {name} en mapas","loc.call":"Llamar",
@@ -651,6 +707,14 @@ const STRINGS = {
     "fsum":"{n} eventos",
     "loading.locating":"Buscando eventos cerca de ti…",
     "loading.data":"Cargando eventos…",
+    // geo.*.msg contienen HTML (un <b> inicial), insertados sin esc() como summary.line / footer.body.
+    "geo.denied.msg":"<b>El acceso a la ubicación está desactivado.</b> Mostrando programas cerca del centro de San Diego. Actívalo o ingresa tu código postal para ver opciones más cercanas.",
+    "geo.unavailable.msg":"<b>No pudimos encontrar tu ubicación.</b> Mostrando programas cerca del centro de San Diego. Inténtalo de nuevo o ingresa tu código postal para ver opciones más cercanas.",
+    "geo.insecure.msg":"<b>La ubicación no está disponible aquí.</b> Mostrando programas cerca del centro de San Diego: ingresa tu código postal para ver opciones más cercanas.",
+    "geo.retry":"Usar mi ubicación",
+    "geo.retrying":"Localizando…",
+    "geo.enterZip":"Ingresar código postal",
+    "geo.dismiss":"Descartar",
     "error.title":"No se pudieron cargar los datos del horario",
     "error.body":"Esta página lee su horario de la carpeta <code>{dir}/</code>. Asegúrate de que <code>{dir}/manifest.js</code>, <code>libraries.js</code> y cada <code>yyyy-mm.js</code> que enumera estén junto a este archivo.",
     "empty.title":"Aún no hay eventos que coincidan",
@@ -788,26 +852,49 @@ function setFiltersEnabled(on){
 function finishLocating(){
   if(!locating) return;
   locating=false;
-  // Fill the (initially empty) ZIP box with the resolved ZIP — the default if geo didn't set one.
-  const el=document.getElementById("zip"); if(el && !el.value) el.value=state.zip;
+  // On success, seed the (empty) ZIP box with the resolved ZIP. On failure we leave it
+  // empty — renderGeoNotice()/syncZipField() then highlight it so the parent knows to
+  // type one, rather than silently pretending 92108 is "near you".
+  const el=document.getElementById("zip"); if(el && !el.value && !state.geoStatus) el.value=state.zip;
   setFiltersEnabled(true);   // filters become usable now that we know the location
   render();
 }
-// Try to center the search on the user's location; otherwise keep the SD centroid default.
+// Map a GeolocationPositionError to our geoStatus reason (code 1 = permission denied;
+// 2 = position unavailable, 3 = timeout — both surface as "unavailable").
+function geoReason(err){ return (err && err.code===1) ? "denied" : "unavailable"; }
+// Try to center the search on the user's location; otherwise keep the SD centroid default
+// and record why so we can tell the parent (see renderGeoNotice).
 function initLocation(){
-  if(!navigator.geolocation){ finishLocating(); return; }
+  // Geolocation needs a secure context; file:// and plain http can't use it at all.
+  if(!navigator.geolocation || !window.isSecureContext){ state.geoStatus="insecure"; finishLocating(); return; }
   navigator.geolocation.getCurrentPosition(
     pos=>{
       const {zip,dist}=nearestZip(pos.coords.latitude,pos.coords.longitude);
       // Only adopt it if they're actually in/near the county (every SD ZIP centroid is
-      // within ~10 mi of another); otherwise stay centered on the city.
-      if(zip && dist<=30) setZip(zip);
+      // within ~10 mi of another); otherwise stay centered on the city (still a guess).
+      if(zip && dist<=30){ setZip(zip); state.locKnown=true; }
       finishLocating();
     },
-    ()=>{ finishLocating(); },   // denied / unavailable / timeout — SD centroid default stands
+    err=>{ state.geoStatus=geoReason(err); finishLocating(); },   // denied / unavailable / timeout
     {enableHighAccuracy:false, timeout:8000, maximumAge:600000}
   );
-  setTimeout(finishLocating, 9000);   // safety net in case no callback ever fires
+  setTimeout(()=>{ if(locating){ if(!state.geoStatus) state.geoStatus="unavailable"; finishLocating(); } }, 9000);
+}
+// Re-request the user's location (from the notice's "Use my location" button). Unlike the
+// initial pass this forces a fresh fix (maximumAge:0) and repaints as it goes.
+function retryLocation(){
+  if(!navigator.geolocation || !window.isSecureContext) return;
+  state.geoRetrying=true; render();
+  navigator.geolocation.getCurrentPosition(
+    pos=>{
+      state.geoRetrying=false;
+      const {zip,dist}=nearestZip(pos.coords.latitude,pos.coords.longitude);
+      if(zip && dist<=30){ state.geoStatus=null; state.geoDismissed=false; state.locKnown=true; setZip(zip); }  // setZip repaints
+      else { state.geoStatus="unavailable"; render(); }
+    },
+    err=>{ state.geoRetrying=false; state.geoStatus=geoReason(err); render(); },
+    {enableHighAccuracy:false, timeout:8000, maximumAge:0}
+  );
 }
 function fmtTime(tm){
   const [h,m]=tm.split(":").map(Number);
@@ -951,14 +1038,20 @@ function mapsUrl(l){
 }
 
 // ---------- FILTER --------------------------------------------------------
+// True when we have no real origin yet (auto-locate failed and no ZIP typed). In this
+// state we're centered on the SD centroid only as a guess, so the radius filter is relaxed
+// (nothing local is hidden) and distances are shown as estimates.
+function locUnknown(){ return !state.locKnown; }
+
 function applyFilters(all){
   const langSel = Object.entries(state.langs).filter(([,v])=>v).map(([k])=>k);
   const today = new Date(); today.setHours(0,0,0,0);
   const end = new Date(today); end.setDate(end.getDate()+state.weeks*7); end.setHours(23,59,59,999);
+  const useRadius = !locUnknown();   // skip distance filtering while the origin is just a guess
   return all.filter(e=>{
     // rolling window: today through the next N weeks
     if(e.date < today || e.date > end) return false;
-    if(libDist(e.lib) > state.radius+0.05) return false;
+    if(useRadius && libDist(e.lib) > state.radius+0.05) return false;
     // language: event langs intersect selection (en/es explicit, else 'other')
     const evLangs = e.tp.lang.map(x=> (x==="en"||x==="es")?x:"other");
     if(!evLangs.some(x=>langSel.includes(x))) return false;
@@ -999,8 +1092,20 @@ const app=document.getElementById("app");
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 
 // Distance pill (pin + miles), shared by all three views. The pin takes the library color.
+// While the origin is only a guess (locUnknown), distances are estimates from central San
+// Diego, not from the parent — round to whole miles ("about 9 mi") and explain on hover, so
+// there's no false precision.
 function distPill(mi,col){
-  return `<span class="distpill"><span class="pin" style="color:${col}">${ICON.pin}</span>${esc(t("unit.mi",{n:mi.toFixed(1)}))}</span>`;
+  const approx=locUnknown();
+  let txt;
+  if(approx){                                  // estimate: round off the false precision ("about 9 mi")
+    const n=Math.round(mi);
+    txt = n<1 ? t("dist.approx.near") : t("dist.approx",{n});
+  } else {
+    txt = t("unit.mi",{n:mi.toFixed(1)});
+  }
+  const attr=approx?` title="${esc(t("dist.approx.title"))}"`:"";
+  return `<span class="distpill${approx?" approx":""}"${attr}><span class="pin" style="color:${col}">${ICON.pin}</span>${esc(txt)}</span>`;
 }
 // A library-page link (or plain text when the library has no linkable page).
 function libLink(l,cls){
@@ -1084,7 +1189,7 @@ function renderLocation(evs){
   // as the tiebreaker. Libraries with no events in view (shown only for a l.note)
   // still sort by distance; their nextStart is Infinity but only breaks ties.
   const nextStart = id => { const r=byLib[id]; return (r&&r.length) ? Math.min(...r.map(e=>+e.start)) : Infinity; };
-  const libIds=LIBS.filter(l=>libDist(l)<=state.radius+0.05)
+  const libIds=LIBS.filter(l=> locUnknown() || libDist(l)<=state.radius+0.05)
                    .sort((a,b)=> (libDist(a)-libDist(b)) || (nextStart(a.id)-nextStart(b.id))).map(l=>l.id);
   let h="";
   let any=false;
@@ -1183,8 +1288,60 @@ function emptyState(){
   </div>`;
 }
 
+// SVGs for the geo notice (warn triangle + crosshair pin), inline so there's no ICON coupling.
+const GEO_WARN=`<svg class="gicon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4"/><path d="M12 17h.01"/><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/></svg>`;
+const GEO_PIN=`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/><circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="2.5" fill="currentColor"/></svg>`;
+
+// Paint (or hide) the fallback-location banner and wire its buttons. Rebuilt on every
+// render() so it re-wires cleanly after innerHTML rebuilds elsewhere.
+function renderGeoNotice(){
+  const host=document.getElementById("geoNotice"); if(!host) return;
+  const show = state.geoStatus && !state.geoDismissed && loadState!=="loading" && !locating;
+  if(!show){ host.hidden=true; host.innerHTML=""; return; }
+  host.hidden=false;
+  // Retry only makes sense where the API can actually run (not insecure / no API).
+  const canRetry = navigator.geolocation && window.isSecureContext && state.geoStatus!=="insecure";
+  const retryBtn = canRetry
+    ? `<button type="button" class="gbtn solid" id="geoRetry"${state.geoRetrying?" disabled":""}>${GEO_PIN}${esc(state.geoRetrying?t("geo.retrying"):t("geo.retry"))}</button>`
+    : "";
+  host.innerHTML=`<div class="geobanner" role="status">${GEO_WARN}
+    <div class="gtxt">${t("geo."+state.geoStatus+".msg")}
+      <div class="gact">${retryBtn}<button type="button" class="gbtn" id="geoZip">${esc(t("geo.enterZip"))}</button></div>
+    </div>
+    <button type="button" class="gx" id="geoX" aria-label="${esc(t("geo.dismiss"))}">×</button>
+  </div>`;
+  const r=host.querySelector("#geoRetry"); if(r) r.addEventListener("click",retryLocation);
+  const z=host.querySelector("#geoZip"); if(z) z.addEventListener("click",()=>{
+    const el=document.getElementById("zip"); if(el){ el.focus(); if(el.select) el.select(); }
+  });
+  const x=host.querySelector("#geoX"); if(x) x.addEventListener("click",()=>{ state.geoDismissed=true; render(); });
+}
+// Highlight the ZIP field (and turn its label into a call to action) while auto-locate
+// has failed and the box is still empty. Also keeps its placeholder in step.
+function syncZipField(){
+  const el=document.getElementById("zip"); if(!el) return;
+  const field=el.closest(".field"), label=field?field.querySelector("label"):null;
+  const flag = !!(state.geoStatus && !state.geoDismissed && !el.value);
+  if(field) field.classList.toggle("flagged", flag);
+  if(label) label.textContent = t(flag ? "filter.zip.cta" : "filter.zip");
+  el.placeholder = locating ? t("filter.zip.locating") : t("filter.zip.example");
+}
+// The radius filter is inert while the origin is only a guess (see applyFilters), so dim and
+// disable the Distance control until we have a real location — an active-looking slider that
+// changes nothing would be more confusing than an obviously inactive one.
+function syncDistanceControl(){
+  const el=document.getElementById("radius");
+  if(!el || locating) return;   // while locating, setFiltersEnabled() owns the disabled state
+  const field=el.closest(".field"), inactive=locUnknown();
+  if(field) field.classList.toggle("inactive", inactive);
+  el.disabled = inactive;
+}
+
 function render(){
   const summaryEl=document.getElementById("summary");
+  renderGeoNotice();
+  syncZipField();
+  syncDistanceControl();
   if(loadState==="error"){ app.innerHTML=errorState(loadError); summaryEl.textContent=""; return; }
   if(loadState==="loading" || locating){ app.innerHTML=loadingState(); summaryEl.textContent=""; return; }
 
@@ -1297,9 +1454,9 @@ function syncStickyHeights(){
   window.addEventListener("resize", ()=>{ measure(); syncStickyHeights(); });
 })();
 document.getElementById("zip").addEventListener("input",e=>{
-  const v=e.target.value.trim();
-  state.zip = /^\d{5}$/.test(v)? v : SD_CENTROID_ZIP;
-  if(/^\d{5}$/.test(v)) render();
+  const v=e.target.value.trim(), ok=/^\d{5}$/.test(v);
+  state.zip = ok ? v : SD_CENTROID_ZIP;
+  if(ok){ state.geoDismissed=true; state.locKnown=true; render(); }   // a typed ZIP is a real origin: resolves the nudge, restores the radius filter
 });
 document.getElementById("zip").addEventListener("blur",render);
 function bindRange(id,key,fmt){
