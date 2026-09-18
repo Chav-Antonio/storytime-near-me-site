@@ -16,7 +16,7 @@ STORYTIME.months["2027-03"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "…books and rhymes in English and in Spanish! All ages welcome. Acompáñenos y disfrute de cancione…",
       "lang": [
         "en",
         "es"
@@ -33,12 +33,108 @@ STORYTIME.months["2027-03"] = {
       "ages": [
         "toddler"
       ],
-      "ageText": "",
+      "ageText": "Toddler Storytime",
       "lang": [
         "en"
       ],
       "eventId": "69fe7482f56bd86e00ae7ddd",
       "note": "For toddlers 1.5 (walking) - 3 years. Come and join the fun with stories, songs, and crafts."
+    },
+    {
+      "lib": "vistacou",
+      "name": "Preschool Playtime",
+      "date": "2027-03-01",
+      "time": "10:30",
+      "dur": 30,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Preschool Playtime",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a5412dbb93a5a73032bcf90",
+      "note": "Calling all preschoolers! Join us in the children's area for free-play every Monday at 10:30 AM. We will read a story and provide sensory and educational toys f"
+    },
+    {
+      "lib": "julianco",
+      "name": "LEGO Club",
+      "date": "2027-03-01",
+      "time": "14:30",
+      "dur": 90,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en"
+      ],
+      "eventId": "697d195fb0595799c099b072",
+      "note": "Bring your imagination and we’ll supply the LEGOs!"
+    },
+    {
+      "lib": "imperial",
+      "name": "Craft Challenge",
+      "date": "2027-03-01",
+      "time": "15:00",
+      "dur": 120,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en"
+      ],
+      "eventId": "69fa9219703c33630025b825",
+      "note": "We’ll provide a theme and materials, you bring your imagination! Stations will be set up for kids to create and experiment with the craft of the day, which they"
+    },
+    {
+      "lib": "solanabe",
+      "name": "Kids' Crafternoon",
+      "date": "2027-03-02",
+      "time": "15:00",
+      "dur": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a6a72a07b79214226ac39e8",
+      "note": "Have fun exploring different art processes from printing making to watercolor. Get creative and make an art piece to take home. For ages 5 and up. While supplie"
+    },
+    {
+      "lib": "lakeside",
+      "name": "Lakeside Kids' Crew: Kids Arcade",
+      "date": "2027-03-02",
+      "time": "15:30",
+      "dur": 45,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a56ba27fb418a28009b01ac",
+      "note": "Do you love games of all kinds? Do you wish you had some friends to play those games with? Join us each month as we play board games, card games, Nintendo Switc"
+    },
+    {
+      "lib": "alpineco",
+      "name": "Paws for Reading",
+      "date": "2027-03-02",
+      "time": "16:00",
+      "dur": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a11e178e8af4a2f00749673",
+      "note": "Paws for Reading allows children to practice their reading skills by reading aloud to a certified therapy dog. Children may find it intimidating to read with pe"
     },
     {
       "lib": "cardiffb",
@@ -49,7 +145,7 @@ STORYTIME.months["2027-03"] = {
       "ages": [
         "baby"
       ],
-      "ageText": "",
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -65,13 +161,31 @@ STORYTIME.months["2027-03"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Bilingual Preschool Storytime",
       "lang": [
         "en",
         "es"
       ],
       "eventId": "6a0e377fe8af4a2f0073f313",
       "note": "Join us for bilingual storytime, with stories and songs in English and Spanish. Acompáñenos a nuestro tiempo de cuentos bilingües, con cuentos y canciones en in"
+    },
+    {
+      "lib": "fletcher",
+      "name": "Family Play Time Hour",
+      "date": "2027-03-03",
+      "time": "10:30",
+      "dur": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "Family Play Time Hour",
+      "lang": [
+        "en"
+      ],
+      "eventId": "691529dca6fedec95308d6b5",
+      "note": "Please join us for Family Play Time Hour, a chance for our little ones to play with our toys and make new friends! Children and their families are welcome to jo"
     },
     {
       "lib": "imperial",
@@ -84,13 +198,31 @@ STORYTIME.months["2027-03"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "…owed by play time! Geared for ages 1-3, but all ages welcome. Every 1st & 3rd Wednesday of the m…",
       "lang": [
         "en",
         "es"
       ],
       "eventId": "69dc11858ddc1caf5f1c79bf",
       "note": "Enjoy songs, rhymes, and stories in English and Spanish, followed by play time! Geared for ages 1-3, but all ages welcome. Every 1st & 3rd Wednesday of the mont"
+    },
+    {
+      "lib": "lemongro",
+      "name": "Family Storytime",
+      "date": "2027-03-03",
+      "time": "10:30",
+      "dur": 45,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "Family Storytime",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a89d900db86e4004d86c1f0",
+      "note": "Join us for stories, songs, crafts, and fun! Babies, toddlers, and preschoolers are all welcome."
     },
     {
       "lib": "ramonaco",
@@ -103,7 +235,7 @@ STORYTIME.months["2027-03"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Family Storytime",
       "lang": [
         "en"
       ],
@@ -119,12 +251,61 @@ STORYTIME.months["2027-03"] = {
       "ages": [
         "toddler"
       ],
-      "ageText": "",
+      "ageText": "Toddler Storytime Yoga",
       "lang": [
         "en"
       ],
       "eventId": "6a5ff72b3896acb13e3fb382",
       "note": "Yoga, stories, and creative movement for Toddlers and their Caregivers. Performed with Ms. Arianna from PEARLS FOR LIFE YOGA. This program is every first Wednes"
+    },
+    {
+      "lib": "vistacou",
+      "name": "Kids' Crafternoon",
+      "date": "2027-03-03",
+      "time": "15:00",
+      "dur": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a5401c6c7e02e3d0068aeb1",
+      "note": "Join us at the library on Wednesdays for a fun afternoon craft! Geared toward children ages 6-10 yrs. old."
+    },
+    {
+      "lib": "4s",
+      "name": "Kids Lotería! (Mexican Bingo!)",
+      "date": "2027-03-03",
+      "time": "16:30",
+      "dur": 30,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en",
+        "es"
+      ],
+      "eventId": "6a3c55980e851028002cfc21",
+      "note": "KIDS! Come and join us at the 4S Ranch Library for a fun LOTERÍA (Mexican Bingo!) game night and win fun prizes! 1st Wednesday of every month!"
+    },
+    {
+      "lib": "elcajonc",
+      "name": "Construction Club",
+      "date": "2027-03-03",
+      "time": "17:00",
+      "dur": 90,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a9a156e60ccaf01c0234a6d",
+      "note": "Craft activities and building challenges with LEGO bricks, geared for kids ages 4 and up. Offered by local high school students. No registration required."
     },
     {
       "lib": "imperial",
@@ -135,7 +316,7 @@ STORYTIME.months["2027-03"] = {
       "ages": [
         "toddler"
       ],
-      "ageText": "",
+      "ageText": "Toddler Storytime",
       "lang": [
         "en"
       ],
@@ -151,12 +332,44 @@ STORYTIME.months["2027-03"] = {
       "ages": [
         "baby"
       ],
-      "ageText": "",
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
       "eventId": "69fe750c703c336300266c25",
       "note": "For babies up to 18 months old. Songs and stories for fun and stimulation of young minds. Followed by playtime and interaction with other babies, as well as con"
+    },
+    {
+      "lib": "fletcher",
+      "name": "Lego Brick Builders Club",
+      "date": "2027-03-04",
+      "time": "14:30",
+      "dur": 120,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en"
+      ],
+      "eventId": "69152d3aa6fedec95308d75e",
+      "note": "Unleash your imagination! Build your own Lego creations along with fellow brick enthusiasts! The Brick Builders Club is held on the first Thursday of each month"
+    },
+    {
+      "lib": "ramonaco",
+      "name": "LEGO Club",
+      "date": "2027-03-04",
+      "time": "15:00",
+      "dur": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a7b6e42f68ff70029b6fd14",
+      "note": "Come join LEGO Club every 1st and 3rd Thursday!"
     },
     {
       "lib": "cardiffb",
@@ -167,7 +380,7 @@ STORYTIME.months["2027-03"] = {
       "ages": [
         "toddler"
       ],
-      "ageText": "",
+      "ageText": "Toddler Time",
       "lang": [
         "en"
       ],
@@ -183,7 +396,7 @@ STORYTIME.months["2027-03"] = {
       "ages": [
         "baby"
       ],
-      "ageText": "",
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -199,12 +412,28 @@ STORYTIME.months["2027-03"] = {
       "ages": [
         "baby"
       ],
-      "ageText": "",
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
       "eventId": "69dc1142bd5c392c7643dc1f",
       "note": "Enjoy songs, fingerplays and short stories for your littlest ones. Geared for pre-walkers 0-18 months and their caregivers. Followed by play time, with age appr"
+    },
+    {
+      "lib": "solanabe",
+      "name": "Dance Party",
+      "date": "2027-03-05",
+      "time": "10:30",
+      "dur": 30,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "…ldren's area. All children are welcome. For toddlers 18 months - 3 years old. Together let's sh…",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a59451c7b79214226a90ace",
+      "note": "Join us for a fun dance party in the Children's area. All children are welcome. For toddlers 18 months - 3 years old. Together let's shake our sillies, row the "
     },
     {
       "lib": "valleyce",
@@ -215,12 +444,76 @@ STORYTIME.months["2027-03"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Preschool Story Time",
       "lang": [
         "en"
       ],
       "eventId": "6680837fe3e1ee3000462f83",
       "note": "Join us on Fridays for stories, songs, and crafts. Geared for children aged 3-5 years."
+    },
+    {
+      "lib": "4s",
+      "name": "Paws to Read",
+      "date": "2027-03-06",
+      "time": "11:00",
+      "dur": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6aa44ff0ab7a8e0037c11bbf",
+      "note": "Come read to a real furry friend, the first and third Saturdays each month!"
+    },
+    {
+      "lib": "4s",
+      "name": "BLOOMING SEEDS SoCal",
+      "date": "2027-03-06",
+      "time": "13:00",
+      "dur": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a7269a19006f7535314f740",
+      "note": "Blooming Seeds Socal: Providing STEM education to neurodivergent students! First Saturday of every month! Our mission is to create a nurturing and inclusive env"
+    },
+    {
+      "lib": "elcajonc",
+      "name": "Construction Club",
+      "date": "2027-03-06",
+      "time": "13:30",
+      "dur": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a9a156e60ccaf01c0234a6f",
+      "note": "Craft activities and building challenges with LEGO bricks, geared for kids ages 4 and up. Offered by local high school students. No registration required."
+    },
+    {
+      "lib": "elcajonc",
+      "name": "Construction Club",
+      "date": "2027-03-07",
+      "time": "13:30",
+      "dur": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a9a15f829a7dd0d6748f7e7",
+      "note": "Craft activities and building challenges with LEGO bricks, geared for kids ages 4 and up. Offered by local high school students. No registration required."
     },
     {
       "lib": "elcajonc",
@@ -233,7 +526,7 @@ STORYTIME.months["2027-03"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "…books and rhymes in English and in Spanish! All ages welcome. Acompáñenos y disfrute de cancione…",
       "lang": [
         "en",
         "es"
@@ -250,12 +543,60 @@ STORYTIME.months["2027-03"] = {
       "ages": [
         "toddler"
       ],
-      "ageText": "",
+      "ageText": "Toddler Storytime",
       "lang": [
         "en"
       ],
       "eventId": "69fe7482f56bd86e00ae7dde",
       "note": "For toddlers 1.5 (walking) - 3 years. Come and join the fun with stories, songs, and crafts."
+    },
+    {
+      "lib": "vistacou",
+      "name": "Preschool Playtime",
+      "date": "2027-03-08",
+      "time": "10:30",
+      "dur": 30,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Preschool Playtime",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a5412dbb93a5a73032bcf91",
+      "note": "Calling all preschoolers! Join us in the children's area for free-play every Monday at 10:30 AM. We will read a story and provide sensory and educational toys f"
+    },
+    {
+      "lib": "julianco",
+      "name": "LEGO Club",
+      "date": "2027-03-08",
+      "time": "14:30",
+      "dur": 90,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a8e2f64be148200298a1348",
+      "note": "Bring your imagination and we’ll supply the LEGOs!"
+    },
+    {
+      "lib": "imperial",
+      "name": "Craft Challenge",
+      "date": "2027-03-08",
+      "time": "15:00",
+      "dur": 120,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en"
+      ],
+      "eventId": "69fa9219703c33630025b826",
+      "note": "We’ll provide a theme and materials, you bring your imagination! Stations will be set up for kids to create and experiment with the craft of the day, which they"
     },
     {
       "lib": "cardiffb",
@@ -266,7 +607,7 @@ STORYTIME.months["2027-03"] = {
       "ages": [
         "baby"
       ],
-      "ageText": "",
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -282,7 +623,7 @@ STORYTIME.months["2027-03"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Bilingual Preschool Storytime",
       "lang": [
         "en",
         "es"
@@ -301,12 +642,46 @@ STORYTIME.months["2027-03"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Family Storytime",
       "lang": [
         "en"
       ],
       "eventId": "69152b429be7c6685c27d6a2",
       "note": "Please join us for family storytime, songs, making new friends & lots of fun! Children and their families are welcome to join in the fun! Geared towards ages 0-"
+    },
+    {
+      "lib": "imperial",
+      "name": "Pre-K Play",
+      "date": "2027-03-10",
+      "time": "10:30",
+      "dur": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Pre-K Play",
+      "lang": [
+        "en"
+      ],
+      "eventId": "69fa945ef56bd86e00add573",
+      "note": "Bring your littles to meet and have fun! The library will provide toys and a play space for kids to play together and socialize. For ages 0-5. Parent/caregiver "
+    },
+    {
+      "lib": "lemongro",
+      "name": "Family Storytime",
+      "date": "2027-03-10",
+      "time": "10:30",
+      "dur": 45,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "Family Storytime",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a89d900db86e4004d86c1f1",
+      "note": "Join us for stories, songs, crafts, and fun! Babies, toddlers, and preschoolers are all welcome."
     },
     {
       "lib": "ramonaco",
@@ -319,12 +694,60 @@ STORYTIME.months["2027-03"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Family Storytime",
       "lang": [
         "en"
       ],
       "eventId": "6a7b6caed033f1003e0aa515",
       "note": "Join us for a fun morning of storytime and songs. All families are welcome!"
+    },
+    {
+      "lib": "imperial",
+      "name": "Brick Builders",
+      "date": "2027-03-10",
+      "time": "15:00",
+      "dur": 90,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en"
+      ],
+      "eventId": "69fa9600f56bd86e00add5c4",
+      "note": "Use your imagination to complete a brick building challenge with Lego bricks or build whatever you'd like! Hosted in partnership with the City of Imperial Beach"
+    },
+    {
+      "lib": "vistacou",
+      "name": "Kids' Crafternoon",
+      "date": "2027-03-10",
+      "time": "15:00",
+      "dur": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a5401c6c7e02e3d0068aeb2",
+      "note": "Join us at the library on Wednesdays for a fun afternoon craft! Geared toward children ages 6-10 yrs. old."
+    },
+    {
+      "lib": "elcajonc",
+      "name": "Construction Club",
+      "date": "2027-03-10",
+      "time": "17:00",
+      "dur": 90,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a9a156e60ccaf01c0234a70",
+      "note": "Craft activities and building challenges with LEGO bricks, geared for kids ages 4 and up. Offered by local high school students. No registration required."
     },
     {
       "lib": "imperial",
@@ -335,7 +758,7 @@ STORYTIME.months["2027-03"] = {
       "ages": [
         "toddler"
       ],
-      "ageText": "",
+      "ageText": "Toddler Storytime",
       "lang": [
         "en"
       ],
@@ -352,7 +775,7 @@ STORYTIME.months["2027-03"] = {
         "baby",
         "toddler"
       ],
-      "ageText": "",
+      "ageText": "Designed for babies and toddlers, this action-packed storytime…",
       "lang": [
         "en"
       ],
@@ -368,7 +791,7 @@ STORYTIME.months["2027-03"] = {
       "ages": [
         "baby"
       ],
-      "ageText": "",
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -384,7 +807,7 @@ STORYTIME.months["2027-03"] = {
       "ages": [
         "toddler"
       ],
-      "ageText": "",
+      "ageText": "Toddler Time",
       "lang": [
         "en"
       ],
@@ -400,7 +823,7 @@ STORYTIME.months["2027-03"] = {
       "ages": [
         "baby"
       ],
-      "ageText": "",
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -416,12 +839,28 @@ STORYTIME.months["2027-03"] = {
       "ages": [
         "baby"
       ],
-      "ageText": "",
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
       "eventId": "69dc1142bd5c392c7643dc20",
       "note": "Enjoy songs, fingerplays and short stories for your littlest ones. Geared for pre-walkers 0-18 months and their caregivers. Followed by play time, with age appr"
+    },
+    {
+      "lib": "solanabe",
+      "name": "Dance Party",
+      "date": "2027-03-12",
+      "time": "10:30",
+      "dur": 30,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "…ldren's area. All children are welcome. For toddlers 18 months - 3 years old. Together let's sh…",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a59451c7b79214226a90acf",
+      "note": "Join us for a fun dance party in the Children's area. All children are welcome. For toddlers 18 months - 3 years old. Together let's shake our sillies, row the "
     },
     {
       "lib": "valleyce",
@@ -432,12 +871,60 @@ STORYTIME.months["2027-03"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Preschool Story Time",
       "lang": [
         "en"
       ],
       "eventId": "6680837fe3e1ee3000462f84",
       "note": "Join us on Fridays for stories, songs, and crafts. Geared for children aged 3-5 years."
+    },
+    {
+      "lib": "fallbroo",
+      "name": "Open Craft Time",
+      "date": "2027-03-13",
+      "time": "11:00",
+      "dur": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a4e9beb2e2bf62f0071a468",
+      "note": "Join us for an open craft time to make your own watercolor artwork! While supplies last. Sponsored by the Friends of the Fallbrook Library."
+    },
+    {
+      "lib": "elcajonc",
+      "name": "Construction Club",
+      "date": "2027-03-13",
+      "time": "13:30",
+      "dur": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a9a156e60ccaf01c0234a72",
+      "note": "Craft activities and building challenges with LEGO bricks, geared for kids ages 4 and up. Offered by local high school students. No registration required."
+    },
+    {
+      "lib": "elcajonc",
+      "name": "Construction Club",
+      "date": "2027-03-14",
+      "time": "13:30",
+      "dur": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a9a15f829a7dd0d6748f7ea",
+      "note": "Craft activities and building challenges with LEGO bricks, geared for kids ages 4 and up. Offered by local high school students. No registration required."
     },
     {
       "lib": "elcajonc",
@@ -450,7 +937,7 @@ STORYTIME.months["2027-03"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "…books and rhymes in English and in Spanish! All ages welcome. Acompáñenos y disfrute de cancione…",
       "lang": [
         "en",
         "es"
@@ -467,12 +954,76 @@ STORYTIME.months["2027-03"] = {
       "ages": [
         "toddler"
       ],
-      "ageText": "",
+      "ageText": "Toddler Storytime",
       "lang": [
         "en"
       ],
       "eventId": "69fe7482f56bd86e00ae7ddf",
       "note": "For toddlers 1.5 (walking) - 3 years. Come and join the fun with stories, songs, and crafts."
+    },
+    {
+      "lib": "vistacou",
+      "name": "Preschool Playtime",
+      "date": "2027-03-15",
+      "time": "10:30",
+      "dur": 30,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Preschool Playtime",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a5412dbb93a5a73032bcf92",
+      "note": "Calling all preschoolers! Join us in the children's area for free-play every Monday at 10:30 AM. We will read a story and provide sensory and educational toys f"
+    },
+    {
+      "lib": "julianco",
+      "name": "LEGO Club",
+      "date": "2027-03-15",
+      "time": "14:30",
+      "dur": 90,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a8e2f64be148200298a1349",
+      "note": "Bring your imagination and we’ll supply the LEGOs!"
+    },
+    {
+      "lib": "imperial",
+      "name": "Craft Challenge",
+      "date": "2027-03-15",
+      "time": "15:00",
+      "dur": 120,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en"
+      ],
+      "eventId": "69fa9219703c33630025b827",
+      "note": "We’ll provide a theme and materials, you bring your imagination! Stations will be set up for kids to create and experiment with the craft of the day, which they"
+    },
+    {
+      "lib": "lakeside",
+      "name": "Lakeside Kids' Crew: Arts and Crafts",
+      "date": "2027-03-16",
+      "time": "15:30",
+      "dur": 45,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a56bcb4fb418a28009b027d",
+      "note": "Do you love to create and use your imagination to produce wonderful artwork? Join us for an afternoon where you bring the ideas and we'll provide a variety of c"
     },
     {
       "lib": "cardiffb",
@@ -483,7 +1034,7 @@ STORYTIME.months["2027-03"] = {
       "ages": [
         "baby"
       ],
-      "ageText": "",
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -499,7 +1050,7 @@ STORYTIME.months["2027-03"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Bilingual Preschool Storytime",
       "lang": [
         "en",
         "es"
@@ -518,7 +1069,7 @@ STORYTIME.months["2027-03"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Family Storytime",
       "lang": [
         "en"
       ],
@@ -536,13 +1087,31 @@ STORYTIME.months["2027-03"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "…owed by play time! Geared for ages 1-3, but all ages welcome. Every 1st & 3rd Wednesday of the m…",
       "lang": [
         "en",
         "es"
       ],
       "eventId": "69dc11858ddc1caf5f1c79c0",
       "note": "Enjoy songs, rhymes, and stories in English and Spanish, followed by play time! Geared for ages 1-3, but all ages welcome. Every 1st & 3rd Wednesday of the mont"
+    },
+    {
+      "lib": "lemongro",
+      "name": "Family Storytime",
+      "date": "2027-03-17",
+      "time": "10:30",
+      "dur": 45,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "Family Storytime",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a89d900db86e4004d86c1f2",
+      "note": "Join us for stories, songs, crafts, and fun! Babies, toddlers, and preschoolers are all welcome."
     },
     {
       "lib": "ramonaco",
@@ -555,12 +1124,44 @@ STORYTIME.months["2027-03"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Family Storytime",
       "lang": [
         "en"
       ],
       "eventId": "6a7b6caed033f1003e0aa516",
       "note": "Join us for a fun morning of storytime and songs. All families are welcome!"
+    },
+    {
+      "lib": "vistacou",
+      "name": "Kids' Crafternoon",
+      "date": "2027-03-17",
+      "time": "15:00",
+      "dur": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a5401c6c7e02e3d0068aeb3",
+      "note": "Join us at the library on Wednesdays for a fun afternoon craft! Geared toward children ages 6-10 yrs. old."
+    },
+    {
+      "lib": "elcajonc",
+      "name": "Construction Club",
+      "date": "2027-03-17",
+      "time": "17:00",
+      "dur": 90,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a9a156e60ccaf01c0234a73",
+      "note": "Craft activities and building challenges with LEGO bricks, geared for kids ages 4 and up. Offered by local high school students. No registration required."
     },
     {
       "lib": "imperial",
@@ -571,7 +1172,7 @@ STORYTIME.months["2027-03"] = {
       "ages": [
         "toddler"
       ],
-      "ageText": "",
+      "ageText": "Toddler Storytime",
       "lang": [
         "en"
       ],
@@ -588,7 +1189,7 @@ STORYTIME.months["2027-03"] = {
         "baby",
         "toddler"
       ],
-      "ageText": "",
+      "ageText": "Designed for babies and toddlers, this action-packed storytime…",
       "lang": [
         "en"
       ],
@@ -604,12 +1205,28 @@ STORYTIME.months["2027-03"] = {
       "ages": [
         "baby"
       ],
-      "ageText": "",
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
       "eventId": "69fe750c703c336300266c27",
       "note": "For babies up to 18 months old. Songs and stories for fun and stimulation of young minds. Followed by playtime and interaction with other babies, as well as con"
+    },
+    {
+      "lib": "ramonaco",
+      "name": "LEGO Club",
+      "date": "2027-03-18",
+      "time": "15:00",
+      "dur": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a7b6e42f68ff70029b6fd15",
+      "note": "Come join LEGO Club every 1st and 3rd Thursday!"
     },
     {
       "lib": "cardiffb",
@@ -620,7 +1237,7 @@ STORYTIME.months["2027-03"] = {
       "ages": [
         "toddler"
       ],
-      "ageText": "",
+      "ageText": "Toddler Time",
       "lang": [
         "en"
       ],
@@ -636,7 +1253,7 @@ STORYTIME.months["2027-03"] = {
       "ages": [
         "baby"
       ],
-      "ageText": "",
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -652,12 +1269,28 @@ STORYTIME.months["2027-03"] = {
       "ages": [
         "baby"
       ],
-      "ageText": "",
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
       "eventId": "69dc1142bd5c392c7643dc21",
       "note": "Enjoy songs, fingerplays and short stories for your littlest ones. Geared for pre-walkers 0-18 months and their caregivers. Followed by play time, with age appr"
+    },
+    {
+      "lib": "solanabe",
+      "name": "Dance Party",
+      "date": "2027-03-19",
+      "time": "10:30",
+      "dur": 30,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "…ldren's area. All children are welcome. For toddlers 18 months - 3 years old. Together let's sh…",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a59451c7b79214226a90ad0",
+      "note": "Join us for a fun dance party in the Children's area. All children are welcome. For toddlers 18 months - 3 years old. Together let's shake our sillies, row the "
     },
     {
       "lib": "valleyce",
@@ -668,12 +1301,60 @@ STORYTIME.months["2027-03"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Preschool Story Time",
       "lang": [
         "en"
       ],
       "eventId": "6680837fe3e1ee3000462f85",
       "note": "Join us on Fridays for stories, songs, and crafts. Geared for children aged 3-5 years."
+    },
+    {
+      "lib": "4s",
+      "name": "Paws to Read",
+      "date": "2027-03-20",
+      "time": "11:00",
+      "dur": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6aa44ff0ab7a8e0037c11bc0",
+      "note": "Come read to a real furry friend, the first and third Saturdays each month!"
+    },
+    {
+      "lib": "elcajonc",
+      "name": "Construction Club",
+      "date": "2027-03-20",
+      "time": "13:30",
+      "dur": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a9a156e60ccaf01c0234a75",
+      "note": "Craft activities and building challenges with LEGO bricks, geared for kids ages 4 and up. Offered by local high school students. No registration required."
+    },
+    {
+      "lib": "elcajonc",
+      "name": "Construction Club",
+      "date": "2027-03-21",
+      "time": "13:30",
+      "dur": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a9a15f829a7dd0d6748f7ed",
+      "note": "Craft activities and building challenges with LEGO bricks, geared for kids ages 4 and up. Offered by local high school students. No registration required."
     },
     {
       "lib": "elcajonc",
@@ -686,7 +1367,7 @@ STORYTIME.months["2027-03"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "…books and rhymes in English and in Spanish! All ages welcome. Acompáñenos y disfrute de cancione…",
       "lang": [
         "en",
         "es"
@@ -703,12 +1384,60 @@ STORYTIME.months["2027-03"] = {
       "ages": [
         "toddler"
       ],
-      "ageText": "",
+      "ageText": "Toddler Storytime",
       "lang": [
         "en"
       ],
       "eventId": "69fe7482f56bd86e00ae7de0",
       "note": "For toddlers 1.5 (walking) - 3 years. Come and join the fun with stories, songs, and crafts."
+    },
+    {
+      "lib": "vistacou",
+      "name": "Preschool Playtime",
+      "date": "2027-03-22",
+      "time": "10:30",
+      "dur": 30,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Preschool Playtime",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a5412dbb93a5a73032bcf93",
+      "note": "Calling all preschoolers! Join us in the children's area for free-play every Monday at 10:30 AM. We will read a story and provide sensory and educational toys f"
+    },
+    {
+      "lib": "julianco",
+      "name": "LEGO Club",
+      "date": "2027-03-22",
+      "time": "14:30",
+      "dur": 90,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a8e2f64be148200298a134a",
+      "note": "Bring your imagination and we’ll supply the LEGOs!"
+    },
+    {
+      "lib": "imperial",
+      "name": "Craft Challenge",
+      "date": "2027-03-22",
+      "time": "15:00",
+      "dur": 120,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en"
+      ],
+      "eventId": "69fa9219703c33630025b828",
+      "note": "We’ll provide a theme and materials, you bring your imagination! Stations will be set up for kids to create and experiment with the craft of the day, which they"
     },
     {
       "lib": "cardiffb",
@@ -719,7 +1448,7 @@ STORYTIME.months["2027-03"] = {
       "ages": [
         "baby"
       ],
-      "ageText": "",
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -735,7 +1464,7 @@ STORYTIME.months["2027-03"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Bilingual Preschool Storytime",
       "lang": [
         "en",
         "es"
@@ -754,12 +1483,46 @@ STORYTIME.months["2027-03"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Family Storytime",
       "lang": [
         "en"
       ],
       "eventId": "69152b429be7c6685c27d6a4",
       "note": "Please join us for family storytime, songs, making new friends & lots of fun! Children and their families are welcome to join in the fun! Geared towards ages 0-"
+    },
+    {
+      "lib": "imperial",
+      "name": "Pre-K Play",
+      "date": "2027-03-24",
+      "time": "10:30",
+      "dur": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Pre-K Play",
+      "lang": [
+        "en"
+      ],
+      "eventId": "69fa945ef56bd86e00add574",
+      "note": "Bring your littles to meet and have fun! The library will provide toys and a play space for kids to play together and socialize. For ages 0-5. Parent/caregiver "
+    },
+    {
+      "lib": "lemongro",
+      "name": "Family Storytime",
+      "date": "2027-03-24",
+      "time": "10:30",
+      "dur": 45,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "Family Storytime",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a89d900db86e4004d86c1f3",
+      "note": "Join us for stories, songs, crafts, and fun! Babies, toddlers, and preschoolers are all welcome."
     },
     {
       "lib": "ramonaco",
@@ -772,12 +1535,76 @@ STORYTIME.months["2027-03"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Family Storytime",
       "lang": [
         "en"
       ],
       "eventId": "6a7b6caed033f1003e0aa517",
       "note": "Join us for a fun morning of storytime and songs. All families are welcome!"
+    },
+    {
+      "lib": "imperial",
+      "name": "Brick Builders",
+      "date": "2027-03-24",
+      "time": "15:00",
+      "dur": 90,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en"
+      ],
+      "eventId": "69fa9600f56bd86e00add5c5",
+      "note": "Use your imagination to complete a brick building challenge with Lego bricks or build whatever you'd like! Hosted in partnership with the City of Imperial Beach"
+    },
+    {
+      "lib": "vistacou",
+      "name": "Kids' Crafternoon",
+      "date": "2027-03-24",
+      "time": "15:00",
+      "dur": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a5401c6c7e02e3d0068aeb4",
+      "note": "Join us at the library on Wednesdays for a fun afternoon craft! Geared toward children ages 6-10 yrs. old."
+    },
+    {
+      "lib": "elcajonc",
+      "name": "Construction Club",
+      "date": "2027-03-24",
+      "time": "17:00",
+      "dur": 90,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a9a156e60ccaf01c0234a76",
+      "note": "Craft activities and building challenges with LEGO bricks, geared for kids ages 4 and up. Offered by local high school students. No registration required."
+    },
+    {
+      "lib": "imperial",
+      "name": "Nature Tots",
+      "date": "2027-03-25",
+      "time": "10:30",
+      "dur": 45,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "Nature Tots",
+      "lang": [
+        "en"
+      ],
+      "eventId": "69fa9ac4703c33630025b9b0",
+      "note": "Listen to a nature-themed story followed by a craft or activity! Presented in partnership with the department of US Fish and Wildlife and the City of Imperial B"
     },
     {
       "lib": "lakeside",
@@ -789,7 +1616,7 @@ STORYTIME.months["2027-03"] = {
         "baby",
         "toddler"
       ],
-      "ageText": "",
+      "ageText": "Designed for babies and toddlers, this action-packed storytime…",
       "lang": [
         "en"
       ],
@@ -805,7 +1632,7 @@ STORYTIME.months["2027-03"] = {
       "ages": [
         "baby"
       ],
-      "ageText": "",
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -821,7 +1648,7 @@ STORYTIME.months["2027-03"] = {
       "ages": [
         "toddler"
       ],
-      "ageText": "",
+      "ageText": "Toddler Time",
       "lang": [
         "en"
       ],
@@ -837,7 +1664,7 @@ STORYTIME.months["2027-03"] = {
       "ages": [
         "baby"
       ],
-      "ageText": "",
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -853,12 +1680,28 @@ STORYTIME.months["2027-03"] = {
       "ages": [
         "baby"
       ],
-      "ageText": "",
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
       "eventId": "69dc1142bd5c392c7643dc22",
       "note": "Enjoy songs, fingerplays and short stories for your littlest ones. Geared for pre-walkers 0-18 months and their caregivers. Followed by play time, with age appr"
+    },
+    {
+      "lib": "solanabe",
+      "name": "Franklin & Friends at the Library",
+      "date": "2027-03-26",
+      "time": "10:30",
+      "dur": 30,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6aa431876074830038263bb0",
+      "note": "Join us for stories with Franklin, the tortoise from the Nature Center of San Elijo Lagoon Ecological Reserve. Hosted by Park Rangers from the Parks & Recreatio"
     },
     {
       "lib": "valleyce",
@@ -869,12 +1712,44 @@ STORYTIME.months["2027-03"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Preschool Story Time",
       "lang": [
         "en"
       ],
       "eventId": "6680837fe3e1ee3000462f86",
       "note": "Join us on Fridays for stories, songs, and crafts. Geared for children aged 3-5 years."
+    },
+    {
+      "lib": "elcajonc",
+      "name": "Construction Club",
+      "date": "2027-03-27",
+      "time": "13:30",
+      "dur": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a9a156e60ccaf01c0234a78",
+      "note": "Craft activities and building challenges with LEGO bricks, geared for kids ages 4 and up. Offered by local high school students. No registration required."
+    },
+    {
+      "lib": "elcajonc",
+      "name": "Construction Club",
+      "date": "2027-03-28",
+      "time": "13:30",
+      "dur": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a9a15f829a7dd0d6748f7f0",
+      "note": "Craft activities and building challenges with LEGO bricks, geared for kids ages 4 and up. Offered by local high school students. No registration required."
     },
     {
       "lib": "elcajonc",
@@ -887,7 +1762,7 @@ STORYTIME.months["2027-03"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "…books and rhymes in English and in Spanish! All ages welcome. Acompáñenos y disfrute de cancione…",
       "lang": [
         "en",
         "es"
@@ -904,12 +1779,44 @@ STORYTIME.months["2027-03"] = {
       "ages": [
         "toddler"
       ],
-      "ageText": "",
+      "ageText": "Toddler Storytime",
       "lang": [
         "en"
       ],
       "eventId": "69fe7482f56bd86e00ae7de1",
       "note": "For toddlers 1.5 (walking) - 3 years. Come and join the fun with stories, songs, and crafts."
+    },
+    {
+      "lib": "julianco",
+      "name": "LEGO Club",
+      "date": "2027-03-29",
+      "time": "14:30",
+      "dur": 90,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a8e2f64be148200298a134b",
+      "note": "Bring your imagination and we’ll supply the LEGOs!"
+    },
+    {
+      "lib": "imperial",
+      "name": "Craft Challenge",
+      "date": "2027-03-29",
+      "time": "15:00",
+      "dur": 120,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en"
+      ],
+      "eventId": "69fa9219703c33630025b829",
+      "note": "We’ll provide a theme and materials, you bring your imagination! Stations will be set up for kids to create and experiment with the craft of the day, which they"
     },
     {
       "lib": "cardiffb",
@@ -920,7 +1827,7 @@ STORYTIME.months["2027-03"] = {
       "ages": [
         "baby"
       ],
-      "ageText": "",
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -938,12 +1845,46 @@ STORYTIME.months["2027-03"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Family Storytime",
       "lang": [
         "en"
       ],
       "eventId": "69152b429be7c6685c27d6a5",
       "note": "Please join us for family storytime, songs, making new friends & lots of fun! Children and their families are welcome to join in the fun! Geared towards ages 0-"
+    },
+    {
+      "lib": "imperial",
+      "name": "Pre-K Play",
+      "date": "2027-03-31",
+      "time": "10:30",
+      "dur": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Pre-K Play",
+      "lang": [
+        "en"
+      ],
+      "eventId": "69fa945ef56bd86e00add575",
+      "note": "Bring your littles to meet and have fun! The library will provide toys and a play space for kids to play together and socialize. For ages 0-5. Parent/caregiver "
+    },
+    {
+      "lib": "lemongro",
+      "name": "Family Storytime",
+      "date": "2027-03-31",
+      "time": "10:30",
+      "dur": 45,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "Family Storytime",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a89d900db86e4004d86c1f4",
+      "note": "Join us for stories, songs, crafts, and fun! Babies, toddlers, and preschoolers are all welcome."
     },
     {
       "lib": "ramonaco",
@@ -956,7 +1897,7 @@ STORYTIME.months["2027-03"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Family Storytime",
       "lang": [
         "en"
       ],

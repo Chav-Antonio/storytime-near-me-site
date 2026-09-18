@@ -14,7 +14,7 @@ STORYTIME.months["2027-10"] = {
       "ages": [
         "toddler"
       ],
-      "ageText": "",
+      "ageText": "Toddler Time",
       "lang": [
         "en"
       ],
@@ -30,12 +30,28 @@ STORYTIME.months["2027-10"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Preschool Story Time",
       "lang": [
         "en"
       ],
       "eventId": "6680837fe3e1ee3000462fa1",
       "note": "Join us on Fridays for stories, songs, and crafts. Geared for children aged 3-5 years."
+    },
+    {
+      "lib": "julianco",
+      "name": "LEGO Club",
+      "date": "2027-10-04",
+      "time": "14:30",
+      "dur": 90,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a8e2f64be148200298a1366",
+      "note": "Bring your imagination and we’ll supply the LEGOs!"
     },
     {
       "lib": "cardiffb",
@@ -46,12 +62,46 @@ STORYTIME.months["2027-10"] = {
       "ages": [
         "baby"
       ],
-      "ageText": "",
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
       "eventId": "6a6a59abd23de82955c9877a",
       "note": "A lap-sit storytime introducing board books, songs, and fingerplays. Storytime will be followed by a playtime including shakers, sensory balls, and blocks. This"
+    },
+    {
+      "lib": "fletcher",
+      "name": "Family Play Time Hour",
+      "date": "2027-10-06",
+      "time": "10:30",
+      "dur": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "Family Play Time Hour",
+      "lang": [
+        "en"
+      ],
+      "eventId": "691529dca6fedec95308d6bc",
+      "note": "Please join us for Family Play Time Hour, a chance for our little ones to play with our toys and make new friends! Children and their families are welcome to jo"
+    },
+    {
+      "lib": "fletcher",
+      "name": "Lego Brick Builders Club",
+      "date": "2027-10-07",
+      "time": "14:30",
+      "dur": 120,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en"
+      ],
+      "eventId": "69152d3aa6fedec95308d765",
+      "note": "Unleash your imagination! Build your own Lego creations along with fellow brick enthusiasts! The Brick Builders Club is held on the first Thursday of each month"
     },
     {
       "lib": "cardiffb",
@@ -62,7 +112,7 @@ STORYTIME.months["2027-10"] = {
       "ages": [
         "toddler"
       ],
-      "ageText": "",
+      "ageText": "Toddler Time",
       "lang": [
         "en"
       ],
@@ -78,12 +128,28 @@ STORYTIME.months["2027-10"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Preschool Story Time",
       "lang": [
         "en"
       ],
       "eventId": "6680837fe3e1ee3000462fa2",
       "note": "Join us on Fridays for stories, songs, and crafts. Geared for children aged 3-5 years."
+    },
+    {
+      "lib": "julianco",
+      "name": "LEGO Club",
+      "date": "2027-10-11",
+      "time": "14:30",
+      "dur": 90,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a8e2f64be148200298a1367",
+      "note": "Bring your imagination and we’ll supply the LEGOs!"
     },
     {
       "lib": "cardiffb",
@@ -94,7 +160,7 @@ STORYTIME.months["2027-10"] = {
       "ages": [
         "baby"
       ],
-      "ageText": "",
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -112,7 +178,7 @@ STORYTIME.months["2027-10"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Family Storytime",
       "lang": [
         "en"
       ],
@@ -128,7 +194,7 @@ STORYTIME.months["2027-10"] = {
       "ages": [
         "toddler"
       ],
-      "ageText": "",
+      "ageText": "Toddler Time",
       "lang": [
         "en"
       ],
@@ -144,12 +210,28 @@ STORYTIME.months["2027-10"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Preschool Story Time",
       "lang": [
         "en"
       ],
       "eventId": "6680837fe3e1ee3000462fa3",
       "note": "Join us on Fridays for stories, songs, and crafts. Geared for children aged 3-5 years."
+    },
+    {
+      "lib": "julianco",
+      "name": "LEGO Club",
+      "date": "2027-10-18",
+      "time": "14:30",
+      "dur": 90,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a8e2f64be148200298a1368",
+      "note": "Bring your imagination and we’ll supply the LEGOs!"
     },
     {
       "lib": "cardiffb",
@@ -160,7 +242,7 @@ STORYTIME.months["2027-10"] = {
       "ages": [
         "baby"
       ],
-      "ageText": "",
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -178,7 +260,7 @@ STORYTIME.months["2027-10"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Family Storytime",
       "lang": [
         "en"
       ],
@@ -194,7 +276,7 @@ STORYTIME.months["2027-10"] = {
       "ages": [
         "toddler"
       ],
-      "ageText": "",
+      "ageText": "Toddler Time",
       "lang": [
         "en"
       ],
@@ -210,12 +292,28 @@ STORYTIME.months["2027-10"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Preschool Story Time",
       "lang": [
         "en"
       ],
       "eventId": "6680837fe3e1ee3000462fa4",
       "note": "Join us on Fridays for stories, songs, and crafts. Geared for children aged 3-5 years."
+    },
+    {
+      "lib": "julianco",
+      "name": "LEGO Club",
+      "date": "2027-10-25",
+      "time": "14:30",
+      "dur": 90,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a8e2f64be148200298a1369",
+      "note": "Bring your imagination and we’ll supply the LEGOs!"
     },
     {
       "lib": "cardiffb",
@@ -226,7 +324,7 @@ STORYTIME.months["2027-10"] = {
       "ages": [
         "baby"
       ],
-      "ageText": "",
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -244,7 +342,7 @@ STORYTIME.months["2027-10"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Family Storytime",
       "lang": [
         "en"
       ],
@@ -260,7 +358,7 @@ STORYTIME.months["2027-10"] = {
       "ages": [
         "toddler"
       ],
-      "ageText": "",
+      "ageText": "Toddler Time",
       "lang": [
         "en"
       ],
@@ -276,7 +374,7 @@ STORYTIME.months["2027-10"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Preschool Story Time",
       "lang": [
         "en"
       ],

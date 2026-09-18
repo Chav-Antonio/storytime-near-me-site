@@ -6,6 +6,38 @@ STORYTIME.months["2027-06"] = {
   "month": "2027-06",
   "events": [
     {
+      "lib": "lakeside",
+      "name": "Lakeside Kids' Crew: Kids Arcade",
+      "date": "2027-06-01",
+      "time": "15:30",
+      "dur": 45,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a56ba27fb418a28009b01af",
+      "note": "Do you love games of all kinds? Do you wish you had some friends to play those games with? Join us each month as we play board games, card games, Nintendo Switc"
+    },
+    {
+      "lib": "alpineco",
+      "name": "Paws for Reading",
+      "date": "2027-06-01",
+      "time": "16:00",
+      "dur": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a11e178e8af4a2f00749676",
+      "note": "Paws for Reading allows children to practice their reading skills by reading aloud to a certified therapy dog. Children may find it intimidating to read with pe"
+    },
+    {
       "lib": "cardiffb",
       "name": "Baby Storytime",
       "date": "2027-06-02",
@@ -14,12 +46,65 @@ STORYTIME.months["2027-06"] = {
       "ages": [
         "baby"
       ],
-      "ageText": "",
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
       "eventId": "6a6a59abd23de82955c98768",
       "note": "A lap-sit storytime introducing board books, songs, and fingerplays. Storytime will be followed by a playtime including shakers, sensory balls, and blocks. This"
+    },
+    {
+      "lib": "fletcher",
+      "name": "Family Play Time Hour",
+      "date": "2027-06-02",
+      "time": "10:30",
+      "dur": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "Family Play Time Hour",
+      "lang": [
+        "en"
+      ],
+      "eventId": "691529dca6fedec95308d6b8",
+      "note": "Please join us for Family Play Time Hour, a chance for our little ones to play with our toys and make new friends! Children and their families are welcome to jo"
+    },
+    {
+      "lib": "lemongro",
+      "name": "Family Storytime",
+      "date": "2027-06-02",
+      "time": "10:30",
+      "dur": 45,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "Family Storytime",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a89d900db86e4004d86c1fd",
+      "note": "Join us for stories, songs, crafts, and fun! Babies, toddlers, and preschoolers are all welcome."
+    },
+    {
+      "lib": "4s",
+      "name": "Kids Lotería! (Mexican Bingo!)",
+      "date": "2027-06-02",
+      "time": "16:30",
+      "dur": 30,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en",
+        "es"
+      ],
+      "eventId": "6a3c55980e851028002cfc24",
+      "note": "KIDS! Come and join us at the 4S Ranch Library for a fun LOTERÍA (Mexican Bingo!) game night and win fun prizes! 1st Wednesday of every month!"
     },
     {
       "lib": "solanabe",
@@ -30,12 +115,28 @@ STORYTIME.months["2027-06"] = {
       "ages": [
         "baby"
       ],
-      "ageText": "",
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
       "eventId": "69fe750c703c336300266c32",
       "note": "For babies up to 18 months old. Songs and stories for fun and stimulation of young minds. Followed by playtime and interaction with other babies, as well as con"
+    },
+    {
+      "lib": "fletcher",
+      "name": "Lego Brick Builders Club",
+      "date": "2027-06-03",
+      "time": "14:30",
+      "dur": 120,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en"
+      ],
+      "eventId": "69152d3aa6fedec95308d761",
+      "note": "Unleash your imagination! Build your own Lego creations along with fellow brick enthusiasts! The Brick Builders Club is held on the first Thursday of each month"
     },
     {
       "lib": "cardiffb",
@@ -46,7 +147,7 @@ STORYTIME.months["2027-06"] = {
       "ages": [
         "toddler"
       ],
-      "ageText": "",
+      "ageText": "Toddler Time",
       "lang": [
         "en"
       ],
@@ -62,12 +163,28 @@ STORYTIME.months["2027-06"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Preschool Story Time",
       "lang": [
         "en"
       ],
       "eventId": "6680837fe3e1ee3000462f90",
       "note": "Join us on Fridays for stories, songs, and crafts. Geared for children aged 3-5 years."
+    },
+    {
+      "lib": "4s",
+      "name": "Paws to Read",
+      "date": "2027-06-05",
+      "time": "11:00",
+      "dur": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6aa44ff0ab7a8e0037c11bc5",
+      "note": "Come read to a real furry friend, the first and third Saturdays each month!"
     },
     {
       "lib": "elcajonc",
@@ -80,7 +197,7 @@ STORYTIME.months["2027-06"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "…books and rhymes in English and in Spanish! All ages welcome. Acompáñenos y disfrute de cancione…",
       "lang": [
         "en",
         "es"
@@ -97,12 +214,28 @@ STORYTIME.months["2027-06"] = {
       "ages": [
         "toddler"
       ],
-      "ageText": "",
+      "ageText": "Toddler Storytime",
       "lang": [
         "en"
       ],
       "eventId": "69fe7482f56bd86e00ae7deb",
       "note": "For toddlers 1.5 (walking) - 3 years. Come and join the fun with stories, songs, and crafts."
+    },
+    {
+      "lib": "julianco",
+      "name": "LEGO Club",
+      "date": "2027-06-07",
+      "time": "14:30",
+      "dur": 90,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a8e2f64be148200298a1355",
+      "note": "Bring your imagination and we’ll supply the LEGOs!"
     },
     {
       "lib": "cardiffb",
@@ -113,7 +246,7 @@ STORYTIME.months["2027-06"] = {
       "ages": [
         "baby"
       ],
-      "ageText": "",
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -131,12 +264,30 @@ STORYTIME.months["2027-06"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Family Storytime",
       "lang": [
         "en"
       ],
       "eventId": "69152b429be7c6685c27d6ac",
       "note": "Please join us for family storytime, songs, making new friends & lots of fun! Children and their families are welcome to join in the fun! Geared towards ages 0-"
+    },
+    {
+      "lib": "lemongro",
+      "name": "Family Storytime",
+      "date": "2027-06-09",
+      "time": "10:30",
+      "dur": 45,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "Family Storytime",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a89d900db86e4004d86c1fe",
+      "note": "Join us for stories, songs, crafts, and fun! Babies, toddlers, and preschoolers are all welcome."
     },
     {
       "lib": "solanabe",
@@ -147,7 +298,7 @@ STORYTIME.months["2027-06"] = {
       "ages": [
         "baby"
       ],
-      "ageText": "",
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -163,7 +314,7 @@ STORYTIME.months["2027-06"] = {
       "ages": [
         "toddler"
       ],
-      "ageText": "",
+      "ageText": "Toddler Time",
       "lang": [
         "en"
       ],
@@ -179,7 +330,7 @@ STORYTIME.months["2027-06"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Preschool Story Time",
       "lang": [
         "en"
       ],
@@ -197,7 +348,7 @@ STORYTIME.months["2027-06"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "…books and rhymes in English and in Spanish! All ages welcome. Acompáñenos y disfrute de cancione…",
       "lang": [
         "en",
         "es"
@@ -214,12 +365,28 @@ STORYTIME.months["2027-06"] = {
       "ages": [
         "toddler"
       ],
-      "ageText": "",
+      "ageText": "Toddler Storytime",
       "lang": [
         "en"
       ],
       "eventId": "69fe7482f56bd86e00ae7dec",
       "note": "For toddlers 1.5 (walking) - 3 years. Come and join the fun with stories, songs, and crafts."
+    },
+    {
+      "lib": "julianco",
+      "name": "LEGO Club",
+      "date": "2027-06-14",
+      "time": "14:30",
+      "dur": 90,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a8e2f64be148200298a1356",
+      "note": "Bring your imagination and we’ll supply the LEGOs!"
     },
     {
       "lib": "cardiffb",
@@ -230,7 +397,7 @@ STORYTIME.months["2027-06"] = {
       "ages": [
         "baby"
       ],
-      "ageText": "",
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -248,12 +415,30 @@ STORYTIME.months["2027-06"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Family Storytime",
       "lang": [
         "en"
       ],
       "eventId": "69152b429be7c6685c27d6ad",
       "note": "Please join us for family storytime, songs, making new friends & lots of fun! Children and their families are welcome to join in the fun! Geared towards ages 0-"
+    },
+    {
+      "lib": "lemongro",
+      "name": "Family Storytime",
+      "date": "2027-06-16",
+      "time": "10:30",
+      "dur": 45,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "Family Storytime",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a89d900db86e4004d86c1ff",
+      "note": "Join us for stories, songs, crafts, and fun! Babies, toddlers, and preschoolers are all welcome."
     },
     {
       "lib": "solanabe",
@@ -264,7 +449,7 @@ STORYTIME.months["2027-06"] = {
       "ages": [
         "baby"
       ],
-      "ageText": "",
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -280,7 +465,7 @@ STORYTIME.months["2027-06"] = {
       "ages": [
         "toddler"
       ],
-      "ageText": "",
+      "ageText": "Toddler Time",
       "lang": [
         "en"
       ],
@@ -296,12 +481,28 @@ STORYTIME.months["2027-06"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Preschool Story Time",
       "lang": [
         "en"
       ],
       "eventId": "6680837fe3e1ee3000462f92",
       "note": "Join us on Fridays for stories, songs, and crafts. Geared for children aged 3-5 years."
+    },
+    {
+      "lib": "4s",
+      "name": "Paws to Read",
+      "date": "2027-06-19",
+      "time": "11:00",
+      "dur": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6aa44ff0ab7a8e0037c11bc6",
+      "note": "Come read to a real furry friend, the first and third Saturdays each month!"
     },
     {
       "lib": "elcajonc",
@@ -314,7 +515,7 @@ STORYTIME.months["2027-06"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "…books and rhymes in English and in Spanish! All ages welcome. Acompáñenos y disfrute de cancione…",
       "lang": [
         "en",
         "es"
@@ -331,12 +532,28 @@ STORYTIME.months["2027-06"] = {
       "ages": [
         "toddler"
       ],
-      "ageText": "",
+      "ageText": "Toddler Storytime",
       "lang": [
         "en"
       ],
       "eventId": "69fe7482f56bd86e00ae7ded",
       "note": "For toddlers 1.5 (walking) - 3 years. Come and join the fun with stories, songs, and crafts."
+    },
+    {
+      "lib": "julianco",
+      "name": "LEGO Club",
+      "date": "2027-06-21",
+      "time": "14:30",
+      "dur": 90,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a8e2f64be148200298a1357",
+      "note": "Bring your imagination and we’ll supply the LEGOs!"
     },
     {
       "lib": "cardiffb",
@@ -347,7 +564,7 @@ STORYTIME.months["2027-06"] = {
       "ages": [
         "baby"
       ],
-      "ageText": "",
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -365,12 +582,30 @@ STORYTIME.months["2027-06"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Family Storytime",
       "lang": [
         "en"
       ],
       "eventId": "69152b429be7c6685c27d6ae",
       "note": "Please join us for family storytime, songs, making new friends & lots of fun! Children and their families are welcome to join in the fun! Geared towards ages 0-"
+    },
+    {
+      "lib": "lemongro",
+      "name": "Family Storytime",
+      "date": "2027-06-23",
+      "time": "10:30",
+      "dur": 45,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "Family Storytime",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a89d900db86e4004d86c200",
+      "note": "Join us for stories, songs, crafts, and fun! Babies, toddlers, and preschoolers are all welcome."
     },
     {
       "lib": "solanabe",
@@ -381,7 +616,7 @@ STORYTIME.months["2027-06"] = {
       "ages": [
         "baby"
       ],
-      "ageText": "",
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -397,7 +632,7 @@ STORYTIME.months["2027-06"] = {
       "ages": [
         "toddler"
       ],
-      "ageText": "",
+      "ageText": "Toddler Time",
       "lang": [
         "en"
       ],
@@ -413,7 +648,7 @@ STORYTIME.months["2027-06"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Preschool Story Time",
       "lang": [
         "en"
       ],
@@ -431,7 +666,7 @@ STORYTIME.months["2027-06"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "…books and rhymes in English and in Spanish! All ages welcome. Acompáñenos y disfrute de cancione…",
       "lang": [
         "en",
         "es"
@@ -448,12 +683,28 @@ STORYTIME.months["2027-06"] = {
       "ages": [
         "toddler"
       ],
-      "ageText": "",
+      "ageText": "Toddler Storytime",
       "lang": [
         "en"
       ],
       "eventId": "69fe7482f56bd86e00ae7dee",
       "note": "For toddlers 1.5 (walking) - 3 years. Come and join the fun with stories, songs, and crafts."
+    },
+    {
+      "lib": "julianco",
+      "name": "LEGO Club",
+      "date": "2027-06-28",
+      "time": "14:30",
+      "dur": 90,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a8e2f64be148200298a1358",
+      "note": "Bring your imagination and we’ll supply the LEGOs!"
     },
     {
       "lib": "cardiffb",
@@ -464,7 +715,7 @@ STORYTIME.months["2027-06"] = {
       "ages": [
         "baby"
       ],
-      "ageText": "",
+      "ageText": "Baby Storytime",
       "lang": [
         "en"
       ],
@@ -482,12 +733,30 @@ STORYTIME.months["2027-06"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "Family Storytime",
       "lang": [
         "en"
       ],
       "eventId": "69152b429be7c6685c27d6af",
       "note": "Please join us for family storytime, songs, making new friends & lots of fun! Children and their families are welcome to join in the fun! Geared towards ages 0-"
+    },
+    {
+      "lib": "lemongro",
+      "name": "Family Storytime",
+      "date": "2027-06-30",
+      "time": "10:30",
+      "dur": 45,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "Family Storytime",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a89d900db86e4004d86c201",
+      "note": "Join us for stories, songs, crafts, and fun! Babies, toddlers, and preschoolers are all welcome."
     }
   ]
 };
