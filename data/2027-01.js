@@ -6,6 +6,24 @@ STORYTIME.months["2027-01"] = {
   "month": "2027-01",
   "events": [
     {
+      "lib": "julianco",
+      "name": "Free Play Friday!",
+      "date": "2027-01-01",
+      "time": "10:30",
+      "dur": 90,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "AI: free-play sensory/educational toys for young children",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6aa468b7101eb7003f2f62dd",
+      "note": "Join us at 10:30 to explore, learn, and play with a variety of sensory and educational toys and activities."
+    },
+    {
       "lib": "valleyce",
       "name": "Preschool Story Time",
       "date": "2027-01-01",
@@ -14,7 +32,7 @@ STORYTIME.months["2027-01"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "Preschool Story Time",
+      "ageText": "3-5 years",
       "lang": [
         "en"
       ],
@@ -161,28 +179,12 @@ STORYTIME.months["2027-01"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "Kids",
+      "ageText": "ages 4 to 12",
       "lang": [
         "en"
       ],
       "eventId": "69fa9219703c33630025b81f",
       "note": "We’ll provide a theme and materials, you bring your imagination! Stations will be set up for kids to create and experiment with the craft of the day, which they"
-    },
-    {
-      "lib": "solanabe",
-      "name": "Kids' Crafternoon",
-      "date": "2027-01-05",
-      "time": "15:00",
-      "dur": 60,
-      "ages": [
-        "preschool"
-      ],
-      "ageText": "Kids",
-      "lang": [
-        "en"
-      ],
-      "eventId": "6a6a72a07b79214226ac39e6",
-      "note": "Have fun exploring different art processes from printing making to watercolor. Get creative and make an art piece to take home. For ages 5 and up. While supplie"
     },
     {
       "lib": "lakeside",
@@ -217,15 +219,34 @@ STORYTIME.months["2027-01"] = {
       "note": "Paws for Reading allows children to practice their reading skills by reading aloud to a certified therapy dog. Children may find it intimidating to read with pe"
     },
     {
+      "lib": "alpineco",
+      "name": "Storytime",
+      "date": "2027-01-06",
+      "time": "10:30",
+      "dur": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6aadb679f9ed2e003851cad2",
+      "note": "Children actively participate in stories, music, and movement enhancing their social, emotional, and language development with time for socializing afterwards."
+    },
+    {
       "lib": "cardiffb",
       "name": "Baby Storytime",
       "date": "2027-01-06",
       "time": "10:30",
       "dur": 60,
       "ages": [
-        "baby"
+        "baby",
+        "toddler"
       ],
-      "ageText": "Baby Storytime",
+      "ageText": "0-18 months",
       "lang": [
         "en"
       ],
@@ -260,7 +281,7 @@ STORYTIME.months["2027-01"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "Family Play Time Hour",
+      "ageText": "ages 0-5",
       "lang": [
         "en"
       ],
@@ -274,11 +295,9 @@ STORYTIME.months["2027-01"] = {
       "time": "10:30",
       "dur": 30,
       "ages": [
-        "baby",
-        "toddler",
-        "preschool"
+        "toddler"
       ],
-      "ageText": "…owed by play time! Geared for ages 1-3, but all ages welcome. Every 1st & 3rd Wednesday of the m…",
+      "ageText": "for ages 1-3",
       "lang": [
         "en",
         "es"
@@ -339,22 +358,6 @@ STORYTIME.months["2027-01"] = {
       "note": "Yoga, stories, and creative movement for Toddlers and their Caregivers. Performed with Ms. Arianna from PEARLS FOR LIFE YOGA. This program is every first Wednes"
     },
     {
-      "lib": "vistacou",
-      "name": "Kids' Crafternoon",
-      "date": "2027-01-06",
-      "time": "15:00",
-      "dur": 60,
-      "ages": [
-        "preschool"
-      ],
-      "ageText": "Kids",
-      "lang": [
-        "en"
-      ],
-      "eventId": "6a5401c6c7e02e3d0068aea9",
-      "note": "Join us at the library on Wednesdays for a fun afternoon craft! Geared toward children ages 6-10 yrs. old."
-    },
-    {
       "lib": "4s",
       "name": "Kids Lotería! (Mexican Bingo!)",
       "date": "2027-01-06",
@@ -380,7 +383,7 @@ STORYTIME.months["2027-01"] = {
       "ages": [
         "toddler"
       ],
-      "ageText": "Toddler Storytime",
+      "ageText": "ages 1-3",
       "lang": [
         "en"
       ],
@@ -404,22 +407,6 @@ STORYTIME.months["2027-01"] = {
       "note": "For babies up to 18 months old. Songs and stories for fun and stimulation of young minds. Followed by playtime and interaction with other babies, as well as con"
     },
     {
-      "lib": "fletcher",
-      "name": "Lego Brick Builders Club",
-      "date": "2027-01-07",
-      "time": "14:30",
-      "dur": 120,
-      "ages": [
-        "preschool"
-      ],
-      "ageText": "Kids",
-      "lang": [
-        "en"
-      ],
-      "eventId": "69152d3aa6fedec95308d75c",
-      "note": "Unleash your imagination! Build your own Lego creations along with fellow brick enthusiasts! The Brick Builders Club is held on the first Thursday of each month"
-    },
-    {
       "lib": "ramonaco",
       "name": "LEGO Club",
       "date": "2027-01-07",
@@ -434,6 +421,22 @@ STORYTIME.months["2027-01"] = {
       ],
       "eventId": "6a7b6e42f68ff70029b6fd10",
       "note": "Come join LEGO Club every 1st and 3rd Thursday!"
+    },
+    {
+      "lib": "alpineco",
+      "name": "Baby Storytime",
+      "date": "2027-01-08",
+      "time": "10:30",
+      "dur": 60,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "Baby Storytime",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6aadb5cc101eb7003f31480c",
+      "note": "Babies experience the sounds and structure of language through rhythm, rhyme, and repetition. Plan on a fifteen-minute program with time for baby and caregiver "
     },
     {
       "lib": "cardiffb",
@@ -458,9 +461,10 @@ STORYTIME.months["2027-01"] = {
       "time": "10:30",
       "dur": 60,
       "ages": [
-        "baby"
+        "baby",
+        "toddler"
       ],
-      "ageText": "Baby Storytime",
+      "ageText": "0-18 months",
       "lang": [
         "en"
       ],
@@ -474,14 +478,33 @@ STORYTIME.months["2027-01"] = {
       "time": "10:30",
       "dur": 30,
       "ages": [
-        "baby"
+        "baby",
+        "toddler"
       ],
-      "ageText": "Baby Storytime",
+      "ageText": "0-18 months",
       "lang": [
         "en"
       ],
       "eventId": "69dc1142bd5c392c7643dc17",
       "note": "Enjoy songs, fingerplays and short stories for your littlest ones. Geared for pre-walkers 0-18 months and their caregivers. Followed by play time, with age appr"
+    },
+    {
+      "lib": "julianco",
+      "name": "Free Play Friday!",
+      "date": "2027-01-08",
+      "time": "10:30",
+      "dur": 90,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "AI: free-play sensory/educational toys for young children",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6aa468b7101eb7003f2f62de",
+      "note": "Join us at 10:30 to explore, learn, and play with a variety of sensory and educational toys and activities."
     },
     {
       "lib": "solanabe",
@@ -492,7 +515,7 @@ STORYTIME.months["2027-01"] = {
       "ages": [
         "toddler"
       ],
-      "ageText": "…ldren's area. All children are welcome. For toddlers 18 months - 3 years old. Together let's sh…",
+      "ageText": "18 months - 3 years",
       "lang": [
         "en"
       ],
@@ -508,7 +531,7 @@ STORYTIME.months["2027-01"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "Preschool Story Time",
+      "ageText": "3-5 years",
       "lang": [
         "en"
       ],
@@ -623,12 +646,30 @@ STORYTIME.months["2027-01"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "Kids",
+      "ageText": "ages 4 to 12",
       "lang": [
         "en"
       ],
       "eventId": "69fa9219703c33630025b820",
       "note": "We’ll provide a theme and materials, you bring your imagination! Stations will be set up for kids to create and experiment with the craft of the day, which they"
+    },
+    {
+      "lib": "alpineco",
+      "name": "Storytime",
+      "date": "2027-01-13",
+      "time": "10:30",
+      "dur": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6aadb679f9ed2e003851cad3",
+      "note": "Children actively participate in stories, music, and movement enhancing their social, emotional, and language development with time for socializing afterwards."
     },
     {
       "lib": "cardiffb",
@@ -637,9 +678,10 @@ STORYTIME.months["2027-01"] = {
       "time": "10:30",
       "dur": 60,
       "ages": [
-        "baby"
+        "baby",
+        "toddler"
       ],
-      "ageText": "Baby Storytime",
+      "ageText": "0-18 months",
       "lang": [
         "en"
       ],
@@ -674,7 +716,7 @@ STORYTIME.months["2027-01"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "Family Storytime",
+      "ageText": "ages 0-5",
       "lang": [
         "en"
       ],
@@ -688,9 +730,11 @@ STORYTIME.months["2027-01"] = {
       "time": "10:30",
       "dur": 60,
       "ages": [
+        "baby",
+        "toddler",
         "preschool"
       ],
-      "ageText": "Pre-K Play",
+      "ageText": "For ages 0-5",
       "lang": [
         "en"
       ],
@@ -735,38 +779,6 @@ STORYTIME.months["2027-01"] = {
     },
     {
       "lib": "imperial",
-      "name": "Brick Builders",
-      "date": "2027-01-13",
-      "time": "15:00",
-      "dur": 90,
-      "ages": [
-        "preschool"
-      ],
-      "ageText": "Kids",
-      "lang": [
-        "en"
-      ],
-      "eventId": "69fa9600f56bd86e00add5c0",
-      "note": "Use your imagination to complete a brick building challenge with Lego bricks or build whatever you'd like! Hosted in partnership with the City of Imperial Beach"
-    },
-    {
-      "lib": "vistacou",
-      "name": "Kids' Crafternoon",
-      "date": "2027-01-13",
-      "time": "15:00",
-      "dur": 60,
-      "ages": [
-        "preschool"
-      ],
-      "ageText": "Kids",
-      "lang": [
-        "en"
-      ],
-      "eventId": "6a5401c6c7e02e3d0068aeaa",
-      "note": "Join us at the library on Wednesdays for a fun afternoon craft! Geared toward children ages 6-10 yrs. old."
-    },
-    {
-      "lib": "imperial",
       "name": "Toddler Storytime",
       "date": "2027-01-14",
       "time": "10:30",
@@ -774,7 +786,7 @@ STORYTIME.months["2027-01"] = {
       "ages": [
         "toddler"
       ],
-      "ageText": "Toddler Storytime",
+      "ageText": "ages 1-3",
       "lang": [
         "en"
       ],
@@ -815,6 +827,22 @@ STORYTIME.months["2027-01"] = {
       "note": "For babies up to 18 months old. Songs and stories for fun and stimulation of young minds. Followed by playtime and interaction with other babies, as well as con"
     },
     {
+      "lib": "alpineco",
+      "name": "Baby Storytime",
+      "date": "2027-01-15",
+      "time": "10:30",
+      "dur": 60,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "Baby Storytime",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6aadb5cc101eb7003f31480d",
+      "note": "Babies experience the sounds and structure of language through rhythm, rhyme, and repetition. Plan on a fifteen-minute program with time for baby and caregiver "
+    },
+    {
       "lib": "cardiffb",
       "name": "Toddler Time",
       "date": "2027-01-15",
@@ -837,9 +865,10 @@ STORYTIME.months["2027-01"] = {
       "time": "10:30",
       "dur": 60,
       "ages": [
-        "baby"
+        "baby",
+        "toddler"
       ],
-      "ageText": "Baby Storytime",
+      "ageText": "0-18 months",
       "lang": [
         "en"
       ],
@@ -853,14 +882,33 @@ STORYTIME.months["2027-01"] = {
       "time": "10:30",
       "dur": 30,
       "ages": [
-        "baby"
+        "baby",
+        "toddler"
       ],
-      "ageText": "Baby Storytime",
+      "ageText": "0-18 months",
       "lang": [
         "en"
       ],
       "eventId": "69dc1142bd5c392c7643dc18",
       "note": "Enjoy songs, fingerplays and short stories for your littlest ones. Geared for pre-walkers 0-18 months and their caregivers. Followed by play time, with age appr"
+    },
+    {
+      "lib": "julianco",
+      "name": "Free Play Friday!",
+      "date": "2027-01-15",
+      "time": "10:30",
+      "dur": 90,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "AI: free-play sensory/educational toys for young children",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6aa468b7101eb7003f2f62df",
+      "note": "Join us at 10:30 to explore, learn, and play with a variety of sensory and educational toys and activities."
     },
     {
       "lib": "solanabe",
@@ -871,7 +919,7 @@ STORYTIME.months["2027-01"] = {
       "ages": [
         "toddler"
       ],
-      "ageText": "…ldren's area. All children are welcome. For toddlers 18 months - 3 years old. Together let's sh…",
+      "ageText": "18 months - 3 years",
       "lang": [
         "en"
       ],
@@ -887,7 +935,7 @@ STORYTIME.months["2027-01"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "Preschool Story Time",
+      "ageText": "3-5 years",
       "lang": [
         "en"
       ],
@@ -959,15 +1007,51 @@ STORYTIME.months["2027-01"] = {
       "note": "Do you love to create and use your imagination to produce wonderful artwork? Join us for an afternoon where you bring the ideas and we'll provide a variety of c"
     },
     {
+      "lib": "solanabe",
+      "name": "Play to Learn",
+      "date": "2027-01-20",
+      "time": "10:00",
+      "dur": 60,
+      "ages": [
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "for ages 18 months+",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6a5951b30d65ac3600403b83",
+      "note": "Join us for open play time. Toys will be provided to help kids learn. Recommended for ages 18 months+"
+    },
+    {
+      "lib": "alpineco",
+      "name": "Storytime",
+      "date": "2027-01-20",
+      "time": "10:30",
+      "dur": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6aadb679f9ed2e003851cad4",
+      "note": "Children actively participate in stories, music, and movement enhancing their social, emotional, and language development with time for socializing afterwards."
+    },
+    {
       "lib": "cardiffb",
       "name": "Baby Storytime",
       "date": "2027-01-20",
       "time": "10:30",
       "dur": 60,
       "ages": [
-        "baby"
+        "baby",
+        "toddler"
       ],
-      "ageText": "Baby Storytime",
+      "ageText": "0-18 months",
       "lang": [
         "en"
       ],
@@ -1002,7 +1086,7 @@ STORYTIME.months["2027-01"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "Family Storytime",
+      "ageText": "ages 0-5",
       "lang": [
         "en"
       ],
@@ -1016,11 +1100,9 @@ STORYTIME.months["2027-01"] = {
       "time": "10:30",
       "dur": 30,
       "ages": [
-        "baby",
-        "toddler",
-        "preschool"
+        "toddler"
       ],
-      "ageText": "…owed by play time! Geared for ages 1-3, but all ages welcome. Every 1st & 3rd Wednesday of the m…",
+      "ageText": "for ages 1-3",
       "lang": [
         "en",
         "es"
@@ -1065,22 +1147,6 @@ STORYTIME.months["2027-01"] = {
       "note": "Join us for a fun morning of storytime and songs. All families are welcome!"
     },
     {
-      "lib": "vistacou",
-      "name": "Kids' Crafternoon",
-      "date": "2027-01-20",
-      "time": "15:00",
-      "dur": 60,
-      "ages": [
-        "preschool"
-      ],
-      "ageText": "Kids",
-      "lang": [
-        "en"
-      ],
-      "eventId": "6a5401c6c7e02e3d0068aeab",
-      "note": "Join us at the library on Wednesdays for a fun afternoon craft! Geared toward children ages 6-10 yrs. old."
-    },
-    {
       "lib": "imperial",
       "name": "Toddler Storytime",
       "date": "2027-01-21",
@@ -1089,7 +1155,7 @@ STORYTIME.months["2027-01"] = {
       "ages": [
         "toddler"
       ],
-      "ageText": "Toddler Storytime",
+      "ageText": "ages 1-3",
       "lang": [
         "en"
       ],
@@ -1146,6 +1212,22 @@ STORYTIME.months["2027-01"] = {
       "note": "Come join LEGO Club every 1st and 3rd Thursday!"
     },
     {
+      "lib": "alpineco",
+      "name": "Baby Storytime",
+      "date": "2027-01-22",
+      "time": "10:30",
+      "dur": 60,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "Baby Storytime",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6aadb5cc101eb7003f31480e",
+      "note": "Babies experience the sounds and structure of language through rhythm, rhyme, and repetition. Plan on a fifteen-minute program with time for baby and caregiver "
+    },
+    {
       "lib": "cardiffb",
       "name": "Toddler Time",
       "date": "2027-01-22",
@@ -1168,9 +1250,10 @@ STORYTIME.months["2027-01"] = {
       "time": "10:30",
       "dur": 60,
       "ages": [
-        "baby"
+        "baby",
+        "toddler"
       ],
-      "ageText": "Baby Storytime",
+      "ageText": "0-18 months",
       "lang": [
         "en"
       ],
@@ -1184,14 +1267,33 @@ STORYTIME.months["2027-01"] = {
       "time": "10:30",
       "dur": 30,
       "ages": [
-        "baby"
+        "baby",
+        "toddler"
       ],
-      "ageText": "Baby Storytime",
+      "ageText": "0-18 months",
       "lang": [
         "en"
       ],
       "eventId": "69dc1142bd5c392c7643dc19",
       "note": "Enjoy songs, fingerplays and short stories for your littlest ones. Geared for pre-walkers 0-18 months and their caregivers. Followed by play time, with age appr"
+    },
+    {
+      "lib": "julianco",
+      "name": "Free Play Friday!",
+      "date": "2027-01-22",
+      "time": "10:30",
+      "dur": 90,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "AI: free-play sensory/educational toys for young children",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6aa468b7101eb7003f2f62e0",
+      "note": "Join us at 10:30 to explore, learn, and play with a variety of sensory and educational toys and activities."
     },
     {
       "lib": "solanabe",
@@ -1202,7 +1304,7 @@ STORYTIME.months["2027-01"] = {
       "ages": [
         "toddler"
       ],
-      "ageText": "…ldren's area. All children are welcome. For toddlers 18 months - 3 years old. Together let's sh…",
+      "ageText": "18 months - 3 years",
       "lang": [
         "en"
       ],
@@ -1218,7 +1320,7 @@ STORYTIME.months["2027-01"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "Preschool Story Time",
+      "ageText": "3-5 years",
       "lang": [
         "en"
       ],
@@ -1317,7 +1419,7 @@ STORYTIME.months["2027-01"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "Kids",
+      "ageText": "ages 4 to 12",
       "lang": [
         "en"
       ],
@@ -1341,15 +1443,34 @@ STORYTIME.months["2027-01"] = {
       "note": "Do you love to work with your hands building super cool stuff while using your imagination? Come join us as we build with a variety of fun materials!"
     },
     {
+      "lib": "alpineco",
+      "name": "Storytime",
+      "date": "2027-01-27",
+      "time": "10:30",
+      "dur": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6aadb679f9ed2e003851cad5",
+      "note": "Children actively participate in stories, music, and movement enhancing their social, emotional, and language development with time for socializing afterwards."
+    },
+    {
       "lib": "cardiffb",
       "name": "Baby Storytime",
       "date": "2027-01-27",
       "time": "10:30",
       "dur": 60,
       "ages": [
-        "baby"
+        "baby",
+        "toddler"
       ],
-      "ageText": "Baby Storytime",
+      "ageText": "0-18 months",
       "lang": [
         "en"
       ],
@@ -1384,7 +1505,7 @@ STORYTIME.months["2027-01"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "Family Storytime",
+      "ageText": "ages 0-5",
       "lang": [
         "en"
       ],
@@ -1398,9 +1519,11 @@ STORYTIME.months["2027-01"] = {
       "time": "10:30",
       "dur": 60,
       "ages": [
+        "baby",
+        "toddler",
         "preschool"
       ],
-      "ageText": "Pre-K Play",
+      "ageText": "For ages 0-5",
       "lang": [
         "en"
       ],
@@ -1445,46 +1568,15 @@ STORYTIME.months["2027-01"] = {
     },
     {
       "lib": "imperial",
-      "name": "Brick Builders",
-      "date": "2027-01-27",
-      "time": "15:00",
-      "dur": 90,
-      "ages": [
-        "preschool"
-      ],
-      "ageText": "Kids",
-      "lang": [
-        "en"
-      ],
-      "eventId": "69fa9600f56bd86e00add5c1",
-      "note": "Use your imagination to complete a brick building challenge with Lego bricks or build whatever you'd like! Hosted in partnership with the City of Imperial Beach"
-    },
-    {
-      "lib": "vistacou",
-      "name": "Kids' Crafternoon",
-      "date": "2027-01-27",
-      "time": "15:00",
-      "dur": 60,
-      "ages": [
-        "preschool"
-      ],
-      "ageText": "Kids",
-      "lang": [
-        "en"
-      ],
-      "eventId": "6a5401c6c7e02e3d0068aeac",
-      "note": "Join us at the library on Wednesdays for a fun afternoon craft! Geared toward children ages 6-10 yrs. old."
-    },
-    {
-      "lib": "imperial",
       "name": "Nature Tots",
       "date": "2027-01-28",
       "time": "10:30",
       "dur": 45,
       "ages": [
-        "toddler"
+        "toddler",
+        "preschool"
       ],
-      "ageText": "Nature Tots",
+      "ageText": "For ages 2-5",
       "lang": [
         "en"
       ],
@@ -1525,6 +1617,22 @@ STORYTIME.months["2027-01"] = {
       "note": "For babies up to 18 months old. Songs and stories for fun and stimulation of young minds. Followed by playtime and interaction with other babies, as well as con"
     },
     {
+      "lib": "alpineco",
+      "name": "Baby Storytime",
+      "date": "2027-01-29",
+      "time": "10:30",
+      "dur": 60,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "Baby Storytime",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6aadb5cc101eb7003f31480f",
+      "note": "Babies experience the sounds and structure of language through rhythm, rhyme, and repetition. Plan on a fifteen-minute program with time for baby and caregiver "
+    },
+    {
       "lib": "cardiffb",
       "name": "Toddler Time",
       "date": "2027-01-29",
@@ -1547,9 +1655,10 @@ STORYTIME.months["2027-01"] = {
       "time": "10:30",
       "dur": 60,
       "ages": [
-        "baby"
+        "baby",
+        "toddler"
       ],
-      "ageText": "Baby Storytime",
+      "ageText": "0-18 months",
       "lang": [
         "en"
       ],
@@ -1563,14 +1672,33 @@ STORYTIME.months["2027-01"] = {
       "time": "10:30",
       "dur": 30,
       "ages": [
-        "baby"
+        "baby",
+        "toddler"
       ],
-      "ageText": "Baby Storytime",
+      "ageText": "0-18 months",
       "lang": [
         "en"
       ],
       "eventId": "69dc1142bd5c392c7643dc1a",
       "note": "Enjoy songs, fingerplays and short stories for your littlest ones. Geared for pre-walkers 0-18 months and their caregivers. Followed by play time, with age appr"
+    },
+    {
+      "lib": "julianco",
+      "name": "Free Play Friday!",
+      "date": "2027-01-29",
+      "time": "10:30",
+      "dur": 90,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "AI: free-play sensory/educational toys for young children",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6aa468b7101eb7003f2f62e1",
+      "note": "Join us at 10:30 to explore, learn, and play with a variety of sensory and educational toys and activities."
     },
     {
       "lib": "solanabe",
@@ -1597,7 +1725,7 @@ STORYTIME.months["2027-01"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "Preschool Story Time",
+      "ageText": "3-5 years",
       "lang": [
         "en"
       ],
