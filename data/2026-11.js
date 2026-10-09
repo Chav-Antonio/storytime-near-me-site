@@ -1932,6 +1932,24 @@ STORYTIME.months["2026-11"] = {
       "note": "For babies up to 18 months old. Songs and stories for fun and stimulation of young minds. Followed by playtime and interaction with other babies, as well as con"
     },
     {
+      "lib": "uc",
+      "name": "Mosquito Storytime",
+      "date": "2026-11-05",
+      "time": "10:30",
+      "dur": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "",
+      "lang": [
+        "en"
+      ],
+      "eventId": "433219",
+      "note": "What goes bzzzz and loves the summer? Mosquitoes! Buzz on by for a special storytime! We’ll explore the lifecycle of mosquitoes, make a fun craft, and share ess"
+    },
+    {
       "lib": "valleyce",
       "name": "Play-to-Learn",
       "date": "2026-11-05",
@@ -2462,6 +2480,22 @@ STORYTIME.months["2026-11"] = {
       ],
       "eventId": "6a59451c7b79214226a90abd",
       "note": "Join us for a fun dance party in the Children's area. All children are welcome. For toddlers 18 months - 3 years old. Together let's shake our sillies, row the "
+    },
+    {
+      "lib": "uc",
+      "name": "Storytime",
+      "date": "2026-11-06",
+      "time": "10:30",
+      "dur": 60,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "Toddler Storytime",
+      "lang": [
+        "en"
+      ],
+      "eventId": "316546",
+      "note": "Toddler Storytime"
     },
     {
       "lib": "valleyce",

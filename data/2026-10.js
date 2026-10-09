@@ -5810,23 +5810,6 @@ STORYTIME.months["2026-10"] = {
       "note": "For babies up to 18 months old. Songs and stories for fun and stimulation of young minds. Followed by playtime and interaction with other babies, as well as con"
     },
     {
-      "lib": "uc",
-      "name": "Toddler Storytime with Ms. Jackie",
-      "date": "2026-10-15",
-      "time": "10:30",
-      "dur": 45,
-      "ages": [
-        "toddler",
-        "preschool"
-      ],
-      "ageText": "",
-      "lang": [
-        "en"
-      ],
-      "eventId": "",
-      "note": "Stories, songs, then craft time."
-    },
-    {
       "lib": "valleyce",
       "name": "Play-to-Learn",
       "date": "2026-10-15",
@@ -6411,6 +6394,22 @@ STORYTIME.months["2026-10"] = {
       ],
       "eventId": "6a59451c7b79214226a90aba",
       "note": "Join us for a fun dance party in the Children's area. All children are welcome. For toddlers 18 months - 3 years old. Together let's shake our sillies, row the "
+    },
+    {
+      "lib": "uc",
+      "name": "Storytime",
+      "date": "2026-10-16",
+      "time": "10:30",
+      "dur": 60,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "Toddler Storytime",
+      "lang": [
+        "en"
+      ],
+      "eventId": "316543",
+      "note": "Toddler Storytime"
     },
     {
       "lib": "valencia",
@@ -7623,6 +7622,24 @@ STORYTIME.months["2026-10"] = {
       "note": "Put on your favorite PJs and join Ms. Carrie in the Community Room Tuesday evenings for a pajama storytime."
     },
     {
+      "lib": "uc",
+      "name": "Take-Home Craft",
+      "date": "2026-10-21",
+      "time": "09:30",
+      "dur": 480,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "…ick up a craft kit to assemble at home with family or friends.",
+      "lang": [
+        "en"
+      ],
+      "eventId": "380287",
+      "note": "Pick up a craft kit to assemble at home with family or friends."
+    },
+    {
       "lib": "carmelva",
       "name": "Family Storytime",
       "date": "2026-10-21",
@@ -8828,23 +8845,6 @@ STORYTIME.months["2026-10"] = {
       "note": "For babies up to 18 months old. Songs and stories for fun and stimulation of young minds. Followed by playtime and interaction with other babies, as well as con"
     },
     {
-      "lib": "uc",
-      "name": "Toddler Storytime with Ms. Jackie",
-      "date": "2026-10-22",
-      "time": "10:30",
-      "dur": 45,
-      "ages": [
-        "toddler",
-        "preschool"
-      ],
-      "ageText": "",
-      "lang": [
-        "en"
-      ],
-      "eventId": "",
-      "note": "Stories, songs, then craft time."
-    },
-    {
       "lib": "valleyce",
       "name": "Play-to-Learn",
       "date": "2026-10-22",
@@ -9372,6 +9372,22 @@ STORYTIME.months["2026-10"] = {
       ],
       "eventId": "6a59451c7b79214226a90abb",
       "note": "Join us for a fun dance party in the Children's area. All children are welcome. For toddlers 18 months - 3 years old. Together let's shake our sillies, row the "
+    },
+    {
+      "lib": "uc",
+      "name": "Storytime",
+      "date": "2026-10-23",
+      "time": "10:30",
+      "dur": 60,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "Toddler Storytime",
+      "lang": [
+        "en"
+      ],
+      "eventId": "316544",
+      "note": "Toddler Storytime"
     },
     {
       "lib": "valleyce",
@@ -11997,23 +12013,6 @@ STORYTIME.months["2026-10"] = {
       "note": "For babies up to 18 months old. Songs and stories for fun and stimulation of young minds. Followed by playtime and interaction with other babies, as well as con"
     },
     {
-      "lib": "uc",
-      "name": "Toddler Storytime with Ms. Jackie",
-      "date": "2026-10-29",
-      "time": "10:30",
-      "dur": 45,
-      "ages": [
-        "toddler",
-        "preschool"
-      ],
-      "ageText": "",
-      "lang": [
-        "en"
-      ],
-      "eventId": "",
-      "note": "Stories, songs, then craft time."
-    },
-    {
       "lib": "valleyce",
       "name": "Play-to-Learn",
       "date": "2026-10-29",
@@ -12513,6 +12512,22 @@ STORYTIME.months["2026-10"] = {
       ],
       "eventId": "6aa431876074830038263bad",
       "note": "Join us for stories with Franklin, the tortoise from the Nature Center of San Elijo Lagoon Ecological Reserve. Hosted by Park Rangers from the Parks & Recreatio"
+    },
+    {
+      "lib": "uc",
+      "name": "Storytime",
+      "date": "2026-10-30",
+      "time": "10:30",
+      "dur": 60,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "Toddler Storytime",
+      "lang": [
+        "en"
+      ],
+      "eventId": "316545",
+      "note": "Toddler Storytime"
     },
     {
       "lib": "valencia",
