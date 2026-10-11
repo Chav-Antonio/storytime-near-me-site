@@ -38,6 +38,23 @@ STORYTIME.months["2026-12"] = {
       "note": "Enjoy songs, fingerplays, books, and more with your baby. All children are welcome. Geared toward pre-walkers."
     },
     {
+      "lib": "sanmarco",
+      "name": "PreSchool Dance Party",
+      "date": "2026-12-01",
+      "time": "13:00",
+      "dur": 30,
+      "ages": [
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "ages 2-5",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6acaa631ea50a10050a6df1b",
+      "note": "Are you ready for a Preschool Dance Party?! Enjoy music, singing, and dancing to all kinds of family-friendly tunes. WEEKLY ON TUESDAYS starting 1:00 PM. Geared"
+    },
+    {
       "lib": "vistacou",
       "name": "Baby Storytime",
       "date": "2026-12-01",
@@ -334,7 +351,7 @@ STORYTIME.months["2026-12"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "AI: open free-play activity stations",
+      "ageText": "AI: open free-play stations",
       "lang": [
         "en"
       ],
@@ -389,6 +406,22 @@ STORYTIME.months["2026-12"] = {
       ],
       "eventId": "69efdeb6129f1274383b34a2",
       "note": "Every first Wednesday of the month at 11 AM, join us for Love on a Leash therapy dogs. Enjoy stories, songs, rhymes, and furry friends. Kids can read to a frien"
+    },
+    {
+      "lib": "sanmarco",
+      "name": "Baby Storytime",
+      "date": "2026-12-02",
+      "time": "13:00",
+      "dur": 30,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "Baby Storytime",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6acaa601e8cf1c005cb12445",
+      "note": "Caregivers and their little ones are invited to join our vibrant Baby Storytime featuring: songs, stories, and playtime! WEEKLY WEDNESDAYS starting at 1:00PM."
     },
     {
       "lib": "vistacou",
@@ -771,6 +804,22 @@ STORYTIME.months["2026-12"] = {
       "note": "Enjoy an open sensory play program with your toddler or preschooler with play-doh, blocks, sensory sand, shakers, and more!"
     },
     {
+      "lib": "sanmarco",
+      "name": "Tots and Blocks",
+      "date": "2026-12-04",
+      "time": "10:00",
+      "dur": 60,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "Tots and Blocks",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6acaa61ee8cf1c005cb12458",
+      "note": "Bring your little ones for play time at the library! Children 0-5 and their caregivers are encouraged to play with the toys provided by the library. *Toys only "
+    },
+    {
       "lib": "4s",
       "name": "Baby Storytime!",
       "date": "2026-12-04",
@@ -865,7 +914,7 @@ STORYTIME.months["2026-12"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "AI: free-play sensory/educational toys for young children",
+      "ageText": "AI: free-play sensory/educational toys",
       "lang": [
         "en"
       ],
@@ -1013,7 +1062,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "AI: weekly take-home library craft",
+      "ageText": "AI: weekly take-home craft",
       "lang": [
         "en"
       ],
@@ -1047,7 +1096,7 @@ STORYTIME.months["2026-12"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "AI: open free-play activity stations",
+      "ageText": "AI: open free-play stations",
       "lang": [
         "en"
       ],
@@ -1366,6 +1415,23 @@ STORYTIME.months["2026-12"] = {
       ],
       "eventId": "6a3d83ea4407827f8aa7611c",
       "note": "Enjoy songs, fingerplays, books, and more with your baby. All children are welcome. Geared toward pre-walkers."
+    },
+    {
+      "lib": "sanmarco",
+      "name": "PreSchool Dance Party",
+      "date": "2026-12-08",
+      "time": "13:00",
+      "dur": 30,
+      "ages": [
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "ages 2-5",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6acaa631ea50a10050a6df1c",
+      "note": "Are you ready for a Preschool Dance Party?! Enjoy music, singing, and dancing to all kinds of family-friendly tunes. WEEKLY ON TUESDAYS starting 1:00 PM. Geared"
     },
     {
       "lib": "vistacou",
@@ -1690,6 +1756,22 @@ STORYTIME.months["2026-12"] = {
       ],
       "eventId": "6ab6abd894b74515467b7db7",
       "note": "Toddlers and preschoolers learn new words through stories, songs, and playtime every week."
+    },
+    {
+      "lib": "sanmarco",
+      "name": "Baby Storytime",
+      "date": "2026-12-09",
+      "time": "13:00",
+      "dur": 30,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "Baby Storytime",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6acaa601e8cf1c005cb12446",
+      "note": "Caregivers and their little ones are invited to join our vibrant Baby Storytime featuring: songs, stories, and playtime! WEEKLY WEDNESDAYS starting at 1:00PM."
     },
     {
       "lib": "encinita",
@@ -2038,6 +2120,22 @@ STORYTIME.months["2026-12"] = {
       "note": "Enjoy an open sensory play program with your toddler or preschooler with play-doh, blocks, sensory sand, shakers, and more!"
     },
     {
+      "lib": "sanmarco",
+      "name": "Tots and Blocks",
+      "date": "2026-12-11",
+      "time": "10:00",
+      "dur": 60,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "Tots and Blocks",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6acaa61ee8cf1c005cb12459",
+      "note": "Bring your little ones for play time at the library! Children 0-5 and their caregivers are encouraged to play with the toys provided by the library. *Toys only "
+    },
+    {
       "lib": "4s",
       "name": "Baby Storytime!",
       "date": "2026-12-11",
@@ -2132,7 +2230,7 @@ STORYTIME.months["2026-12"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "AI: free-play sensory/educational toys for young children",
+      "ageText": "AI: free-play sensory/educational toys",
       "lang": [
         "en"
       ],
@@ -2312,7 +2410,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "AI: weekly take-home library craft",
+      "ageText": "AI: weekly take-home craft",
       "lang": [
         "en"
       ],
@@ -2371,14 +2469,16 @@ STORYTIME.months["2026-12"] = {
     },
     {
       "lib": "borregos",
-      "name": "Crafts for Kids/Manualidades para Niños",
+      "name": "Family Craft/Manualidades para Niños",
       "date": "2026-12-12",
       "time": "11:00",
       "dur": 60,
       "ages": [
+        "baby",
+        "toddler",
         "preschool"
       ],
-      "ageText": "Kids",
+      "ageText": "Family Craft/Manualidades para Niños",
       "lang": [
         "en",
         "es"
@@ -2648,6 +2748,23 @@ STORYTIME.months["2026-12"] = {
       ],
       "eventId": "6a3d83ea4407827f8aa7611d",
       "note": "Enjoy songs, fingerplays, books, and more with your baby. All children are welcome. Geared toward pre-walkers."
+    },
+    {
+      "lib": "sanmarco",
+      "name": "PreSchool Dance Party",
+      "date": "2026-12-15",
+      "time": "13:00",
+      "dur": 30,
+      "ages": [
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "ages 2-5",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6acaa631ea50a10050a6df1d",
+      "note": "Are you ready for a Preschool Dance Party?! Enjoy music, singing, and dancing to all kinds of family-friendly tunes. WEEKLY ON TUESDAYS starting 1:00 PM. Geared"
     },
     {
       "lib": "vistacou",
@@ -2945,7 +3062,7 @@ STORYTIME.months["2026-12"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "AI: open free-play activity stations",
+      "ageText": "AI: open free-play stations",
       "lang": [
         "en"
       ],
@@ -2968,6 +3085,22 @@ STORYTIME.months["2026-12"] = {
       ],
       "eventId": "6ab6abd894b74515467b7db8",
       "note": "Toddlers and preschoolers learn new words through stories, songs, and playtime every week."
+    },
+    {
+      "lib": "sanmarco",
+      "name": "Baby Storytime",
+      "date": "2026-12-16",
+      "time": "13:00",
+      "dur": 30,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "Baby Storytime",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6acaa601e8cf1c005cb12447",
+      "note": "Caregivers and their little ones are invited to join our vibrant Baby Storytime featuring: songs, stories, and playtime! WEEKLY WEDNESDAYS starting at 1:00PM."
     },
     {
       "lib": "4s",
@@ -3264,6 +3397,22 @@ STORYTIME.months["2026-12"] = {
       "note": "Enjoy an open sensory play program with your toddler or preschooler with play-doh, blocks, sensory sand, shakers, and more!"
     },
     {
+      "lib": "sanmarco",
+      "name": "Tots and Blocks",
+      "date": "2026-12-18",
+      "time": "10:00",
+      "dur": 60,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "Tots and Blocks",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6acaa61ee8cf1c005cb1245a",
+      "note": "Bring your little ones for play time at the library! Children 0-5 and their caregivers are encouraged to play with the toys provided by the library. *Toys only "
+    },
+    {
       "lib": "4s",
       "name": "Baby Storytime!",
       "date": "2026-12-18",
@@ -3358,7 +3507,7 @@ STORYTIME.months["2026-12"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "AI: free-play sensory/educational toys for young children",
+      "ageText": "AI: free-play sensory/educational toys",
       "lang": [
         "en"
       ],
@@ -3539,7 +3688,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "AI: weekly take-home library craft",
+      "ageText": "AI: weekly take-home craft",
       "lang": [
         "en"
       ],
@@ -3573,7 +3722,7 @@ STORYTIME.months["2026-12"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "AI: open free-play activity stations",
+      "ageText": "AI: open free-play stations",
       "lang": [
         "en"
       ],
@@ -4059,7 +4208,7 @@ STORYTIME.months["2026-12"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "AI: free-play sensory/educational toys for young children",
+      "ageText": "AI: free-play sensory/educational toys",
       "lang": [
         "en"
       ],
@@ -4123,7 +4272,7 @@ STORYTIME.months["2026-12"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "AI: weekly take-home library craft",
+      "ageText": "AI: weekly take-home craft",
       "lang": [
         "en"
       ],
@@ -4148,14 +4297,16 @@ STORYTIME.months["2026-12"] = {
     },
     {
       "lib": "borregos",
-      "name": "Crafts for Kids/Manualidades para Niños",
+      "name": "Family Craft/Manualidades para Niños",
       "date": "2026-12-26",
       "time": "11:00",
       "dur": 60,
       "ages": [
+        "baby",
+        "toddler",
         "preschool"
       ],
-      "ageText": "Kids",
+      "ageText": "Family Craft/Manualidades para Niños",
       "lang": [
         "en",
         "es"

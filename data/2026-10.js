@@ -1692,9 +1692,11 @@ STORYTIME.months["2026-10"] = {
       "time": "10:00",
       "dur": 30,
       "ages": [
+        "baby",
+        "toddler",
         "preschool"
       ],
-      "ageText": "Kids",
+      "ageText": "ages 10 and under",
       "lang": [
         "en"
       ],
@@ -4128,7 +4130,7 @@ STORYTIME.months["2026-10"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "AI: LEGO and DUPLO free play",
+      "ageText": "AI: LEGO + DUPLO free play",
       "lang": [
         "en"
       ],
@@ -4432,7 +4434,7 @@ STORYTIME.months["2026-10"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "AI: open Lego build for children",
+      "ageText": "AI: open Lego build",
       "lang": [
         "en"
       ],
@@ -4556,6 +4558,24 @@ STORYTIME.months["2026-10"] = {
       ],
       "eventId": "322257",
       "note": "Come enjoy a pajama storytime with us in the cozy, downstairs reading nook! Get ready in your pajamas (or comfy clothes) to enjoy an evening Storytime in the li"
+    },
+    {
+      "lib": "central",
+      "name": "Storefront Art Exhibit Reception",
+      "date": "2026-10-13",
+      "time": "18:00",
+      "dur": 90,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "…textiles. Light refreshments to be served. All ages welcome!",
+      "lang": [
+        "en"
+      ],
+      "eventId": "427252",
+      "note": "Come join the Storefront Emergency Shelter for poetry, paint pours, vinyl records and recycled art textiles. Light refreshments to be served. All ages welcome!"
     },
     {
       "lib": "springva",
@@ -5109,7 +5129,7 @@ STORYTIME.months["2026-10"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "…nguage. The storytime will be followed by a stay and play. Geared towards children ages 5 and under.",
+      "ageText": "ages 5 and under",
       "lang": [
         "en"
       ],
@@ -5207,7 +5227,7 @@ STORYTIME.months["2026-10"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "AI: children's arts & crafts",
+      "ageText": "AI: children arts & crafts",
       "lang": [
         "en"
       ],
@@ -5377,7 +5397,7 @@ STORYTIME.months["2026-10"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "AI: dance party for little ones (egg shakers, bubbles)",
+      "ageText": "AI: dance party for little ones",
       "lang": [
         "en"
       ],
@@ -5412,7 +5432,7 @@ STORYTIME.months["2026-10"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "AI: weekly play: storytime, crafts, dancing, songs",
+      "ageText": "AI: weekly play: storytime, crafts, dancing",
       "lang": [
         "en"
       ],
@@ -6003,7 +6023,7 @@ STORYTIME.months["2026-10"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "AI: Lego/chalk/perler creative session",
+      "ageText": "AI: Lego/chalk/perler session",
       "lang": [
         "en"
       ],
@@ -6051,7 +6071,7 @@ STORYTIME.months["2026-10"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "AI: bilingual children's craft",
+      "ageText": "AI: bilingual kids craft",
       "lang": [
         "en",
         "es"
@@ -6306,7 +6326,7 @@ STORYTIME.months["2026-10"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "AI: free-play sensory/educational toys for young children",
+      "ageText": "AI: free-play sensory/educational toys",
       "lang": [
         "en"
       ],
@@ -6607,7 +6627,7 @@ STORYTIME.months["2026-10"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "AI: dance party + storytime for littles (egg shakers, bubbles)",
+      "ageText": "AI: dance party + storytime for littles",
       "lang": [
         "en"
       ],
@@ -6657,7 +6677,7 @@ STORYTIME.months["2026-10"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "AI: weekly take-home library craft",
+      "ageText": "AI: weekly take-home craft",
       "lang": [
         "en"
       ],
@@ -6707,7 +6727,7 @@ STORYTIME.months["2026-10"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "AI: Lego/Rokenbok building club",
+      "ageText": "AI: Lego/Rokenbok club",
       "lang": [
         "en"
       ],
@@ -6721,9 +6741,11 @@ STORYTIME.months["2026-10"] = {
       "time": "10:30",
       "dur": 90,
       "ages": [
-        "toddler"
+        "baby",
+        "toddler",
+        "preschool"
       ],
-      "ageText": "Tiny Tot Play",
+      "ageText": "Age 5 & under",
       "lang": [
         "en"
       ],
@@ -7141,7 +7163,7 @@ STORYTIME.months["2026-10"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "AI: LEGO and DUPLO free play",
+      "ageText": "AI: LEGO + DUPLO free play",
       "lang": [
         "en"
       ],
@@ -7274,7 +7296,7 @@ STORYTIME.months["2026-10"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "AI: picture-book play performance for children",
+      "ageText": "AI: picture-book play for children",
       "lang": [
         "en"
       ],
@@ -7442,7 +7464,7 @@ STORYTIME.months["2026-10"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "AI: open Lego build for children",
+      "ageText": "AI: open Lego build",
       "lang": [
         "en"
       ],
@@ -8049,7 +8071,7 @@ STORYTIME.months["2026-10"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "AI: open free-play activity stations",
+      "ageText": "AI: open free-play stations",
       "lang": [
         "en"
       ],
@@ -8133,7 +8155,7 @@ STORYTIME.months["2026-10"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "…nguage. The storytime will be followed by a stay and play. Geared towards children ages 5 and under.",
+      "ageText": "ages 5 and under",
       "lang": [
         "en"
       ],
@@ -8265,7 +8287,7 @@ STORYTIME.months["2026-10"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "AI: drop-in craft for children",
+      "ageText": "AI: drop-in craft",
       "lang": [
         "en"
       ],
@@ -8434,7 +8456,7 @@ STORYTIME.months["2026-10"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "AI: weekly play: storytime, crafts, dancing, songs",
+      "ageText": "AI: weekly play: storytime, crafts, dancing",
       "lang": [
         "en"
       ],
@@ -9019,7 +9041,7 @@ STORYTIME.months["2026-10"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "AI: Lego/chalk/perler creative session",
+      "ageText": "AI: Lego/chalk/perler session",
       "lang": [
         "en"
       ],
@@ -9035,7 +9057,7 @@ STORYTIME.months["2026-10"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "AI: bilingual children's craft",
+      "ageText": "AI: bilingual kids craft",
       "lang": [
         "en",
         "es"
@@ -9286,7 +9308,7 @@ STORYTIME.months["2026-10"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "AI: free-play sensory/educational toys for young children",
+      "ageText": "AI: free-play sensory/educational toys",
       "lang": [
         "en"
       ],
@@ -9567,7 +9589,7 @@ STORYTIME.months["2026-10"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "AI: open Lego build for kids",
+      "ageText": "AI: open Lego build",
       "lang": [
         "en"
       ],
@@ -9585,7 +9607,7 @@ STORYTIME.months["2026-10"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "AI: dance party + storytime for littles (egg shakers, bubbles)",
+      "ageText": "AI: dance party + storytime for littles",
       "lang": [
         "en"
       ],
@@ -9633,7 +9655,7 @@ STORYTIME.months["2026-10"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "AI: weekly take-home library craft",
+      "ageText": "AI: weekly take-home craft",
       "lang": [
         "en"
       ],
@@ -9667,7 +9689,7 @@ STORYTIME.months["2026-10"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "AI: Lego/Rokenbok building club",
+      "ageText": "AI: Lego/Rokenbok club",
       "lang": [
         "en"
       ],
@@ -9681,9 +9703,11 @@ STORYTIME.months["2026-10"] = {
       "time": "10:30",
       "dur": 90,
       "ages": [
-        "toddler"
+        "baby",
+        "toddler",
+        "preschool"
       ],
-      "ageText": "Tiny Tot Play",
+      "ageText": "Age 5 & under",
       "lang": [
         "en"
       ],
@@ -9697,9 +9721,11 @@ STORYTIME.months["2026-10"] = {
       "time": "10:30",
       "dur": 120,
       "ages": [
+        "baby",
+        "toddler",
         "preschool"
       ],
-      "ageText": "Kids",
+      "ageText": "aged 10 and younger",
       "lang": [
         "en"
       ],
@@ -9717,7 +9743,7 @@ STORYTIME.months["2026-10"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "AI: open free-play activity stations",
+      "ageText": "AI: open free-play stations",
       "lang": [
         "en"
       ],
@@ -9758,14 +9784,16 @@ STORYTIME.months["2026-10"] = {
     },
     {
       "lib": "borregos",
-      "name": "Crafts for Kids/Manualidades para Niños",
+      "name": "Family Craft/Manualidades para Niños",
       "date": "2026-10-24",
       "time": "11:00",
       "dur": 60,
       "ages": [
+        "baby",
+        "toddler",
         "preschool"
       ],
-      "ageText": "Kids",
+      "ageText": "Family Craft/Manualidades para Niños",
       "lang": [
         "en",
         "es"
@@ -10151,7 +10179,7 @@ STORYTIME.months["2026-10"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "AI: LEGO and DUPLO free play",
+      "ageText": "AI: LEGO + DUPLO free play",
       "lang": [
         "en"
       ],
@@ -10488,7 +10516,7 @@ STORYTIME.months["2026-10"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "AI: open Lego build for children",
+      "ageText": "AI: open Lego build",
       "lang": [
         "en"
       ],
@@ -11300,7 +11328,7 @@ STORYTIME.months["2026-10"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "…nguage. The storytime will be followed by a stay and play. Geared towards children ages 5 and under.",
+      "ageText": "ages 5 and under",
       "lang": [
         "en"
       ],
@@ -11416,7 +11444,7 @@ STORYTIME.months["2026-10"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "AI: children's arts & crafts",
+      "ageText": "AI: children arts & crafts",
       "lang": [
         "en"
       ],
@@ -11600,7 +11628,7 @@ STORYTIME.months["2026-10"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "AI: weekly play: storytime, crafts, dancing, songs",
+      "ageText": "AI: weekly play: storytime, crafts, dancing",
       "lang": [
         "en"
       ],
@@ -12172,7 +12200,7 @@ STORYTIME.months["2026-10"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "AI: Lego/chalk/perler creative session",
+      "ageText": "AI: Lego/chalk/perler session",
       "lang": [
         "en"
       ],
@@ -12442,7 +12470,7 @@ STORYTIME.months["2026-10"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "AI: free-play sensory/educational toys for young children",
+      "ageText": "AI: free-play sensory/educational toys",
       "lang": [
         "en"
       ],
@@ -12726,7 +12754,7 @@ STORYTIME.months["2026-10"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "AI: dance party + storytime for littles (egg shakers, bubbles)",
+      "ageText": "AI: dance party + storytime for littles",
       "lang": [
         "en"
       ],
@@ -12758,7 +12786,7 @@ STORYTIME.months["2026-10"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "AI: weekly take-home library craft",
+      "ageText": "AI: weekly take-home craft",
       "lang": [
         "en"
       ],
@@ -12842,7 +12870,7 @@ STORYTIME.months["2026-10"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "AI: Lego/Rokenbok building club",
+      "ageText": "AI: Lego/Rokenbok club",
       "lang": [
         "en"
       ],
@@ -12874,9 +12902,11 @@ STORYTIME.months["2026-10"] = {
       "time": "10:30",
       "dur": 90,
       "ages": [
-        "toddler"
+        "baby",
+        "toddler",
+        "preschool"
       ],
-      "ageText": "Tiny Tot Play",
+      "ageText": "Age 5 & under",
       "lang": [
         "en"
       ],

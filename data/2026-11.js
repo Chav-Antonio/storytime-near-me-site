@@ -172,22 +172,6 @@ STORYTIME.months["2026-11"] = {
       "note": "Build with LEGO bricks! Take the weekly \"Challenge\" and display your design in our LEGO gallery. This activity encourages creativity, critical thinking and coll"
     },
     {
-      "lib": "imperial",
-      "name": "Craft Challenge",
-      "date": "2026-11-02",
-      "time": "15:00",
-      "dur": 120,
-      "ages": [
-        "preschool"
-      ],
-      "ageText": "ages 4 to 12",
-      "lang": [
-        "en"
-      ],
-      "eventId": "69fa9219703c33630025b816",
-      "note": "We’ll provide a theme and materials, you bring your imagination! Stations will be set up for kids to create and experiment with the craft of the day, which they"
-    },
-    {
       "lib": "lamesaco",
       "name": "Construction Club",
       "date": "2026-11-02",
@@ -213,7 +197,7 @@ STORYTIME.months["2026-11"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "AI: LEGO and DUPLO free play",
+      "ageText": "AI: LEGO + DUPLO free play",
       "lang": [
         "en"
       ],
@@ -532,7 +516,7 @@ STORYTIME.months["2026-11"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "AI: open Lego build for children",
+      "ageText": "AI: open Lego build",
       "lang": [
         "en"
       ],
@@ -586,6 +570,22 @@ STORYTIME.months["2026-11"] = {
       ],
       "eventId": "6a11e178e8af4a2f0074966f",
       "note": "Paws for Reading allows children to practice their reading skills by reading aloud to a certified therapy dog. Children may find it intimidating to read with pe"
+    },
+    {
+      "lib": "carmelva",
+      "name": "Pumpkin Turkey Craft",
+      "date": "2026-11-03",
+      "time": "16:00",
+      "dur": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "AI: festive kids craft",
+      "lang": [
+        "en"
+      ],
+      "eventId": "321497",
+      "note": "Join us for a fun, festive craft and turn an adorable pumpkin into a cute turkey to decorate your Thanksgiving table! Bring your creativity and get ready to mak"
     },
     {
       "lib": "lajollar",
@@ -690,6 +690,24 @@ STORYTIME.months["2026-11"] = {
       ],
       "eventId": "364075",
       "note": "Put on your favorite PJs and join Ms. Carrie in the Community Room Tuesday evenings for a pajama storytime."
+    },
+    {
+      "lib": "balboa",
+      "name": "Signing Storytime w/ Miss Jennifer!",
+      "date": "2026-11-04",
+      "time": "10:00",
+      "dur": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "",
+      "lang": [
+        "en"
+      ],
+      "eventId": "434815",
+      "note": "Come join us for a special signing storytime at the Balboa Branch Library. Signs at Play’s Jennifer Duncan will teach sign language basics to foster early liter"
     },
     {
       "lib": "carmelva",
@@ -1104,7 +1122,7 @@ STORYTIME.months["2026-11"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "AI: open free-play activity stations",
+      "ageText": "AI: open free-play stations",
       "lang": [
         "en"
       ],
@@ -1188,12 +1206,28 @@ STORYTIME.months["2026-11"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "…nguage. The storytime will be followed by a stay and play. Geared towards children ages 5 and under.",
+      "ageText": "ages 5 and under",
       "lang": [
         "en"
       ],
       "eventId": "391876",
       "note": "Read along and sing for this fun interactive storytime. We will read picture books, move our bodies, act out stories, and sing fun songs and silly rhymes to bui"
+    },
+    {
+      "lib": "uc",
+      "name": "Kids' Craft",
+      "date": "2026-11-04",
+      "time": "12:30",
+      "dur": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "AI: monthly kids craft",
+      "lang": [
+        "en"
+      ],
+      "eventId": "371654",
+      "note": "Monthly crafts in the library"
     },
     {
       "lib": "sanmarco",
@@ -1210,6 +1244,24 @@ STORYTIME.months["2026-11"] = {
       ],
       "eventId": "6a6a58430e562e28009d5b9c",
       "note": "Caregivers and their little ones are invited to join our vibrant Baby Storytime featuring: songs, stories, and playtime! WEEKLY WEDNESDAYS starting at 1:00PM."
+    },
+    {
+      "lib": "borregos",
+      "name": "Bilingual Storytime | Cuentos Bilingües",
+      "date": "2026-11-04",
+      "time": "15:30",
+      "dur": 30,
+      "ages": [
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "for ages 2-5",
+      "lang": [
+        "en",
+        "es"
+      ],
+      "eventId": "6ac9452f754bb0003ac387b8",
+      "note": "Enjoy songs, rhymes, and stories in English and Spanish, followed by play time! Geared for ages 2-5, but all ages welcome. - Venga a escuchar canciones y cuento"
     },
     {
       "lib": "missionh",
@@ -1454,7 +1506,7 @@ STORYTIME.months["2026-11"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "AI: dance party for little ones (egg shakers, bubbles)",
+      "ageText": "AI: dance party for little ones",
       "lang": [
         "en"
       ],
@@ -1489,7 +1541,7 @@ STORYTIME.months["2026-11"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "AI: weekly play: storytime, crafts, dancing, songs",
+      "ageText": "AI: weekly play: storytime, crafts, dancing",
       "lang": [
         "en"
       ],
@@ -2141,7 +2193,7 @@ STORYTIME.months["2026-11"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "AI: bilingual children's craft",
+      "ageText": "AI: bilingual kids craft",
       "lang": [
         "en",
         "es"
@@ -2394,7 +2446,7 @@ STORYTIME.months["2026-11"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "AI: free-play sensory/educational toys for young children",
+      "ageText": "AI: free-play sensory/educational toys",
       "lang": [
         "en"
       ],
@@ -2675,7 +2727,7 @@ STORYTIME.months["2026-11"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "AI: open Lego build for kids",
+      "ageText": "AI: open Lego build",
       "lang": [
         "en"
       ],
@@ -2693,7 +2745,7 @@ STORYTIME.months["2026-11"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "AI: dance party + storytime for littles (egg shakers, bubbles)",
+      "ageText": "AI: dance party + storytime for littles",
       "lang": [
         "en"
       ],
@@ -2728,7 +2780,7 @@ STORYTIME.months["2026-11"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "AI: weekly take-home library craft",
+      "ageText": "AI: weekly take-home craft",
       "lang": [
         "en"
       ],
@@ -2780,7 +2832,7 @@ STORYTIME.months["2026-11"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "AI: Lego/Rokenbok building club",
+      "ageText": "AI: Lego/Rokenbok club",
       "lang": [
         "en"
       ],
@@ -2832,7 +2884,7 @@ STORYTIME.months["2026-11"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "AI: open free-play activity stations",
+      "ageText": "AI: open free-play stations",
       "lang": [
         "en"
       ],
@@ -3136,6 +3188,24 @@ STORYTIME.months["2026-11"] = {
       "note": "Enjoy songs, fingerplays, books, and more with your baby. All children are welcome. Geared toward pre-walkers."
     },
     {
+      "lib": "rb",
+      "name": "Musical Biographies",
+      "date": "2026-11-09",
+      "time": "14:00",
+      "dur": 120,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "…l forms of dementia, their care-givers, and family in a unique multi-sensorial experience that…",
+      "lang": [
+        "en"
+      ],
+      "eventId": "415492",
+      "note": "Musical Biographies ™ is a program that uses music and art to bring memories to life! In partnership with the UCSD Shiley-Marcos Alzheimer’s Disease Research Ce"
+    },
+    {
       "lib": "julianco",
       "name": "LEGO Club",
       "date": "2026-11-09",
@@ -3218,6 +3288,175 @@ STORYTIME.months["2026-11"] = {
       "note": "Paws to Read encourages children to practice their reading skills by reading aloud to certified therapy dogs. This partnership allows children to bolster their "
     },
     {
+      "lib": "northpar",
+      "name": "Lego Playtime",
+      "date": "2026-11-09",
+      "time": "17:00",
+      "dur": 60,
+      "ages": [
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "AI: LEGO + DUPLO free play",
+      "lang": [
+        "en"
+      ],
+      "eventId": "364766",
+      "note": "Kids can enjoy being creative by building with LEGO blocks and DUPLO bricks. It's a great opportunity for exploring with new ideas, as well as sharing concepts "
+    },
+    {
+      "lib": "rb",
+      "name": "RB Pajamas Storytime",
+      "date": "2026-11-09",
+      "time": "18:30",
+      "dur": 30,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "ages 3 - 6",
+      "lang": [
+        "en"
+      ],
+      "eventId": "339277",
+      "note": "Wear your favorite pajamas for this evening storytime. Listen to stories, dance along to music, and have fun! This storytime is geared toward ages 3 - 6, but th"
+    },
+    {
+      "lib": "lindavis",
+      "name": "Live Interactive Video Preschool/Kindergarten Storytime with Mr. Luan",
+      "date": "2026-11-10",
+      "time": "10:30",
+      "dur": 45,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "ages 4 to 6",
+      "lang": [
+        "en"
+      ],
+      "eventId": "324168",
+      "note": "My Live Interactive Video Preschool/Kindergarten Storytimes, good for kids ages 4 to 6, are fun, kinetic, and humorous experiences! I make it a point not just t"
+    },
+    {
+      "lib": "balboa",
+      "name": "Storytime",
+      "date": "2026-11-10",
+      "time": "11:30",
+      "dur": 30,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "…fts, giveaways & more! Afterwards, stay for Toddler Happy Hour. For children and their caregive…",
+      "lang": [
+        "en"
+      ],
+      "eventId": "312816",
+      "note": "Join us for indoor Storytime at the Balboa Library. We’ll read fun stories and sing songs. There will be take-home crafts, giveaways & more! Afterwards, stay fo"
+    },
+    {
+      "lib": "mountain",
+      "name": "Music and Motion",
+      "date": "2026-11-10",
+      "time": "11:30",
+      "dur": 45,
+      "ages": [
+        "baby",
+        "toddler"
+      ],
+      "ageText": "…tion! This program is designed to introduce babies and toddlers to music, dance and instrument…",
+      "lang": [
+        "en"
+      ],
+      "eventId": "326990",
+      "note": "Come join us every Tuesday at 11:30am for Music and Motion! This program is designed to introduce babies and toddlers to music, dance and instruments. We will l"
+    },
+    {
+      "lib": "balboa",
+      "name": "Toddler Happy Hour",
+      "date": "2026-11-10",
+      "time": "12:00",
+      "dur": 45,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "Toddler Happy Hour",
+      "lang": [
+        "en"
+      ],
+      "eventId": "312893",
+      "note": "Come join us for Toddler Happy Hour! Right after Storytime, parents and caregivers with young children can come and meet their neighbors! Age-appropriate toys a"
+    },
+    {
+      "lib": "lajollar",
+      "name": "Storytime with Ms Teri",
+      "date": "2026-11-10",
+      "time": "12:00",
+      "dur": 30,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "",
+      "lang": [
+        "en"
+      ],
+      "eventId": "324127",
+      "note": "Come one, come all to this story time designed for little ones and their caregivers. Enjoy songs, rhymes, and books with captivating illustrations."
+    },
+    {
+      "lib": "nu",
+      "name": "Toddler Storytime",
+      "date": "2026-11-10",
+      "time": "12:00",
+      "dur": 30,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "Toddler Storytime",
+      "lang": [
+        "en"
+      ],
+      "eventId": "341031",
+      "note": "Join in as we read, sing, dance, and play at Toddler Storytime! Come and build essential early literacy skills and foster a love of reading."
+    },
+    {
+      "lib": "sanysidr",
+      "name": "Bilingual Spanish Storytime w/Ms. Katia",
+      "date": "2026-11-10",
+      "time": "12:00",
+      "dur": 45,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "…ay of each month @12pm starting in October! All ages welcome. *First Thursday in December Acompá…",
+      "lang": [
+        "en",
+        "es"
+      ],
+      "eventId": "339662",
+      "note": "Librarian on the Go’s Bilingual Spanish Storytime exposes children and caregivers to another language and culture, is a comfort to native Spanish speakers and a"
+    },
+    {
+      "lib": "nu",
+      "name": "Stay and Play",
+      "date": "2026-11-10",
+      "time": "12:30",
+      "dur": 30,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "Stay and Play",
+      "lang": [
+        "en"
+      ],
+      "eventId": "341011",
+      "note": "Stay and Play is a relaxed playtime designed for babies, toddlers, and their caregivers. Little ones can explore toys, practice new skills, and interact with ot"
+    },
+    {
       "lib": "pw",
       "name": "Bouncing Baby Storytime",
       "date": "2026-11-10",
@@ -3284,6 +3523,24 @@ STORYTIME.months["2026-11"] = {
       "note": "Come have fun at the library while making a cool craft. A different craft each time, while supplies last. Ven y divertirse en la biblioteca. Una manualidad nuev"
     },
     {
+      "lib": "alliedga",
+      "name": "Lego Club",
+      "date": "2026-11-10",
+      "time": "14:30",
+      "dur": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "…d our collection to build something unique. All ages welcome.",
+      "lang": [
+        "en"
+      ],
+      "eventId": "332620",
+      "note": "Free play with LEGO bricks and Duplos. Use your creativity and our collection to build something unique. All ages welcome."
+    },
+    {
       "lib": "lincolna",
       "name": "Spanish Bilingual Storytime",
       "date": "2026-11-10",
@@ -3320,6 +3577,38 @@ STORYTIME.months["2026-11"] = {
       "note": "Stop by the library and create a fun craft you can take home afterwards. This program is free, while supplies last!"
     },
     {
+      "lib": "colleger",
+      "name": "LEGO Play Lab",
+      "date": "2026-11-10",
+      "time": "15:30",
+      "dur": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "AI: open Lego build",
+      "lang": [
+        "en"
+      ],
+      "eventId": "313929",
+      "note": "Learn, play, and create with LEGOs! Children can build with LEGOs and display their creations in the library."
+    },
+    {
+      "lib": "nu",
+      "name": "Lego Builders Club",
+      "date": "2026-11-10",
+      "time": "15:30",
+      "dur": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "AI: open Lego builders club",
+      "lang": [
+        "en"
+      ],
+      "eventId": "322042",
+      "note": "Come build your creations while making new friends! All Legos will be supplied by the North University Community Branch Library."
+    },
+    {
       "lib": "4s",
       "name": "ART INSTRUCTION FOR CHILDREN",
       "date": "2026-11-10",
@@ -3334,6 +3623,58 @@ STORYTIME.months["2026-11"] = {
       ],
       "eventId": "6a9083c83b6c71003e5bcebc",
       "note": "Come join us for a fun art class! Del Norte High School art students provide art instruction in collaboration with the National Arts Honors Society and Art Care"
+    },
+    {
+      "lib": "lajollar",
+      "name": "Drop-In Craft Tuesdays",
+      "date": "2026-11-10",
+      "time": "16:00",
+      "dur": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "Join us for drop-in craft Tuesdays. Kids of all ages can make a craft to take with them. All sup…",
+      "lang": [
+        "en"
+      ],
+      "eventId": "326496",
+      "note": "Join us for drop-in craft Tuesdays. Kids of all ages can make a craft to take with them. All supplies provided. No reservations needed."
+    },
+    {
+      "lib": "lindavis",
+      "name": "Crafts for Kids with Mr. Luan",
+      "date": "2026-11-10",
+      "time": "16:00",
+      "dur": 45,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "4 to 8 years",
+      "lang": [
+        "en"
+      ],
+      "eventId": "324431",
+      "note": "Stretch your imagination and discover the artist within you've always known existed! Create fabulous crafts! In this program, get detailed instructions on how t"
+    },
+    {
+      "lib": "pointlom",
+      "name": "Pajama Storytime",
+      "date": "2026-11-10",
+      "time": "17:30",
+      "dur": 30,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "",
+      "lang": [
+        "en"
+      ],
+      "eventId": "322261",
+      "note": "Come enjoy a pajama storytime with us in the cozy, downstairs reading nook! Get ready in your pajamas (or comfy clothes) to enjoy an evening Storytime in the li"
     },
     {
       "lib": "springva",
@@ -3351,6 +3692,41 @@ STORYTIME.months["2026-11"] = {
       ],
       "eventId": "6a7384cd88e9bf280035c001",
       "note": "Join us to Shake your sillies out with music and dancing, followed by a cozy story time in Spanish & English. Everyone is invited to wear your pajamas and bring"
+    },
+    {
+      "lib": "pacifich",
+      "name": "Pajama Storytime + Special Guest: Guitarist Jayden Yoon at 6:15 p.m.",
+      "date": "2026-11-10",
+      "time": "18:30",
+      "dur": 30,
+      "ages": [
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "…0-7 p.m. for stories and songs selected for toddlers and preschoolers. Shhhh! Don’t tell them w…",
+      "lang": [
+        "en"
+      ],
+      "eventId": "314573",
+      "note": "Special Guest Tonight! Guitarist Jayden Yoon will be performing from 6:15-6:30 p.m. Bring the kids to enjoy some kid-friendly music before the start of storytim"
+    },
+    {
+      "lib": "sm",
+      "name": "Pajama Storytime",
+      "date": "2026-11-10",
+      "time": "18:30",
+      "dur": 30,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "",
+      "lang": [
+        "en"
+      ],
+      "eventId": "364076",
+      "note": "Put on your favorite PJs and join Ms. Carrie in the Community Room Tuesday evenings for a pajama storytime."
     },
     {
       "lib": "4s",
@@ -3470,6 +3846,22 @@ STORYTIME.months["2026-11"] = {
       ],
       "eventId": "6a6a58430e562e28009d5b9d",
       "note": "Caregivers and their little ones are invited to join our vibrant Baby Storytime featuring: songs, stories, and playtime! WEEKLY WEDNESDAYS starting at 1:00PM."
+    },
+    {
+      "lib": "mountain",
+      "name": "Kids Craft",
+      "date": "2026-11-11",
+      "time": "16:00",
+      "dur": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "AI: weekly kids craft",
+      "lang": [
+        "en"
+      ],
+      "eventId": "327008",
+      "note": "Join us every Wednesday for a fun craft project. Everything will be provided free of charge."
     },
     {
       "lib": "4s",
@@ -3997,7 +4389,7 @@ STORYTIME.months["2026-11"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "AI: free-play sensory/educational toys for young children",
+      "ageText": "AI: free-play sensory/educational toys",
       "lang": [
         "en"
       ],
@@ -4193,7 +4585,7 @@ STORYTIME.months["2026-11"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "AI: weekly take-home library craft",
+      "ageText": "AI: weekly take-home craft",
       "lang": [
         "en"
       ],
@@ -4268,14 +4660,16 @@ STORYTIME.months["2026-11"] = {
     },
     {
       "lib": "borregos",
-      "name": "Crafts for Kids/Manualidades para Niños",
+      "name": "Family Craft/Manualidades para Niños",
       "date": "2026-11-14",
       "time": "11:00",
       "dur": 60,
       "ages": [
+        "baby",
+        "toddler",
         "preschool"
       ],
-      "ageText": "Kids",
+      "ageText": "Family Craft/Manualidades para Niños",
       "lang": [
         "en",
         "es"
@@ -4733,7 +5127,7 @@ STORYTIME.months["2026-11"] = {
     },
     {
       "lib": "alpineco",
-      "name": "Storytime",
+      "name": "DiNovember Storytime",
       "date": "2026-11-18",
       "time": "10:30",
       "dur": 60,
@@ -4742,7 +5136,7 @@ STORYTIME.months["2026-11"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "",
+      "ageText": "This will be our last family storytime for 2026. Let’s wrap up the year…",
       "lang": [
         "en"
       ],
@@ -4932,7 +5326,7 @@ STORYTIME.months["2026-11"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "AI: open free-play activity stations",
+      "ageText": "AI: open free-play stations",
       "lang": [
         "en"
       ],
@@ -4957,6 +5351,22 @@ STORYTIME.months["2026-11"] = {
       "note": "Toddlers and preschoolers learn new words through stories, songs, and playtime every week."
     },
     {
+      "lib": "sanmarco",
+      "name": "Baby Storytime",
+      "date": "2026-11-18",
+      "time": "13:00",
+      "dur": 30,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "Baby Storytime",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6acaa601e8cf1c005cb12443",
+      "note": "Caregivers and their little ones are invited to join our vibrant Baby Storytime featuring: songs, stories, and playtime! WEEKLY WEDNESDAYS starting at 1:00PM."
+    },
+    {
       "lib": "delmarco",
       "name": "The Girl with the Crooked Smile Storytime",
       "date": "2026-11-18",
@@ -4971,6 +5381,24 @@ STORYTIME.months["2026-11"] = {
       ],
       "eventId": "6abc51a8ea50a10050a5abd5",
       "note": "Join us for a storytime that is both spoken and in American Sign Language! The authors of this book, Sarah Tubert and Katelyn Brooke, join us to share a story t"
+    },
+    {
+      "lib": "borregos",
+      "name": "Bilingual Storytime | Cuentos Bilingües",
+      "date": "2026-11-18",
+      "time": "15:30",
+      "dur": 30,
+      "ages": [
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "for ages 2-5",
+      "lang": [
+        "en",
+        "es"
+      ],
+      "eventId": "6ac9452f754bb0003ac387b9",
+      "note": "Enjoy songs, rhymes, and stories in English and Spanish, followed by play time! Geared for ages 2-5, but all ages welcome. - Venga a escuchar canciones y cuento"
     },
     {
       "lib": "4s",
@@ -5387,6 +5815,22 @@ STORYTIME.months["2026-11"] = {
       "note": "Enjoy an open sensory play program with your toddler or preschooler with play-doh, blocks, sensory sand, shakers, and more!"
     },
     {
+      "lib": "sanmarco",
+      "name": "Tots and Blocks",
+      "date": "2026-11-20",
+      "time": "10:00",
+      "dur": 60,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "Tots and Blocks",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6acaa61ee8cf1c005cb12456",
+      "note": "Bring your little ones for play time at the library! Children 0-5 and their caregivers are encouraged to play with the toys provided by the library. *Toys only "
+    },
+    {
       "lib": "4s",
       "name": "Baby Storytime!",
       "date": "2026-11-20",
@@ -5497,7 +5941,7 @@ STORYTIME.months["2026-11"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "AI: free-play sensory/educational toys for young children",
+      "ageText": "AI: free-play sensory/educational toys",
       "lang": [
         "en"
       ],
@@ -5678,7 +6122,7 @@ STORYTIME.months["2026-11"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "AI: weekly take-home library craft",
+      "ageText": "AI: weekly take-home craft",
       "lang": [
         "en"
       ],
@@ -5731,7 +6175,7 @@ STORYTIME.months["2026-11"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "AI: open free-play activity stations",
+      "ageText": "AI: open free-play stations",
       "lang": [
         "en"
       ],
@@ -6052,6 +6496,23 @@ STORYTIME.months["2026-11"] = {
       "note": "Enjoy songs, fingerplays, books, and more with your baby. All children are welcome. Geared toward pre-walkers."
     },
     {
+      "lib": "sanmarco",
+      "name": "PreSchool Dance Party",
+      "date": "2026-11-24",
+      "time": "13:00",
+      "dur": 30,
+      "ages": [
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "ages 2-5",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6acaa631ea50a10050a6df1a",
+      "note": "Are you ready for a Preschool Dance Party?! Enjoy music, singing, and dancing to all kinds of family-friendly tunes. WEEKLY ON TUESDAYS starting 1:00 PM. Geared"
+    },
+    {
       "lib": "ranchos2",
       "name": "STEAM Explorers",
       "date": "2026-11-24",
@@ -6293,6 +6754,22 @@ STORYTIME.months["2026-11"] = {
       "note": "Toddlers and preschoolers learn new words through stories, songs, and playtime every week."
     },
     {
+      "lib": "sanmarco",
+      "name": "Baby Storytime",
+      "date": "2026-11-25",
+      "time": "13:00",
+      "dur": 30,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "Baby Storytime",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6acaa601e8cf1c005cb12444",
+      "note": "Caregivers and their little ones are invited to join our vibrant Baby Storytime featuring: songs, stories, and playtime! WEEKLY WEDNESDAYS starting at 1:00PM."
+    },
+    {
       "lib": "delmarco",
       "name": "Kamishibai Storybox Theater",
       "date": "2026-11-25",
@@ -6443,6 +6920,22 @@ STORYTIME.months["2026-11"] = {
       "note": "Kids are welcome to drop in and get creative at our weekly 'buffet-style' craft session! We'll provide all the supplies, just bring your imagination."
     },
     {
+      "lib": "sanmarco",
+      "name": "Tots and Blocks",
+      "date": "2026-11-27",
+      "time": "10:00",
+      "dur": 60,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "Tots and Blocks",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6acaa61ee8cf1c005cb12457",
+      "note": "Bring your little ones for play time at the library! Children 0-5 and their caregivers are encouraged to play with the toys provided by the library. *Toys only "
+    },
+    {
       "lib": "julianco",
       "name": "Free Play Friday!",
       "date": "2026-11-27",
@@ -6453,7 +6946,7 @@ STORYTIME.months["2026-11"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "AI: free-play sensory/educational toys for young children",
+      "ageText": "AI: free-play sensory/educational toys",
       "lang": [
         "en"
       ],
@@ -6517,7 +7010,7 @@ STORYTIME.months["2026-11"] = {
       "ages": [
         "preschool"
       ],
-      "ageText": "AI: weekly take-home library craft",
+      "ageText": "AI: weekly take-home craft",
       "lang": [
         "en"
       ],
@@ -6558,14 +7051,16 @@ STORYTIME.months["2026-11"] = {
     },
     {
       "lib": "borregos",
-      "name": "Crafts for Kids/Manualidades para Niños",
+      "name": "Family Craft/Manualidades para Niños",
       "date": "2026-11-28",
       "time": "11:00",
       "dur": 60,
       "ages": [
+        "baby",
+        "toddler",
         "preschool"
       ],
-      "ageText": "Kids",
+      "ageText": "Family Craft/Manualidades para Niños",
       "lang": [
         "en",
         "es"

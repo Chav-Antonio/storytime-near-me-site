@@ -16,7 +16,7 @@ STORYTIME.months["2027-01"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "AI: free-play sensory/educational toys for young children",
+      "ageText": "AI: free-play sensory/educational toys",
       "lang": [
         "en"
       ],
@@ -499,7 +499,7 @@ STORYTIME.months["2027-01"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "AI: free-play sensory/educational toys for young children",
+      "ageText": "AI: free-play sensory/educational toys",
       "lang": [
         "en"
       ],
@@ -655,7 +655,7 @@ STORYTIME.months["2027-01"] = {
     },
     {
       "lib": "alpineco",
-      "name": "Storytime",
+      "name": "Pajama Storytime",
       "date": "2027-01-13",
       "time": "10:30",
       "dur": 60,
@@ -903,7 +903,7 @@ STORYTIME.months["2027-01"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "AI: free-play sensory/educational toys for young children",
+      "ageText": "AI: free-play sensory/educational toys",
       "lang": [
         "en"
       ],
@@ -1288,7 +1288,7 @@ STORYTIME.months["2027-01"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "AI: free-play sensory/educational toys for young children",
+      "ageText": "AI: free-play sensory/educational toys",
       "lang": [
         "en"
       ],
@@ -1693,7 +1693,7 @@ STORYTIME.months["2027-01"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "AI: free-play sensory/educational toys for young children",
+      "ageText": "AI: free-play sensory/educational toys",
       "lang": [
         "en"
       ],
