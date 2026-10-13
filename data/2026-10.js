@@ -4595,23 +4595,6 @@ STORYTIME.months["2026-10"] = {
       "note": "Join us to Shake your sillies out with music and dancing, followed by a cozy story time in Spanish & English. Everyone is invited to wear your pajamas and bring"
     },
     {
-      "lib": "pacifich",
-      "name": "**CANCELLED TONIGHT!** Pajama Storytime",
-      "date": "2026-10-13",
-      "time": "18:30",
-      "dur": 30,
-      "ages": [
-        "toddler",
-        "preschool"
-      ],
-      "ageText": "…0-7 p.m. for stories and songs selected for toddlers and preschoolers. Shhhh! Don’t tell them w…",
-      "lang": [
-        "en"
-      ],
-      "eventId": "314569",
-      "note": "Get those slippers kickin' at Pajama Storytime! Join Ms. Maureen every Tuesday from 6:30-7 p.m. for stories and songs selected for toddlers and preschoolers. Sh"
-    },
-    {
       "lib": "sm",
       "name": "Pajama Storytime",
       "date": "2026-10-13",
@@ -12980,6 +12963,22 @@ STORYTIME.months["2026-10"] = {
       ],
       "eventId": "364583",
       "note": "Sign language fun for babies, toddlers, and preschoolers! No sign up needed."
+    },
+    {
+      "lib": "4s",
+      "name": "STAR WARS HALLOWEEN SPOOKTACULAR!",
+      "date": "2026-10-31",
+      "time": "13:00",
+      "dur": 90,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6acd10b1e06996003a83042e",
+      "note": "Star Wars Halloween Spooktacular with special guests! Wear your STAR WARS/Halloween costumes! Cool creature scavenger hunt! Star Wars trivia contest! Treats & P"
     },
     {
       "lib": "northcla",
