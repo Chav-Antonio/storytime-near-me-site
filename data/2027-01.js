@@ -20,7 +20,7 @@ STORYTIME.months["2027-01"] = {
       "lang": [
         "en"
       ],
-      "eventId": "6aa468b7101eb7003f2f62dd",
+      "eventId": "6ad26fb79dbc2b002c8f12cc",
       "note": "Join us at 10:30 to explore, learn, and play with a variety of sensory and educational toys and activities."
     },
     {
@@ -70,6 +70,22 @@ STORYTIME.months["2027-01"] = {
       ],
       "eventId": "6aa44ff0ab7a8e0037c11bbb",
       "note": "Come read to a real furry friend, the first and third Saturdays each month!"
+    },
+    {
+      "lib": "delmarco",
+      "name": "Creekside Critters: TBD",
+      "date": "2027-01-02",
+      "time": "11:00",
+      "dur": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6acfe3ee9dbc2b002c8ea129",
+      "note": "Join us for a series of animal programs presented by the San Dieguito River Valley Conservancy! For the month of December, get up close and personal with TBD! S"
     },
     {
       "lib": "4s",
@@ -254,6 +270,24 @@ STORYTIME.months["2027-01"] = {
       "note": "A lap-sit storytime introducing board books, songs, and fingerplays. Storytime will be followed by a playtime including shakers, sensory balls, and blocks. This"
     },
     {
+      "lib": "delmarco",
+      "name": "Toddler Storytime",
+      "date": "2027-01-06",
+      "time": "10:30",
+      "dur": 30,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "ages 0-5",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6acfe2109d27a0004550f2b5",
+      "note": "Come sing, dance, and hear some good stories with us on Wednesdays! This storytime is geared toward children ages 0-5."
+    },
+    {
       "lib": "fallbroo",
       "name": "Bilingual Preschool Storytime",
       "date": "2027-01-06",
@@ -287,23 +321,6 @@ STORYTIME.months["2027-01"] = {
       ],
       "eventId": "691529dca6fedec95308d6b3",
       "note": "Please join us for Family Play Time Hour, a chance for our little ones to play with our toys and make new friends! Children and their families are welcome to jo"
-    },
-    {
-      "lib": "imperial",
-      "name": "Bilingual Storytime | Cuentos Bilingües",
-      "date": "2027-01-06",
-      "time": "10:30",
-      "dur": 30,
-      "ages": [
-        "toddler"
-      ],
-      "ageText": "for ages 1-3",
-      "lang": [
-        "en",
-        "es"
-      ],
-      "eventId": "69dc11858ddc1caf5f1c79bb",
-      "note": "Enjoy songs, rhymes, and stories in English and Spanish, followed by play time! Geared for ages 1-3, but all ages welcome. Every 1st & 3rd Wednesday of the mont"
     },
     {
       "lib": "lemongro",
@@ -375,6 +392,22 @@ STORYTIME.months["2027-01"] = {
       "note": "KIDS! Come and join us at the 4S Ranch Library for a fun LOTERÍA (Mexican Bingo!) game night and win fun prizes! 1st Wednesday of every month!"
     },
     {
+      "lib": "cardiffb",
+      "name": "Toddler Time",
+      "date": "2027-01-07",
+      "time": "10:00",
+      "dur": 120,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "Toddler Time",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6ad14d83035faf0033dceea1",
+      "note": "Enjoy an open sensory play program with your toddler or preschooler with play-doh, blocks, sensory sand, shakers, and more!"
+    },
+    {
       "lib": "imperial",
       "name": "Toddler Storytime",
       "date": "2027-01-07",
@@ -405,6 +438,23 @@ STORYTIME.months["2027-01"] = {
       ],
       "eventId": "69fe750c703c336300266c1d",
       "note": "For babies up to 18 months old. Songs and stories for fun and stimulation of young minds. Followed by playtime and interaction with other babies, as well as con"
+    },
+    {
+      "lib": "crestcou",
+      "name": "Little Storytime",
+      "date": "2027-01-07",
+      "time": "11:00",
+      "dur": 60,
+      "ages": [
+        "baby",
+        "toddler"
+      ],
+      "ageText": "…activity. This activity is friendly towards babies and toddlers along with their families.",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6ad2aa6c9dbc2b002c8f25b3",
+      "note": "Join us for stories, songs, and playtime in the library! Little Storytime helps foster a love of reading, build social skills, and promotes physical activity. T"
     },
     {
       "lib": "ramonaco",
@@ -440,19 +490,38 @@ STORYTIME.months["2027-01"] = {
     },
     {
       "lib": "cardiffb",
-      "name": "Toddler Time",
+      "name": "Preschool Storytime",
       "date": "2027-01-08",
       "time": "10:30",
-      "dur": 90,
+      "dur": 30,
       "ages": [
-        "toddler"
+        "toddler",
+        "preschool"
       ],
-      "ageText": "Toddler Time",
+      "ageText": "for ages 2-4",
       "lang": [
         "en"
       ],
-      "eventId": "6a6a60ccb44674e2601bbdc6",
-      "note": "Enjoy an open sensory play program with your toddler or preschooler with play-doh, blocks, sensory sand, shakers, and more!"
+      "eventId": "6ad14c4f9dbc2b002c8ee674",
+      "note": "Join us for stories, songs and dancing! Best for ages 2-4; no sign-up required."
+    },
+    {
+      "lib": "delmarco",
+      "name": "Family Play Time",
+      "date": "2027-01-08",
+      "time": "10:30",
+      "dur": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "Family Play Time",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6acfe32d9d27a0004550f36b",
+      "note": "Little ones and their caregivers can socialize with one another while playing with educational toys at the library."
     },
     {
       "lib": "fallbroo",
@@ -503,7 +572,7 @@ STORYTIME.months["2027-01"] = {
       "lang": [
         "en"
       ],
-      "eventId": "6aa468b7101eb7003f2f62de",
+      "eventId": "6ad26fb79dbc2b002c8f12cd",
       "note": "Join us at 10:30 to explore, learn, and play with a variety of sensory and educational toys and activities."
     },
     {
@@ -689,6 +758,24 @@ STORYTIME.months["2027-01"] = {
       "note": "A lap-sit storytime introducing board books, songs, and fingerplays. Storytime will be followed by a playtime including shakers, sensory balls, and blocks. This"
     },
     {
+      "lib": "delmarco",
+      "name": "Toddler Storytime",
+      "date": "2027-01-13",
+      "time": "10:30",
+      "dur": 30,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "ages 0-5",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6acfe2109d27a0004550f2b6",
+      "note": "Come sing, dance, and hear some good stories with us on Wednesdays! This storytime is geared toward children ages 0-5."
+    },
+    {
       "lib": "fallbroo",
       "name": "Bilingual Preschool Storytime",
       "date": "2027-01-13",
@@ -778,6 +865,22 @@ STORYTIME.months["2027-01"] = {
       "note": "Join us for a fun morning of storytime and songs. All families are welcome!"
     },
     {
+      "lib": "cardiffb",
+      "name": "Toddler Time",
+      "date": "2027-01-14",
+      "time": "10:00",
+      "dur": 120,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "Toddler Time",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6ad14d83035faf0033dceea2",
+      "note": "Enjoy an open sensory play program with your toddler or preschooler with play-doh, blocks, sensory sand, shakers, and more!"
+    },
+    {
       "lib": "imperial",
       "name": "Toddler Storytime",
       "date": "2027-01-14",
@@ -827,6 +930,23 @@ STORYTIME.months["2027-01"] = {
       "note": "For babies up to 18 months old. Songs and stories for fun and stimulation of young minds. Followed by playtime and interaction with other babies, as well as con"
     },
     {
+      "lib": "crestcou",
+      "name": "Little Storytime",
+      "date": "2027-01-14",
+      "time": "11:00",
+      "dur": 60,
+      "ages": [
+        "baby",
+        "toddler"
+      ],
+      "ageText": "…activity. This activity is friendly towards babies and toddlers along with their families.",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6ad2aa6c9dbc2b002c8f25b4",
+      "note": "Join us for stories, songs, and playtime in the library! Little Storytime helps foster a love of reading, build social skills, and promotes physical activity. T"
+    },
+    {
       "lib": "alpineco",
       "name": "Baby Storytime",
       "date": "2027-01-15",
@@ -844,19 +964,38 @@ STORYTIME.months["2027-01"] = {
     },
     {
       "lib": "cardiffb",
-      "name": "Toddler Time",
+      "name": "Preschool Storytime",
       "date": "2027-01-15",
       "time": "10:30",
-      "dur": 90,
+      "dur": 30,
       "ages": [
-        "toddler"
+        "toddler",
+        "preschool"
       ],
-      "ageText": "Toddler Time",
+      "ageText": "for ages 2-4",
       "lang": [
         "en"
       ],
-      "eventId": "6a6a60ccb44674e2601bbdc7",
-      "note": "Enjoy an open sensory play program with your toddler or preschooler with play-doh, blocks, sensory sand, shakers, and more!"
+      "eventId": "6ad14c4f9dbc2b002c8ee675",
+      "note": "Join us for stories, songs and dancing! Best for ages 2-4; no sign-up required."
+    },
+    {
+      "lib": "delmarco",
+      "name": "Family Play Time",
+      "date": "2027-01-15",
+      "time": "10:30",
+      "dur": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "Family Play Time",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6acfe32d9d27a0004550f36c",
+      "note": "Little ones and their caregivers can socialize with one another while playing with educational toys at the library."
     },
     {
       "lib": "fallbroo",
@@ -907,7 +1046,7 @@ STORYTIME.months["2027-01"] = {
       "lang": [
         "en"
       ],
-      "eventId": "6aa468b7101eb7003f2f62df",
+      "eventId": "6ad26fb79dbc2b002c8f12ce",
       "note": "Join us at 10:30 to explore, learn, and play with a variety of sensory and educational toys and activities."
     },
     {
@@ -957,6 +1096,24 @@ STORYTIME.months["2027-01"] = {
       ],
       "eventId": "6aa44ff0ab7a8e0037c11bbc",
       "note": "Come read to a real furry friend, the first and third Saturdays each month!"
+    },
+    {
+      "lib": "crestcou",
+      "name": "Saturday Storytime and Craft",
+      "date": "2027-01-16",
+      "time": "14:00",
+      "dur": 90,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "…r the other, or both! This event is open to all ages!",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6ad3f6369d27a0004551a97b",
+      "note": "Visit Crest on select Saturdays to listen to a story and then do a craft! Patrons can do one or the other, or both! This event is open to all ages!"
     },
     {
       "lib": "vistacou",
@@ -1059,6 +1216,24 @@ STORYTIME.months["2027-01"] = {
       "note": "A lap-sit storytime introducing board books, songs, and fingerplays. Storytime will be followed by a playtime including shakers, sensory balls, and blocks. This"
     },
     {
+      "lib": "delmarco",
+      "name": "Toddler Storytime",
+      "date": "2027-01-20",
+      "time": "10:30",
+      "dur": 30,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "ages 0-5",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6acfe2109d27a0004550f2b7",
+      "note": "Come sing, dance, and hear some good stories with us on Wednesdays! This storytime is geared toward children ages 0-5."
+    },
+    {
       "lib": "fallbroo",
       "name": "Bilingual Preschool Storytime",
       "date": "2027-01-20",
@@ -1092,23 +1267,6 @@ STORYTIME.months["2027-01"] = {
       ],
       "eventId": "69152b429be7c6685c27d69d",
       "note": "Please join us for family storytime, songs, making new friends & lots of fun! Children and their families are welcome to join in the fun! Geared towards ages 0-"
-    },
-    {
-      "lib": "imperial",
-      "name": "Bilingual Storytime | Cuentos Bilingües",
-      "date": "2027-01-20",
-      "time": "10:30",
-      "dur": 30,
-      "ages": [
-        "toddler"
-      ],
-      "ageText": "for ages 1-3",
-      "lang": [
-        "en",
-        "es"
-      ],
-      "eventId": "69dc11858ddc1caf5f1c79bc",
-      "note": "Enjoy songs, rhymes, and stories in English and Spanish, followed by play time! Geared for ages 1-3, but all ages welcome. Every 1st & 3rd Wednesday of the mont"
     },
     {
       "lib": "lemongro",
@@ -1145,6 +1303,22 @@ STORYTIME.months["2027-01"] = {
       ],
       "eventId": "6a7b6caed033f1003e0aa50e",
       "note": "Join us for a fun morning of storytime and songs. All families are welcome!"
+    },
+    {
+      "lib": "cardiffb",
+      "name": "Toddler Time",
+      "date": "2027-01-21",
+      "time": "10:00",
+      "dur": 120,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "Toddler Time",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6ad14d83035faf0033dceea3",
+      "note": "Enjoy an open sensory play program with your toddler or preschooler with play-doh, blocks, sensory sand, shakers, and more!"
     },
     {
       "lib": "imperial",
@@ -1196,6 +1370,23 @@ STORYTIME.months["2027-01"] = {
       "note": "For babies up to 18 months old. Songs and stories for fun and stimulation of young minds. Followed by playtime and interaction with other babies, as well as con"
     },
     {
+      "lib": "crestcou",
+      "name": "Little Storytime",
+      "date": "2027-01-21",
+      "time": "11:00",
+      "dur": 60,
+      "ages": [
+        "baby",
+        "toddler"
+      ],
+      "ageText": "…activity. This activity is friendly towards babies and toddlers along with their families.",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6ad2aa6c9dbc2b002c8f25b5",
+      "note": "Join us for stories, songs, and playtime in the library! Little Storytime helps foster a love of reading, build social skills, and promotes physical activity. T"
+    },
+    {
       "lib": "ramonaco",
       "name": "LEGO Club",
       "date": "2027-01-21",
@@ -1229,19 +1420,38 @@ STORYTIME.months["2027-01"] = {
     },
     {
       "lib": "cardiffb",
-      "name": "Toddler Time",
+      "name": "Preschool Storytime",
       "date": "2027-01-22",
       "time": "10:30",
-      "dur": 90,
+      "dur": 30,
       "ages": [
-        "toddler"
+        "toddler",
+        "preschool"
       ],
-      "ageText": "Toddler Time",
+      "ageText": "for ages 2-4",
       "lang": [
         "en"
       ],
-      "eventId": "6a6a60ccb44674e2601bbdc8",
-      "note": "Enjoy an open sensory play program with your toddler or preschooler with play-doh, blocks, sensory sand, shakers, and more!"
+      "eventId": "6ad14c4f9dbc2b002c8ee676",
+      "note": "Join us for stories, songs and dancing! Best for ages 2-4; no sign-up required."
+    },
+    {
+      "lib": "delmarco",
+      "name": "Family Play Time",
+      "date": "2027-01-22",
+      "time": "10:30",
+      "dur": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "Family Play Time",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6acfe32d9d27a0004550f36d",
+      "note": "Little ones and their caregivers can socialize with one another while playing with educational toys at the library."
     },
     {
       "lib": "fallbroo",
@@ -1292,7 +1502,7 @@ STORYTIME.months["2027-01"] = {
       "lang": [
         "en"
       ],
-      "eventId": "6aa468b7101eb7003f2f62e0",
+      "eventId": "6ad26fb79dbc2b002c8f12cf",
       "note": "Join us at 10:30 to explore, learn, and play with a variety of sensory and educational toys and activities."
     },
     {
@@ -1478,6 +1688,24 @@ STORYTIME.months["2027-01"] = {
       "note": "A lap-sit storytime introducing board books, songs, and fingerplays. Storytime will be followed by a playtime including shakers, sensory balls, and blocks. This"
     },
     {
+      "lib": "delmarco",
+      "name": "Toddler Storytime",
+      "date": "2027-01-27",
+      "time": "10:30",
+      "dur": 30,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "ages 0-5",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6acfe2109d27a0004550f2b8",
+      "note": "Come sing, dance, and hear some good stories with us on Wednesdays! This storytime is geared toward children ages 0-5."
+    },
+    {
       "lib": "fallbroo",
       "name": "Bilingual Preschool Storytime",
       "date": "2027-01-27",
@@ -1567,6 +1795,40 @@ STORYTIME.months["2027-01"] = {
       "note": "Join us for a fun morning of storytime and songs. All families are welcome!"
     },
     {
+      "lib": "delmarco",
+      "name": "Kamishibai Storybox Theater",
+      "date": "2027-01-27",
+      "time": "14:30",
+      "dur": 30,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "…ed by Write Out Loud San Diego! Children of all ages welcome.",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6acfe3649d27a0004550f3a7",
+      "note": "Join us monthly for this mesmerizing Japanese storytelling tradition presented by Write Out Loud San Diego! Children of all ages welcome."
+    },
+    {
+      "lib": "cardiffb",
+      "name": "Toddler Time",
+      "date": "2027-01-28",
+      "time": "10:00",
+      "dur": 120,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "Toddler Time",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6ad14d83035faf0033dceea4",
+      "note": "Enjoy an open sensory play program with your toddler or preschooler with play-doh, blocks, sensory sand, shakers, and more!"
+    },
+    {
       "lib": "imperial",
       "name": "Nature Tots",
       "date": "2027-01-28",
@@ -1617,6 +1879,23 @@ STORYTIME.months["2027-01"] = {
       "note": "For babies up to 18 months old. Songs and stories for fun and stimulation of young minds. Followed by playtime and interaction with other babies, as well as con"
     },
     {
+      "lib": "crestcou",
+      "name": "Little Storytime",
+      "date": "2027-01-28",
+      "time": "11:00",
+      "dur": 60,
+      "ages": [
+        "baby",
+        "toddler"
+      ],
+      "ageText": "…activity. This activity is friendly towards babies and toddlers along with their families.",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6ad2aa6c9dbc2b002c8f25b6",
+      "note": "Join us for stories, songs, and playtime in the library! Little Storytime helps foster a love of reading, build social skills, and promotes physical activity. T"
+    },
+    {
       "lib": "alpineco",
       "name": "Baby Storytime",
       "date": "2027-01-29",
@@ -1634,19 +1913,38 @@ STORYTIME.months["2027-01"] = {
     },
     {
       "lib": "cardiffb",
-      "name": "Toddler Time",
+      "name": "Preschool Storytime",
       "date": "2027-01-29",
       "time": "10:30",
-      "dur": 90,
+      "dur": 30,
       "ages": [
-        "toddler"
+        "toddler",
+        "preschool"
       ],
-      "ageText": "Toddler Time",
+      "ageText": "for ages 2-4",
       "lang": [
         "en"
       ],
-      "eventId": "6a6a60ccb44674e2601bbdc9",
-      "note": "Enjoy an open sensory play program with your toddler or preschooler with play-doh, blocks, sensory sand, shakers, and more!"
+      "eventId": "6ad14c4f9dbc2b002c8ee677",
+      "note": "Join us for stories, songs and dancing! Best for ages 2-4; no sign-up required."
+    },
+    {
+      "lib": "delmarco",
+      "name": "Family Play Time",
+      "date": "2027-01-29",
+      "time": "10:30",
+      "dur": 60,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "Family Play Time",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6acfe32d9d27a0004550f36e",
+      "note": "Little ones and their caregivers can socialize with one another while playing with educational toys at the library."
     },
     {
       "lib": "fallbroo",
@@ -1697,7 +1995,7 @@ STORYTIME.months["2027-01"] = {
       "lang": [
         "en"
       ],
-      "eventId": "6aa468b7101eb7003f2f62e1",
+      "eventId": "6ad26fb79dbc2b002c8f12d0",
       "note": "Join us at 10:30 to explore, learn, and play with a variety of sensory and educational toys and activities."
     },
     {
