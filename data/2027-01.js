@@ -491,6 +491,22 @@ STORYTIME.months["2027-01"] = {
       "note": "Each week will feature one of the following all-ages storytimes: Dance Party Storytime - Music and movement for kids and families. High-energy education through"
     },
     {
+      "lib": "ranchosa",
+      "name": "Baby Storytime",
+      "date": "2027-01-07",
+      "time": "10:30",
+      "dur": 45,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "Baby Storytime",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6af75926be8bbf00683b65f1",
+      "note": "Join us for stories, songs and movement activities for babies."
+    },
+    {
       "lib": "solanabe",
       "name": "Baby Storytime",
       "date": "2027-01-07",
@@ -1064,6 +1080,22 @@ STORYTIME.months["2027-01"] = {
       "note": "Each week will feature one of the following all-ages storytimes: Dance Party Storytime - Music and movement for kids and families. High-energy education through"
     },
     {
+      "lib": "ranchosa",
+      "name": "Baby Storytime",
+      "date": "2027-01-14",
+      "time": "10:30",
+      "dur": 45,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "Baby Storytime",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6af75926be8bbf00683b65f2",
+      "note": "Join us for stories, songs and movement activities for babies."
+    },
+    {
       "lib": "solanabe",
       "name": "Baby Storytime",
       "date": "2027-01-14",
@@ -1558,6 +1590,22 @@ STORYTIME.months["2027-01"] = {
       "note": "Each week will feature one of the following all-ages storytimes: Dance Party Storytime - Music and movement for kids and families. High-energy education through"
     },
     {
+      "lib": "ranchosa",
+      "name": "Baby Sensory Play Time",
+      "date": "2027-01-21",
+      "time": "10:30",
+      "dur": 45,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "Baby Sensory Play Time",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6af7590bbe8bbf00683b65d9",
+      "note": "Join us for a special program designed for babies and their caregivers to explore sights, sounds, and textures in a safe and friendly environment. Develop early"
+    },
+    {
       "lib": "solanabe",
       "name": "Baby Storytime",
       "date": "2027-01-21",
@@ -1589,6 +1637,22 @@ STORYTIME.months["2027-01"] = {
       ],
       "eventId": "6ad2aa6c9dbc2b002c8f25b5",
       "note": "Join us for stories, songs, and playtime in the library! Little Storytime helps foster a love of reading, build social skills, and promotes physical activity. T"
+    },
+    {
+      "lib": "crestcou",
+      "name": "Crest Elementary Kindergarten Class Visit",
+      "date": "2027-01-21",
+      "time": "13:00",
+      "dur": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6af634bf92dc1500457ba17a",
+      "note": "A local kindergarten class visits the Crest branch once a month to listen to stories, do a light physical activity, and a craft. Sometimes guest readers will vi"
     },
     {
       "lib": "ramonaco",
@@ -1891,6 +1955,22 @@ STORYTIME.months["2027-01"] = {
       "note": "Play and build with LEGO® bricks! Free build - or take on the weekly building challenge! Recommended for ages 4+ Younger children may attend, but must be accomp"
     },
     {
+      "lib": "cardiffb",
+      "name": "Celebrate Puzzle Day!",
+      "date": "2027-01-26",
+      "time": "13:00",
+      "dur": 180,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6af64f9792dc1500457ba47a",
+      "note": "To celebrate National Puzzle Month and Puzzle Day (on January the 29th), we'll put out puzzles in the Children's Area for families and kids to have fun solving;"
+    },
+    {
       "lib": "lakeside",
       "name": "Lakeside Kids' Crew: Master Builders",
       "date": "2027-01-26",
@@ -2166,6 +2246,22 @@ STORYTIME.months["2027-01"] = {
       ],
       "eventId": "6ae4fc4e9d27a00045548d63",
       "note": "Each week will feature one of the following all-ages storytimes: Dance Party Storytime - Music and movement for kids and families. High-energy education through"
+    },
+    {
+      "lib": "ranchosa",
+      "name": "Baby Storytime",
+      "date": "2027-01-28",
+      "time": "10:30",
+      "dur": 45,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "Baby Storytime",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6af75926be8bbf00683b65f3",
+      "note": "Join us for stories, songs and movement activities for babies."
     },
     {
       "lib": "solanabe",

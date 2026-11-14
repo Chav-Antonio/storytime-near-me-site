@@ -5568,24 +5568,6 @@ STORYTIME.months["2026-11"] = {
       "note": "Craft activities and building challenges with LEGO bricks, geared for kids ages 4 and up. Offered by local high school students. No registration required."
     },
     {
-      "lib": "crestcou",
-      "name": "Saturday Storytime and Craft",
-      "date": "2026-11-14",
-      "time": "14:00",
-      "dur": 60,
-      "ages": [
-        "baby",
-        "toddler",
-        "preschool"
-      ],
-      "ageText": "…r the other, or both! This event is open to all ages!",
-      "lang": [
-        "en"
-      ],
-      "eventId": "6a3dbad4296ea565de2ecf08",
-      "note": "Visit Crest on select Saturdays to listen to a story and then do a craft! Patrons can do one or the other, or both! This event is open to all ages!"
-    },
-    {
       "lib": "elcajonc",
       "name": "Construction Club",
       "date": "2026-11-15",
@@ -5899,7 +5881,7 @@ STORYTIME.months["2026-11"] = {
         "en"
       ],
       "eventId": "6a5574f30e562e280099af02",
-      "note": "Preschool Storytime is geared for children aged 3-6 years. Join us for stories, songs and a craft."
+      "note": "Join us for The Gingerbread Man Puppet Show, performed by the RSF Library Youth Services Staff."
     },
     {
       "lib": "balboa",
@@ -7317,7 +7299,7 @@ STORYTIME.months["2026-11"] = {
         "toddler",
         "preschool"
       ],
-      "ageText": "…ories, socializing. Lots of fun for kids of all ages and their caregivers!",
+      "ageText": "…als.) Geared to early learners, children of all ages welcome!",
       "lang": [
         "en"
       ],
@@ -7523,7 +7505,7 @@ STORYTIME.months["2026-11"] = {
         "en"
       ],
       "eventId": "6a8338bba821f90037ee6ac0",
-      "note": "Get ready for toddler storytime with songs, movement, and engaging picture books, followed by hands-on learning and crafting. For ages 18 months to 3 years."
+      "note": "Join us for The Gingerbread Man Puppet Show, performed by the RSF Library Youth Services Staff."
     },
     {
       "lib": "ranchosa",
@@ -7742,6 +7724,22 @@ STORYTIME.months["2026-11"] = {
       ],
       "eventId": "348724",
       "note": "Storybox Theatre is a wonderful way to present illustrated stories to youngsters. Storybox is the American name we have given to the Japanese storytelling tradi"
+    },
+    {
+      "lib": "crestcou",
+      "name": "Crest Elementary Kindergarten Class Visit",
+      "date": "2026-11-19",
+      "time": "13:00",
+      "dur": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6af634bf92dc1500457ba178",
+      "note": "A local kindergarten class visits the Crest branch once a month to listen to stories, do a light physical activity, and a craft. Sometimes guest readers will vi"
     },
     {
       "lib": "lincolna",
@@ -8129,14 +8127,14 @@ STORYTIME.months["2026-11"] = {
     },
     {
       "lib": "lajollar",
-      "name": "Bilingual Storytime: Spanish (Cuentos Bilingües: Español)",
+      "name": "**RESCHEDULED FOR 11/19** Bilingual Storytime: Spanish (Cuentos Bilingües: Español)",
       "date": "2026-11-20",
       "time": "10:30",
       "dur": 30,
       "ages": [
         "preschool"
       ],
-      "ageText": "This bilingual program is designed for preschool children to experience both English and Spa…",
+      "ageText": "…19** This bilingual program is designed for preschool children to experience both English and Spa…",
       "lang": [
         "en",
         "es"
@@ -8395,6 +8393,22 @@ STORYTIME.months["2026-11"] = {
       ],
       "eventId": "450924",
       "note": "Come to Family Hangout every Friday from 3:30 pm - 5:30 pm It's November and the cold is here! Come in and relax while watching family friendly movies and munch"
+    },
+    {
+      "lib": "4s",
+      "name": "AI Workshop",
+      "date": "2026-11-20",
+      "time": "16:00",
+      "dur": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6af381568b254c003ad876e4",
+      "note": "The AI Literacy Project is a student-led passion project out of Del Norte High School. We teach kids and teens what artificial intelligence is, how to use it re"
     },
     {
       "lib": "oakpark",
@@ -10041,22 +10055,6 @@ STORYTIME.months["2026-11"] = {
       "note": "Join us Thursday mornings at 10am for stories, songs, finger games and more! Each week our librarians will choose books based off themes to get children's imagi"
     },
     {
-      "lib": "casadeor",
-      "name": "Family Storytime",
-      "date": "2026-11-26",
-      "time": "10:30",
-      "dur": 45,
-      "ages": [
-        "preschool"
-      ],
-      "ageText": "ages 3-5",
-      "lang": [
-        "en"
-      ],
-      "eventId": "6ac024e19dbc2b002c8be251",
-      "note": "Join us for a fun morning of stories, songs, and making new friends! This storytime is geared toward ages 3-5, but the whole family is welcome to join in!"
-    },
-    {
       "lib": "lamesaco",
       "name": "Family Free Play",
       "date": "2026-11-26",
@@ -10291,6 +10289,22 @@ STORYTIME.months["2026-11"] = {
       "note": "Learn, play, and create with Lego bricks! Explore new ideas and share concepts and strategies with other attendees. Each creation is put on display in the libra"
     },
     {
+      "lib": "4s",
+      "name": "AI Workshop",
+      "date": "2026-11-28",
+      "time": "11:00",
+      "dur": 90,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6af381c28b254c003ad876f9",
+      "note": "The AI Literacy Project is a student-led passion project out of Del Norte High School. We teach kids and teens what artificial intelligence is, how to use it re"
+    },
+    {
       "lib": "borregos",
       "name": "Kids' Lego Club!",
       "date": "2026-11-28",
@@ -10372,6 +10386,24 @@ STORYTIME.months["2026-11"] = {
       ],
       "eventId": "364587",
       "note": "Sign language fun for babies, toddlers, and preschoolers! No sign up needed."
+    },
+    {
+      "lib": "4s",
+      "name": "Robotics Demo (by DNHS Team Optix 3749)",
+      "date": "2026-11-28",
+      "time": "13:00",
+      "dur": 90,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "…resent a ROBOTICS DEMO at 4S Ranch Library! All ages welcome!",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6af760516d7b4d002c6739b1",
+      "note": "Interested in Robotics? DNHS Team Optox 3749 will present a ROBOTICS DEMO at 4S Ranch Library! All ages welcome!"
     },
     {
       "lib": "northcla",
