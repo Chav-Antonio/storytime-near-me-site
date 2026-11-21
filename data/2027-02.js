@@ -344,6 +344,24 @@ STORYTIME.months["2027-02"] = {
       "note": "Enjoy an open sensory play program with your toddler or preschooler with play-doh, blocks, sensory sand, shakers, and more!"
     },
     {
+      "lib": "elcajonc",
+      "name": "Thursday Storytime",
+      "date": "2027-02-04",
+      "time": "10:30",
+      "dur": 30,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "…ories, socializing. Lots of fun for kids of all ages and their caregivers!",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6afcfb9bd7e98e002c538f4b",
+      "note": "Join us for ABC's, 123's, songs, stories, socializing. Lots of fun for kids of all ages and their caregivers!"
+    },
+    {
       "lib": "imperial",
       "name": "Toddler Storytime",
       "date": "2027-02-04",
@@ -427,6 +445,22 @@ STORYTIME.months["2027-02"] = {
       "note": "Join us for stories, songs, and playtime in the library! Little Storytime helps foster a love of reading, build social skills, and promotes physical activity. T"
     },
     {
+      "lib": "encinita",
+      "name": "Storytime",
+      "date": "2027-02-04",
+      "time": "11:00",
+      "dur": 30,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "…re provided by Imagine Brave Spaces , where toddlers and their caregivers join in lively storie…",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6b00922d8b254c003adabe3e",
+      "note": "Join us in welcoming Storytime Theatre provided by Imagine Brave Spaces , where toddlers and their caregivers join in lively stories, singing, and dancing for a"
+    },
+    {
       "lib": "ramonaco",
       "name": "LEGO Club",
       "date": "2027-02-04",
@@ -492,6 +526,22 @@ STORYTIME.months["2027-02"] = {
       ],
       "eventId": "6acfe32d9d27a0004550f36f",
       "note": "Little ones and their caregivers can socialize with one another while playing with educational toys at the library."
+    },
+    {
+      "lib": "elcajonc",
+      "name": "Toddler Circle Time",
+      "date": "2027-02-05",
+      "time": "10:30",
+      "dur": 30,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "Toddler Circle Time",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6b01e6cd0f200f18598675bd",
+      "note": "Join us for songs, rhymes, and socializing for babies, toddlers, and their caregivers. All ages welcome!"
     },
     {
       "lib": "fallbroo",
@@ -560,22 +610,6 @@ STORYTIME.months["2027-02"] = {
       ],
       "eventId": "6a59451c7b79214226a90aca",
       "note": "Join us for a fun dance party in the Children's area. All children are welcome. For toddlers 18 months - 3 years old. Together let's shake our sillies, row the "
-    },
-    {
-      "lib": "valleyce",
-      "name": "Preschool Story Time",
-      "date": "2027-02-05",
-      "time": "10:30",
-      "dur": 60,
-      "ages": [
-        "preschool"
-      ],
-      "ageText": "3-5 years",
-      "lang": [
-        "en"
-      ],
-      "eventId": "6680837fe3e1ee3000462f7f",
-      "note": "Join us on Fridays for stories, songs, and crafts. Geared for children aged 3-5 years."
     },
     {
       "lib": "ranchosa",
@@ -741,6 +775,22 @@ STORYTIME.months["2027-02"] = {
       ],
       "eventId": "6a5412dbb93a5a73032bcf8d",
       "note": "Calling all preschoolers! Join us in the children's area for free-play every Monday at 10:30 AM. We will read a story and provide sensory and educational toys f"
+    },
+    {
+      "lib": "encinita",
+      "name": "Signing Storytime",
+      "date": "2027-02-08",
+      "time": "11:00",
+      "dur": 30,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "You and baby, birth to 12 months old, will learn how to…",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6b0090368b254c003adabdfa",
+      "note": "You and baby, birth to 12 months old, will learn how to communicate with signs long before speech is possible, while enjoying music, stories, bubbles, new frien"
     },
     {
       "lib": "julianco",
@@ -983,6 +1033,24 @@ STORYTIME.months["2027-02"] = {
       "note": "Come sing, dance, and listen to some good books in both English and Chinese two Thursdays a month with Ms. Lili!"
     },
     {
+      "lib": "elcajonc",
+      "name": "Thursday Storytime",
+      "date": "2027-02-11",
+      "time": "10:30",
+      "dur": 30,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "…ories, socializing. Lots of fun for kids of all ages and their caregivers!",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6afcfb9bd7e98e002c538f4c",
+      "note": "Join us for ABC's, 123's, songs, stories, socializing. Lots of fun for kids of all ages and their caregivers!"
+    },
+    {
       "lib": "imperial",
       "name": "Toddler Storytime",
       "date": "2027-02-11",
@@ -1134,6 +1202,22 @@ STORYTIME.months["2027-02"] = {
       "note": "Little ones and their caregivers can socialize with one another while playing with educational toys at the library."
     },
     {
+      "lib": "elcajonc",
+      "name": "Toddler Circle Time",
+      "date": "2027-02-12",
+      "time": "10:30",
+      "dur": 30,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "Toddler Circle Time",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6b01e6cd0f200f18598675be",
+      "note": "Join us for songs, rhymes, and socializing for babies, toddlers, and their caregivers. All ages welcome!"
+    },
+    {
       "lib": "fallbroo",
       "name": "Baby Storytime",
       "date": "2027-02-12",
@@ -1200,22 +1284,6 @@ STORYTIME.months["2027-02"] = {
       ],
       "eventId": "6a59451c7b79214226a90acb",
       "note": "Join us for a fun dance party in the Children's area. All children are welcome. For toddlers 18 months - 3 years old. Together let's shake our sillies, row the "
-    },
-    {
-      "lib": "valleyce",
-      "name": "Preschool Story Time",
-      "date": "2027-02-12",
-      "time": "10:30",
-      "dur": 60,
-      "ages": [
-        "preschool"
-      ],
-      "ageText": "3-5 years",
-      "lang": [
-        "en"
-      ],
-      "eventId": "6680837fe3e1ee3000462f80",
-      "note": "Join us on Fridays for stories, songs, and crafts. Geared for children aged 3-5 years."
     },
     {
       "lib": "ranchosa",
@@ -1507,6 +1575,24 @@ STORYTIME.months["2027-02"] = {
       "note": "Enjoy an open sensory play program with your toddler or preschooler with play-doh, blocks, sensory sand, shakers, and more!"
     },
     {
+      "lib": "elcajonc",
+      "name": "Thursday Storytime",
+      "date": "2027-02-18",
+      "time": "10:30",
+      "dur": 30,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "…ories, socializing. Lots of fun for kids of all ages and their caregivers!",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6afcfb9bd7e98e002c538f4d",
+      "note": "Join us for ABC's, 123's, songs, stories, socializing. Lots of fun for kids of all ages and their caregivers!"
+    },
+    {
       "lib": "imperial",
       "name": "Toddler Storytime",
       "date": "2027-02-18",
@@ -1607,6 +1693,22 @@ STORYTIME.months["2027-02"] = {
       "note": "Join us for stories, songs, and playtime in the library! Little Storytime helps foster a love of reading, build social skills, and promotes physical activity. T"
     },
     {
+      "lib": "encinita",
+      "name": "Storytime",
+      "date": "2027-02-18",
+      "time": "11:00",
+      "dur": 30,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "…re provided by Imagine Brave Spaces , where toddlers and their caregivers join in lively storie…",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6b00922d8b254c003adabe3f",
+      "note": "Join us in welcoming Storytime Theatre provided by Imagine Brave Spaces , where toddlers and their caregivers join in lively stories, singing, and dancing for a"
+    },
+    {
       "lib": "crestcou",
       "name": "Crest Elementary Kindergarten Class Visit",
       "date": "2027-02-18",
@@ -1690,6 +1792,22 @@ STORYTIME.months["2027-02"] = {
       "note": "Little ones and their caregivers can socialize with one another while playing with educational toys at the library."
     },
     {
+      "lib": "elcajonc",
+      "name": "Toddler Circle Time",
+      "date": "2027-02-19",
+      "time": "10:30",
+      "dur": 30,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "Toddler Circle Time",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6b01e6cd0f200f18598675bf",
+      "note": "Join us for songs, rhymes, and socializing for babies, toddlers, and their caregivers. All ages welcome!"
+    },
+    {
       "lib": "fallbroo",
       "name": "Baby Storytime",
       "date": "2027-02-19",
@@ -1756,22 +1874,6 @@ STORYTIME.months["2027-02"] = {
       ],
       "eventId": "6a59451c7b79214226a90acc",
       "note": "Join us for a fun dance party in the Children's area. All children are welcome. For toddlers 18 months - 3 years old. Together let's shake our sillies, row the "
-    },
-    {
-      "lib": "valleyce",
-      "name": "Preschool Story Time",
-      "date": "2027-02-19",
-      "time": "10:30",
-      "dur": 60,
-      "ages": [
-        "preschool"
-      ],
-      "ageText": "3-5 years",
-      "lang": [
-        "en"
-      ],
-      "eventId": "6680837fe3e1ee3000462f81",
-      "note": "Join us on Fridays for stories, songs, and crafts. Geared for children aged 3-5 years."
     },
     {
       "lib": "ranchosa",
@@ -1923,6 +2025,22 @@ STORYTIME.months["2027-02"] = {
       ],
       "eventId": "6a5412dbb93a5a73032bcf8f",
       "note": "Calling all preschoolers! Join us in the children's area for free-play every Monday at 10:30 AM. We will read a story and provide sensory and educational toys f"
+    },
+    {
+      "lib": "encinita",
+      "name": "Signing Storytime",
+      "date": "2027-02-22",
+      "time": "11:00",
+      "dur": 30,
+      "ages": [
+        "baby"
+      ],
+      "ageText": "You and baby, birth to 12 months old, will learn how to…",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6b0090368b254c003adabdfb",
+      "note": "You and baby, birth to 12 months old, will learn how to communicate with signs long before speech is possible, while enjoying music, stories, bubbles, new frien"
     },
     {
       "lib": "julianco",
@@ -2199,6 +2317,24 @@ STORYTIME.months["2027-02"] = {
       "note": "Come sing, dance, and listen to some good books in both English and Chinese two Thursdays a month with Ms. Lili!"
     },
     {
+      "lib": "elcajonc",
+      "name": "Thursday Storytime",
+      "date": "2027-02-25",
+      "time": "10:30",
+      "dur": 30,
+      "ages": [
+        "baby",
+        "toddler",
+        "preschool"
+      ],
+      "ageText": "…ories, socializing. Lots of fun for kids of all ages and their caregivers!",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6afcfb9bd7e98e002c538f4e",
+      "note": "Join us for ABC's, 123's, songs, stories, socializing. Lots of fun for kids of all ages and their caregivers!"
+    },
+    {
       "lib": "imperial",
       "name": "Nature Tots",
       "date": "2027-02-25",
@@ -2351,6 +2487,22 @@ STORYTIME.months["2027-02"] = {
       "note": "Little ones and their caregivers can socialize with one another while playing with educational toys at the library."
     },
     {
+      "lib": "elcajonc",
+      "name": "Toddler Circle Time",
+      "date": "2027-02-26",
+      "time": "10:30",
+      "dur": 30,
+      "ages": [
+        "toddler"
+      ],
+      "ageText": "Toddler Circle Time",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6b01e6cd0f200f18598675c0",
+      "note": "Join us for songs, rhymes, and socializing for babies, toddlers, and their caregivers. All ages welcome!"
+    },
+    {
       "lib": "fallbroo",
       "name": "Baby Storytime",
       "date": "2027-02-26",
@@ -2417,22 +2569,6 @@ STORYTIME.months["2027-02"] = {
       ],
       "eventId": "6aa431876074830038263baf",
       "note": "Join us for stories with Franklin, the tortoise from the Nature Center of San Elijo Lagoon Ecological Reserve. Hosted by Park Rangers from the Parks & Recreatio"
-    },
-    {
-      "lib": "valleyce",
-      "name": "Preschool Story Time",
-      "date": "2027-02-26",
-      "time": "10:30",
-      "dur": 60,
-      "ages": [
-        "preschool"
-      ],
-      "ageText": "3-5 years",
-      "lang": [
-        "en"
-      ],
-      "eventId": "6680837fe3e1ee3000462f82",
-      "note": "Join us on Fridays for stories, songs, and crafts. Geared for children aged 3-5 years."
     },
     {
       "lib": "ranchosa",

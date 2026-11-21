@@ -8427,22 +8427,6 @@ STORYTIME.months["2026-11"] = {
       "note": "Calling all builders! LEGO Power Hour is the perfect place for master builders to show off their skills and for new builders to practice the craft of building, "
     },
     {
-      "lib": "descanso",
-      "name": "Make & Take Craft",
-      "date": "2026-11-21",
-      "time": "08:00",
-      "dur": 60,
-      "ages": [
-        "preschool"
-      ],
-      "ageText": "Kids",
-      "lang": [
-        "en"
-      ],
-      "eventId": "698285bd707481383708c540",
-      "note": "Come in with the kids and enjoy a self guided craft that's available all day long. Each week features a different theme. We look forward to seeing you here."
-    },
-    {
       "lib": "alliedga",
       "name": "Saturday Drop-In Craft Time",
       "date": "2026-11-21",
@@ -8459,72 +8443,6 @@ STORYTIME.months["2026-11"] = {
       "note": "Visit the Allied Gardens/Benjamin Library on Saturday & create a terrific craft. All supplies provided!"
     },
     {
-      "lib": "cm",
-      "name": "Fall Storytime and Turkey Craft",
-      "date": "2026-11-21",
-      "time": "10:00",
-      "dur": 60,
-      "ages": [
-        "preschool"
-      ],
-      "ageText": "Enjoy a fall-themed preschool storytime and a turkey craft to follow. Mak…",
-      "lang": [
-        "en"
-      ],
-      "eventId": "317711",
-      "note": "Enjoy a fall-themed preschool storytime and a turkey craft to follow. Make it at the library or take it home."
-    },
-    {
-      "lib": "lindavis",
-      "name": "LEGO Time!",
-      "date": "2026-11-21",
-      "time": "10:00",
-      "dur": 60,
-      "ages": [
-        "preschool"
-      ],
-      "ageText": "AI: open Lego build",
-      "lang": [
-        "en"
-      ],
-      "eventId": "324303",
-      "note": "Build, build BUILD!!! Come join us for a fun filled activity on alternating Saturdays here at the Linda Vista Library. Kids can create something unique or build"
-    },
-    {
-      "lib": "missionh",
-      "name": "Dance Pants Bash!",
-      "date": "2026-11-21",
-      "time": "10:00",
-      "dur": 30,
-      "ages": [
-        "baby",
-        "toddler",
-        "preschool"
-      ],
-      "ageText": "AI: dance party + storytime for littles",
-      "lang": [
-        "en"
-      ],
-      "eventId": "317378",
-      "note": "Bring the littles and come for a fun dance party and maybe a storytime! We will dance to fun songs, use egg shakers, and dance with bubbles!"
-    },
-    {
-      "lib": "paradise",
-      "name": "Storytime & Craft",
-      "date": "2026-11-21",
-      "time": "10:00",
-      "dur": 30,
-      "ages": [
-        "toddler"
-      ],
-      "ageText": "…en's Area from 10:00AM-10:30AM, followed by Tiny Tot Play from 10:30AM-12PM",
-      "lang": [
-        "en"
-      ],
-      "eventId": "450930",
-      "note": "Please join us for storytime, music, and craft with Mr. Rogelio every Saturday morning in the Children's Area from 10:00AM-10:30AM, followed by Tiny Tot Play fr"
-    },
-    {
       "lib": "pinevall",
       "name": "Make & Take Craft",
       "date": "2026-11-21",
@@ -8539,95 +8457,6 @@ STORYTIME.months["2026-11"] = {
       ],
       "eventId": "694c703494297d3600a190b1",
       "note": "Take home a new craft every week! Fun and creativity to enjoy at the library or at home."
-    },
-    {
-      "lib": "kensingt",
-      "name": "Saturday Story Time",
-      "date": "2026-11-21",
-      "time": "10:30",
-      "dur": 60,
-      "ages": [
-        "baby",
-        "toddler",
-        "preschool"
-      ],
-      "ageText": "",
-      "lang": [
-        "en"
-      ],
-      "eventId": "431471",
-      "note": "Grab a blanket and enjoy Story Time out in the park! Our story time events are filled with fun songs to sing and dance to; stories that are vivid and cater to E"
-    },
-    {
-      "lib": "mountain",
-      "name": "Lego and Rokenbok Club",
-      "date": "2026-11-21",
-      "time": "10:30",
-      "dur": 90,
-      "ages": [
-        "preschool"
-      ],
-      "ageText": "AI: Lego/Rokenbok club",
-      "lang": [
-        "en"
-      ],
-      "eventId": "327259",
-      "note": "Join us every Saturday from 10:30am-12pm for Lego and Rokenbok Club! Patrons will be able to build at their own pace. We will provide a lego square to build on "
-    },
-    {
-      "lib": "paradise",
-      "name": "Tiny Tot Play",
-      "date": "2026-11-21",
-      "time": "10:30",
-      "dur": 90,
-      "ages": [
-        "baby",
-        "toddler",
-        "preschool"
-      ],
-      "ageText": "Age 5 & under",
-      "lang": [
-        "en"
-      ],
-      "eventId": "450937",
-      "note": "Babies & Toddlers- Let's Play! Engage curiosity, exploration, and build confidence with sensory activity stations that promote cognitive, social, & motor skills"
-    },
-    {
-      "lib": "pw",
-      "name": "German Bilingual Dance Party Storytime",
-      "date": "2026-11-21",
-      "time": "10:30",
-      "dur": 30,
-      "ages": [
-        "baby",
-        "toddler",
-        "preschool"
-      ],
-      "ageText": "",
-      "lang": [
-        "en",
-        "de"
-      ],
-      "eventId": "6aa1a84ed9692700553436a2",
-      "note": "Dance along with fun storytime songs in German!"
-    },
-    {
-      "lib": "ranchosa",
-      "name": "Discover & Play Saturday - Free Play",
-      "date": "2026-11-21",
-      "time": "10:30",
-      "dur": 60,
-      "ages": [
-        "baby",
-        "toddler",
-        "preschool"
-      ],
-      "ageText": "AI: open free-play stations",
-      "lang": [
-        "en"
-      ],
-      "eventId": "69d8123fbd9a3c316a51e9fd",
-      "note": "Come and enjoy a variety of activity stations."
     },
     {
       "lib": "4s",
@@ -8676,40 +8505,6 @@ STORYTIME.months["2026-11"] = {
       ],
       "eventId": "6ac69eee686221156abb8fc1",
       "note": "Join us for a children's story time of KPBS's 2026 One Book One San Diego book choice \"Books On Bikes\" by F. Isabel Campoy & Theresa Howell. Story and craft. Wh"
-    },
-    {
-      "lib": "northpar",
-      "name": "Signing Storytime",
-      "date": "2026-11-21",
-      "time": "11:00",
-      "dur": 30,
-      "ages": [
-        "baby",
-        "toddler",
-        "preschool"
-      ],
-      "ageText": "Enjoy some sign language fun for babies, toddlers, and preschoolers with Ms. Jennif…",
-      "lang": [
-        "en"
-      ],
-      "eventId": "355256",
-      "note": "Enjoy some sign language fun for babies, toddlers, and preschoolers with Ms. Jennifer from Signs at Play! Come learn some simple signs and songs at this fun wee"
-    },
-    {
-      "lib": "oakpark",
-      "name": "Baby Sign Language Storytime",
-      "date": "2026-11-21",
-      "time": "12:30",
-      "dur": 60,
-      "ages": [
-        "baby"
-      ],
-      "ageText": "Baby Sign Language Storytime",
-      "lang": [
-        "en"
-      ],
-      "eventId": "364586",
-      "note": "Sign language fun for babies, toddlers, and preschoolers! No sign up needed."
     },
     {
       "lib": "northcla",
@@ -8776,25 +8571,6 @@ STORYTIME.months["2026-11"] = {
       ],
       "eventId": "6a9a156e60ccaf01c0234a61",
       "note": "Craft activities and building challenges with LEGO bricks, geared for kids ages 4 and up. Offered by local high school students. No registration required."
-    },
-    {
-      "lib": "elcajonc",
-      "name": "Bilingual Storytime",
-      "date": "2026-11-23",
-      "time": "10:30",
-      "dur": 30,
-      "ages": [
-        "baby",
-        "toddler",
-        "preschool"
-      ],
-      "ageText": "…books and rhymes in English and in Spanish! All ages welcome. Acompáñenos y disfrute de cancione…",
-      "lang": [
-        "en",
-        "es"
-      ],
-      "eventId": "6a7a4d1cb44674e2601d0792",
-      "note": "Join us for songs, books and rhymes in English and in Spanish! All ages welcome. Acompáñenos y disfrute de canciones, libros y rimas en inglés y en español. ¡To"
     },
     {
       "lib": "encinita",
@@ -9580,10 +9356,10 @@ STORYTIME.months["2026-11"] = {
     },
     {
       "lib": "tierrasa",
-      "name": "Baby & Toddler Storytime",
+      "name": "Baby & Toddler Playtime",
       "date": "2026-11-25",
       "time": "10:00",
-      "dur": 60,
+      "dur": 30,
       "ages": [
         "baby",
         "toddler"
@@ -9592,8 +9368,8 @@ STORYTIME.months["2026-11"] = {
       "lang": [
         "en"
       ],
-      "eventId": "437029",
-      "note": "Join us for stories, songs, dancing, finger games and more! Little ones ages 0-3 are able to make noise, play, and meet new friends. Toys will be provided for a"
+      "eventId": "463395",
+      "note": "In place of our Baby & Toddler Storytime this week, join us for a social playtime for little ones ages 0-3."
     },
     {
       "lib": "4s",
@@ -9714,23 +9490,6 @@ STORYTIME.months["2026-11"] = {
       ],
       "eventId": "431309",
       "note": "Grab a blanket and enjoy Story Time out in the park! Our story time events are filled with fun songs to sing and dance to; stories that are vivid and cater to E"
-    },
-    {
-      "lib": "lajollar",
-      "name": "Bilingual Storytime: French (L'Heure de Conte Bilingue: Français)",
-      "date": "2026-11-25",
-      "time": "10:30",
-      "dur": 30,
-      "ages": [
-        "preschool"
-      ],
-      "ageText": "This bilingual program is designed for preschool children to experience both English and Fre…",
-      "lang": [
-        "en",
-        "fr"
-      ],
-      "eventId": "324393",
-      "note": "This bilingual program is designed for preschool children to experience both English and French in a fun, engaging setting. During each session, we will read st"
     },
     {
       "lib": "lemongro",
@@ -9929,7 +9688,7 @@ STORYTIME.months["2026-11"] = {
       "name": "LEGO Power Hour",
       "date": "2026-11-25",
       "time": "15:30",
-      "dur": 90,
+      "dur": 60,
       "ages": [
         "preschool"
       ],
@@ -10071,22 +9830,6 @@ STORYTIME.months["2026-11"] = {
       ],
       "eventId": "6ae8da62901b02002cc6deec",
       "note": "Storytime is on a holiday break. During the break, join us for Family Free Play! Kids and caregivers are invited to play with educational and creative play item"
-    },
-    {
-      "lib": "pinevall",
-      "name": "Preschool Storytime",
-      "date": "2026-11-26",
-      "time": "10:30",
-      "dur": 60,
-      "ages": [
-        "preschool"
-      ],
-      "ageText": "Preschool Storytime",
-      "lang": [
-        "en"
-      ],
-      "eventId": "694c6bae1e64afd01e50b8de",
-      "note": "Come join us for a joyful preschool storytime filled with stories, songs, and fun movement activities followed by a fun craft."
     },
     {
       "lib": "lincolna",
@@ -10389,7 +10132,7 @@ STORYTIME.months["2026-11"] = {
     },
     {
       "lib": "4s",
-      "name": "Robotics Demo (by DNHS Team Optix 3749)",
+      "name": "ROBOTICS SHOWCASE (by DNHS Team Optix 3749)",
       "date": "2026-11-28",
       "time": "13:00",
       "dur": 90,
@@ -10594,6 +10337,22 @@ STORYTIME.months["2026-11"] = {
       "note": "Build with LEGO bricks! Take the weekly \"Challenge\" and display your design in our LEGO gallery. This activity encourages creativity, critical thinking and coll"
     },
     {
+      "lib": "ranchos2",
+      "name": "Read with Liberty",
+      "date": "2026-11-30",
+      "time": "14:30",
+      "dur": 60,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6afb873bf018c3003344416c",
+      "note": "Young readers are invited to practice their reading skills by reading to Liberty, a friendly therapy dog! This relaxed, judgment-free experience helps build con"
+    },
+    {
       "lib": "imperial",
       "name": "Craft Challenge",
       "date": "2026-11-30",
@@ -10624,6 +10383,22 @@ STORYTIME.months["2026-11"] = {
       ],
       "eventId": "69fa69cecaf93436005a05e5",
       "note": "Play and build with LEGO® bricks! Free build - or take on the weekly building challenge! Recommended for ages 4+ Younger children may attend, but must be accomp"
+    },
+    {
+      "lib": "4s",
+      "name": "Lemonade & Financial Literacy",
+      "date": "2026-11-30",
+      "time": "16:30",
+      "dur": 90,
+      "ages": [
+        "preschool"
+      ],
+      "ageText": "Kids",
+      "lang": [
+        "en"
+      ],
+      "eventId": "6aff5b340f200f185985e552",
+      "note": "Del Norte DECA teaches youth finance through interactive Lemonade Stand activities! DECA will present information on topics including needs vs. wants, savings, "
     },
     {
       "lib": "northpar",
