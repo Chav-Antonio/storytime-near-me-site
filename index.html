@@ -1027,7 +1027,14 @@ async function loadData(){
 
   await loadScript(`${DATA_DIR}/manifest.js`);
   const manifest = S.manifest || {};
-  const months   = manifest.months || [];
+  // Only fetch month files that overlap the rolling window applyFilters()
+  // shows (today → today + state.weeks). Past and far-future months would be
+  // downloaded and parsed just to be filtered out.
+  const ym = d => `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}`;
+  const winStart = new Date(); winStart.setHours(0,0,0,0);
+  const winEnd   = new Date(winStart); winEnd.setDate(winEnd.getDate()+state.weeks*7);
+  const loMo = ym(winStart), hiMo = ym(winEnd);
+  const months = (manifest.months || []).filter(mo => mo >= loMo && mo <= hiMo);
   const libsFile = manifest.libraries || "libraries.js";
 
   await loadScript(`${DATA_DIR}/${libsFile}`);
